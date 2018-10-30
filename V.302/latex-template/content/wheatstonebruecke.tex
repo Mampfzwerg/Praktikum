@@ -1,0 +1,46 @@
+\section{Wheatstone Brücke}
+\label{sec:Wheatstone Brücke}
+
+\subsection{Durchführung}
+\label{subsec:Durchführung}
+
+In Abbildung 4 ist der Aufbau einer Wheatstone Brücke schematisch dargestellt.
+
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[circuit ee IEC, font=\sffamily]
+    \draw (0,0) to [battery={info'={$U_s$}}] (0,-6);
+    \draw (0,0) -- (3,0);
+    \draw (3,0) -- (3, -1);
+    \node[contact] at (3,-1) {};
+    \draw (1.5, -1) -- (4.5, -1);
+    \draw (1.5, -1) to [resistor={info={$R_x$}}] (1.5, -3);
+    \draw (1.5, -3) to [resistor={info={$R_2$}}] (1.5, -5);
+    \draw (4.5, -1) to [resistor={info={$R_3$ \\ $R_4$}}] (4.5, -5);
+    \node[scale=0.8] at (3,-2.75) {Nullindikator};
+    \node[scale=0.8] at (3,-3.2) {$U_b$};
+    \node[contact] at (1.5,-3) {};
+    \node[contact] at (2.5, -3) {};
+    \node[contact] at (3.5,-3) {};
+    \draw (1.5, -3) -- (2.5, -3);
+    \draw (3.5, -3) -- (4.4, -3);
+    \draw (1.5, -5) -- (4.5, -5);
+    \node[contact] at (3,-5) {};
+    \draw (0, -6) -- (3,-6);
+    \draw (3, -6) -- (3,-5);
+    \end{tikzpicture}
+    \caption{Wheatstone Brücke}
+    \label{fig:Wheatstone Brücke}
+\end{figure}
+
+Sie besteht demnach aus zwei jeweils parallel geschalteten Widerständen
+$R_x$ und $R_3$, und $R_2$ und $R_4$.
+Dabei wird die Spannung jeweils nach dem ersten Widerstand gemessen.
+Da hier Wechselstrom angelegt ist, werden zwei Widerstände $R_3$ und $R_4$
+solange variiert, bis die Brückenspannung $U_b$ ihr Minimum (optimal wäre 
+null) erreicht hat. Bei diesem Versuch
+werden zwei unbekannte Widerstände ermittelt. Zur Fehlerbestimmung wird 
+$R_2$ variiert.
+
+\subsection{Auswertung}
+\label{subsec:Auswertung}
