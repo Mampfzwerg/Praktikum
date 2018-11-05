@@ -11,3 +11,4 @@
 \contentsline {subsection}{\numberline {3.5}Systematischer Fehler eines in Reihe geschalteten Voltmeters}{11}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}Leistungskurve}{12}{subsection.3.6}
 \contentsline {section}{\numberline {4}Diskussion}{13}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{14}{section.5}

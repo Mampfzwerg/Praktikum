@@ -19,26 +19,24 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{sample}{manual}{}
+    \entry{Anleitung}{misc}{}
       \name{author}{1}{}{%
-        {{hash=2821a70f99517ac7757c95300d43e95c}{%
-           family={Dortmund},
-           familyi={D\bibinitperiod},
-           given={TU},
-           giveni={T\bibinitperiod}}}%
+        {{hash=fdf8fe2dc0980233f0b9f2d4de1012eb}{%
+           family={Praktikumsanleitung},
+           familyi={P\bibinitperiod}}}%
       }
-      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
-      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
-      \field{sortinit}{D}
-      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \strng{namehash}{fdf8fe2dc0980233f0b9f2d4de1012eb}
+      \strng{fullhash}{fdf8fe2dc0980233f0b9f2d4de1012eb}
+      \strng{bibnamehash}{fdf8fe2dc0980233f0b9f2d4de1012eb}
+      \strng{authorbibnamehash}{fdf8fe2dc0980233f0b9f2d4de1012eb}
+      \strng{authornamehash}{fdf8fe2dc0980233f0b9f2d4de1012eb}
+      \strng{authorfullhash}{fdf8fe2dc0980233f0b9f2d4de1012eb}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Versuch zum Literaturverzeichnis}
-      \field{year}{2014}
+      \field{howpublished}{\url{http://129.217.224.2/HOMEPAGE/Anleitung_AP.html}}
+      \field{title}{{Versuch 301 - Leerlaufspannung und Innenwiderstand von Spannungsquellen}}
     \endentry
   \enddatalist
 \endrefsection

@@ -33,10 +33,10 @@ $U_k \,/\, \si{\volt}$ & $I \,/\, \si{\milli\ampere}$\\
 \end{tabular}
 \end{table}
 
-Es wird eine lineare Regression durchgeführt, um die Leerlaufspannung 
-und den Innenwiderstand zu berechnen. Hierfür verwenden wir Python mit 
+Es wird eine lineare Regression durchgeführt, um die Leerlaufspannung $U_0$ 
+und den Innenwiderstand $R_i$ zu berechnen. Hierfür verwenden wir Python mit 
 der Bibliothek Numpy.
-Es ergibt sich die in \ref{fig:plot1} dargestellte Ausgleichsgerade:
+Es ergibt sich die in Abbildung \ref{fig:plot1} dargestellte Ausgleichsgerade:
 
 \begin{equation}
 U(I) = m\cdot I + b 
@@ -45,10 +45,10 @@ U(I) = m\cdot I + b
 
 Mit den Parametern
 
-\begin{align}
+\begin{align*}
 m &= \SI{-5.655+-0.0776}{\volt\per\ampere}\\
 b &= \SI{1.680+-0.0085}{\volt}
-\end{align}
+\end{align*}
 
 \begin{figure}
   \centering
@@ -57,15 +57,15 @@ b &= \SI{1.680+-0.0085}{\volt}
   \label{fig:plot1}
 \end{figure}
 
-Durch Vergleich mit \ref{eqn:Maschenregel} ergeben sich somit 
+Durch Vergleich mit (\ref{eqn:Maschenregel}) ergeben sich somit 
 die gesuchten Größen zu: 
 
-\begin{align}
+\begin{align*}
 R_i &= \SI{5.655+-0.0776}{\ohm}\\
 U_0 &= \SI{1.680+-0.0085}{\volt}
-\end{align}
+\end{align*}
 
-Man erkennt, dass der Wert für die Leerlaufspannung annäherend mit den zuvor
+Man erkennt, dass der Wert für die Leerlaufspannung annäherend mit dem zuvor
 gemessenen Wert $U_0 = \SI{1.65}{\volt}$ übereinstimmt. Die Abweichung entsteht
 durch einen systematischen Fehler, der durch den endlichen Innenwiderstand des
 Voltmeters entsteht.
@@ -121,7 +121,7 @@ Die gemessenen Werte sind in Tabelle \ref{tab:Gegen} aufgeführt.
 \end{table}
 
 Auch hier wird eine lineare Regression mittels Phyton und Numpy durchgeführt.
-Das Resultat findet sich in Abbilgung \ref{fig:plot2}.
+Das Resultat ist in Abbildung \ref{fig:plot2} zu sehen.
 
 \begin{figure}
   \centering
@@ -132,7 +132,7 @@ Das Resultat findet sich in Abbilgung \ref{fig:plot2}.
 
 Die Ausgleichsgerade hat eine positive Steigung. Dies liegt daran, dass 
 der Strom in entgegengesetzter Richtung durch die Monozelle fließt. 
-Die Geradengleichung lautet gemäß \ref{eqn:Gerade}. Dabei ergeben sich diesmal 
+Die Geradengleichung lautet gemäß (\ref{eqn:Gerade}). Dabei ergeben sich diesmal 
 die Parameter: 
 
 \begin{align*}
@@ -140,8 +140,8 @@ m &= \SI{6.0770+-0.0576}{\volt\per\ampere}\\
 b &= \SI{1.6587+-0.0061}{\volt}
 \end{align*}
 
-Damit ergibt sich für die gesuchten Werte analog, wobei der Strom mit
-einem umgekehrten Vorzeichen versehen wird. 
+Damit ergibt sich die gesuchten Werte analog, wobei der Strom mit
+einem umgekehrten Vorzeichen versehen wird:
 
 \begin{align*}
 R_i &= \SI{6.0770+-0.0576}{\ohm}\\
@@ -192,14 +192,14 @@ zu sehen.
   \label{fig:plot3}
 \end{figure}
 
-Die Parameter ergeben sich diesmal gemäß \ref{eqn:Gerade} zu: 
+Die Parameter ergeben sich diesmal gemäß (\ref{eqn:Gerade}) zu: 
 
 \begin{align*}
 m &= \SI{-52.350+-0.4829}{\volt\per\ampere}\\
 b &= \SI{0.652+-0.0025}{\volt}
 \end{align*}
 
-Somit ergeben sich gemäß Formel \ref{eqn:Maschenregel} folgende Werte:
+Somit ergeben sich gemäß (\ref{eqn:Maschenregel}) folgende Werte:
 
 \begin{align*}
 R_i &= \SI{52.350+-0.4829}{\ohm}\\
@@ -252,14 +252,14 @@ zu sehen.
   \label{fig:plot4}
 \end{figure}
 
-Die Parameter ergeben sich diesmal gemäß \ref{eqn:Gerade} zu: 
+Die Parameter ergeben sich diesmal gemäß (\ref{eqn:Gerade}) zu: 
 
 \begin{align*}
 m &= \SI{624.117+-7.8725}{\volt\per\ampere}\\
 b &= \SI{2.339+-0.011}{\volt}
 \end{align*}
 
-Somit ergeben sich gemäß Formel \ref{eqn:Maschenregel} folgende Werte:
+Somit ergeben sich gemäß (\ref{eqn:Maschenregel}) folgende Werte:
 
 \begin{align*}
 R_i &= \SI{624.117+-7.8725}{\ohm}\\
@@ -272,10 +272,10 @@ Nun soll die Schaltung, die in Abbildung \ref{fig:Ersatz} dargestellt ist,
 so variiert werden, dass das Voltmeter in Reihe geschaltet wird.
 Dabei verändert sich die Klemmspannung $U_k$ nach der 2. Kirchhoffschen Regel:
 
-\begin{align}
+\begin{align*}
 U_k &= U_{am} + U_{vm} + U_{Ra}\\
 U_k &= R_{am}\cdot I + R_{vm}\cdot I + R_a\cdot I  
-\end{align}
+\end{align*}
 
 Dabei bezeichnet $U_{am}$ die Spannung, die über das Amperemeter,
 $U_{vm}$, die über das Voltmeter und $U_{Ra}$, die über den Widerstand
@@ -289,7 +289,7 @@ hochohmigen Innenwiderstand behaftet ist.
 
 Aus den Messwerten in Kapitel 4.1 werden der Belastungswiderstand und 
 die im Widerstand umgesetzte Leistung berechnet. Die Werte sind in 
-Tabelle \ref{tab:Leistung} aufgetragen:
+Tabelle \ref{tab:Leistung} aufgetragen.
 
 \begin{table}
    \centering
@@ -318,16 +318,17 @@ Tabelle \ref{tab:Leistung} aufgetragen:
    \end{tabular}
  \end{table}
 
-Nach Formel \ref{eqn:Leistungsfunktion} wird nun die Leistung $P$ gegen den
-Belastungswiderstand $R_a$ aufgetragen und die Theoriekurve in Abbildung 
-\ref{fig:plot5} eingetragen, die sich mit den Werten
+Nach (\ref{eqn:Leistungsfunktion}) wird nun die Leistung $P$ gegen den
+Belastungswiderstand $R_a$ aufgetragen. Die Theoriekurve ergibt sich aus 
+den Werten:
 
 \begin{align*}
 R_i &= \SI{5.66}{\ohm}\\
 U_0 &= \SI{1.68}{\volt}
 \end{align*}
 
-ergibt.
+Sowohl die Kurve als auch die Messwerte sind in Abbildung \ref{fig:plot5}
+dargestellt. 
 
 \begin{figure}
   \centering
