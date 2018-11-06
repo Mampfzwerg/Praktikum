@@ -1,0 +1,36 @@
+from uncertainties import ufloat
+
+d = 0.0158
+pf = 998.8
+a = ufloat(0.001397,0.000008)
+b = ufloat(0.001520,0.000008)
+c = ufloat(0.001628,0.000014)
+d = ufloat(0.001861,0.000006)
+e = ufloat(0.002015,0.000006)
+f = ufloat(0.002199,0.000030)
+g = ufloat(0.002313,0.000004)
+h = ufloat(0.002481,0.000001)
+i = ufloat(0.002624,0.000022)
+j = ufloat(0.002762,0.000008)
+
+ea = ufloat(8.16e-3, 0.006e-3)
+eb = ufloat(7.50e-3, 0.005e-3)
+ec = ufloat(7.00e-3, 0.007e-3)
+ed = ufloat(6.12e-3, 0.003e-3)
+ee = ufloat(5.66e-3, 0.003e-3)
+ef = ufloat(5.18e-3, 0.007e-3)
+eg = ufloat(4.93e-3, 0.002e-3)
+eh = ufloat(4.60e-3, 0.002e-3)
+ei = ufloat(4.34e-3, 0.004e-3)
+ej = ufloat(4.12e-3, 0.002e-3)
+
+print((pf*a*d)/ea)
+print((pf*b*d)/eb)
+print((pf*c*d)/ec)
+print((pf*d*d)/ed)
+print((pf*e*d)/ee)
+print((pf*f*d)/ef)
+print((pf*g*d)/eg)
+print((pf*h*d)/eh)
+print((pf*i*d)/ei)
+print((pf*j*d)/ej)

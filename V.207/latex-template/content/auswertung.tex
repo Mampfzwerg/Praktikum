@@ -1,6 +1,8 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Viskosität von Wasser}
+
 Zunächst wird die Dichte der beiden Kugeln berechnet. Für die Kugeln 
 ergaben sich die in Tabelle \ref{tab:Dichte} dargestellten Messwerte für den 
 Durchmesser und die Masse, sowie die daraus berechneten Werte für das 
@@ -53,8 +55,8 @@ $t_g$ ist dabei die Fallzeit der großen und $t_k$ die Fallzeit der kleinen
 Kugel.
 
 \begin{align*}
-t_g &= \SI{12.40+-0.31}{\second}\\
-t_k &= \SI{80.00+-0.12}{\second}
+t_g &= \SI{12.40+-0.12}{\second}\\
+t_k &= \SI{80.00+-0.31}{\second}
 \end{align*}
 
 Nun berechnet sich die Viskosität $\eta$ des Wassers nach (\ref{eqn:Viskosität}).
@@ -69,6 +71,7 @@ Mit der Gaußschen Fehlerfortpflanzung
 \begin{align}
 \Delta \eta &= \sqrt{\left(\frac{\partial\eta}{\partial t}\right)^2 \cdot \left(\Delta t\right)²}\\
 &=\sqrt{\left(K\cdot(\rho_K - \rho_F)\right)²\cdot(\Delta t)²}
+\label{eqn:Fehlereta}
 \end{align}
 
 und der Dichte des Wassers 
@@ -80,7 +83,7 @@ und der Dichte des Wassers
 ergibt sich folgender Wert für die Viskosität $\eta$:
 
 \begin{equation}
-\eta = \SI{0.009114+-0.000014}{\kilo\gram\per(\meter\second)}
+\eta = \SI{0.009114+-0.000035}{\kilo\gram\per(\meter\second)}
 \end{equation}
 
 Aus diesem Wert kann die Apperaturkonstante $K$ der großen Kugel
@@ -101,12 +104,90 @@ Mit der Gaußschen Fehlerfortpflanzung
 ergibt sich für K: 
 
 \begin{equation}
-K = \SI{76.40+-0.16}{\nano\meter\squared\per\second\squared}
+K = \SI{76.40+-0.32}{\nano\meter\squared\per\second\squared}
 \end{equation}
+
+\subsection{Temperaturabhängigkeit der Viskosität}
+
+Die für 10 Temperaturen zwischen 21°C und 70°C gemessenen Fallzeiten 
+sind in Tabelle \ref{tab:Temperatur} eingetragen.
+
+\begin{table}
+\centering
+\caption{Temperaturabhängige Fallzeiten und Viskositäten}
+\label{tab:Temperatur}
+\sisetup{table-format=2.1}
+\begin{tabular}{c c c c c c}
+\toprule
+$T \,/\, \si{\kelvin}$ & $\frac{1}{T} \,/\, \si{\milli\kelvin^{-1}}$& \multicolumn{2}{c}{t \,/\, \si{\second}} & $\overline{t}$ & $\eta \,/\, \si{\gram\per\second\meter}$\\
+\midrule
+300.15 & 3.33 & 72.00 & 71.18 & 71.59 \pm\:0.41 & 8.16 \pm\:0.006\\
+304.15 & 3.29 & 66.13 & 65.47 & 65.80 \pm\:0.33 & 7.50 \pm\:0.005\\
+308.15 & 3.25 & 61.93 & 60.90 & 61.42 \pm\:0.52 & 7.00 \pm\:0.007\\
+315.15 & 3.17 & 53.89 & 53.58 & 53.74 \pm\:0.16 & 6.12 \pm\:0.003\\
+319.65 & 3.13 & 49.50 & 49.77 & 49.64 \pm\:0.14 & 5.66 \pm\:0.003\\
+323.65 & 3.09 & 44.95 & 46.20 & 45.58 \pm\:0.63 & 5.18 \pm\:0.007\\
+328.15 & 3.05 & 43.30 & 43.16 & 43.23 \pm\:0.07 & 4.93 \pm\:0.002\\
+333.15 & 3.00 & 40.30 & 40.29 & 40.30 \pm\:0.01 & 4.60 \pm\:0.002\\
+338.15 & 2.96 & 38.43 & 37.80 & 38.11 \pm\:0.32 & 4.34 \pm\:0.004\\
+343.15 & 2.91 & 36.40 & 36.18 & 36.29 \pm\:0.11 & 4.12 \pm\:0.002\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In der Tabelle sind die jeweiligen Mittelwerte der Fallzeiten mit deren Standardabweichung
+aus den beiden Messungen für eine Temperatur aufgeführt. Außerdem wird die 
+jeweilige Viskosität nach Formel (\ref{eqn:Viskosität}) ausgerechnet und deren
+Fehler durch die Gaußsche Fehlerfortpflanzung nach (\ref{eqn:Fehlereta}) berechnet. 
+
+Nun wird $ln(\eta)$ gegen $1/T$ in Abbildung \ref{fig:plot} aufgetragen.
 
 \begin{figure}
   \centering
-  \includegraphics{plot.pdf}
-  \caption{Plot.}
+  \includegraphics[scale=0.7]{content/plot1.pdf}
+  \caption{Temperaturabhängigkeit der Viskosität}
   \label{fig:plot}
 \end{figure}
+
+Die lineare Regression, durchgeführt mit Python und Numpy, 
+liefert folgende Geradengleichung: 
+
+\begin{equation}
+\ln{\eta} = B\cdot \frac{1}{T} + \ln{A}
+\end{equation}
+
+Dabei ergeben sich die Parameter zu: 
+
+\begin{align*}
+A &= \exp{(-10.353\pm0.1742)} = (\num{3.19e-5}\pm\num{5.56e-6})\si{\kilo\gram\per\meter\per\second} \\
+B &= \SI{1658.432+-55.8256}{\kelvin}
+\end{align*}
+
+\subsection{Reynolds Zahl}
+
+Mit den berechneten Werten lässt sich nun die Reynoldszahl für die 
+jeweiligen Temperaturen berechnen. Die Ergebnisse für die große Kugel sind 
+in Tabelle \ref{tab:Zeit} aufgeführt.
+
+\begin{table}
+\centering
+\caption{Temperaturabhängige Reynoldszahl}
+\label{tab:Zeit}
+\sisetup{table-format=2.1}
+\begin{tabular}{c c c}
+\toprule
+$T\,/\, \si{\kelvin}$ & $v\,/\, \si{\milli\meter\per\second}$ &$Re$\\
+\midrule
+300.15 & 1.397 \pm\:0.008 & 0.3182\pm\:0.0021\\
+304.15 & 1.520 \pm\:0.008 & 0.3767\pm\:0.0023\\
+308.15 & 1.682 \pm\:0.014 & 0.4320\pm\:0.0040\\
+315.15 & 1.861 \pm\:0.006 & 0.5650\pm\:0.0040\\
+319.65 & 2.015 \pm\:0.006 & 0.6617\pm\:0.0029\\
+323.65 & 2.199 \pm\:0.030 & 0.7890\pm\:0.0110\\
+328.15 & 2.313 \pm\:0.004 & 0.8721\pm\:0.0032\\
+333.15 & 2.481 \pm\:0.001 & 1.0025\pm\:0.0033\\
+338.15 & 2.624 \pm\:0.022 & 1.1240\pm\:0.0100\\
+343.15 & 2.762 \pm\:0.008 & 1.2460\pm\:0.0050\\
+\bottomrule
+\end{tabular}
+\end{table}

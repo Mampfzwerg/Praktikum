@@ -4,4 +4,7 @@
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}
 \contentsline {section}{\numberline {2}Durchführung}{4}{section.2}
 \contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
-\contentsline {section}{\numberline {4}Diskussion}{7}{section.4}
+\contentsline {subsection}{\numberline {3.1}Viskosität von Wasser}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Temperaturabhängigkeit der Viskosität}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Reynolds Zahl}{7}{subsection.3.3}
+\contentsline {section}{\numberline {4}Diskussion}{9}{section.4}
