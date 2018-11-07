@@ -104,7 +104,7 @@ Mit der Gaußschen Fehlerfortpflanzung
 ergibt sich für K: 
 
 \begin{equation*}
-K = \SI{493.40+-5}{\nano\meter\squared\per\second\squared}
+K = \SI{493.40+-5e-9}{\meter\squared\per\second\squared}
 \end{equation*}
 
 \subsection{Temperaturabhängigkeit der Viskosität}
@@ -121,16 +121,16 @@ sind in Tabelle \ref{tab:Temperatur} eingetragen.
 \toprule
 $T \,/\, \si{\kelvin}$ & $\frac{1}{T} \,/\, \si{\milli\kelvin^{-1}}$& \multicolumn{2}{c}{t \,/\, \si{\second}} & $\overline{t}$ & $\eta \,/\, \si{\gram\per\second\meter}$\\
 \midrule
-300.15 & 3.33 & 72.00 & 71.18 & 71.59 \pm\:0.41 & 8.16 \pm\:0.006\\
-304.15 & 3.29 & 66.13 & 65.47 & 65.80 \pm\:0.33 & 7.50 \pm\:0.005\\
-308.15 & 3.25 & 61.93 & 60.90 & 61.42 \pm\:0.52 & 7.00 \pm\:0.007\\
-315.15 & 3.17 & 53.89 & 53.58 & 53.74 \pm\:0.16 & 6.12 \pm\:0.003\\
-319.65 & 3.13 & 49.50 & 49.77 & 49.64 \pm\:0.14 & 5.66 \pm\:0.003\\
-323.65 & 3.09 & 44.95 & 46.20 & 45.58 \pm\:0.63 & 5.18 \pm\:0.007\\
-328.15 & 3.05 & 43.30 & 43.16 & 43.23 \pm\:0.07 & 4.93 \pm\:0.002\\
-333.15 & 3.00 & 40.30 & 40.29 & 40.30 \pm\:0.01 & 4.60 \pm\:0.002\\
-338.15 & 2.96 & 38.43 & 37.80 & 38.11 \pm\:0.32 & 4.34 \pm\:0.004\\
-343.15 & 2.91 & 36.40 & 36.18 & 36.29 \pm\:0.11 & 4.12 \pm\:0.002\\
+300.15 & 3.33 & 72.00 & 71.18 & 71.59 \pm\:0.41 & 52.70 \pm\:0.60\\
+304.15 & 3.29 & 66.13 & 65.47 & 65.80 \pm\:0.33 & 48,40 \pm\:0.50\\
+308.15 & 3.25 & 61.93 & 60.90 & 61.42 \pm\:0.52 & 45.20 \pm\:0.60\\
+315.15 & 3.17 & 53.89 & 53.58 & 53.74 \pm\:0.16 & 39.50 \pm\:0.40\\
+319.65 & 3.13 & 49.50 & 49.77 & 49.64 \pm\:0.14 & 36.50 \pm\:0.40\\
+323.65 & 3.09 & 44.95 & 46.20 & 45.58 \pm\:0.63 & 33.50 \pm\:0.60\\
+328.15 & 3.05 & 43.30 & 43.16 & 43.23 \pm\:0.07 & 31.81 \pm\:0.33\\
+333.15 & 3.00 & 40.30 & 40.29 & 40.30 \pm\:0.01 & 29.65 \pm\:0.30\\
+338.15 & 2.96 & 38.43 & 37.80 & 38.11 \pm\:0.32 & 28.00 \pm\:0.40\\
+343.15 & 2.91 & 36.40 & 36.18 & 36.29 \pm\:0.11 & 26.63 \pm\:0.28\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -152,22 +152,22 @@ Nun wird $ln(\eta)$ gegen $1/T$ in Abbildung \ref{fig:plot} aufgetragen.
 Die lineare Regression, durchgeführt mit Python und Numpy, 
 liefert folgende Geradengleichung: 
 
-\begin{equation}
-\ln{\eta} = B\cdot \frac{1}{T} + \ln{A}
-\end{equation}
+\begin{equation*}
+\ln{(\eta)} = B\cdot \frac{1}{T} + \ln{(A)}
+\end{equation*}
 
 Dabei ergeben sich die Parameter zu: 
 
 \begin{align*}
-A &= \exp{(-10.353\pm0.1742)} = (\num{3.19e-5}\pm\num{5.56e-6})\si{\kilo\gram\per\meter\per\second} \\
-B &= \SI{1658.432+-55.8256}{\kelvin}
+A &= \exp{(-8.492\pm0.1756)} = (\num{2.05e-5}\pm\num{3.60e-5})\si{\kilo\gram\per\meter\per\second} \\
+B &= \SI{1659.546+-56.2745}{\kelvin}
 \end{align*}
 
 Für die Zeitabhängigkeit der Viskosität gilt also:
 
-\begin{equation}
-\eta (T) = (\num{3.19e-5}\pm\num{5.56e-6})\si{\kilo\gram\per\meter\per\second} \cdot \exp{\left(\frac{\SI{1658.432+-55.8256}{\kelvin}}{T}\right)}
-\end{equation}
+\begin{equation*}
+\eta (T) = (\num{2.05e-5}\pm\num{3.60e-5})\si{\kilo\gram\per\meter\per\second} \cdot \exp{\left(\frac{\SI{1659.546+-56.2745}{\kelvin}}{T}\right)}
+\end{equation*}
 
 \subsection{Reynolds Zahl}
 
@@ -179,21 +179,23 @@ in Tabelle \ref{tab:Zeit} aufgeführt.
 \centering
 \caption{Temperaturabhängige Reynoldszahl}
 \label{tab:Zeit}
-\sisetup{table-format=2.1}
-\begin{tabular}{c c c}
+%\sisetup{table-format=2.1}
+\begin{tabular}{S[table-format=3.2] S[table-format=1.3]@{${}\pm{}$}S[table-format=1.3] 
+S[table-format=2.2]@{${}\pm{}$}S[table-format=1.2]}
 \toprule
-$T\,/\, \si{\kelvin}$ & $v\,/\, \si{\milli\meter\per\second}$ &$Re$\\
+{$T\,/\, \si{\kelvin}$} & \multicolumn{2}{c}{$v\,/\, \si{\milli\meter\per\second}$} 
+& \multicolumn{2}{c}{$Re$}\\
 \midrule
-300.15 & 1.397 \pm\:0.008 &  27.02\pm\:0.16\\
-304.15 & 1.520 \pm\:0.008 &  31.98\pm\:0.17\\
-308.15 & 1.682 \pm\:0.014 &  36.70\pm\:0.32\\
-315.15 & 1.861 \pm\:0.006 &  47.99\pm\:0.16\\
-319.65 & 2.015 \pm\:0.006 &  56.18\pm\:0.17\\
-323.65 & 2.199 \pm\:0.030 &  67.00\pm\:0.90\\
-328.15 & 2.313 \pm\:0.004 &  74.04\pm\:0.13\\
-333.15 & 2.481 \pm\:0.001 &  85.11\pm\:0.05\\
-338.15 & 2.624 \pm\:0.022 &  95.40\pm\:0.80\\
-343.15 & 2.762 \pm\:0.008 & 105.79\pm\:0.31\\
+300.15 & 1.397 & 0.008 &  4.18 & 0.05\\
+304.15 & 1.520 & 0.008 &  4.96 & 0.06\\
+308.15 & 1.682 & 0.014 &  5.68 & 0.09\\
+315.15 & 1.861 & 0.006 &  7.44 & 0.08\\
+319.65 & 2.015 & 0.006 &  8.71 & 0.10\\
+323.65 & 2.199 & 0.030 & 10.36 & 0.23\\
+328.15 & 2.313 & 0.004 & 11.47 & 0.12\\
+333.15 & 2.481 & 0.001 & 13.20 & 0.13\\
+338.15 & 2.624 & 0.022 & 14.79 & 0.24\\
+343.15 & 2.762 & 0.008 & 16.37 & 0.18\\
 \bottomrule
 \end{tabular}
 \end{table}
