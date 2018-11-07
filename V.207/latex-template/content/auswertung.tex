@@ -68,11 +68,10 @@ K_k = \SI{0.0764}{\milli\pascal\cubic\centi\meter\per\gram}
 
 Mit der Gaußschen Fehlerfortpflanzung
 
-\begin{align*}
+\begin{align}
 \Delta \eta &= \sqrt{\left(\frac{\partial\eta}{\partial t}\right)^2 \cdot \left(\Delta t\right)²}\\
 &=\sqrt{\left(K\cdot(\rho_K - \rho_F)\right)²\cdot(\Delta t)²}
-\label{eqn:Fehlereta}
-\end{align*}
+\end{align}
 
 und der Dichte des Wassers 
 
@@ -138,7 +137,7 @@ $T \,/\, \si{\kelvin}$ & $\frac{1}{T} \,/\, \si{\milli\kelvin^{-1}}$& \multicolu
 In der Tabelle sind die jeweiligen Mittelwerte der Fallzeiten mit deren Standardabweichung
 aus den beiden Messungen für eine Temperatur aufgeführt. Außerdem wird die 
 jeweilige Viskosität nach Formel (\ref{eqn:Viskosität}) ausgerechnet und deren
-Fehler durch die Gaußsche Fehlerfortpflanzung nach (\ref{eqn:Fehlereta}) berechnet. 
+Fehler durch die Gaußsche Fehlerfortpflanzung nach (6) und (7) berechnet. 
 
 Nun wird $ln(\eta)$ gegen $1/T$ in Abbildung \ref{fig:plot} aufgetragen.
 
@@ -156,17 +155,17 @@ liefert folgende Geradengleichung:
 \ln{(\eta)} = B\cdot \frac{1}{T} + \ln{(A)}
 \end{equation*}
 
-Dabei ergeben sich die Parameter zu: 
+Dabei ergeben sich die Parameter A und B aus der Andradeschen Gleichung zu: 
 
 \begin{align*}
-A &= \exp{(-8.492\pm0.1756)} = (\num{2.05e-5}\pm\num{3.60e-5})\si{\kilo\gram\per\meter\per\second} \\
+A &= \exp{(-8.492\pm0.1756)} = (\num{2.05e-4}\pm\num{3.60e-5})\si{\kilo\gram\per\meter\per\second} \\
 B &= \SI{1659.546+-56.2745}{\kelvin}
 \end{align*}
 
 Für die Zeitabhängigkeit der Viskosität gilt also:
 
 \begin{equation*}
-\eta (T) = (\num{2.05e-5}\pm\num{3.60e-5})\si{\kilo\gram\per\meter\per\second} \cdot \exp{\left(\frac{\SI{1659.546+-56.2745}{\kelvin}}{T}\right)}
+\eta (T) = (\num{2.05e-4})\si{\kilo\gram\per\meter\per\second} \cdot \exp{\left(\frac{\SI{1659.546}{\kelvin}}{T}\right)}
 \end{equation*}
 
 \subsection{Reynolds Zahl}
@@ -206,5 +205,5 @@ Außerdem ergibt sich die Reynoldzahl für die kleine Kugel:
 Re_{kl} = \num{890.7+-1.1}
 \end{equation*}
 
-Es ist zu erkennen, dass die Reynoldzahlen für alle Temperaturen unter 1160 
-liegen und man somit von laminaren Stömungsverhältnissen ausgehen kann.
+Es ist zu erkennen, dass die Reynoldzahl für alle Temperaturen unter 1160 
+liegt und man somit von laminaren Stömungsverhältnissen ausgehen kann.
