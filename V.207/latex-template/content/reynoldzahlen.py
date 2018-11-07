@@ -1,6 +1,7 @@
 from uncertainties import ufloat
 
-d = 0.0158
+D = 0.158
+Du = 0.156
 pf = 998.8
 a = ufloat(0.001397,0.000008)
 b = ufloat(0.001520,0.000008)
@@ -12,6 +13,7 @@ g = ufloat(0.002313,0.000004)
 h = ufloat(0.002481,0.000001)
 i = ufloat(0.002624,0.000022)
 j = ufloat(0.002762,0.000008)
+t = ufloat(0.008060,0.000008)
 
 ea = ufloat(8.16e-3, 0.006e-3)
 eb = ufloat(7.50e-3, 0.005e-3)
@@ -23,14 +25,16 @@ eg = ufloat(4.93e-3, 0.002e-3)
 eh = ufloat(4.60e-3, 0.002e-3)
 ei = ufloat(4.34e-3, 0.004e-3)
 ej = ufloat(4.12e-3, 0.002e-3)
+et = ufloat(1.41e-3, 0.001e-3)
 
-print((pf*a*d)/ea)
-print((pf*b*d)/eb)
-print((pf*c*d)/ec)
-print((pf*d*d)/ed)
-print((pf*e*d)/ee)
-print((pf*f*d)/ef)
-print((pf*g*d)/eg)
-print((pf*h*d)/eh)
-print((pf*i*d)/ei)
-print((pf*j*d)/ej)
+print((pf*a*D)/ea)
+print((pf*b*D)/eb)
+print((pf*c*D)/ec)
+print((pf*d*D)/ed)
+print((pf*e*D)/ee)
+print((pf*f*D)/ef)
+print((pf*g*D)/eg)
+print((pf*h*D)/eh)
+print((pf*i*D)/ei)
+print((pf*j*D)/ej)
+print((pf*t*Du)/et)

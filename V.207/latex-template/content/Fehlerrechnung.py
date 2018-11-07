@@ -1,17 +1,17 @@
 from uncertainties import ufloat
 
-t = ufloat(80, 0.31)
+t = ufloat(12.40,0.12)
 pf = 998.8
 pk = 2.49e3
 K = 0.0764e-6
 
 print(K*(pk-pf)*t)
 
-e = ufloat(0.009114, 0.000014)
+e = ufloat(0.001413, 0.000014)
 
 print(e/((pk-pf)*t))
 
-k = ufloat(76.40e-9, 0.32e-9)
+k = ufloat(493.40e-9, 5e-9)
 x = ufloat(71.59,0.41)
 y = ufloat(65.80,0.33)
 z = ufloat(61.42,0.52)
@@ -47,4 +47,5 @@ print(100/d)
 print(100/e)
 print(100/f)
 print(100/g)
+print(100/t)
 

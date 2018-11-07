@@ -55,24 +55,24 @@ $t_g$ ist dabei die Fallzeit der großen und $t_k$ die Fallzeit der kleinen
 Kugel.
 
 \begin{align*}
-t_g &= \SI{12.40+-0.12}{\second}\\
-t_k &= \SI{80.00+-0.31}{\second}
+t_k &= \SI{12.40+-0.12}{\second}\\
+t_g &= \SI{80.00+-0.31}{\second}
 \end{align*}
 
 Nun berechnet sich die Viskosität $\eta$ des Wassers nach (\ref{eqn:Viskosität}).
 Die Apperaturkonstante der kleinen Kugel ist gegeben mit 
 
-\begin{equation}
+\begin{equation*}
 K_k = \SI{0.0764}{\milli\pascal\cubic\centi\meter\per\gram}
-\end{equation}
+\end{equation*}
 
 Mit der Gaußschen Fehlerfortpflanzung
 
-\begin{align}
+\begin{align*}
 \Delta \eta &= \sqrt{\left(\frac{\partial\eta}{\partial t}\right)^2 \cdot \left(\Delta t\right)²}\\
 &=\sqrt{\left(K\cdot(\rho_K - \rho_F)\right)²\cdot(\Delta t)²}
 \label{eqn:Fehlereta}
-\end{align}
+\end{align*}
 
 und der Dichte des Wassers 
 
@@ -82,30 +82,30 @@ und der Dichte des Wassers
 
 ergibt sich folgender Wert für die Viskosität $\eta$:
 
-\begin{equation}
-\eta = \SI{0.009114+-0.000035}{\kilo\gram\per(\meter\second)}
-\end{equation}
+\begin{equation*}
+\eta = \SI{0.001413+-0.000014}{\kilo\gram\per(\meter\second)}
+\end{equation*}
 
 Aus diesem Wert kann die Apperaturkonstante $K$ der großen Kugel
 bestimmt werden. Dafür wird die Formel \ref{eqn:Viskosität} nach 
 $K$ umgestellt: 
 
-\begin{equation}
+\begin{equation*}
 K = \frac{\eta}{(\rho_K - \rho_F) \cdot t}
-\end{equation}
+\end{equation*}
 
 Mit der Gaußschen Fehlerfortpflanzung
 
-\begin{align}
+\begin{align*}
 \Delta K &= \sqrt{\left(\frac{\partial K}{\partial \eta}\cdot \Delta\eta\right)² + \left(\frac{\partial K}{\partial t}\cdot \Delta t\right)²}\\
 &= \sqrt{\left(\frac{1}{(\rho_K - \rho_F)\cdot t}\cdot \Delta\eta\right)² + \left(\frac{-\eta}{(\rho_K - \rho_F)\cdot t²}\cdot \Delta t\right)²}
-\end{align}
+\end{align*}
 
 ergibt sich für K: 
 
-\begin{equation}
-K = \SI{76.40+-0.32}{\nano\meter\squared\per\second\squared}
-\end{equation}
+\begin{equation*}
+K = \SI{493.40+-5}{\nano\meter\squared\per\second\squared}
+\end{equation*}
 
 \subsection{Temperaturabhängigkeit der Viskosität}
 
@@ -163,6 +163,12 @@ A &= \exp{(-10.353\pm0.1742)} = (\num{3.19e-5}\pm\num{5.56e-6})\si{\kilo\gram\pe
 B &= \SI{1658.432+-55.8256}{\kelvin}
 \end{align*}
 
+Für die Zeitabhängigkeit der Viskosität gilt also:
+
+\begin{equation}
+\eta (T) = (\num{3.19e-5}\pm\num{5.56e-6})\si{\kilo\gram\per\meter\per\second} \cdot \exp{\left(\frac{\SI{1658.432+-55.8256}{\kelvin}}{T}\right)}
+\end{equation}
+
 \subsection{Reynolds Zahl}
 
 Mit den berechneten Werten lässt sich nun die Reynoldszahl für die 
@@ -178,16 +184,25 @@ in Tabelle \ref{tab:Zeit} aufgeführt.
 \toprule
 $T\,/\, \si{\kelvin}$ & $v\,/\, \si{\milli\meter\per\second}$ &$Re$\\
 \midrule
-300.15 & 1.397 \pm\:0.008 & 0.3182\pm\:0.0021\\
-304.15 & 1.520 \pm\:0.008 & 0.3767\pm\:0.0023\\
-308.15 & 1.682 \pm\:0.014 & 0.4320\pm\:0.0040\\
-315.15 & 1.861 \pm\:0.006 & 0.5650\pm\:0.0040\\
-319.65 & 2.015 \pm\:0.006 & 0.6617\pm\:0.0029\\
-323.65 & 2.199 \pm\:0.030 & 0.7890\pm\:0.0110\\
-328.15 & 2.313 \pm\:0.004 & 0.8721\pm\:0.0032\\
-333.15 & 2.481 \pm\:0.001 & 1.0025\pm\:0.0033\\
-338.15 & 2.624 \pm\:0.022 & 1.1240\pm\:0.0100\\
-343.15 & 2.762 \pm\:0.008 & 1.2460\pm\:0.0050\\
+300.15 & 1.397 \pm\:0.008 &  27.02\pm\:0.16\\
+304.15 & 1.520 \pm\:0.008 &  31.98\pm\:0.17\\
+308.15 & 1.682 \pm\:0.014 &  36.70\pm\:0.32\\
+315.15 & 1.861 \pm\:0.006 &  47.99\pm\:0.16\\
+319.65 & 2.015 \pm\:0.006 &  56.18\pm\:0.17\\
+323.65 & 2.199 \pm\:0.030 &  67.00\pm\:0.90\\
+328.15 & 2.313 \pm\:0.004 &  74.04\pm\:0.13\\
+333.15 & 2.481 \pm\:0.001 &  85.11\pm\:0.05\\
+338.15 & 2.624 \pm\:0.022 &  95.40\pm\:0.80\\
+343.15 & 2.762 \pm\:0.008 & 105.79\pm\:0.31\\
 \bottomrule
 \end{tabular}
 \end{table}
+
+Außerdem ergibt sich die Reynoldzahl für die kleine Kugel: 
+
+\begin{equation*}
+Re_{kl} = \num{890.7+-1.1}
+\end{equation*}
+
+Es ist zu erkennen, dass die Reynoldzahlen für alle Temperaturen unter 1160 
+liegen und man somit von laminaren Stömungsverhältnissen ausgehen kann.
