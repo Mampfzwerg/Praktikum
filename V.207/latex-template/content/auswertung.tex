@@ -63,7 +63,7 @@ Nun berechnet sich die Viskosität $\eta$ des Wassers nach (\ref{eqn:Viskosität
 Die Apperaturkonstante der kleinen Kugel ist gegeben mit 
 
 \begin{equation*}
-K_k = \SI{0.0764}{\milli\pascal\cubic\centi\meter\per\gram}
+K_k = \SI{0.0764}{\milli\pascal\cubic\centi\meter\per\gram} [1]
 \end{equation*}
 
 Mit der Gaußschen Fehlerfortpflanzung
@@ -76,7 +76,7 @@ Mit der Gaußschen Fehlerfortpflanzung
 und der Dichte des Wassers 
 
 \begin{equation}
-\rho _F = \SI{998.8}{\kilo\gram\per\cubic\meter}
+\rho _F = \SI{998.8}{\kilo\gram\per\cubic\meter} [1]
 \end{equation}
 
 ergibt sich folgender Wert für die Viskosität $\eta$:
@@ -103,7 +103,7 @@ Mit der Gaußschen Fehlerfortpflanzung
 ergibt sich für K: 
 
 \begin{equation*}
-K = \SI{493.40+-5e-9}{\meter\squared\per\second\squared}
+K = \SI{493.40+-5e-9}{\meter\squared\per\second\squared}.
 \end{equation*}
 
 \subsection{Temperaturabhängigkeit der Viskosität}
@@ -165,7 +165,7 @@ B &= \SI{1659.546+-56.2745}{\kelvin}
 Für die Zeitabhängigkeit der Viskosität gilt also:
 
 \begin{equation*}
-\eta (T) = (\num{2.05e-4})\si{\kilo\gram\per\meter\per\second} \cdot \exp{\left(\frac{\SI{1659.546}{\kelvin}}{T}\right)}
+\eta (T) = (\num{2.05e-4})\si{\kilo\gram\per\meter\per\second} \cdot \exp{\left(\frac{\SI{1659.546}{\kelvin}}{T}\right)}.
 \end{equation*}
 
 \subsection{Reynolds Zahl}
@@ -204,6 +204,13 @@ Außerdem ergibt sich die Reynoldzahl für die kleine Kugel:
 \begin{equation*}
 Re_{kl} = \num{890.7+-1.1}
 \end{equation*}
+
+Dabei berechnet sich der Fehler durch: 
+
+\begin{align*}
+\Delta Re &= \sqrt{\left(\frac{\partial Re}{\partial \eta}\cdot \Delta\eta\right)² + \left(\frac{\partial Re}{\partial v_m}\cdot \Delta v_m\right)²}\\
+&= \sqrt{\left(\frac{- \rho_F \cdot v_m \cdot 2r}{\eta²}\cdot \Delta\eta\right)² + \left(\frac{\rho_F \cdot 2r}{\eta}\cdot \Delta v_m\right)²}
+\end{align*}
 
 Es ist zu erkennen, dass die Reynoldzahl für alle Temperaturen unter 1160 
 liegt und man somit von laminaren Stömungsverhältnissen ausgehen kann.
