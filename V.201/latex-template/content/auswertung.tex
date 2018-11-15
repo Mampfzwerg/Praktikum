@@ -1,9 +1,179 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-%\begin{figure}
-%  \centering
-%  \includegraphics{plot.pdf}
-%  \caption{Plot.}
-%  \label{fig:plot}
-%\end{figure}
+
+\subsection {Bestimmung der Wärmekapazität $c_g m_g$}
+
+Zunächst wird die Wärmekapazität $c_g m_g$ gemäß Kapitel \ref{sec:Durchführung}
+bestimmt. Die Messwerte sind in Tabelle \ref{tab:Kalorimeter} aufgeführt.
+
+\begin{table}
+\centering
+\caption{Messwerte zur Bestimmung von $c_g m_g$}
+\label{tab:Kalorimeter}
+\sisetup{table-format=2.1}
+\begin{tabular}{c c c}
+\toprule
+$ $ & $T \,/\, \si{\kelvin}$& $m \,/\, \si{\gram}$\\
+\midrule
+X: & 295.25 & 157.64\\
+Y: & 349.15 & 155.22\\
+M: & 317.95 & 312.86\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Nun lässt sich mit \ref{eqn:KapKalori} die Wärmekapazität $c_g m_g$ bestimmen
+zu: 
+
+\begin{equation*}
+c_g m_g = \SI{232.83}{\joule\per\kelvin}
+\end{equation*}
+
+Dabei ist die spezifische Wärmekapazität des Wassers bei 40°C gegeben durch
+
+\begin{equation}
+c_w = \SI{4.18}{\joule\per\gram\per\kelvin} [1]
+\end{equation}
+
+\subsection{Molwärme verschiedener Stoffe}
+
+\subsubsection{Aluminium}
+
+Die Messwerte für Aluminium sind in Tabelle \ref{tab:Aluminium} aufgeführt.
+
+\begin{table}
+\centering
+\caption{Messwerte von Aluminium}
+\label{tab:Aluminium}
+\sisetup{table-format=2.1}
+\begin{tabular}{c c c}
+\toprule
+$ $ & $T \,/\, \si{\kelvin}$& $m \,/\, \si{\gram}$\\
+\midrule
+  Wasser: & 296.95 & 509.88\\
+  Körper: & 373.15 & 113.86\\
+Mischung: & 300.55 & 623.74\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Nun wird zunächst die Wärmekapazität $c_k$ gemäß \ref{eqn:KapProbe} berechnet. 
+Es ergibt sich:
+
+\begin{equation*}
+c_k = \SI{1.03}{\joule\per\gram\per\kelvin}
+\end{equation*}
+
+Für die Molwärme $C_V$ ergibt sich nach \ref{eqn:Molwaerme2}.
+
+\begin{equation*}
+C_V = \SI{27.7}{\joule\per\kelvin\per\mol}
+\end{equation*}
+
+Die körperspezifischen Konstanten sind dabei gegeben durch: 
+
+\begin{align*}
+M &= \SI{27.0}{\gram\per\mol}\\
+\alpha &= \SI{23.5e-6}{\per\kelvin}\\
+\kappa &= \SI{75e9}{\newton\per\m²}\\
+\rho &= \SI{2.7}{\gram\per\centi\meter³} [1]
+\end{align*}
+
+Dies ergibt eine Abweichung von \SI{0.87}{\percent} von den entsprechenden $3R$ aus 
+dem Dulong-Petitschen Gesetz. 
+
+\subsubsection{Kupfer}
+
+Die Messwerte für Kupfer sind in Tabelle \ref{tab:Kupfer} aufgeführt.
+
+\begin{table}
+\centering
+\caption{Messwerte von Kupfer}
+\label{tab:Kupfer}
+\sisetup{table-format=2.1}
+\begin{tabular}{c c c c}
+\toprule
+$ $ & $ $ & $T \,/\, \si{\kelvin}$& $m \,/\, \si{\gram}$\\
+\midrule
+1.)  &  Wasser: & 296.65 & 514.09\\
+     &  Körper: & 372.85 & 237.07\\
+     &Mischung: & 300.95 & 751.16\\
+     \midrule
+2.)  &  Wasser: & 296.95 & 514.21\\
+     &  Körper: & 373.15 & 237.07\\
+     &Mischung: & 300.55 & 751.28\\
+     \midrule
+3.)  &  Wasser: & 296.55 & 514.11\\
+     &  Körper: & 373.15 & 237.07\\
+     &Mischung: & 300.35 & 751.18\\
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+Aus diesen Werten lässt sich zunächst die Wärmekapazität $c_k$ berechnen. 
+Aus $c_k$ wird der Mittelwert und dessen Fehler bestimmt. Diese und die 
+Mischtemperaturen samt Mittelwert und dessen Fehler sind in Tabelle 
+\ref{tab:Ergebnisse} aufgeführt.
+
+\begin{table}
+\centering
+\caption{Ergebnisse Kupfer}
+\label{tab:Ergebnisse}
+\sisetup{table-format=2.1}
+\begin{tabular}{c c c}
+\toprule
+$ $ & $c_k \,/\, \si{\joule\per\gram\per\kelvin}$& $T \,/\, \si{\kelvin}$\\
+\midrule
+    1.)  & 0.601 & 300.95\\
+    2.)  & 0.498 & 300.55\\
+    3.)  & 0.524 & 300.35\\
+\midrule
+Mittel:  & 0.541\,\pm\,0.044 & 300.62\,\pm\,0.25\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Der Mittelwert ergibt sich nach 
+
+\begin{equation*}
+\overline x = \frac{1}{n} \sum^{n}_{i=1} x_i
+\end{equation*}
+
+und dessen Fehler nach 
+
+\begin{equation*}
+\Delta \overline x = \sqrt{\frac{\sum^{n}_{i=1}(x_i - \overline x)^2}{n(n-1)}}. 
+\end{equation*}
+
+Nun wird aus $\overline c_k$ und $\overline T$ die Molwärme $C_V$ nach 
+\ref{eqn:Molwaerme2} berechnet. Für die Berechnung werden die 
+körperspezifischen Konstanten benötigt. $V_o$ lässt sich aus der Dichte 
+$\rho$ und molaren Masse $M$ zu $V_o = \frac{M}{\rho}$ berechnen.
+
+\begin{align*}
+M &= \SI{63.5}{\gram\per\mol}\\
+\alpha &= \SI{16.8e-6}{\per\kelvin}\\
+\kappa &= \SI{136e9}{\newton\per\m²}\\
+\rho &= \SI{8.96}{\gram\per\centi\meter³}\\
+V_o &= \SI{709e-6}{\cubic\meter\per\mol} [1]
+\end{align*}
+
+Der Fehler von $C_V$ berechnet sich gemäß der Gaußschen Fehlerfortpflanzung
+zu:
+
+\begin{align*}
+\Delta C_V &= \sqrt{\frac{\partial C_V}{\partial c_k}\cdot\Delta c_k + \frac{\partial C_V}{\partial T}\cdot\Delta T}\\
+&= \sqrt{M\cdot\Delta c_k - 9\cdot\alpha²\kappa V_o}
+\end{align*}
+
+Schließlich ergibt sich für die Molwärme: 
+
+\begin{equation*}
+C_V = \SI{39.3+-2.8}{\joule\per\kelvin\per\mol}
+\end{equation*}
+
+Dies ergibt eine Abweichung von \SI{28.91}{\percent} von den entsprechenden $3R$ aus 
+dem Dulong-Petitschen Gesetz. 
+

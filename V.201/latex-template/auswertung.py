@@ -1,7 +1,7 @@
 import numpy as np
+from uncertainties import ufloat
 
-#hier noch Kalorimeterkapazitätsrechnung einfügen
-#der rest funktioniert schon :D
+cgmg = 232.83
 
 #Massen
 #Becher
@@ -33,3 +33,24 @@ for i in range(4):
     print(ck(i))
 
 #hier noch mittelwertrechnung usw.
+
+Tmk = np.array([27.8 + K, 27.4 + K, 27.2 + K])
+print(np.mean(Tmk))
+print(np.std(Tmk))
+
+ck = np.array([0.601, 0.498, 0.524])
+print(np.mean(ck))
+print(np.std(ck))
+
+#Hier alles für Cv
+
+M = 63.5
+a = 16.8e-6
+k = 136e9
+p = 8.96e8
+V = 709e-6
+
+ck2 = ufloat(np.mean(ck), np.std(ck))
+Tm2 = ufloat(np.mean(Tmk), np.std(Tmk))
+
+print(ck2*M-9*a**2*k*V*Tm2)
