@@ -1,0 +1,9 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Theorie}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Das Prinzip der Wärmepumpe}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Die Arbeitsweise der Wärmepumpe}{4}{subsection.1.2}
+\contentsline {section}{\numberline {2}Durchführung}{4}{section.2}
+\contentsline {section}{\numberline {3}Auswertung}{4}{section.3}
+\contentsline {section}{\numberline {4}Diskussion}{4}{section.4}
