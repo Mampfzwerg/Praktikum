@@ -7,35 +7,40 @@ zwei Wärmereservoiren untersucht wird.
 
 \subsection{Das Prinzip der Wärmepumpe}
 
-Ohne äußere Einflüsse findet Temperaturänderung in Form von Wärmeabgabe vom heißeren zum kälteren
-Körper oder Medium statt. Durch aufgewandte (mechanische) Arbeit $A$ kann dieser Prozess jedoch auch in anderer
-Richtung ablaufen. Gemäß dem ersten Hauptsatz der Thermodynamik beträgt die an das wärmere Medium 
-abgegebene Wärmemenge $Q_1$, die von dem kühleren Medium aufgenommene Wärmemeng $Q_2$, zuzüglich der Arbeit $A$.
-Dementsprechend gilt
+Ohne äußere Einflüsse findet Temperaturänderung in Form von Wärmeabgabe
+vom heißeren zum kälteren Körper oder Medium statt. Durch aufgewandte 
+(mechanische) Arbeit $A$ kann dieser Prozess jedoch auch in anderer
+Richtung ablaufen. 
+
+Gemäß dem ersten Hauptsatz der Thermodynamik beträgt 
+die an das wärmere Medium abgegebene Wärmemenge $Q_1$, die von dem kühleren 
+Medium aufgenommene Wärmemeng $Q_2$, zuzüglich der Arbeit $A$. Dementsprechend gilt
 
 \begin{equation}
     Q_1 = Q_2 + A
     \label{eqn:Wärm}
 \end{equation}
 
-Die Güteziffer $\nu$ der Wärmepumpe gibt dabei das Verhältnis der abgegebenen Wärmemenge $Q_1$ zur aufgewandten
-Arbeit $A$ an
+Die Güteziffer $\nu$ der Wärmepumpe gibt dabei das Verhältnis der abgegebenen 
+Wärmemenge $Q_1$ zur aufgewandten Arbeit $A$ an
 
 \begin{equation}
     \nu = \frac{Q_1}{A}
     \label{eqn:Güte}
 \end{equation}
 
-Der zweite Hauptsatz der Thermodynamik führt für die reduzierten Wärmemengen zu der Beziehung, dass deren Summe 
-$\int \frac{\symup{d}Q}{T}$ null beträgt. Aus dieser folgt
+Der zweite Hauptsatz der Thermodynamik führt für die reduzierten Wärmemengen 
+zu der Beziehung, dass deren Summe $\int \frac{\symup{d}Q}{T}$ null beträgt. 
+Aus dieser folgt
 
 \begin{equation}
     \frac{Q_1}{T_1} - \frac{Q_2}{T_2} = 0
     \label{eqn:redWärm}
 \end{equation}
 
-Allerdings muss es sich für diese Beziehung um einen idealen reversiblen, d.h. umkehrbaren Prozess handeln. 
-Vom Ideal abweichend, gilt für die technische Anwendung also die Ungleichung
+Allerdings muss es sich für diese Beziehung um einen idealen reversiblen, d.h. 
+umkehrbaren Prozess handeln. Vom Ideal abweichend, gilt für die technische 
+Anwendung also die Ungleichung
 
 \begin{equation}
     \frac{Q_1}{T_1} - \frac{Q_2}{T_2} > 0
@@ -62,30 +67,137 @@ und aus \ref{eqn:Wärm} und \ref{eqn:ungWärme} für die Güte der realen Wärme
     \label{eqn:real}
 \end{equation}
 
-Aus \ref{eqn:ideal} und \ref{eqn:real} ist abzulesen, dass die Wärmepumpe für kleine
-Temperaturdifferenzen $T_1 - T_2$ am effizientesten arbeitet, die aufgewandte Arbeit $A$ zur Wärmeübertragung
-also minimal ist.
+Aus \ref{eqn:ideal} und \ref{eqn:real} ist abzulesen, dass die Wärmepumpe 
+für kleine Temperaturdifferenzen $T_1 - T_2$ am effizientesten arbeitet, 
+die aufgewandte Arbeit $A$ zur Wärmeübertragung also minimal ist.
 
 \subsection{Die Arbeitsweise der Wärmepumpe}
 
-In der Wärmepumpe fungiert ein reales Gas als Transportmedium, welches bei Wärmeaufnahme verdampft und die Wärme
-durch Kondensation wieder abgibt, die Wärmeenergie infolgedessen als Phasenumwandlungsenergie transportiert.
+In der Wärmepumpe fungiert ein reales Gas als Transportmedium, welches 
+bei Wärmeaufnahme verdampft und die Wärme durch Kondensation wieder abgibt, 
+die Wärmeenergie infolgedessen als Phasenumwandlungsenergie transportiert.
 Vorteilhaft ist daher die Verwendung von Gasen hoher Kondensationswärme. 
 
 Nach dem Aufbau der Wärmepumpe 
-(Abbildung  ) sorgt der Kompressor K für einen Kreislauf, den das Transportgas und somit sowohl beide
-Wärmereservoires, als auch ein Drosselventil D durchläuft. An diesem entsteht ein Druckunterschied $p_\text{b} 
-- p_\text{a}$. Dabei ist das Transportgas bei Druck $p_\text{b}$ und Temperatur $T_1$ flüssig und bei $p_\text{a}$
-und $T_2$ gasförmig.
+(Abbildung  ) sorgt der Kompressor K für einen Kreislauf, den das Transportgas 
+und somit sowohl beide Wärmereservoires, als auch ein Drosselventil D 
+durchläuft. An diesem entsteht ein Druckunterschied $p_\text{b} - p_\text{a}$. 
+Dabei ist das Transportgas bei Druck $p_\text{b}$ und Temperatur $T_1$ flüssig 
+und bei $p_\text{a}$ und $T_2$ gasförmig.
 
-Dem kälteren Reservoire 2 wird durch das Verdampfen des Transportgases die Verdampfungswärme $L$ pro gramm 
-entzogen. Darauf wird das Gas im Kompressor K adiabatisch komprimiert, sodass dessen Druck und Temperatur steigen
+Dem kälteren Reservoire 2 wird durch das Verdampfen des Transportgases 
+die Verdampfungswärme $L$ pro gramm entzogen. Darauf wird das Gas im 
+Kompressor K adiabatisch komprimiert, sodass dessen Druck und Temperatur steigen
 und es schließlich die Kondensationswärme $L$ pro gramm an das Reservoire 1 abgibt.
 
-Weitere nötige Komponenten der Wärmepumpe sind ein Reiniger R, der die Blasen im flüssigen Medium entfernt, sowie
-ein Steuerungselement S, welches mit dem Drosselventil D gekoppelt ist und das schädliche Eindringen flüssigen 
-Mediums in den Kompressor K über Kontrolle der Temperaturdifferenz am Ein- und Ausgang des Reservoires 2 verhindert.
+Weitere nötige Komponenten der Wärmepumpe sind ein Reiniger R, der die Blasen 
+im flüssigen Medium entfernt, sowie ein Steuerungselement S, welches mit dem 
+Drosselventil D gekoppelt ist und das schädliche Eindringen flüssigen 
+Mediums in den Kompressor K über Kontrolle der Temperaturdifferenz am Ein- 
+und Ausgang des Reservoires 2 verhindert.
 
+\subsection{Die Bestimmung der Kenngrößen einer realen Wärmepumpe}
+
+Die Kenngrößen der realen Wärmepumpe sind die Güteziffer $\nu$, der 
+Massendurchsatz $\frac{\symup{d}m}{\symup{d}t}$, sowie der mechanische 
+Kompressorleistung $N_\text{mech}$.
+
+Zu der zeitabhängigen Messungen der Drücke $p_\text{a}$, $p_\text{b}$ 
+dienen gemäß Abbildung  zwei jeweils zwischen dem jeweiligen Reservoires und dem 
+Drosselventil D installierte Manometer, für die Temperaturverläufe 
+zwei digitale Thermometer in den Reservoires und für die Leistungsaufnahme
+des Kompressors ein Wattmeter.
+
+Die Reservoires befinden sich in thermisch isolierten Gefäßen und werden während
+der Messung von zwei Rührmotoren umgerührt. \\
+
+Im Folgenden können Differentialquotienten anstelle von Differenzenquotienten 
+verwendet werden, da sich die Messreihen der Temperaturen als einfache, zeitabhängige
+Funktionen beschreiben lassen.
+
+\subsubsection{Die reale Güteziffer}
+
+
+Mit der Messung der Zeit $T_1$ in Abhängigkeit von der Zeit $t$ lässt sich die
+reale Güteziffer als
+
+\begin{align}
+    \nu \; &= \; \frac{\symup{d} Q_1}{\symup{d} t} \cdot \frac{1}{N} \\
+    \frac{\symup{d} Q_1}{\symup{d} t} &= (m_1 c_\text{w} + m_\text{k} c_\text{k})
+    \cdot \frac{\symup{d} T_1}{\symup{d} t}
+\end{align}
+
+bestimmen. 
+
+Dabei beschreiben $m_1$ die Wassermasse in Reservoire 1 und $m_\text{k}$
+die der Kupferschlange und des Eimers, mit den Wärmekapazitäten $c_\text{w}$ 
+des Wassers und $c_\text{k}$ der Kupferschlange und des Eimers.
+$N$ gibt die am Wattmeter abgelesene, über das Zeitintervall $\increment t$
+gemittelte Leistungsaufnahme des Kompressors an.
+
+\subsubsection{Der Massendurchsatz}
+
+Mithilfe der zeitabhängigen Messung der Temperatur $T_2$ lässt sich, bei 
+bekannter Verdampfungswärme $L$, der Massendurchsatz durch
+
+\begin{align}
+    \frac{\symup{d} m}{\symup{d}t} &= \frac{\symup{d} Q_2}{\symup{d}t} \cdot
+    \frac{1}{L} \\
+    \frac{\symup{d} Q_2}{\symup{d}t} &= (m_2 c_\text{w} + m_\text{k} c_\text{k})
+    \cdot \frac{\symup{d} T_2}{\symup{d}t}
+\end{align}
+
+bestimmen.
+
+Fast analog zur vorherigen Bestimmung der Güteziffer wird nun die Wassermasse
+$m_2$ des Reservoires 2 benötigt.
+
+%Hier vielleicht noch Bestimmung der Verdampfungswärme einfügen
+
+\subsubsection{Die mechanische Kompressorleistung}
+
+Bei der Komprimierung eines Gasvolumens $V_\text{a}$ zu dem Volumen $V_\text{b}$ 
+verrichtet der Kompressor die Arbeit
+
+\begin{equation}
+    A = - \int^{V_\text{b}}_{V_\text{a}} p \; \symup{d}V \; \; \text{.}
+\end{equation}
+
+Für eine adiabatische Komprimierung gilt die Poissonsche Gleichung
+
+\begin{equation}
+    p_\text{a} V^\kappa_\text{a} = p_\text{b} V^\kappa_\text{b} = p V^\kappa \; \;
+    \text{,}
+\end{equation}
+
+sodass für $A$ 
+
+\begin{equation}
+    \begin{split}
+        A &= - p_\text{a} V^\kappa_\text{a} \int^{V_\text{b}}_{V_\text{a}} V^{-\kappa}
+        \; \symup{d}V = \frac{1}{\kappa - 1} p_\text{a} V^\kappa_\text{a} \left(
+        V^{-\kappa + 1}_\text{b} - V^{-\kappa + 1}_\text{a} \right) \\
+        &= \frac{1}{\kappa - 1} \left(p_\text{b} \sqrt[\kappa]{
+        \frac{p_\text{a}}{p_\text{b}}} - p_\text{a}\right) V_\text{a}
+    \end{split}
+\end{equation}
+
+folgt und für die mechanische Kompressionsleistung
+
+\begin{equation}
+    \begin{split}
+        N_\text{mech} &= \frac{\symup{d}A}{\symup{d}t} = \frac{1}{\kappa - 1}
+        \left(p_\text{b} \sqrt[\kappa]{ \frac{p_\text{a}}{p_\text{b}}} 
+        - p_\text{a} \right) \frac{\symup{d}V_\text{a}}{\symup{d}t} \\
+        &= \frac{1}{\kappa - 1} \left(p_\text{b} \sqrt[\kappa]{ 
+        \frac{p_\text{a}}{p_\text{b}}} - p_\text{a}\right) \frac{1}{\rho}
+        \frac{\symup{d}m}{\symup{d}t}
+    \end{split}
+\end{equation}
+
+mit Dichte $\rho$ des Transportmediums unter  dem Druck $p_\text{a}$, die sich
+mit der idealen Gasgleichung unter den Normalbedingungen $p = \SI{1}{\bar}$ und
+$T = \SI{0}{\celsius}$ bestimmen lässt.
 
 
 
