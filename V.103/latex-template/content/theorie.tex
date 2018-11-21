@@ -1,0 +1,85 @@
+\section{Theorie}
+\label{sec:Theorie}
+
+Ziel des Versuches ist es, Elastizitätsmodule verschiedener Materialen
+zu ermitteln, indem die Biegung elastischer Stäbe untersucht wird.
+
+\subsection{Die Spannung an elastischen Körpern}
+
+Die physikalische Größe der mechanischen Spannung $\sigma_m$ ist die wirkende
+Kraft $F$ pro Fläche $A$. Sie setzt sich zusammen aus der Normalspannung $\sigma$,
+die senkrecht zur Oberfläche wirkt und einer tangential zur Fläche wirkenden
+Tangentialspannung.
+
+Spannungen können an Körpern zu Gestalt- und Volumenveränderungen
+führen. Liegt durch Druck oder Zug eine Spannung nur in einer Körperdimension vor, 
+so ist sie proportional zur Längenänderung $\frac{\Delta L}{L}$ und es ergibt sich
+das Hooksche Gesetz
+
+\begin{equation}
+    \sigma = E \cdot \frac{\Delta L}{L}
+\end{equation}
+
+mit dem materialspezifischen Elastizitätsmodul $E$ als Proportionalitätsfaktor.
+Mithilfe einer hinreichend genauen Apparatur kann der Elastizitätsmodul durch
+Messung der Längenänderung $\frac{\Delta L}{L}$ bestimmt werden.
+
+Allerdings kann der Elastizitätsmodul $E$ auch unter geringerem Kraftaufwand
+durch die Biegung von Stäben bestimmt werden, so wie es Gegenstand dieses
+Versuches sein soll. Hier reichen schon kleinere Kräfte aus, um eine Veränderung 
+des Körpers zu bewirken. Dazu werden zwei unterschiedliche Arten der Biegung
+untersucht, wie sie in den Abbildungen , dargestellt sind.
+
+%\begin{figure}
+%
+%\end{figure}
+
+Bei den dargestellten Biegungen handelt es sich um die Biegungen eines einseitig
+eingespannten und eines beidseitig aufgelegten Stabes.
+
+\subsection{Die Biegung eines Stabes bei einseitiger Einspannung}
+
+Die am uneingespannten Ende des Stabes wirkende Gravitationskraft $F$ eines 
+aufgehängten Gewichtes biegt den Stab mit der Durchbiegung $D(x)$ aus und
+bewirkt ein angreifendes Drehmoment
+
+\begin{equation}
+    M_\text{F} = F \cdot (L - x)
+\end{equation}
+
+mit der Länge des Hebelarms $(L - x)$.
+
+Dieses Drehmoment verursacht eine Dehnung der oberen und eine Stauchung
+der unteren Stabschichten, sodass der Querschnitt $Q$ sich nicht mehr in vertikaler,
+sondern in verdrehter Position befindet. Einzig die neutrale Faser in der Mitte
+des Querschnitts $Q$ behält ihre Länge bei. An allen anderen Fasern kommt es ,
+aufgrund der Elastizitäts des Körpers, zu Normalspannungen, die sich zu einem
+zu $M_\text{F}$ entgegengesetzen Drehmoment $M_\sigma$ aufsummieren:
+
+\begin{equation}
+    M_\sigma = \int_Q y \sigma(y) \; \symup{d}q
+\end{equation}
+
+Dabei beschreibt $y$ den Abstand des Flächenelements $\symup{d}q$ zur neutralen Faser.
+
+Zwischen den Drehmomenten stellt sich ein Gleichgewicht mit fester
+Durchbiegung $D(x)$ ein, sodass 
+
+\begin{align}
+    M_\text{F} &= M_\sigma \\
+    \iff \; \int_Q y \sigma(y) \; \symup{d}q &= F \cdot (L - x)
+\end{align}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
