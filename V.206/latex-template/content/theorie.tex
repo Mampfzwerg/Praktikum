@@ -1,7 +1,7 @@
 \section{Theorie}
 \label{sec:Theorie}
 
-Ziel des Versuches ist es, die Kenngröße der Wärmepumpe zu 
+Ziel des Versuches ist es, die Kenngrößen der Wärmepumpe zu 
 ermitteln, indem der Transport von Wärmeenergie zwischen
 zwei Wärmereservoiren untersucht wird.
 
@@ -14,7 +14,7 @@ Richtung ablaufen.
 
 Gemäß dem ersten Hauptsatz der Thermodynamik beträgt 
 die an das wärmere Medium abgegebene Wärmemenge $Q_1$, die von dem kühleren 
-Medium aufgenommene Wärmemeng $Q_2$, zuzüglich der Arbeit $A$. Dementsprechend gilt
+Medium aufgenommene Wärmemenge $Q_2$ zuzüglich der Arbeit $A$. Dementsprechend gilt
 
 \begin{equation}
     Q_1 = Q_2 + A
@@ -75,22 +75,22 @@ die aufgewandte Arbeit $A$ zur Wärmeübertragung also minimal ist.
 
 \begin{figure}
       \centering
-      \includegraphics[width=\textwidth]{aufbau2.pdf}
-      \caption{Aufbau einer Wärmepumpe}
+      \includegraphics[scale=0.4]{aufbau2.pdf}
+      \caption{Aufbau einer Wärmepumpe [1]}
       \label{fig:aufbau2}
 \end{figure}
 
 In der Wärmepumpe fungiert ein reales Gas als Transportmedium, welches 
-bei Wärmeaufnahme verdampft und die Wärme durch Kondensation wieder abgibt, 
-die Wärmeenergie infolgedessen als Phasenumwandlungsenergie transportiert.
+bei Wärmeaufnahme verdampft und die Wärme durch Kondensation wieder abgibt.
+Demzufolge wird die Wärmeenergie als Phasenumwandlungsenergie transportiert.
 Vorteilhaft ist daher die Verwendung von Gasen hoher Kondensationswärme. 
 
-Nach dem Aufbau der Wärmepumpe 
-(Abbildung \ref{fig:aufbau2}) sorgt der Kompressor K für einen Kreislauf, den das Transportgas 
-und somit sowohl beide Wärmereservoires, als auch ein Drosselventil D 
-durchläuft. An diesem entsteht ein Druckunterschied $p_\text{b} - p_\text{a}$. 
-Dabei ist das Transportgas bei Druck $p_\text{b}$ und Temperatur $T_1$ flüssig 
-und bei $p_\text{a}$ und $T_2$ gasförmig.
+In Abbildung \ref{fig:aufbau2} ist der Aufbau der Wärmepumpe schematisch 
+dargestellt. Demnach sorgt der Kompressor K für einen Kreislauf, durch 
+den das Transportgas und sowohl beide Wärmereservoires, als auch ein 
+Drosselventil D durchläuft. An diesem entsteht ein Druckunterschied 
+$p_\text{b} - p_\text{a}$. Dabei ist das Transportgas bei Druck $p_\text{b}$ 
+und Temperatur $T_1$ flüssig und bei $p_\text{a}$ und $T_2$ gasförmig.
 
 Dem kälteren Reservoire 2 wird durch das Verdampfen des Transportgases 
 die Verdampfungswärme $L$ pro gramm entzogen. Darauf wird das Gas im 
@@ -107,18 +107,18 @@ und Ausgang des Reservoires 2 verhindert.
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{aufbau.pdf}
-    \caption{Aufbau der Messapparatur}
+    \includegraphics[scale=0.7]{aufbau.pdf}
+    \caption{Aufbau der Messapparatur [1]}
     \label{fig:aufbau}
 \end{figure}
 
 Die Kenngrößen der realen Wärmepumpe sind die Güteziffer $\nu$, der 
-Massendurchsatz $\frac{\symup{d}m}{\symup{d}t}$, sowie der mechanische 
+Massendurchsatz $\frac{\symup{d}m}{\symup{d}t}$, sowie die mechanische 
 Kompressorleistung $N_\text{mech}$.
 
-Zu der zeitabhängigen Messungen der Drücke $p_\text{a}$, $p_\text{b}$ 
-dienen gemäß Abbildung \ref{fig:aufbau}  zwei jeweils zwischen dem jeweiligen Reservoires und dem 
-Drosselventil D installierte Manometer, für die Temperaturverläufe 
+Für die zeitabhängigen Messungen der Drücke $p_\text{a}$, $p_\text{b}$ 
+gibt es, gemäß Abbildung \ref{fig:aufbau}, zwei jeweils zwischen dem Reservoires und dem 
+Drosselventil D installierte Manometer. Für die Temperaturverläufe gibt es 
 zwei digitale Thermometer in den Reservoires und für die Leistungsaufnahme
 des Kompressors ein Wattmeter.
 
@@ -135,17 +135,17 @@ Funktionen beschreiben lassen.
 Mit der Messung der Zeit $T_1$ in Abhängigkeit von der Zeit $t$ lässt sich die
 reale Güteziffer als
 
-\begin{align}
-    \nu \; &= \; \frac{\symup{d} Q_1}{\symup{d} t} \cdot \frac{1}{N} \\
-    \frac{\symup{d} Q_1}{\symup{d} t} &= (m_1 c_\text{w} + m_\text{k} c_\text{k})
-    \cdot \frac{\symup{d} T_1}{\symup{d} t}
-\end{align}
+\begin{equation}
+\nu = (m_1 c_\text{w} + m_\text{k} c_\text{k})\cdot 
+\frac{\symup{d} T_1}{\symup{d} t} \cdot \frac{1}{N}
+\label{eqn:Güteziffer}
+\end{equation}
 
 bestimmen. 
 
-Dabei beschreiben $m_1$ die Wassermasse in Reservoire 1 und $m_\text{k}$
-die der Kupferschlange und des Eimers, mit den Wärmekapazitäten $c_\text{w}$ 
-des Wassers und $c_\text{k}$ der Kupferschlange und des Eimers.
+Dabei beschreibt $m_1$ die Wassermasse und $c_text{w}$ deren 
+Wärmekapazität. $m_text{k}$ beschreibt die Masse der Kupferschlange und 
+des Eimers und $c_text{k}$ deren Wärmekapazität.
 $N$ gibt die am Wattmeter abgelesene, über das Zeitintervall $\increment t$
 gemittelte Leistungsaufnahme des Kompressors an.
 
@@ -154,19 +154,43 @@ gemittelte Leistungsaufnahme des Kompressors an.
 Mithilfe der zeitabhängigen Messung der Temperatur $T_2$ lässt sich, bei 
 bekannter Verdampfungswärme $L$, der Massendurchsatz durch
 
-\begin{align}
-    \frac{\symup{d} m}{\symup{d}t} &= \frac{\symup{d} Q_2}{\symup{d}t} \cdot
-    \frac{1}{L} \\
-    \frac{\symup{d} Q_2}{\symup{d}t} &= (m_2 c_\text{w} + m_\text{k} c_\text{k})
-    \cdot \frac{\symup{d} T_2}{\symup{d}t}
-\end{align}
+\begin{equation}
+\frac{\symup{d} m}{\symup{d}t} = (m_2 c_\text{w} + m_\text{k} c_\text{k}) \cdot 
+\frac{\symup{d} T_2}{\symup{d}t} \cdot  \frac{1}{L}
+\label{eqn:Massendurchsatz}
+\end{equation}
 
 bestimmen.
 
 Fast analog zur vorherigen Bestimmung der Güteziffer wird nun die Wassermasse
 $m_2$ des Reservoires 2 benötigt.
 
-%Hier vielleicht noch Bestimmung der Verdampfungswärme einfügen
+Zur Bestimmung des Massendurchsatzes wird außerdem die Verdampfungswärme $L$
+benötigt. Diese kann mit Hilfe der Clausius-Clapeyron'schen Gleichung 
+berechnet werden, welche den Verlauf der Siedepunkte eines Stoffes beschreibt. 
+Diese lautet: 
+
+\begin{equation*}
+\frac{\symup{d}p}{\symup{d}T} = \frac{L}{\symup{\Delta} V_m T}
+\end{equation*}
+
+Dabei ist $p$ der Dampfdruck, $T$ die Temperatur und $V_m$ die Änderung 
+des molaren Volumens zwischen gasförmiger und flüssiger Phase. $\symup{\Delta} V_m$
+kann dabei als molares Volumen der gasförmigen Phase genährt werden. 
+Außerdem wird ein ideales Gas angenommen und dass L unabhängig von Druck 
+und Temperatur ist. Dies führt zu der vereinfachten Gleichung:
+
+\begin{equation*}
+\frac{1}{p}\symup{d}p = \frac{L}{R\cdot T²}\symup{d}T.
+\end{equation*}
+
+Aufintegriert ergibt sich der Zusammenhang, aus dem $L$ bestimmt werden 
+kann: 
+
+\begin{equation}
+ln(p)=\frac{L}{R}\cdot\frac{1}{T}+const.
+\label{eqn:Verdampfung2}
+\end{equation}
 
 \subsubsection{Die mechanische Kompressorleistung}
 
@@ -206,6 +230,7 @@ folgt und für die mechanische Kompressionsleistung
         &= \frac{1}{\kappa - 1} \left(p_\text{b} \sqrt[\kappa]{ 
         \frac{p_\text{a}}{p_\text{b}}} - p_\text{a}\right) \frac{1}{\rho}
         \frac{\symup{d}m}{\symup{d}t}
+        \label{eqn:Kompressor}
     \end{split}
 \end{equation}
 
