@@ -70,7 +70,41 @@ Durchbiegung $D(x)$ ein, sodass
     \iff \; \int_Q y \sigma(y) \; \symup{d}q &= F \cdot (L - x)
 \end{align}
 
+gilt.
 
+Damit ergibt sich für die Durchbiegung
+
+\begin{equation}
+    D(x) = \frac{F}{2 E \symbf{I}} \left(L x^2 - \frac{x^3}{3} \right) 
+    \qquad (\text{für } 0 \leq x \leq L)
+\end{equation}
+
+mit dem Flächenträgheitsmoment
+
+\begin{equation}
+    \symbf{I} = \int_Q y^2 \; \symup{d} q(y)
+\end{equation}
+
+\subsection{Die Biegung eines Stabes mit beideitiger Auflage}
+
+Am beidseitig aufgelegten Stab wirkt nach Abblidung ... die Gravitationskraft
+$\frac{F}{2}$ eines Gewichtes an der Mitte der Querschnittsfläche $Q$ mit einem
+Hebelarm der Länge $x$ und bewirkt somit das Drehmoment
+
+\begin{align}
+    M_\text{F} &= - \frac{F}{2} x \qquad \qquad \; \; \,
+    (\text{für } 0 \leq x \leq \frac{L}{2})\\
+    M_\text{F} &= - \frac{F}{2} (L - x) \qquad (\text{für } \frac{L}{2} \leq x \leq L)
+\end{align}
+
+Damit ergibt sich analog die Durchbiegung
+
+\begin{align}
+    D(x) &= \frac{F}{48 E \symbf{I}} \left(3 L^2 x - 4 x^3 \right) 
+    \qquad \qquad \qquad \qquad \: (\text{für } 0 \leq x \leq \frac{L}{2}) \\
+    D(x) &= \frac{F}{48 E \symbf{I}} \left(4 x^3 - 12 L x^2 + 9 L^2 x - L^3 \right) 
+    \qquad (\text{für } \frac{L}{2} \leq x \leq L)
+\end{align}
 
 
 
