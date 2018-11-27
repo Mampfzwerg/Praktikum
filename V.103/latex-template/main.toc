@@ -8,4 +8,6 @@
 \contentsline {section}{\numberline {2}Durchführung}{4}{section.2}
 \contentsline {section}{\numberline {3}Auswertung}{4}{section.3}
 \contentsline {subsection}{\numberline {3.1}Bestimmung des Elasitzitätsmodul zweier einseitig eingespannter Stäbe}{4}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Stab mit quadratischem Querschnitt}{4}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Stab mit zylindrischem Querschnitt}{7}{subsubsection.3.1.2}
 \contentsline {section}{\numberline {4}Diskussion}{7}{section.4}
