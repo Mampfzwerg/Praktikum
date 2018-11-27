@@ -2,9 +2,9 @@ import numpy as np
 from uncertainties import ufloat
 import matplotlib.pyplot as plt
 
-x, y, z = np.genfromtxt('mess1.txt', unpack=True)
+x, y, z = np.genfromtxt('mess2.txt', unpack=True)
 
-L = 540
+L = 552
 x2 = x*10
 #Durchbiegung
 
@@ -31,4 +31,4 @@ plt.ylabel(r'$D \: / \: mm$')
 plt.legend(loc='best')
 
 plt.tight_layout()
-plt.savefig('plot1.pdf')
+plt.savefig('plot2.pdf')

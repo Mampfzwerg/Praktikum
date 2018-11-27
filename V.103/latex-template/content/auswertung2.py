@@ -2,9 +2,9 @@ import numpy as np
 from uncertainties import ufloat
 import matplotlib.pyplot as plt
 
-x, y, z = np.genfromtxt('mess1.txt', unpack=True)
+x, y, z = np.genfromtxt('mess2.txt', unpack=True)
 
-L = 540
+L = 552 
 x2 = x*10
 #Durchbiegung
 
@@ -12,11 +12,11 @@ x2 = x*10
 
 #print((L*x2**2-(x2**3)/3)*1e-5)
 
-#Elastizitätsmodul
+#elastizitätsdingens
 
-m = 0.528
+m = 0.516
 g = 9.81
-m1 = ufloat(0.014,0.0002)
-I = (1/12)*1e-8
+m1 = ufloat(0.0497,0.0004)
+I = (np.pi/64)*1e-8
 
 print((m*g)/(2*m1*I))
