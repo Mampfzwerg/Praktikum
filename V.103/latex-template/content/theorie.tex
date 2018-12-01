@@ -16,9 +16,9 @@ führen. Liegt durch Druck oder Zug eine Spannung nur in einer Körperdimension 
 so ist sie proportional zur Längenänderung $\frac{\Delta L}{L}$ und es ergibt sich
 das Hooksche Gesetz
 
-\begin{equation}
+\begin{equation*}
     \sigma = E \cdot \frac{\Delta L}{L}
-\end{equation}
+\end{equation*}
 
 mit dem materialspezifischen Elastizitätsmodul $E$ als Proportionalitätsfaktor.
 Mithilfe einer hinreichend genauen Apparatur kann der Elastizitätsmodul durch
@@ -47,9 +47,9 @@ Die am uneingespannten Ende des Stabes wirkende Gravitationskraft $F$ eines
 aufgehängten Gewichtes, biegt den Stab mit der Durchbiegung $D(x)$ und
 bewirkt ein angreifendes Drehmoment
 
-\begin{equation}
+\begin{equation*}
     M_\text{F} = F \cdot (L - x)
-\end{equation}
+\end{equation*}
 
 mit der Länge des Hebelarms $(L - x)$.
 
@@ -60,19 +60,19 @@ des Querschnitts $Q$ behält ihre Länge bei. An allen anderen Fasern kommt es,
 aufgrund der Elastizitäts des Körpers, zu Normalspannungen, die sich zu einem
 zu $M_\text{F}$ entgegengesetzen Drehmoment $M_\sigma$ aufsummieren:
 
-\begin{equation}
+\begin{equation*}
     M_\sigma = \int_Q y \sigma(y) \; \symup{d}q
-\end{equation}
+\end{equation*}
 
 Dabei beschreibt $y$ den Abstand des Flächenelements $\symup{d}q$ zur neutralen Faser.
 
 Zwischen den Drehmomenten stellt sich ein Gleichgewicht mit fester
 Durchbiegung $D(x)$ ein, sodass 
 
-\begin{align}
+\begin{align*}
     M_\text{F} &= M_\sigma \\
     \iff \; \int_Q y \sigma(y) \; \symup{d}q &= F \cdot (L - x)
-\end{align}
+\end{align*}
 
 gilt.
 
@@ -97,11 +97,11 @@ Am beidseitig aufgelegten Stab wirkt nach Abblidung \ref{fig:abb1} die Gravitati
 $\frac{F}{2}$ eines Gewichtes an der Mitte der Querschnittsfläche $Q$ mit einem
 Hebelarm der Länge $x$ und bewirkt somit das Drehmoment
 
-\begin{align}
+\begin{align*}
     M_\text{F} &= - \frac{F}{2} x \qquad \qquad \; \; \,
     (\text{für } 0 \leq x \leq \frac{L}{2})\\
     M_\text{F} &= - \frac{F}{2} (L - x) \qquad (\text{für } \frac{L}{2} \leq x \leq L)
-\end{align}
+\end{align*}
 
 Damit ergibt sich analog die Durchbiegung
 
@@ -110,11 +110,12 @@ Damit ergibt sich analog die Durchbiegung
     \qquad \qquad \qquad \qquad \: (\text{für } 0 \leq x \leq \frac{L}{2}) \\
     D(x) &= \frac{F}{48 E \symbf{I}} \left(4 x^3 - 12 L x^2 + 9 L^2 x - L^3 \right) 
     \qquad (\text{für } \frac{L}{2} \leq x \leq L)
+    \label{eqn:Beidseitig}
 \end{align}
 
 \subsection{Berechnung der Flächenträgheitsmomente}
 
-Das Flächenträgheitsmoment $I$ ist durch \eqref{Traegheit} definiert. 
+Das Flächenträgheitsmoment $I$ ist durch \eqref{eqn:Traegheit} definiert. 
 Für einen Stab mit quadratischem Querschnitt mit Kantenlänge $a$ ergibt 
 sich demnach: 
 

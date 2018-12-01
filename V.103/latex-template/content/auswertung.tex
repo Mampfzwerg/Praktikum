@@ -145,7 +145,7 @@ $Lx²-\frac{x³}{3} \,/\, \SI{e5}{\milli\meter³}$\\
 \end{table}
 
 Trägt man nun erneut $D$ gegen $L\cdot x²-\frac{x³}{3}$ auf und führt eine
-Ausgleichsrechnung mittels matplotlib durch ergibt sich Abbildung \ref{fig:plot2}. 
+Ausgleichsrechnung mittels matplotlib durch, ergibt sich Abbildung \ref{fig:plot2}. 
 
 \begin{figure}
   \centering
@@ -255,22 +255,22 @@ Die Regressionsparamter der Regression für die rechte Seite des Stabes
 lauten:
 
 \begin{align*}
-a_3 = \SI{0.00449+-0.00004}{1\per\meter²}
-c_3 = \SI{-0.0198+-0.0377}{\milli\meter}
+a_3 &= \SI{0.00449+-0.00004}{1\per\meter²}\\
+c_3 &= \SI{-0.0198+-0.0377}{\milli\meter}
 \end{align*}
 
 Und für die linke Seite des Stabes ergibt sich: 
 
 \begin{align*}
-a_4 = \SI{0.00308+-0.00001}{1\per\meter²}
-c_4 = \SI{-0.1534+-0.0275}{\milli\meter}
+a_4 &= \SI{0.00308+-0.00001}{1\per\meter²}\\
+c_4 &= \SI{-0.1534+-0.0275}{\milli\meter}
 \end{align*}
 
-Gemäß der Formeln ... gilt für die beiden Elasitzitätsmodule, rechts und links, 
+Gemäß der Formel \eqref{eqn:Beidseitig} gilt für die beiden Elasitzitätsmodule, rechts und links, 
 der Zusammenhang: 
 
 \begin{equation*}
-E = \frac{F_G}{48a_iI} \text{mit i = 3,4}
+E = \frac{F_G}{48a_iI} \text{ mit i = 3, 4}
 \end{equation*}
 
 Hier ist $F_G = m\cdot g$ mit $m = \SI{1.2033}{\kilo\gram}$ und $g = \SI{9.81}{\meter\per\second²}$.
@@ -278,14 +278,14 @@ Mit \eqref{eqn:Quadratisch} folgt für $I = \frac{1}{12}\SI{e-8}{\meter⁴}$. Da
 ergibt sich für die Elasitzitätsmodule: 
 
 \begin{align*}
-E_R = \SI{6.57+-0.06e4}{\newton\per\milli\meter²}
-E_L = \SI{9.581+-0.031e4}{\newton\per\milli\meter²}
+E_R &= \SI{6.57+-0.06e4}{\newton\per\milli\meter²}\\
+E_L &= \SI{9.581+-0.031e4}{\newton\per\milli\meter²}
 \end{align*}
 
 Bildet man aus diesen Werten den Mittelwert ergibt sich schließlich: 
 
 \begin{equation*}
-E_M = \SI{8.0755+-1.5055}{\newton\per\milli\meter²}
+E_M = \SI{8.0755+-1.5055e4}{\newton\per\milli\meter²}
 \end{equation*}
 
 wobei der Fehler mit 
