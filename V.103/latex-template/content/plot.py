@@ -10,7 +10,7 @@ x2 = x*10
 
 D = z-y
 
-L1 = ((L*x2**2-(x2**3)/3))
+L1 = ((L*x2**2-(x2**3)/3)*1e-5)
 
 params, covariance_matrix = np.polyfit(L1, D, deg=1, cov=True)
 

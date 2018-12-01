@@ -2,15 +2,15 @@ import numpy as np
 from uncertainties import ufloat
 import matplotlib.pyplot as plt
 
-x, y, z = np.genfromtxt('mess2.txt', unpack=True)
+x, y, z = np.genfromtxt('mess3.txt', unpack=True)
 
-L = 552
+L = 603
 x2 = x*10
 #Durchbiegung
 
 D = z-y
 
-L1 = ((L*x2**2-(x2**3)/3)*1e-5)
+L1=(2*L**2*x2-4*x2**3)*1e-5
 
 params, covariance_matrix = np.polyfit(L1, D, deg=1, cov=True)
 
@@ -26,9 +26,9 @@ z = np.linspace(np.min(L1), np.max(L1))
 
 plt.plot(L1, D, 'rx', label='Messdaten')
 plt.plot(z, gerade (z, *params), 'b-', label='Ausgleichsgerade')
-plt.xlabel(r'$Lx²-\frac{x³}{3}  \: / \: 10^5\cdot mm³$')
+plt.xlabel(r'$3Lx²-4x³  \: / \: 10^5\cdot mm³$')
 plt.ylabel(r'$D \: / \: mm$')
 plt.legend(loc='best')
 
 plt.tight_layout()
-plt.savefig('plot2.pdf')
+plt.savefig('plot3.pdf')

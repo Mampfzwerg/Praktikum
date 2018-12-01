@@ -20,7 +20,7 @@ C = \frac{\diff Q}{\diff T}
 
 Wenn keine Arbeit an dem Stoff verrichtet wird, ergibt sich
 nach dem ersten Haupsatz der Thermodynamik die Gleichheit 
-von Wärmemenge und Energie. 
+von Wärmemenge und innerer Energie: 
 
 \begin{equation*}
 \diff U = \diff Q + \diff A
@@ -39,7 +39,7 @@ C_V = \left(\frac{\diff Q}{\diff T}\right)_V = \left(\frac{\diff U}{\diff T}\rig
 Das Dulong-Petitsche Gesetz sagt nun aus, dass ein Stoff 
 unabhängig vom chemischen Charakter stets eine Molwärme von
 $C_V = 3 R$ hat. Dabei ist R die allgemeine Gaskonstante mit 
-$R = \SI{9.3144621}{\joule\per\mol\per\kelvin}$ [1].
+$R = \SI{8.3145}{\joule\per\mol\per\kelvin}$ [3].
 
 \subsection{Klassische Berechnung der Molwärme}
 \label{sec:Klassisch}
@@ -73,16 +73,16 @@ gesamte Energie eines Atomes:
 E_{ges} = E_ {kin} + E_ {pot} = 2\cdot E_ {kin} = 3 k_B T 
 \end{equation*}
 
-Multipliziert man dieses Ergebnis nun mit der Avogadrokonstante
-$N_A$, so erhält man die gesamte Energie in einem Mol eines 
-Stoffes: 
+Wird dieses Ergebnis nun mit der Avogadrokonstante
+$N_A$ multipliziert, so folgt für die gesamte Energie 
+in einem Mol eines Stoffes: 
 
 \begin{equation}
 U = 3\underbrace{N_A k_B}_{=R} T = 3 R T 
 \label{eqn:innereEnergie}
 \end{equation}
 
-Nach \ref{eqn:Molwaerme} ergibt sich somit für die Molwärme:
+Nach \eqref{eqn:Molwaerme} ergibt sich somit für die Molwärme:
 
 \begin{equation*}
 C_V = 3 R 
@@ -119,32 +119,15 @@ Damit ergibt sich:
 U = \frac{3 N_A \hbar \omega}{e^{\frac{\hbar \omega}{k_B T} - 1}}
 \end{equation*}
 
-Zur Untersuchung dieses Terms wird eine Taylorentwicklung
-der Exponentialfunktion durchgeführt. 
-
-\begin{equation*}
-U = \frac{3 N_A \hbar \omega}{1 + \frac{\hbar\omega}{k_B T} + \mathcal{O}(T^{-2})-1}
-= \frac{3 N_A k_B T}{1 + \mathcal{O} (T^{-2})}
-= \frac{3 R T}{1 + \mathcal{O} (T^{-2})}
-\end{equation*}
-
-So erkennt man sehr einfach, dass die somit erhaltene innere
-Energie kleiner ist, als die in (\ref{eqn:innereEnergie}) 
-betrachtete. Somit ist auch die Molwärme geringer als der
-klassische Wert von $3 R$. Wenn jedoch im Fall $T \rightarrow \infty$
-der Restterm verschwindet, ergibt sich wieder der klassische
-Wert.
-Man erkennt außerdem, dass dieser Grenzfall für schwere Atome
-bei niedrigeren Temperaturen bereits erreicht wird. Dies 
-liegt daran, dass der Exponent der e-Funktion wegen 
-$\omega \propto \frac{1}{\sqrt{m}}$ für große Massen kleiner
-wird und somit die Taylorentwicklung eine bessere Nährung 
-darstellt.
+Es ist zu sehen, dass die Energie gegen $3R$ strebt, für den
+Fall, dass $kT >> \hbar \omega$. Für kleine Massen ist das
+wegen $\omega \sim \frac{1}{\sqrt{m}}$ erst bei 
+hohen Temperaturen erfüllt. 
 
 \subsection{Mischungskalometrie}
 
 Da die Konstanz des Volumens nur unter enormen Drücken 
-gewehrleistet werden kann, wird stattdessen der Druck 
+gewährleistet werden kann, wird stattdessen der Druck 
 konstant gehalten. 
 Die Messung der spezifischen Wärmekapazität $c_k$ eines 
 Festkörpers bei p = const kann mit einem Mischungskalorimeter
@@ -155,10 +138,22 @@ Dewargefäß getaucht. Zuvor sind Wasser und Gefäß in einem
 thermischen Gleichgewicht mit der Temperatur $T_w$. 
 Nach dem Eintauchen stellt sich erneut ein thermisches 
 Gleichgewicht mit der Mischtemperatur $T_m$ ein. 
-Setzt man voraus, dass es sich um ein abgeschlossenes 
+Wird voraus gesetzt, dass es sich um ein abgeschlossenes 
 System handelt und an diesem keine mechanische Arbeit 
-verrichtet wird, oder Energie entweicht, kann mit der 
-Formel 
+verrichtet wird, oder Energie entweicht, kann mit dem
+1.Haupsatz der Thermodynamik gefolgert werden:
+
+\begin{equation*}
+Q_1 = Q_2
+\end{equation*}
+
+Für diesen Zusammenhang ergibt sich: 
+
+\begin{equation*}
+c_k m_k (T_k - T_m) = (c_w m_w + c_g m_g)(T_m - T_w)
+\end{equation*} 
+
+Und schließlich kann durch Umstellung
 
 \begin{equation}
 c_k = \frac{(c_w m_w + c_g m_g)(T_m -T_w)}{m_k(T_k - T_m)}
@@ -172,8 +167,11 @@ des Kalorimeters.
 Dabei können alle Werte direkt gemessen werden, außer
 $c_g m_g$. Um diesen Wert zu ermitteln, müssem im Kalorimeter
 zwei Wassermengen mit Massen $m_x$ und $m_y$ und Temperaturen
-$T_x$ und $T_y$ zu der Mischtemperatur $T_m\prime$ vermischt werden.
-Dann gilt: 
+$T_x$ und $T_y$ zu der Mischtemperatur $T_m\prime$ vermischt 
+werden.
+Es gilt, dass die abgegebene Wärmemenge des heißen Wassers, 
+der aufgenommenen Wärmemenge des kalten Wassers entspricht.
+Daraus folgt: 
 
 \begin{equation}
 c_g m_g = \frac{c_w m_y(T_y - T_m\prime)- c_w m_x(T_m\prime - T_x)}{T_m\prime - T_x}
@@ -193,4 +191,4 @@ körperspezifische Konstanten. Die Größe $\alpha$ wird als
 linearer Ausdehnungskoeffizient, $\kappa$ als Kompressionsmodul
 und $V_o$ als molares Volumen bezeichnet.
 
-\cite{sample}
+%\cite{sample}

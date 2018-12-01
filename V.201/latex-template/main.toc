@@ -5,12 +5,12 @@
 \contentsline {subsection}{\numberline {1.1}Die Molwärme}{3}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Klassische Berechnung der Molwärme}{3}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Quantenmechanische Ergänzungen}{4}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Mischungskalometrie}{5}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.4}Mischungskalometrie}{4}{subsection.1.4}
 \contentsline {section}{\numberline {2}Durchführung}{5}{section.2}
 \contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}Bestimmung der Wärmekapazität $c_g m_g$}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Molwärme verschiedener Stoffe}{7}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Aluminium}{7}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2}Molwärme verschiedener Stoffe}{6}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Aluminium}{6}{subsubsection.3.2.1}
 \contentsline {subsubsection}{\numberline {3.2.2}Kupfer}{7}{subsubsection.3.2.2}
 \contentsline {section}{\numberline {4}Diskussion}{9}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{10}{section.5}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{9}{section.5}
