@@ -1,7 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\subsection{Bestimmung des Elasitzitätsmodul zweier einseitig eingespannter Stäbe}
+\subsection{Bestimmung der Elasitzitätsmodule zweier einseitig eingespannter Stäbe}
 
 \subsubsection{Stab mit quadratischem Querschnitt}
 
@@ -76,23 +76,23 @@ c_1 &= \SI{0.0752+-0.01364}{\milli\meter}
 Nach Formel \eqref{eqn:Biegung} ergibt sich die Formel: 
 
 \begin{equation*}
-E = \frac{F_G}{2a_1\symbf{I}}
+E = \frac{F_\text{G}}{2a_1\symbf{I}}
 \end{equation*}
 
-Hierbei ist $F_G = m_g\cdot g$ mit $m_g = \SI{0.528}{\kilo\gram}$ und 
-$g = \SI{9.81}{\meter\per\second\squared}$. Das Flächenträgheitsmoment
+Hierbei ist $F_\text{G} = m_\text{g}\cdot g$ mit $m_\text{g} = \SI{0.528}{\kilo\gram}$
+und $g = \SI{9.81}{\meter\per\second\squared}$. Das Flächenträgheitsmoment
 ergibt sich nach Formel \eqref{eqn:Quadratisch} zu $\frac{1}{12}\SI{e-8}{\meter⁴}$. 
-Das Elastizitätsmodul ist also gegeben durch: 
+Der Elastizitätsmodul ist also gegeben durch: 
 
 \begin{equation*}
 E = \SI{2.220+-0.032e5}{\newton\per\milli\meter²}
 \end{equation*}
 
-Der statische Fehler ergibt sich mit der Gaußschen Fehlerfortpflanzung zu: 
+Der statistische Fehler ergibt sich mit der Gaußschen Fehlerfortpflanzung zu: 
 
 \begin{equation*}
 \Delta E = \frac{\partial E}{\partial m_1}\cdot \Delta m_1 
-= \frac{-F_G}{2\symbf{I}m²} \cdot \Delta m_1
+= \frac{-F_\text{G}}{2\symbf{I}m²} \cdot \Delta m_1
 \end{equation*}
 
 %Es scheint sich demnach bei dem Material um Stahl zu handeln, dessen 
@@ -163,7 +163,7 @@ c_2 &= \SI{0.1362+-0.0232}{\milli\meter}
 
 Bei diesem Stab ist das Flächenträgheitsmoment nach Formel \eqref{eqn:Rund}
 gegeben durch $\frac{\pi}{64}\si{\centi\meter⁴}$.
-Schließlich ergibt sich für das Elasitzitätsmodul $E$ wie oben mit Formel 
+Schließlich ergibt sich für den Elasitzitätsmodul $E$ wie oben mit Formel 
 \eqref{eqn:Biegung} und durch das Flächenträgheitsmoment:
 
 \begin{equation*}
@@ -270,28 +270,29 @@ Gemäß der Formel \eqref{eqn:Beidseitig} gilt für die beiden Elasitzitätsmodu
 der Zusammenhang: 
 
 \begin{equation*}
-E = \frac{F_G}{48a_iI} \text{ mit i = 3, 4}
+E = \frac{F_\text{G}}{48a_\text{i}\symbf{I}} \text{ mit i = 3, 4}
 \end{equation*}
 
-Hier ist $F_G = m\cdot g$ mit $m = \SI{1.2033}{\kilo\gram}$ und $g = \SI{9.81}{\meter\per\second²}$.
-Mit \eqref{eqn:Quadratisch} folgt für $I = \frac{1}{12}\SI{e-8}{\meter⁴}$. Damit 
+Hier ist $F_\text{G} = m\cdot g$ mit $m = \SI{1.2033}{\kilo\gram}$ und 
+$g = \SI{9.81}{\meter\per\second²}$.
+Mit \eqref{eqn:Quadratisch} folgt für $\symbf{I} = \frac{1}{12}\SI{e-8}{\meter⁴}$. Damit 
 ergibt sich für die Elasitzitätsmodule: 
 
 \begin{align*}
-E_R &= \SI{6.57+-0.06e4}{\newton\per\milli\meter²}\\
-E_L &= \SI{9.581+-0.031e4}{\newton\per\milli\meter²}
+E_\text{R} &= \SI{6.57+-0.06e4}{\newton\per\milli\meter²}\\
+E_\text{L} &= \SI{9.581+-0.031e4}{\newton\per\milli\meter²}
 \end{align*}
 
 Bildet man aus diesen Werten den Mittelwert ergibt sich schließlich: 
 
 \begin{equation*}
-E_M = \SI{8.0755+-1.5055e4}{\newton\per\milli\meter²}
+E_\text{M} = \SI{8.0755+-1.5055e4}{\newton\per\milli\meter²}
 \end{equation*}
 
 wobei der Fehler mit 
 
 \begin{equation*}
-\Delta E_M = \sqrt{(\Delta E_R)²+(\Delta E_L)²}
+\Delta E_\text{M} = \sqrt{(\Delta E_\text{R})²+(\Delta E_\text{L})²}
 \end{equation*}
 
 berechnet wird.

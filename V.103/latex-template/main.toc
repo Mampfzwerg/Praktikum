@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {1.4}Berechnung der Flächenträgheitsmomente}{5}{subsection.1.4}
 \contentsline {section}{\numberline {2}Durchführung}{5}{section.2}
 \contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Bestimmung des Elasitzitätsmodul zweier einseitig eingespannter Stäbe}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Bestimmung der Elasitzitätsmodule zweier einseitig eingespannter Stäbe}{6}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Stab mit quadratischem Querschnitt}{6}{subsubsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.2}Stab mit zylindrischem Querschnitt}{9}{subsubsection.3.1.2}
 \contentsline {subsection}{\numberline {3.2}Bestimmung des Elasitzitätsmodul eines beidseitig aufgelegten Stabes}{11}{subsection.3.2}
