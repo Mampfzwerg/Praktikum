@@ -31,7 +31,7 @@ $Winkel \,/\, °$ & $Winkel \,/\, rad$ & $F \,/\, \si{\milli\newton}$ & $M \,/\,
 \end{table}
 
 Anhand von Formel \eqref{eqn:Winkelrichtgröße} ist zu erkennen, dass die Winkelrichtgröße $D$ 
-lediglich ein Proportionalitätsfaktor zwischen Drehmoment $M$ und Winkel $\varpi$ ist. Zur Ermittlung 
+lediglich ein Proportionalitätsfaktor zwischen Drehmoment $M$ und Winkel $\varphi$ ist. Zur Ermittlung 
 dieser Größe wird eine lineare Regressions mittels python und matplotlib durchgeführt. 
 Das Ergebnis ist in Abbildung \ref{fig:plot1} zu sehen. 
 
@@ -43,7 +43,7 @@ Das Ergebnis ist in Abbildung \ref{fig:plot1} zu sehen.
   \label{fig:plot1}
 \end{figure}
 
-Die Ausgleichsgerade ist gegeben mit $M(\varphi) = a\cdot \varphi + b$. Für die Parameter Regressionsparameter
+Die Ausgleichsgerade ist gegeben mit $M(\varphi) = a\cdot \varphi + b$. Für die Regressionsparameter
 ergibt sich: 
 
 \begin{align*}
@@ -90,6 +90,7 @@ Aus \eqref{eqn:Steiner} und \eqref{eqn:Periode} folgt der Zusammenhang:
 
 \begin{equation*}
 T² = \underbrace{\frac{4\pi²m}{D}}_{\hat = s}\cdot a² + \underbrace{\frac{4\pi²}{D} I_D}_{\hat = b}
+\label{eqn:Regression}
 \end{equation*}
 
 Mittels linearer Regression wird nun der als $b$ bezeichnete Parameter 
@@ -124,6 +125,33 @@ zu:
 = \sqrt{\left(\frac{D}{4\pi²}\cdot \Delta b\right)²+\left(\frac{b}{4\pi²}\cdot \Delta D\right)²}
 \end{equation*}
 
+\subsubsection{Verifikation des Satzes von Steiner}
+
+Anhand der Daten, die zur Ermittelung des Eigenträgheitsmoments $I_D$ berechnet wurden, lässt sich der
+Satz von Steiner verifizieren. Die verwendete Regressionsformel \eqref{eqn:Regression} folgt unter der
+Annahme, das der Steiner'sche Satz gilt. Diese Formel fordert einen linearen Zusammenhang zwischen 
+$T²$ und $a²$. Wie in Abbildung \ref{fig:plot2} zu erkennen ist, lässt sich dieser Zusammenhang 
+bestätigen. Die Geradensteigung
+
+\begin{equation*}
+s = \SI{905.17+-54.89}{\second²\per\meter²}
+\end{equation*}
+
+passt ebenfalls zu dem theoretischen Wert, der sich mit der Gesamtmasse der Gewichte  $m = 2\cdot 
+\SI{0.2218}{\kilo\gram}$ eingesetzt in die Definition von $s$ in Formel \eqref{eqn:Regression} zu 
+dem Wert:
+
+\begin{equation*}
+s_{theo} = \SI{750+-50}{\second²\per\meter²}
+\end{equation*}
+
+ergibt.
+Dabei ist der Fehler des theoretischen Wertes gegeben durch:
+
+\begin{equation*}
+\Delta s = \frac{-4\pi²m}{D²} 
+\end{equation*}
+
 \subsection{Trägheitsmomente zweier einfacher Körper}
 
 Die zu untersuchenden Körper werden oben auf der Drillachse befestigt, zum Schwingen gebracht 
@@ -132,18 +160,17 @@ Diese Körper besitzen folgende Maße:
 
 \begin{align*}
 m_Z &= \SI{1005.9}{\gram}\\
-l_Z &= \SI{139.9+-0.05}{\centi\meter}\\
-d_Z &= \SI{79.95+-0.05}{\centi\meter}\\
+d_Z &= \SI{7.95+-0.05}{\centi\meter}\\
 m_K &= \SI{812.4}{\gram}\\
-r_K &= \SI{7.5}{\centi\meter} 
+r_K &= \SI{7.5+-0.05}{\centi\meter} 
 \end{align*}
 
-Die ermittelten Periodendauer und Trägheitsmomente finden sich in Tabelle ....
+Die ermittelten Periodendauer und Trägheitsmomente finden sich in Tabelle \ref{tab:Messdaten3}.
 
 \begin{table}
 \centering
 \caption{Messwerte Kugel und Zylinder}
-\label{tab:Messdaten2}
+\label{tab:Messdaten3}
 \sisetup{table-format=2.1}
 \begin{tabular}{c c c c}
 \toprule
@@ -161,3 +188,31 @@ $T_Z \,/\, \si{\second}$ & $I_Z \,/\, \SI{1e-3}{\kilo\gram\meter²}$ & $T_K\,/\,
 \bottomrule
 \end{tabular}
 \end{table}
+
+Dabei ergeben sich die Fehler der Trägheitsmomente zu: 
+
+\begin{equation*}
+\Delta I = \sqrt{\left(\frac{\partial I}{\partial T}\cdot \Delta T\right)²+\left(\frac{\partial I}{\partial D}\cdot \Delta D\right)²}
+= \sqrt{\left(\frac{T D}{2\pi²}\cdot \Delta T\right)²+\left(\frac{T²}{4\pi²}\cdot \Delta D\right)²}
+\end{equation*}
+
+Nun werden die theoretischen Trägheitsmomente der beiden Körper berechnet, um die 
+experimentell ermittelten Daten mit diesen zu vergleichen. Die Trägheitsmomente 
+der Kugel, bzw. des Zylinders werden hierbei mit den bekannten Formeln berechnet:
+
+\begin{align*}
+I_{K, theo} &= \frac{2}{5} mR²\\
+I_{Z, theo} &= \frac{1}{2} mR²
+\end{align*}
+
+Mit den Maßen der verwendeten Körper ergeben sich somit: 
+
+\begin{align*}
+I_{K, theo} &= \SI{1.828+-0.024}{\kilo\gram\meter²}\\
+I_{Z, theo} &= \SI{0.795+-0.010}{\kilo\gram\meter²}
+\end{align*}
+
+Die experimentell bestimmten Trägheitsmomente weichen von den theoretischen
+Werten um $\SI{6.9}{\percent}$ bei der Kugel und um $\SI{0.625}{\percent}$ bei dem Zylinder ab.
+
+\subsection{Trägheitsmoment einer Puppe in zwei Stellungen}

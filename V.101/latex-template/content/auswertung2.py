@@ -30,4 +30,23 @@ T21 = T72/7
 
 IK = (T21**2*D)/(4*np.pi**2)
 
-print(np.mean(IK))
+#print(np.mean(IK))
+
+#Nochmal zum Eigenträgheitsmoment
+
+m = 2*0.2218
+
+#print((4*np.pi**2*m)/D)
+
+#Theoretische Trägheitsmomente
+
+mz = 1.0059
+dz = ufloat (0.0795, 0.0005)
+rz = dz/2
+#print(rz)
+print((1/2)*mz*rz**2)
+
+mk = 0.8124
+rk = ufloat(0.075,0.0005)
+
+print((2/5)*mk*rk**2)

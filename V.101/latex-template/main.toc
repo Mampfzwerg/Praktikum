@@ -2,9 +2,11 @@
 \defcounter {refsection}{0}\relax 
 \select@language {german}
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}
-\contentsline {section}{\numberline {2}Durchführung}{4}{section.2}
+\contentsline {section}{\numberline {2}Durchführung}{3}{section.2}
 \contentsline {section}{\numberline {3}Auswertung}{4}{section.3}
 \contentsline {subsection}{\numberline {3.1}Bestimmung der Winkelrichtgröße}{4}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Bestimmung des Trägheitsmoments der Drillachse}{6}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Verifikation des Satzes von Steiner}{8}{subsubsection.3.2.1}
 \contentsline {subsection}{\numberline {3.3}Trägheitsmomente zweier einfacher Körper}{8}{subsection.3.3}
-\contentsline {section}{\numberline {4}Diskussion}{8}{section.4}
+\contentsline {subsection}{\numberline {3.4}Trägheitsmoment einer Puppe in zwei Stellungen}{9}{subsection.3.4}
+\contentsline {section}{\numberline {4}Diskussion}{9}{section.4}
