@@ -9,4 +9,6 @@
 \contentsline {subsubsection}{\numberline {3.2.1}Verifikation des Satzes von Steiner}{8}{subsubsection.3.2.1}
 \contentsline {subsection}{\numberline {3.3}Trägheitsmomente zweier einfacher Körper}{8}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Trägheitsmoment einer Puppe in zwei Stellungen}{9}{subsection.3.4}
-\contentsline {section}{\numberline {4}Diskussion}{9}{section.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Gemessene Trägheitsmomente}{9}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Theoretische Trägheitsmomente}{10}{subsubsection.3.4.2}
+\contentsline {section}{\numberline {4}Diskussion}{12}{section.4}
