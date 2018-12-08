@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.30)  8 DEC 2018 18:45
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.30)  8 DEC 2018 19:41
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -901,9 +901,9 @@ Module polyglossia Info: Language data for german
 (polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	table: 0x3e7f310
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            synonyms	table: 0x51a6fc0
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
@@ -913,9 +913,9 @@ Module polyglossia Info: Language data for ngerman
 (polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	table: 0x3e7f4e0
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            synonyms	table: 0x51a7190
+(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -2314,128 +2314,4 @@ Package microtype Info: Loading generic protrusion settings for font family
 (/home/marek/.local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-(/home/marek/.local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `XITSMath' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 14.4002pt on input line 14.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 14.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 14.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 14.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 14.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 14.
-
-[1
-
-{/home/marek/.local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 15.
-
- (./main.toc
-Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
-3
-)
-\tf@toc=\write5
-
-\openout5 = main.toc
- [2
-
-] (./content/theorie.tex) (./content/durchfuehrung.tex)
-(./content/auswertung.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--1
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--1
-
- []
-
-[3]
-<content/plot1.pdf, id=58, 462.52798pt x 346.89601pt>
-File: content/plot1.pdf Graphic file (type pdf)
-<use content/plot1.pdf>
-Package luatex.def Info: content/plot1.pdf  used on input line 41.
-(luatex.def)             Requested size: 370.02287pt x 277.51718pt.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 42.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 42.
- [4] [5<./content/plot1.pdf>]
-
-LaTeX Warning: Reference `eqn:Steiner' on page 6 undefined on input line 89.
-
-<content/plot2.pdf, id=122, 462.52798pt x 346.89601pt>
-File: content/plot2.pdf Graphic file (type pdf)
-<use content/plot2.pdf>
-Package luatex.def Info: content/plot2.pdf  used on input line 102.
-(luatex.def)             Requested size: 370.02287pt x 277.51718pt.
-[6] [7<./content/plot2.pdf>] [8] [9]) (./content/diskussion.tex [10] [11])
-
-LaTeX Warning: Empty bibliography on input line 23.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-[12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
- (./main.aux
-Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
-26
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
-Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 8C938A25811CABB41FB2CA0C6591C481;9825.
-Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 033F9855741567DDDD4CBC192208828E;1173.
-
-
-LaTeX Warning: There were undefined references.
-
-Package logreq Info: Writing requests to 'main.run.xml'.
-
-\openout1 = main.run.xml
-)
-
-Here is how much of LuaTeX's memory you used:
- 42145 strings out of 494407
- 100000,1648299 words of node,token memory allocated
- 692 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 25 attribute, 77 glue_spec
-, 25 attribute_list, 1 write nodes
-   avail lists: 1:3,2:983,3:140,4:51,5:330,6:25,7:4265,8:89,9:435,10:13,11:444
- 45061 multiletter control sequences out of 65536+600000
- 156 fonts using 55940663 bytes
- 61i,14n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman8-re
-gular.otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/l
-mroman10-bold.otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/pub
-lic/lm-math/latinmodern-math.otf></home/marek/.local/texlive/2018/texmf-dist/fon
-ts/opentype/public/lm-math/latinmodern-math.otf></home/marek/.local/texlive/2018
-/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/marek/.local/t
-exlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/mar
-ek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></h
-ome/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-bold
-.otf>
-Output written on main.pdf (12 pages, 86804 bytes).
-
-PDF statistics: 306 PDF objects out of 1000 (max. 8388607)
- 200 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 131072)
- 89 words of extra memory for PDF output out of 10000 (max. 100000000)
-
+(/hom
