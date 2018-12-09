@@ -143,14 +143,16 @@ Vb6 = a * b * c
 ab6 = a
 bb6 = b
 cb6 = c
-print(a, b, c, Vb6)
+#print(a, b, c, Vb6)
 
 #Gesamtvolumen
 V = Vk1 + Vk2 + Vk3 + Vt1 + Vt2 + Vt3 + 2 * (Va1 + Va2 + Va3 + Va4 + Va5 + Va6) + 2 * (Vb1 + Vb2 + Vb3 + Vb4 + Vb5 + Vb6)
+#print(V)
 
 #Masse, Dichte
 m = 0.1626
 w = m / V
+#print(w)
 
 #Massen
 mk1 = Vk1 * w
@@ -187,13 +189,16 @@ Ib3 = (2 / 5) * mb3 * rb3**2
 Ib4 = (1 / 2) * mb4 * rb4**2
 Ib5 = (2 / 5) * mb5 * rb5**2
 Ib6 = (1 / 12) * mb6 * (bb6**2 + cb6**2)
+
+#print(Ib1 , Ib2 , Ib3 , Ib4 , Ib5 , Ib6)
+
 #Abstände zur Drehachse
-b1 = ufloat(0.0125, 0.003)
-b2 = ufloat(0.016, 0.003)
-b3 = ufloat(0.013, 0.003)
-b4 = ufloat(0.019, 0.003)
-b5 = ufloat(0.014, 0.003)
-b6 = ufloat(0.015, 0.003)
+b1 = ufloat(0.0125, 0.0015)
+b2 = ufloat(0.016, 0.0015)
+b3 = ufloat(0.013, 0.0015)
+b4 = ufloat(0.019, 0.0015)
+b5 = ufloat(0.014, 0.0015)
+b6 = ufloat(0.015, 0.0015)
 #
 Ib1 = Ib1 + mb1 * b1**2
 Ib2 = Ib2 + mb2 * b2**2
@@ -201,6 +206,7 @@ Ib3 = Ib3 + mb3 * b3**2
 Ib4 = Ib4 + mb4 * b4**2
 Ib5 = Ib5 + mb5 * b5**2
 Ib6 = Ib6 + mb6 * b6**2
+#print(Ib1 , Ib2 , Ib3 , Ib4 , Ib5 , Ib6)
 
 Ik = Ik1 + Ik2 + Ik3 + It1 + It2 + It3 + 2 * (Ib1 + Ib2 + Ib3 + Ib4 + Ib5 + Ib6)
 
@@ -214,20 +220,23 @@ Ia4a = ma4 / 4 * (ra4**2 + (ha4**2 / 3))
 Ia5 = (2 / 5) * ma5 * ra5**2
 Ia6 = (1 / 2) * ma6 * ra6**2
 Ia6a = ma6 / 4 * (ra6**2 + (ha6**2 / 3))
+
+#print(Ib1 , Ib2 , Ib3 , Ib4 , Ib5 , Ib6)
+
 #Abstände zur Drehachse (c = ausgestreckt)
-a1 = ufloat(0.030, 0.003)
-a2 = ufloat(0.0275, 0.003)
-a3 = ufloat(0.0275, 0.003)
-a4 = ufloat(0.030, 0.003)
-a5 = ufloat(0.030, 0.003)
-a6 = ufloat(0.030, 0.003)
+a1 = ufloat(0.030, 0.0015)
+a2 = ufloat(0.0275, 0.0015)
+a3 = ufloat(0.0275, 0.0015)
+a4 = ufloat(0.030, 0.0015)
+a5 = ufloat(0.030, 0.0015)
+a6 = ufloat(0.030, 0.0015)
 #
-c1 = ufloat(0.030, 0.003)
-c2 = ufloat(0.059, 0.003)
-c3 = ufloat(0.083, 0.003)
-c4 = ufloat(0.108, 0.003)
-c5 = ufloat(0.131, 0.003)
-c6 = ufloat(0.1465, 0.003)
+c1 = ufloat(0.030, 0.0015)
+c2 = ufloat(0.059, 0.0015)
+c3 = ufloat(0.083, 0.0015)
+c4 = ufloat(0.108, 0.0015)
+c5 = ufloat(0.131, 0.0015)
+c6 = ufloat(0.1465, 0.0015)
 #
 Ic1 = Ia1  + ma1 * c1**2
 Ic2 = Ia2a + ma2 * c2**2
@@ -243,11 +252,13 @@ Ia4 = Ia4 + ma4 * a4**2
 Ia5 = Ia5 + ma5 * a5**2
 Ia6 = Ia6 + ma6 * a6**2
 
+#print(Ic1 , Ic2 , Ic3 , Ic4 , Ic5 , Ic6)
+
 #Endergebnisse
 Ia = Ik + 2 * (Ia1 + Ia2 + Ia3 + Ia4 + Ia5 + Ia6)
 Ic = Ik + 2 * (Ic1 + Ic2 + Ic3 + Ic4 + Ic5 + Ic6)
 
-#print(Ia, Ic)
+print(Ia, Ic)
 
 #Zeitmessung
 
