@@ -14,7 +14,7 @@ hat die konstante Länge \SI{0.3}{\meter}.
 \sisetup{table-format=2.1}
 \begin{tabular}{c c c c}
 \toprule
-$Winkel \,/\, °$ & $Winkel \,/\, rad$ & $F \,/\, \si{\milli\newton}$ & $M \,/\, \si{\milli\newton\meter}$\\
+$\text{Winkel} \,/\, °$ & $\text{Winkel} \,/\, \text{rad}$ & $F \,/\, \si{\milli\newton}$ & $M \,/\, \si{\milli\newton\meter}$\\
 \midrule
  35 & 0.61 &  30 &  9.00\\
  45 & 0.79 &  35 & 10.05\\
@@ -70,7 +70,7 @@ des Abstands $a$ der Gewichte zur Drillachse gemessen. Die erhaltenen Daten sind
 \sisetup{table-format=2.1}
 \begin{tabular}{c c c c c}
 \toprule
-$a \,/\, \si{\meter}$ & $a² \,/\, m²$ & $T_7\,/\, \si{\second}$ & $T \,/\, \si{\second}$ & $T² \,/\, s²$\\
+$a \,/\, \si{\meter}$ & $a² \,/\, m²$ & $T\,/\, \si{\second}$ & $\frac{T}{7} \,/\, \si{\second}$ & $T² \,/\, s²$\\
 \midrule
  0.2700 & 0.0729 & 57.93\,\pm 0.5 & 8.28\,\pm 0.071 & 68.49\,\pm 1.18\\
  0.2300 & 0.0529 & 50.30\,\pm 0.5 & 7.19\,\pm 0.071 & 51.63\,\pm 1.03\\
@@ -89,12 +89,12 @@ $a \,/\, \si{\meter}$ & $a² \,/\, m²$ & $T_7\,/\, \si{\second}$ & $T \,/\, \si
 Aus \eqref{eqn:Steiner} und \eqref{eqn:Periode} folgt der Zusammenhang: 
 
 \begin{equation*}
-T² = \underbrace{\frac{4\pi²m}{D}}_{\hat = s}\cdot a² + \underbrace{\frac{4\pi²}{D} I_D}_{\hat = b}
+T² = \underbrace{\frac{4\pi²m}{D}}_{\hat = s}\cdot a² + \underbrace{\frac{4\pi²}{D} I_\text{D}}_{\hat = b}
 \label{eqn:Regression}
 \end{equation*}
 
 Mittels linearer Regression wird nun der als $b$ bezeichnete Parameter 
-ermittelt und daraus das gesuchte Trägheitsmoment $I_D$ berechnet. Das 
+ermittelt und daraus das gesuchte Trägheitsmoment $I_\text{D}$ berechnet. Das 
 Ergebnis ist in Abbildung \ref{fig:plot2} dargestellt. 
 
 \begin{figure}
@@ -111,23 +111,23 @@ s &= \SI{905.17+-54.89}{\second²\per\meter²}\\
 b &= \SI{4.59+-1.99}{\second²}
 \end{align*}
 
-Damit berechnet sich $I_D$ zu: 
+Damit berechnet sich $I_\text{D}$ zu: 
 
 \begin{equation*}
-I_D = \frac{b\cdot D}{4\pi²} = \SI{2.7+-1.2e-3}{\kilo\gram\meter²}
+I_\text{D} = \frac{b\cdot D}{4\pi²} = \SI{2.7+-1.2e-3}{\kilo\gram\meter²}
 \end{equation*}
 
 Der statistische Fehler berechnet sich dabei mit der Gaußschenfehlerfortpflanzung 
 zu: 
 
 \begin{equation*}
-\Delta I_D = \sqrt{\left(\frac{\partial I_D}{\partial b}\cdot \Delta b\right)²+\left(\frac{\partial I_D}{\partial D}\cdot \Delta D\right)²}
-= \sqrt{\left(\frac{D}{4\pi²}\cdot \Delta b\right)²+\left(\frac{b}{4\pi²}\cdot \Delta D\right)²}
+\symup{\Delta} I_\text{D} = \sqrt{\left(\frac{\partial I_\text{D}}{\partial b}\cdot \symup{\Delta} b\right)²+\left(\frac{\partial I_\text{D}}{\partial D}\cdot \symup{\Delta} D\right)²}
+= \sqrt{\left(\frac{D}{4\pi²}\cdot \symup{\Delta} b\right)²+\left(\frac{b}{4\pi²}\cdot \text{\Delta} D\right)²}
 \end{equation*}
 
 \subsubsection{Verifikation des Satzes von Steiner}
 
-Anhand der Daten, die zur Ermittelung des Eigenträgheitsmoments $I_D$ berechnet wurden, lässt sich der
+Anhand der Daten, die zur Ermittelung des Eigenträgheitsmoments $I_\text{D}$ berechnet wurden, lässt sich der
 Satz von Steiner verifizieren. Die verwendete Regressionsformel \eqref{eqn:Regression} folgt unter der
 Annahme, das der Steiner'sche Satz gilt. Diese Formel fordert einen linearen Zusammenhang zwischen 
 $T²$ und $a²$. Wie in Abbildung \ref{fig:plot2} zu erkennen ist, lässt sich dieser Zusammenhang 
@@ -142,14 +142,14 @@ passt ebenfalls zu dem theoretischen Wert, der sich mit der Gesamtmasse der Gewi
 dem Wert:
 
 \begin{equation*}
-s_{theo} = \SI{750+-50}{\second²\per\meter²}
+s_\text{theo} = \SI{750+-50}{\second²\per\meter²}
 \end{equation*}
 
 ergibt.
 Dabei ist der Fehler des theoretischen Wertes gegeben durch:
 
 \begin{equation*}
-\Delta s = \frac{-4\pi²m}{D²} 
+\symup{\Delta} s = \frac{-4\pi²m}{D²} 
 \end{equation*}
 
 \subsection{Trägheitsmomente zweier einfacher Körper}
@@ -159,10 +159,10 @@ und die Periodendauer $T$ gemessen. Es werden zwei Körper untersucht: Ein Zylin
 Diese Körper besitzen folgende Maße: 
 
 \begin{align*}
-m_Z &= \SI{1005.9}{\gram}\\
-d_Z &= \SI{7.95+-0.05}{\centi\meter}\\
-m_K &= \SI{812.4}{\gram}\\
-r_K &= \SI{7.5+-0.05}{\centi\meter} 
+m_\text{Z} &= \SI{1005.9}{\gram}\\
+d_\text{Z} &= \SI{7.95+-0.05}{\centi\meter}\\
+m_\text{K} &= \SI{812.4}{\gram}\\
+r_\text{K} &= \SI{7.5+-0.05}{\centi\meter} 
 \end{align*}
 
 Die ermittelten Periodendauer und Trägheitsmomente finden sich in Tabelle \ref{tab:Messdaten3}.
@@ -176,7 +176,7 @@ Die ermittelten Periodendauer und Trägheitsmomente finden sich in Tabelle \ref{
 \toprule
 \multicolumn{2}{c}{Zylinder} &  \multicolumn{2}{c}{Kugel} \\
 \midrule
-$T_Z \,/\, \si{\second}$ & $I_Z \,/\, \SI{1e-3}{\kilo\gram\meter²}$ & $T_K\,/\, \si{\second}$ & $I_K \,/\, \SI{1e-3}{\kilo\gram\meter²}$\\
+$T_\text{Z} \,/\, \si{\second}$ & $I_\text{Z} \,/\, \SI{1e-3}{\kilo\gram\meter²}$ & $T_\text{K}\,/\, \si{\second}$ & $I_\text{K} \,/\, \SI{1e-3}{\kilo\gram\meter²}$\\
 \midrule
  1.21\,\pm 0.07 & 0.862\,\pm 0.115 & 1.73\,\pm 0.71 & 1.769\,\pm 0.182\\
  1.14\,\pm 0.07 & 0.770\,\pm 0.107 & 1.69\,\pm 0.71 & 1.691\,\pm 0.176\\
@@ -184,7 +184,7 @@ $T_Z \,/\, \si{\second}$ & $I_Z \,/\, \SI{1e-3}{\kilo\gram\meter²}$ & $T_K\,/\,
  1.15\,\pm 0.07 & 0.782\,\pm 0.108 & 1.66\,\pm 0.71 & 1.629\,\pm 0.172\\
  1.16\,\pm 0.07 & 0.196\,\pm 0.109 & 1.69\,\pm 0.71 & 1.686\,\pm 0.176\\
 \midrule
-\multicolumn{2}{c}{$\bar{I_Z}= \SI{0.80+-0.07}{\kilo\gram\meter²}$} & \multicolumn{2}{c}{$\bar{I_K} = \SI{1.71+-0.12}{\kilo\gram\meter²}$} \\
+\multicolumn{2}{c}{$\bar{I_\text{Z}}= \SI{0.80+-0.07}{\kilo\gram\meter²}$} & \multicolumn{2}{c}{$\bar{I_\text{K}} = \SI{1.71+-0.12}{\kilo\gram\meter²}$} \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -192,8 +192,8 @@ $T_Z \,/\, \si{\second}$ & $I_Z \,/\, \SI{1e-3}{\kilo\gram\meter²}$ & $T_K\,/\,
 Dabei ergeben sich die Fehler der Trägheitsmomente zu: 
 
 \begin{equation*}
-\Delta I = \sqrt{\left(\frac{\partial I}{\partial T}\cdot \Delta T\right)²+\left(\frac{\partial I}{\partial D}\cdot \Delta D\right)²}
-= \sqrt{\left(\frac{T D}{2\pi²}\cdot \Delta T\right)²+\left(\frac{T²}{4\pi²}\cdot \Delta D\right)²}
+\Delta I = \sqrt{\left(\frac{\partial I}{\partial T}\cdot \symup{\Delta} T\right)²+\left(\frac{\partial I}{\partial D}\cdot \symup{\Delta} D\right)²}
+= \sqrt{\left(\frac{T D}{2\pi²}\cdot \symup{\Delta} T\right)²+\left(\frac{T²}{4\pi²}\cdot \symup{\Delta} D\right)²}
 \end{equation*}
 
 Nun werden die theoretischen Trägheitsmomente der beiden Körper berechnet, um die 
@@ -201,15 +201,15 @@ experimentell ermittelten Daten mit diesen zu vergleichen. Die Trägheitsmomente
 der Kugel, bzw. des Zylinders werden hierbei mit den bekannten Formeln berechnet:
 
 \begin{align*}
-I_{K, theo} &= \frac{2}{5} mR²\\
-I_{Z, theo} &= \frac{1}{2} mR²
+I_\text{K,theo} &= \frac{2}{5} mR²\\
+I_\text{Z,theo} &= \frac{1}{2} mR²
 \end{align*}
 
 Mit den Maßen der verwendeten Körper ergeben sich somit: 
 
 \begin{align*}
-I_{K, theo} &= \SI{1.828+-0.024}{\kilo\gram\meter²}\\
-I_{Z, theo} &= \SI{0.795+-0.010}{\kilo\gram\meter²}
+I_\text{K,theo} &= \SI{1.828+-0.024}{\kilo\gram\meter²}\\
+I_\text{Z,theo} &= \SI{0.795+-0.010}{\kilo\gram\meter²}
 \end{align*}
 
 Die experimentell bestimmten Trägheitsmomente weichen von den theoretischen
@@ -233,15 +233,16 @@ Puppe parallel zum Oberkörper.
   \caption{Messwerte der Periodendauern}
   \label{tab:Periodendauer}
   \sisetup{table-format=2.1}
-  \begin{tabular}{c c}
+  \begin{tabular}{c c c c}
   \toprule
-  $T_1 \,/\, \si{\second}$ & $T_2 \,/\, \si{second}$ \\
+  $T_1 \,/\, \si{\second}$ & $\frac{T_1}{5} \,/\, \si{\second}$ & 
+  $T_2 \,/\, \si{\second}$ & $\frac{T_2}{5} \,/\, \si{\second}$ \\
   \midrule
-   3.22\,\pm 0.5 & 4.33\,\pm 0.5 \\
-   3.16\,\pm 0.5 & 4.26\,\pm 0.5 \\
-   3.22\,\pm 0.5 & 4.20\,\pm 0.5 \\
-   3.08\,\pm 0.5 & 4.57\,\pm 0.5 \\
-   3.17\,\pm 0.5 & 4.51\,\pm 0.5 \\
+   3.22\,\pm 0.5 & 0.64\,\pm 0.10 & 4.33\,\pm 0.5 & 0.87\,\pm 0.10 \\
+   3.16\,\pm 0.5 & 0.63\,\pm 0.10 & 4.26\,\pm 0.5 & 0.85\,\pm 0.10 \\
+   3.22\,\pm 0.5 & 0.64\,\pm 0.10 & 4.20\,\pm 0.5 & 0.84\,\pm 0.10 \\
+   3.08\,\pm 0.5 & 0.62\,\pm 0.10 & 4.57\,\pm 0.5 & 0.91\,\pm 0.10 \\
+   3.17\,\pm 0.5 & 0.63\,\pm 0.10 & 4.51\,\pm 0.5 & 0.90\,\pm 0.10 \\
   \bottomrule
   \end{tabular}
   \end{table}
@@ -249,8 +250,8 @@ Puppe parallel zum Oberkörper.
   Daraus ergeben sich die Trägheitsmomente $I_1$, $I_2$ für die Positionen 1 und 2 der Puppe.
 
   \begin{align*}
-    I_1 &= \SI{5.9+-0.9 e-3}{\kilo\gram\meter²} \\
-    I_2 &= \SI{11.3+-1.3 e-3}{\kilo\gram\meter²}
+    I_\text{1,mess} &= \SI{2.4+-0.4 e-4}{\kilo\gram\meter²} \\
+    I_\text{2,mess} &= \SI{4.5+-0.5 e-4}{\kilo\gram\meter²}
   \end{align*}
 
   \subsubsection{Theoretische Trägheitsmomente}
@@ -264,8 +265,8 @@ Puppe parallel zum Oberkörper.
   \end{figure}
 
   Wie in Abbildung \ref{fig:Igor} dargestellt, kann die Figur durch geometrische Figuren
-  genähert werden. Dabei beschreiben die Figuren $K_i$ den Kopf, $T_i$ den Torso, 
-  $A_i$ die Arme und $B_i$ die Beine.
+  genähert werden. Dabei beschreiben die Figuren $K_\text{i}$ den Kopf, $T_\text{i}$ 
+  den Torso, $A_\text{i}$ die Arme und $B_\text{i}$ die Beine.
   
   Die verwendeten geometrischen Figuren sind 
   (Halb-)Kugeln - als (Halb-)Kreise dargestellt und mit angegebenen Radien $r$ -, 
@@ -286,46 +287,46 @@ Puppe parallel zum Oberkörper.
   $\text{Figur}$ & $\text{Abmessungen}$ & $\text{in } \si{\milli\meter}$ 
   & $V \,/\, \SI{e-5}{\meter³}$ \\
   \midrule
-   $K1$ & $r_{K1} = $  & 16.00\,\pm 0.25 & 1.72\,\pm 0.08 \\
-   $K2$ & $r1_{K2} = $ & 16.00\,\pm 0.25 & 2.35\,\pm 0.08 \\
-   $  $ & $r2_{K2} = $ &  9.50\,\pm 0.25 & $ $ \\
-   $  $ & $h_{K2} = $  & 45.50\,\pm 0.50 & $ $ \\
-   $K3$ & $r_{K3} = $  &  8.00\,\pm 0.25 & 0.21\,\pm 0.02 \\
-   $T1$ & $a_{T1} = $  & 48.70\,\pm 0.50 & 7.01\,\pm 0.15 \\
-   $  $ & $b_{T1} = $  & 40.00\,\pm 0.50 & $ $ \\
-   $  $ & $c_{T1} = $  & 36.00\,\pm 0.50 & $ $ \\
-   $T2$ & $r_{T2} = $  & 12.85\,\pm 0.25 & 0.69\,\pm 0.04 \\
-   $  $ & $h_{T2} = $  & 13.30\,\pm 0.50 & $ $ \\
-   $T3$ & $r1_{T3} = $ & 15.15\,\pm 0.25 & 3.41\,\pm 0.08 \\
-   $  $ & $r2_{T3} = $ & 19.70\,\pm 0.25 & $ $ \\
-   $  $ & $h_{T3} = $  & 35.50\,\pm 0.50 & $ $ \\
-   $A1$ & $r_{A1} = $  &  8.00\,\pm 0.25 & 0.21\,\pm 0.02 \\
-   $A2$ & $r_{A2} = $  &  8.00\,\pm 0.25 & 0.86\,\pm 0.05 \\
-   $  $ & $h_{A2} = $  & 42.80\,\pm 0.50 & $ $ \\
-   $A3$ & $r_{A3} = $  &  5.80\,\pm 0.25 & 0.08\,\pm 0.01 \\
-   $A4$ & $r_{A4} = $  &  7.15\,\pm 0.25 & 0.69\,\pm 0.05 \\
-   $  $ & $h_{A4} = $  & 42.80\,\pm 0.50 & $ $ \\
-   $A5$ & $r_{A5} = $  &  4.75\,\pm 0.25 & 0.05\,\pm 0.01 \\
-   $A6$ & $r_{A6} = $  &  7.75\,\pm 0.25 & 0.50\,\pm 0.03 \\
-   $  $ & $h_{A6} = $  & 26.70\,\pm 0.50 & $ $ \\
-   $B1$ & $r_{B1} = $  &  8.40\,\pm 0.25 & 0.25\,\pm 0.02 \\
-   $B2$ & $r_{B2} = $  &  9.10\,\pm 0.25 & 1.47\,\pm 0.08 \\
-   $  $ & $h_{B2} = $  & 56.40\,\pm 0.50 & $ $ \\
-   $B3$ & $r_{B3} = $  &  6.25\,\pm 0.25 & 0.10\,\pm 0.01 \\
-   $B4$ & $r_{B4} = $  &  7.35\,\pm 0.25 & 1.13\,\pm 0.08 \\
-   $  $ & $h_{B4} = $  & 66.30\,\pm 0.50 & $ $ \\
-   $B5$ & $r_{B5} = $  &  4.60\,\pm 0.25 & 0.04\,\pm 0.01 \\
-   $B6$ & $a_{B6} = $  &  5.40\,\pm 0.25 & 0.25\,\pm 0.02 \\
-   $  $ & $b_{B6} = $  & 42.30\,\pm 0.50 & $ $ \\
-   $  $ & $c_{B6} = $  & 10.80\,\pm 0.50 & $ $ \\
+   K1 & $r_\text{K1} = $  & 16.00\,\pm 0.25 & 1.72\,\pm 0.08 \\
+   K2 & $r1_\text{K2} = $ & 16.00\,\pm 0.25 & 2.35\,\pm 0.08 \\
+      & $r2_\text{K2} = $ &  9.50\,\pm 0.25 & $ $ \\
+      & $h_\text{K2} = $  & 45.50\,\pm 0.50 & $ $ \\
+   K3 & $r_\text{K3} = $  &  8.00\,\pm 0.25 & 0.21\,\pm 0.02 \\
+   T1 & $a_\text{T1} = $  & 48.70\,\pm 0.50 & 7.01\,\pm 0.15 \\
+      & $b_\text{T1} = $  & 40.00\,\pm 0.50 & $ $ \\
+      & $c_\text{T1} = $  & 36.00\,\pm 0.50 & $ $ \\
+   T2 & $r_\text{T2} = $  & 12.85\,\pm 0.25 & 0.69\,\pm 0.04 \\
+      & $h_\text{T2} = $  & 13.30\,\pm 0.50 & $ $ \\
+   T3 & $r1_\text{T3} = $ & 15.15\,\pm 0.25 & 3.41\,\pm 0.08 \\
+      & $r2_\text{T3} = $ & 19.70\,\pm 0.25 & $ $ \\
+      & $h_\text{T3} = $  & 35.50\,\pm 0.50 & $ $ \\
+   A1 & $r_\text{A1} = $  &  8.00\,\pm 0.25 & 0.21\,\pm 0.02 \\
+   A2 & $r_\text{A2} = $  &  8.00\,\pm 0.25 & 0.86\,\pm 0.05 \\
+      & $h_\text{A2} = $  & 42.80\,\pm 0.50 & $ $ \\
+   A3 & $r_\text{A3} = $  &  5.80\,\pm 0.25 & 0.08\,\pm 0.01 \\
+   A4 & $r_\text{A4} = $  &  7.15\,\pm 0.25 & 0.69\,\pm 0.05 \\
+      & $h_\text{A4} = $  & 42.80\,\pm 0.50 & $ $ \\
+   A5 & $r_\text{A5} = $  &  4.75\,\pm 0.25 & 0.05\,\pm 0.01 \\
+   A6 & $r_\text{A6} = $  &  7.75\,\pm 0.25 & 0.50\,\pm 0.03 \\
+      & $h_\text{A6} = $  & 26.70\,\pm 0.50 & $ $ \\
+   B1 & $r_\text{B1} = $  &  8.40\,\pm 0.25 & 0.25\,\pm 0.02 \\
+   B2 & $r_\text{B2} = $  &  9.10\,\pm 0.25 & 1.47\,\pm 0.08 \\
+      & $h_\text{B2} = $  & 56.40\,\pm 0.50 & $ $ \\
+   B3 & $r_\text{B3} = $  &  6.25\,\pm 0.25 & 0.10\,\pm 0.01 \\
+   B4 & $r_\text{B4} = $  &  7.35\,\pm 0.25 & 1.13\,\pm 0.08 \\
+      & $h_\text{B4} = $  & 66.30\,\pm 0.50 & $ $ \\
+   B5 & $r_\text{B5} = $  &  4.60\,\pm 0.25 & 0.04\,\pm 0.01 \\
+   B6 & $a_\text{B6} = $  &  5.40\,\pm 0.25 & 0.25\,\pm 0.02 \\
+      & $b_\text{B6} = $  & 42.30\,\pm 0.50 & $ $ \\
+      & $c_\text{B6} = $  & 10.80\,\pm 0.50 & $ $ \\
   \bottomrule
   \end{tabular}
   \end{table}
 
   Die Volumina ergeben sich nach den Formeln in Tabelle \ref{tab:Formeln}.
-  Zur Massenbestimmung der einzelnen Bestandteil werden die Teilvolumina $V_i$ zum
-  Gesamtvolumen $V = \SI{26.63e-5}{\meter³}$ aufsummiert.
-  Dabei ist darauf zu achten, dass die Komonenten der Arme und Beine jeweils doppelt
+  Zur Massenbestimmung der einzelnen Bestandteile werden die Teilvolumina $V_\text{i}$ 
+  zum Gesamtvolumen $V = \SI{26.63e-5}{\meter³}$ aufsummiert.
+  Dabei ist darauf zu achten, dass die Komponenten der Arme und Beine jeweils doppelt
   vorhanden sind. Mit der Gesamtmasse
   $m = \SI{0.1626}{\kilo\gram}$ ergibt sich die Dichte
 
@@ -338,11 +339,11 @@ Puppe parallel zum Oberkörper.
   Komponenten nach Umstellen von \eqref{eqn:Dichte} zu
 
   \begin{equation}
-    m_i = \rho \cdot V
+    m_\text{i} = \rho \cdot V
   \end{equation}
 
   Mit diesen Einzelmassen lassen sich nach Tabelle \ref{tab:Formeln} die Trägheitsmomente
-  der einzelnen Körper bestimmen, welche in Tabelle ... aufgelistet sind.
+  der einzelnen Körper bestimmen, welche in Tabelle \ref{tab:Trägheit} aufgelistet sind.
 
   \begin{table}
     \centering
@@ -353,12 +354,13 @@ Puppe parallel zum Oberkörper.
     \toprule
     $\text{Figur}$ & $V$ & $I$ \\
     \midrule
-     $\text{Kugel}$         & $ = \frac{4}{3} \pi r^3 $                                        & $ = \frac{2}{5} m r^2 $ \\                        
-     $\text{Halbkugel}$     & $ = \frac{2}{3} \pi r^3 $                                        & $ = \frac{2}{5} m r^2 $ \\
-     $\text{Zylinder um h}$ & $ = \pi r^2 \cdot h $                                            & $ = \frac{1}{2} m r^2 $ \\
-     $\text{Zylinder um r}$ & $ = \pi r^2 \cdot h $                                            & $ = \frac{m}{4} \left(r^2 + \frac{h^2}{3} \right)$ \\
-     $\text{Quader}$        & $ = a\cdot b \cdot c$                                            & $ = \frac{3}{10} m \frac{r_g^5 - r_k^5}{r_g^3 - r_k^3}$ \\
-     $\text{Kegelstumpf}$   & $ = \frac{h \pi}{3}\cdot \left(r_g^2 + r_g r_k + r_k^2 \right) $ & $ = \frac{1}{12} m \left(b^2 + c^2 \right)$ \\
+     $\text{Kugel}$         & $ = \frac{4}{3} \pi r^3 $ & $ = \frac{2}{5} m r^2 $ \\                        
+     $\text{Halbkugel}$     & $ = \frac{2}{3} \pi r^3 $ & $ = \frac{2}{5} m r^2 $ \\
+     $\text{Zylinder um h}$ & $ = \pi r^2 \cdot h $     & $ = \frac{1}{2} m r^2 $ \\
+     $\text{Zylinder um r}$ & $ = \pi r^2 \cdot h $     & $ = \frac{m}{4} \left(r^2 + \frac{h^2}{3} \right)$ \\
+     $\text{Quader}$        & $ = a\cdot b \cdot c$     & $ = \frac{3}{10} m \frac{r_\text{g}^5 - r_\text{k}^5}{r_\text{g}^3 - r_\text{k}^3}$ \\
+     $\text{Kegelstumpf}$   & $ = \frac{h \pi}{3}\cdot \left(r_\text{g}^2 + r_\text{g} r_\text{k}
+      + r_\text{k}^2 \right) $ & $ = \frac{1}{12} m \left(b^2 + c^2 \right)$ \\
     \bottomrule
     \end{tabular}
     \end{table}
@@ -370,47 +372,47 @@ Puppe parallel zum Oberkörper.
       \sisetup{table-format=2.1}
       \begin{tabular}{c c c c}
       \toprule
-      $\text{Figur}$ & $I_i \,/\, \SI{e-7}{\kilo\gram\meter²}$ & $a_i \,/\, \si{\milli\meter}$ 
+      $\text{Figur}$ & $I_\text{i} \,/\, \SI{e-7}{\kilo\gram\meter²}$ & $a_\text{i} \,/\, \si{\milli\meter}$ 
       & $I_\text{i,Steiner} \,/\, \SI{e-7}{\kilo\gram\meter²}$ \\
       \midrule
-       $K1$ &  10.70\,\pm 0.80                  & -              & - \\
-       $K2$ &  12.90\,\pm 0.70                  & -              & - \\
-       $K3$ &   0.30\,\pm 0.05                  & -              & - \\
-       $T1$ & 103.00\,\pm 4.00                  & -              & - \\
-       $T2$ &   3.50\,\pm 0.30                  & -              & - \\
-       $T3$ &  32.50\,\pm 1.40                  & -              & - \\
-       $B1$ &   0.43\,\pm 0.06                  &  12.5\,\pm 1.5 &   2.80\,\pm  0.60 \\
-       $B2$ &   3.70\,\pm 0.04                  &  16.0\,\pm 1.5 &  27.00\,\pm  5.00 \\
-       $B3$ &   0.10\,\pm 0.02                  &  13.0\,\pm 1.5 &   1.15\,\pm  0.28 \\
-       $B4$ &   1.86\,\pm 0.24                  &  19.0\,\pm 1.5 &  27.00\,\pm  4.00 \\
-       $B5$ &   0.02\,\pm 0.01                  &  14.0\,\pm 1.5 &   0.51\,\pm  0.13 \\
-       $B6$ &   2.39\,\pm 0.25                  &  15.0\,\pm 1.5 &   5.80\,\pm  0.90 \\
-       $A1$ &   0.34\,\pm 0.05                  &  30.0\,\pm 1.5 &  12.10\,\pm  1.60 \\
-       $A2$ &   1.68\,\pm 0.21                  &  27.5\,\pm 1.5 &  41.00\,\pm  5.00 \\
-       $A3$ &   0.07\,\pm 0.01                  &  27.5\,\pm 1.5 &   3.80\,\pm  0.60 \\
-       $A4$ &   1.07\,\pm 0.15                  &  30.0\,\pm 1.5 &  39.00\,\pm  5.00 \\
-       $A5$ &   0.03\,\pm 0.01                  &  30.0\,\pm 1.5 &   2.50\,\pm  0.50 \\
-       $A6$ &   0.92\,\pm 0.12                  &  30.0\,\pm 1.5 &  28.60\,\pm  3.40 \\
-       $A1_\text{gestreckt} $ &  0.34\,\pm 0.05 &  30.0\,\pm 1.5 &  12.10\,\pm  1.60 \\
-       $A2_\text{gestreckt} $ &  8.90\,\pm 0.06 &  59.0\,\pm 1.5 & 192.00\,\pm 15.00 \\
-       $A3_\text{gestreckt} $ &  0.07\,\pm 0.01 &  83.0\,\pm 1.5 &  34.00\,\pm  5.00 \\
-       $A4_\text{gestreckt} $ &  6.90\,\pm 0.60 & 108.0\,\pm 1.5 & 500.00\,\pm 40.00 \\
-       $A5_\text{gestreckt} $ &  0.03\,\pm 0.01 & 131.0\,\pm 1.5 &  47.00\,\pm  8.00 \\
-       $A6_\text{gestreckt} $ &  2.29\,\pm 0.21 & 146.5\,\pm 1.5 & 660.00\,\pm 50.00 \\
+       K1 &  10.70\,\pm 0.80                  & -              & - \\
+       K2 &  12.90\,\pm 0.70                  & -              & - \\
+       K3 &   0.30\,\pm 0.05                  & -              & - \\
+       T1 & 103.00\,\pm 4.00                  & -              & - \\
+       T2 &   3.50\,\pm 0.30                  & -              & - \\
+       T3 &  32.50\,\pm 1.40                  & -              & - \\
+       B1 &   0.43\,\pm 0.06                  &  12.5\,\pm 1.5 &   2.80\,\pm  0.60 \\
+       B2 &   3.70\,\pm 0.04                  &  16.0\,\pm 1.5 &  27.00\,\pm  5.00 \\
+       B3 &   0.10\,\pm 0.02                  &  13.0\,\pm 1.5 &   1.15\,\pm  0.28 \\
+       B4 &   1.86\,\pm 0.24                  &  19.0\,\pm 1.5 &  27.00\,\pm  4.00 \\
+       B5 &   0.02\,\pm 0.01                  &  14.0\,\pm 1.5 &   0.51\,\pm  0.13 \\
+       B6 &   2.39\,\pm 0.25                  &  15.0\,\pm 1.5 &   5.80\,\pm  0.90 \\
+       A1 &   0.34\,\pm 0.05                  &  30.0\,\pm 1.5 &  12.10\,\pm  1.60 \\
+       A2 &   1.68\,\pm 0.21                  &  27.5\,\pm 1.5 &  41.00\,\pm  5.00 \\
+       A3 &   0.07\,\pm 0.01                  &  27.5\,\pm 1.5 &   3.80\,\pm  0.60 \\
+       A4 &   1.07\,\pm 0.15                  &  30.0\,\pm 1.5 &  39.00\,\pm  5.00 \\
+       A5 &   0.03\,\pm 0.01                  &  30.0\,\pm 1.5 &   2.50\,\pm  0.50 \\
+       A6 &   0.92\,\pm 0.12                  &  30.0\,\pm 1.5 &  28.60\,\pm  3.40 \\
+       $ \text{A1}_\text{gestreckt} $ &  0.34\,\pm 0.05 &  30.0\,\pm 1.5 &  12.10\,\pm  1.60 \\
+       $ \text{A2}_\text{gestreckt} $ &  8.90\,\pm 0.06 &  59.0\,\pm 1.5 & 192.00\,\pm 15.00 \\
+       $ \text{A3}_\text{gestreckt} $ &  0.07\,\pm 0.01 &  83.0\,\pm 1.5 &  34.00\,\pm  5.00 \\
+       $ \text{A4}_\text{gestreckt} $ &  6.90\,\pm 0.60 & 108.0\,\pm 1.5 & 500.00\,\pm 40.00 \\
+       $ \text{A5}_\text{gestreckt} $ &  0.03\,\pm 0.01 & 131.0\,\pm 1.5 &  47.00\,\pm  8.00 \\
+       $ \text{A6}_\text{gestreckt} $ &  2.29\,\pm 0.21 & 146.5\,\pm 1.5 & 660.00\,\pm 50.00 \\
       \bottomrule
       \end{tabular}
       \end{table}
 
       Da die Schwerpunkte der Komponenten der Arme und Beine nicht auf der Drehachse liegen,
       muss für diese der Satz von Steiner nach \eqref{eqn:Steiner} beachtet werden. 
-      Nach diesem addiert sich zu jedem Trägheitsmoment das Produkt von Masse $m_i$ und
-      Abstand zwischen Schwerpunkt und Drehachse  zum Quadrat $a_i^2$ zum Trägheitsmoment
+      Nach diesem addiert sich zu jedem Trägheitsmoment das Produkt von Masse $m_\text{i}$ und
+      Abstand zwischen Schwerpunkt und Drehachse  zum Quadrat $a_\text{i}^2$ zum Trägheitsmoment
       auf der Drehachse. Somit ergeben sich nach Tabelle \ref{tab:Trägheit} für die Komponenten
-      mit Abständen $a_i$ die Trägheitsmomente $I_\text{i,Steiner}$.
+      mit Abständen $a_\text{i}$ die Trägheitsmomente $I_\text{i,Steiner}$.
       
       Diese summieren sich für Position 1 und 2 zu
 
       \begin{align*}
-        I_1 &= \SI{5.45+-0.19 e-5}{\kilo\gram\meter²} \\
-        I_2 &= \SI{31.8+-1.2 e-5}{\kilo\gram\meter²}
+        I_\text{1,theo} &= \SI{5.45+-0.19 e-5}{\kilo\gram\meter²} \\
+        I_\text{2,theo} &= \SI{31.8+-1.2 e-5}{\kilo\gram\meter²}
       \end{align*}

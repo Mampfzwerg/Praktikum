@@ -258,23 +258,25 @@ Ia6 = Ia6 + ma6 * a6**2
 Ia = Ik + 2 * (Ia1 + Ia2 + Ia3 + Ia4 + Ia5 + Ia6)
 Ic = Ik + 2 * (Ic1 + Ic2 + Ic3 + Ic4 + Ic5 + Ic6)
 
-print(Ia, Ic)
+#print(Ia, Ic)
 
 #Zeitmessung
 
-t1 = ufloat(3.22, 0.5)
-t2 = ufloat(3.16, 0.5)
-t3 = ufloat(3.22, 0.5)
-t4 = ufloat(3.08, 0.5)
-t5 = ufloat(3.17, 0.5)
-t6 = ufloat(4.33, 0.5)
-t7 = ufloat(4.26, 0.5)
-t8 = ufloat(4.20, 0.5)
-t9 = ufloat(4.57, 0.5)
-t10 = ufloat(4.51, 0.5)
+t1 = ufloat(3.22, 0.5) / 5
+t2 = ufloat(3.16, 0.5) / 5
+t3 = ufloat(3.22, 0.5) / 5
+t4 = ufloat(3.08, 0.5) / 5
+t5 = ufloat(3.17, 0.5) / 5
+t6 = ufloat(4.33, 0.5) / 5
+t7 = ufloat(4.26, 0.5) / 5
+t8 = ufloat(4.20, 0.5) / 5
+t9 = ufloat(4.57, 0.5) / 5
+t10 = ufloat(4.51, 0.5) / 5
 
 x = np.array([t1, t2, t3, t4, t5])
 y = np.array([t6, t7, t8, t9, t10])
+
+#print(x, y)
 
 T1 = np.mean(x)
 T2 = np.mean(y)
@@ -285,3 +287,5 @@ I1 = (T1**2 * D) / (4 * np.pi**2)
 I2 = (T2**2 * D) / (4 * np.pi**2)
 
 #print(I1, I2)
+
+print(I1 / Ia, I2 / Ic)
