@@ -288,4 +288,6 @@ I2 = (T2**2 * D) / (4 * np.pi**2)
 
 #print(I1, I2)
 
-print(I1 / Ia, I2 / Ic)
+#print(I1 / Ia, I2 / Ic)
+print((Ia-I1)/Ia*100)
+print((Ic-I2)/Ic*100)
