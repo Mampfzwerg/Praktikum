@@ -32,7 +32,7 @@ $\text{Winkel} \,/\, °$ & $\text{Winkel} \,/\, \text{rad}$ & $F \,/\, \si{\mill
 
 Anhand von Formel \eqref{eqn:Winkelrichtgröße} ist zu erkennen, dass die Winkelrichtgröße $D$ 
 lediglich ein Proportionalitätsfaktor zwischen Drehmoment $M$ und Winkel $\varphi$ ist. Zur Ermittlung 
-dieser Größe wird eine lineare Regressions mittels python und matplotlib durchgeführt. 
+dieser Größe wird eine lineare Regression mittels python und matplotlib durchgeführt. 
 Das Ergebnis ist in Abbildung \ref{fig:plot1} zu sehen. 
 
 
@@ -61,7 +61,7 @@ D = \SI{23.34+-1.43}{\milli\newton\meter}
 
 Zur Bestimmung des Eigenträgheitsmoments der Drillachse wird die Periodendauer $T$ in Abhängigkeit 
 des Abstands $a$ der Gewichte zur Drillachse gemessen. Die erhaltenen Daten sind in Tabelle 
-\ref{tab:Messdaten2} aufgeführt. Dabei ist $T_7$ die gemessene Dauer für 7 Perioden.
+\ref{tab:Messdaten2} aufgeführt. Dabei ist $T$ die gemessene Dauer für 7 Perioden.
 
 \begin{table}
 \centering
@@ -137,8 +137,8 @@ bestätigen. Die Geradensteigung
 s = \SI{905.17+-54.89}{\second²\per\meter²}
 \end{equation*}
 
-passt ebenfalls zu dem theoretischen Wert, der sich mit der Gesamtmasse der Gewichte  $m = 2\cdot 
-\SI{0.2218}{\kilo\gram}$ eingesetzt in die Definition von $s$ in Formel \eqref{eqn:Regression} zu 
+passt ebenfalls zu dem theoretischen Wert, der sich ,mit der Gesamtmasse der Gewichte  $m = 2\cdot 
+\SI{0.2218}{\kilo\gram}$ in die Definition von $s$ in Formel \eqref{eqn:Regression} eingesetzt, zu 
 dem Wert:
 
 \begin{equation*}
@@ -198,7 +198,7 @@ Dabei ergeben sich die Fehler der Trägheitsmomente zu:
 
 Nun werden die theoretischen Trägheitsmomente der beiden Körper berechnet, um die 
 experimentell ermittelten Daten mit diesen zu vergleichen. Die Trägheitsmomente 
-der Kugel, bzw. des Zylinders werden hierbei mit den bekannten Formeln berechnet:
+der Kugel bzw. des Zylinders werden hierbei mit den bekannten Formeln berechnet:
 
 \begin{align*}
 I_\text{K,theo} &= \frac{2}{5} mR²\\
@@ -225,8 +225,14 @@ Die Trägheitsmomente sollen durch eine Zeitmessung und das Umstellen der Formel
 \end{equation}
 
 bestimmt werden. In Tabelle \ref{tab:Periodendauer} sind die gemessenen Periodendauern $T_1$ für eine Puppe mit anliegenden und
-$T_2$ für eine Puppe mit ausgestreckten Armen aufgelistet. In beiden Positionen befinden sich die Beine der 
-Puppe parallel zum Oberkörper.
+$T_2$ für eine Puppe mit ausgestreckten Armen aufgelistet. Diese wurden fürjeweils $7$ Schwingungen gemessen.
+In beiden Positionen befinden sich die Beine der Puppe parallel zum Oberkörper.
+Daraus ergeben sich die Trägheitsmomente $I_1$, $I_2$ für die Positionen 1 und 2 der Puppe.
+
+\begin{align*}
+  I_\text{1,mess} &= \SI{2.4+-0.4 e-4}{\kilo\gram\meter²} \\
+  I_\text{2,mess} &= \SI{4.5+-0.5 e-4}{\kilo\gram\meter²}
+\end{align*}
 
 \begin{table}
   \centering
@@ -247,13 +253,6 @@ Puppe parallel zum Oberkörper.
   \end{tabular}
   \end{table}
 
-  Daraus ergeben sich die Trägheitsmomente $I_1$, $I_2$ für die Positionen 1 und 2 der Puppe.
-
-  \begin{align*}
-    I_\text{1,mess} &= \SI{2.4+-0.4 e-4}{\kilo\gram\meter²} \\
-    I_\text{2,mess} &= \SI{4.5+-0.5 e-4}{\kilo\gram\meter²}
-  \end{align*}
-
   \subsubsection{Theoretische Trägheitsmomente}
 
   \begin{figure}
@@ -272,10 +271,9 @@ Puppe parallel zum Oberkörper.
   (Halb-)Kugeln - als (Halb-)Kreise dargestellt und mit angegebenen Radien $r$ -, 
   Zylinder - als Rechtecke dargestellt und mit angegebenen Radien $r$ und Höhen $h$ -, 
   Quader - als Rechtecke dargestellt und mit angegbenen Seitenlängen $a$, $b$, $c$ -
-  und Kegelstümpfe - als Trapeze dargestellt und mit angebenen Radien $r1$ und $r2$.
-
+  und Kegelstümpfe - als Trapeze dargestellt und mit angebenen Radien $r1$ und $r2$. 
   Die Abmessungen und resultierneden Volumina $V$ dieser Figuren sind in Tabelle
-  \ref{tab:Abmessungen} aufgelistet.
+  \ref{tab:Abmessungen} aufgelistet. \\
 
 \begin{table}
   \centering
@@ -409,7 +407,6 @@ Puppe parallel zum Oberkörper.
       Abstand zwischen Schwerpunkt und Drehachse  zum Quadrat $a_\text{i}^2$ zum Trägheitsmoment
       auf der Drehachse. Somit ergeben sich nach Tabelle \ref{tab:Trägheit} für die Komponenten
       mit Abständen $a_\text{i}$ die Trägheitsmomente $I_\text{i,Steiner}$.
-      
       Diese summieren sich für Position 1 und 2 zu
 
       \begin{align*}
