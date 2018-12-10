@@ -11,4 +11,4 @@
 \contentsline {subsection}{\numberline {3.4}Trägheitsmoment einer Puppe in zwei Stellungen}{9}{subsection.3.4}
 \contentsline {subsubsection}{\numberline {3.4.1}Gemessene Trägheitsmomente}{9}{subsubsection.3.4.1}
 \contentsline {subsubsection}{\numberline {3.4.2}Theoretische Trägheitsmomente}{10}{subsubsection.3.4.2}
-\contentsline {section}{\numberline {4}Diskussion}{14}{section.4}
+\contentsline {section}{\numberline {4}Diskussion}{15}{section.4}
