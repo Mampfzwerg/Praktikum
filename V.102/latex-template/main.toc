@@ -1,0 +1,9 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Theorie}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Bestimmung des Schubmoduls $G$}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Bestimmung des magnetischen Momentes des Permanentmagneten}{5}{subsection.1.2}
+\contentsline {section}{\numberline {2}Durchführung}{6}{section.2}
+\contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
+\contentsline {section}{\numberline {4}Diskussion}{6}{section.4}

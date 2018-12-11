@@ -33,8 +33,9 @@ untersucht, wie sie in Abbildung \ref{fig:abb1}, dargestellt sind.
 \begin{figure}
     \centering
     \includegraphics[scale=0.2]{content/Biegungen.png}
-    \caption{Biegung eines einseitig eingespannten Stabes links.\newline
-    Biegung eines beidseitig eingespannten Stabes rechts. [1]}
+    \caption{Biegung eines einseitig eingespannten elastischen Stabes links.\newline
+    Biegung eines beidseitig eingespannten Stabes rechts. [1]\newline
+    Dabei wird durch die Strichelung die neutrale Faser makiert, die ihre Länge beibehält.}
     \label{fig:abb1}
 \end{figure}
 
@@ -61,7 +62,7 @@ aufgrund der Elastizitäts des Körpers, zu Normalspannungen, die sich zu einem
 zu $M_\text{F}$ entgegengesetzen Drehmoment $M_\sigma$ aufsummieren:
 
 \begin{equation*}
-    M_\sigma = \int_Q y \sigma(y) \; \symup{d}q
+    M_\sigma = \int_Q y \sigma(y) \; \symup{d}q.
 \end{equation*}
 
 Dabei beschreibt $y$ den Abstand des Flächenelements $\symup{d}q$ zur neutralen Faser.
@@ -87,7 +88,7 @@ Damit ergibt sich für die Durchbiegung
 mit dem Flächenträgheitsmoment
 
 \begin{equation}
-    \symbf{I} = \int_Q y^2 \; \symup{d} q(y)
+    \symbf{I} = \int_Q y^2 \; \symup{d} q(y).
     \label{eqn:Traegheit}
 \end{equation}
 
@@ -123,7 +124,7 @@ sich demnach:
 \symbf{I}_\text{Q} = \int_\frac{-a}{2}^\frac{a}{2} \int_\frac{-a}{2}^\frac{a}{2} y² \symup{d}y \symup{d}z 
 = \int_\frac{-a}{2}^\frac{a}{2} \frac{2}{3} \frac{a³}{8} \symup{d}z 
 = a \cdot \frac{2}{3} \frac{a³}{8} 
-= \frac{a⁴}{12}
+= \frac{a⁴}{12}.
 \label{eqn:Quadratisch}
 \end{equation}
 
@@ -134,7 +135,7 @@ Verwendung von Polarkoordinaten:
 \symbf{I}_\text{K} &= \int_0^2\pi \int_0^\frac{d}{2} (r \cdot \sin(\varphi))²\cdot \symup{d}r \symup{d}\varphi
 = \frac{1}{4}\left(\frac{d}{2}\right)⁴ \int_0^2\pi \sin(\varphi)² \symup{d}\varphi\\
 &= \left.\frac{d⁴}{64} \frac{\varphi}{2} - \frac{\sin(\varphi) \cos{\varphi}}{2} \right|_0^2\pi
-= \frac{\pi}{64} d⁴
+= \frac{\pi}{64} d⁴.
 \label{eqn:Rund}
 \end{align}
 

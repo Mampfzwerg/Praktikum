@@ -12,5 +12,5 @@
 \contentsline {subsubsection}{\numberline {3.1.1}Stab mit quadratischem Querschnitt}{6}{subsubsection.3.1.1}
 \contentsline {subsubsection}{\numberline {3.1.2}Stab mit zylindrischem Querschnitt}{9}{subsubsection.3.1.2}
 \contentsline {subsection}{\numberline {3.2}Bestimmung des Elasitzitätsmodul eines beidseitig aufgelegten Stabes}{11}{subsection.3.2}
-\contentsline {section}{\numberline {4}Diskussion}{14}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{15}{section.5}
+\contentsline {section}{\numberline {4}Diskussion}{15}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{16}{section.5}

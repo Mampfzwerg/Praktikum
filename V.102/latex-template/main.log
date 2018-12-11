@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.10.3)  11 DEC 2018 21:28
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.10.3)  11 DEC 2018 21:02
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -32,7 +32,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.119 seconds (./header.tex
+luaotfload | main : initialization completed in 0.123 seconds (./header.tex
 (/home/sara/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/home/sara/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -902,24 +902,24 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 df
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	table: 0x486ba50
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            synonyms	table: 0x5fd76f0
+(polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	table: 0x486bc20
 (polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            synonyms	table: 0x5fd78c0
+(polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -2359,125 +2359,114 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
  [2
 
 ] (./content/theorie.tex
-<content/Biegungen.png, id=49, 1304.875pt x 538.01pt>
-File: content/Biegungen.png Graphic file (type png)
-<use content/Biegungen.png>
-Package luatex.def Info: content/Biegungen.png  used on input line 35.
-(luatex.def)             Requested size: 260.97038pt x 107.60008pt.
- [3<./content/Biegungen.png>] [4])
-(./content/durchfuehrung.tex
-<content/aufbau.png, id=70, 1194.4625pt x 691.58376pt>
-File: content/aufbau.png Graphic file (type png)
-<use content/aufbau.png>
-Package luatex.def Info: content/aufbau.png  used on input line 9.
-(luatex.def)             Requested size: 238.88826pt x 138.3143pt.
-) (./content/auswertung.tex [5<./content/aufbau.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 4--6
+
+ []
+
+<content/Mu.png, id=36, 709.65125pt x 337.26pt>
+File: content/Mu.png Graphic file (type png)
+<use content/Mu.png>
+Package luatex.def Info: content/Mu.png  used on input line 48.
+(luatex.def)             Requested size: 212.897pt x 101.17877pt.
+[3]
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 18.
+(Font)              scaled to size 12.00018pt on input line 71.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 8.00012pt on input line 71.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 6.00009pt on input line 71.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 18.
-<content/plot1.pdf, id=85, 462.52798pt x 346.89601pt>
-File: content/plot1.pdf Graphic file (type pdf)
-<use content/plot1.pdf>
-Package luatex.def Info: content/plot1.pdf  used on input line 65.
-(luatex.def)             Requested size: 370.02287pt x 277.51718pt.
- [6] [7] [8<./content/plot1.pdf>]
-<content/plot2.pdf, id=154, 462.52798pt x 346.89601pt>
-File: content/plot2.pdf Graphic file (type pdf)
-<use content/plot2.pdf>
-Package luatex.def Info: content/plot2.pdf  used on input line 157.
-(luatex.def)             Requested size: 370.02287pt x 277.51718pt.
- [9] [10<./content/plot2.pdf>]
-<content/plot3.pdf, id=220, 462.52798pt x 346.89601pt>
-File: content/plot3.pdf Graphic file (type pdf)
-<use content/plot3.pdf>
-Package luatex.def Info: content/plot3.pdf  used on input line 251.
-(luatex.def)             Requested size: 370.02287pt x 277.51718pt.
-<content/plot4.pdf, id=221, 462.52798pt x 346.89601pt>
-File: content/plot4.pdf Graphic file (type pdf)
-<use content/plot4.pdf>
-Package luatex.def Info: content/plot4.pdf  used on input line 259.
-(luatex.def)             Requested size: 370.02287pt x 277.51718pt.
- [11] [12]
-[13<./content/plot3.pdf>] [14<./content/plot4.pdf>]) (./content/diskussion.tex) [15]
+(Font)              scaled to size 11.99982pt on input line 71.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 7.99988pt on input line 71.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 5.99991pt on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 71.
+
+<content/Torsion.png, id=47, 454.69875pt x 487.8225pt>
+File: content/Torsion.png Graphic file (type png)
+<use content/Torsion.png>
+Package luatex.def Info: content/Torsion.png  used on input line 95.
+(luatex.def)             Requested size: 136.41068pt x 146.34787pt.
+[4<./content/Mu.png>]
+<content/Magnet.png, id=61, 827.09pt x 376.40625pt>
+File: content/Magnet.png Graphic file (type png)
+<use content/Magnet.png>
+Package luatex.def Info: content/Magnet.png  used on input line 162.
+(luatex.def)             Requested size: 248.1289pt x 112.92273pt.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 163.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 163.
+ [5<./content/Torsion.png>]) (./content/durchfuehrung.tex) (./content/auswertun
+g.tex
+
+LaTeX Warning: File `plot.pdf' not found on input line 6.
+
+
+! Package luatex.def Error: File `plot.pdf' not found: using draft setting.
+
+See the luatex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6   \includegraphics{plot.pdf}
+                              
+? 
+) (./content/diskussion.tex)
 
 LaTeX Warning: Empty bibliography on input line 23.
 
-
-Overfull \hbox (31.97517pt too wide) in paragraph at lines 27--34
-\TU/lmr/m/n/10.95 [2]:  []$\TU/lmtt/m/n/10.95 https://vergleichsspannung.de/glo
-ssar/e-[]modul/$[] \TU/lmr/m/it/10.95 (Wer-te ent-nom-men am 01.12.2018) 
- []
-
-
-Overfull \hbox (12.06923pt too wide) in paragraph at lines 27--34
-\TU/lmr/m/n/10.95 [3]:  Wi-ki-books. []$\TU/lmtt/m/n/10.95 https://de.wikibooks
-.org/wiki/Tabellensammlung_Chemie/_Dichte_
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--34
-
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
-[16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
+[6<./content/Magnet.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./main.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 26
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
-
-
-Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: E575A6F0EDE3F816A3689E6247D911FC;12706
-(rerunfilecheck)             After:  AE23D0109EDA80E9F0D871537F881801;15161.
-
-Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: 7BDFD95C246433DB032D05C80F3BB985;1428
-(rerunfilecheck)             After:  06C701E1AA74FEC95287A97517AE21A7;1428.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: 97857F576C09CFF9F1DE3E7CE28F3C9B;5590.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: AAC9FBFD4F1F7B2A4D8E0B3C5B15B979;643.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 42704 strings out of 494407
+ 42093 strings out of 494407
  100000,1648299 words of node,token memory allocated
- 702 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 26 attribute, 77 glue_spec
-, 26 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:3,2:1973,3:183,4:37,5:235,6:35,7:6393,8:114,9:698,10:18,11:377
-
- 45432 multiletter control sequences out of 65536+600000
- 316 fonts using 116939007 bytes
- 61i,21n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 690 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 28 attribute, 76 glue_spec
+, 28 attribute_list, 1 write nodes
+   avail lists: 1:3,2:313,3:107,4:36,5:258,6:21,7:3339,8:62,9:147,10:15,11:391
+ 45028 multiletter control sequences out of 65536+600000
+ 142 fonts using 51223163 bytes
+ 61i,6n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-reg
 ular.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmr
-oman10-italic.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/publ
-ic/lm-math/latinmodern-math.otf></home/sara/.local/texlive/2018/texmf-dist/fonts
-/opentype/public/lm/lmroman8-regular.otf></home/sara/.local/texlive/2018/texmf-d
-ist/fonts/opentype/public/lm/lmroman10-bold.otf></home/sara/.local/texlive/2018/
-texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/sara/.local
-/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></ho
-me/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-regula
-r.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroma
-n12-regular.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public
-/lm/lmsans10-bold.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/
-public/lm/lmroman12-bold.otf>
-Output written on main.pdf (16 pages, 252004 bytes).
+oman8-regular.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/publ
+ic/lm/lmroman10-bold.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/openty
+pe/public/lm-math/latinmodern-math.otf></home/sara/.local/texlive/2018/texmf-dis
+t/fonts/opentype/public/lm-math/latinmodern-math.otf></home/sara/.local/texlive/
+2018/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/sara/.loca
+l/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/
+sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><
+/home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-bol
+d.otf>
+Output written on main.pdf (6 pages, 158250 bytes).
 
-PDF statistics: 476 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 131072)
- 105 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 158 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 131072)
+ 49 words of extra memory for PDF output out of 10000 (max. 100000000)
 
