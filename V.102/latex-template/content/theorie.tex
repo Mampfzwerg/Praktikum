@@ -55,10 +55,12 @@ der Zusammenhang:
 
 \begin{equation}
 E = 2G(\mu +1) \leftrightarrow \mu = \frac{E}{2G} - 1
+\label{eqn:Mu}
 \end{equation}
 
 \begin{equation}
-E = 3(1-2\mu)Q \leftrightarrow Q = \frac{E}{3(1-2\mu)} \leftrightarrow Q = \frac{EG}{9G-\frac{3}{2}E}
+E = 3(1-2\mu)Q \leftrightarrow Q = \frac{E}{3(1-2\mu)}
+\label{eqn:Q}
 \end{equation}
 
 Bei Proben, die deutlich länger als breit sind, also $L>>B$ lassen sich der 
@@ -84,9 +86,9 @@ Durchmesser hinweg, ergibt die Notwendigkeit den Körper in Holzylinder mit
 der infinitesimalen Dicke $dr$ und dem Radius $r$ zu zerlegen. 
 Für das Drehmoment $M$ ergibt sich dadurch schließlich zu: 
 
-\begin{equation}
+\begin{equation*}
 M = \int_0^R 2\pi \frac{G}{L} \varphi r³ dr = \frac{\pi G R⁴ \varphi}{2 L}.
-\end{equation}
+\end{equation*}
 
 Dabei ist R der Radius des Drahtes, L die Länge und $\varphi$ der Torsionswinkel. 
 
@@ -99,9 +101,9 @@ Dabei ist R der Radius des Drahtes, L die Länge und $\varphi$ der Torsionswinke
 
 Somit lautet die Richtgröße $D$:
 
-\begin{equation}
+\begin{equation*}
 D = \frac{\pi G R⁴}{2 L}.
-\end{equation}
+\end{equation*}
 
 Angesprochene Nachwirkungen werden vermieden durch eine Messmethode, 
 bei der die Spannung eine periodische Funktion der Zeit ist. Dafür 
@@ -119,9 +121,10 @@ T = 2\pi \sqrt{\frac{\theta}{D}}
 Dabei bezeichnet $\theta$ das Trägheitsmoment der Kugel. Dieses ist im 
 Allgemeinem gegeben durch: 
 
-\begin{equation*}
+\begin{equation}
 \theta_\text{K} = \frac{2}{5} m_\text{K}R_\text{K}²
-\end{equation*}
+\label{eqn:Kugel}
+\end{equation}
 
 $m_\text{K}$ ist dabei gegeben als Masse der Kugel und $R_\text{K}$ als Radius
 der Kugel. Wird $\theta_\text{K}$ und $D$ in \eqref{eqn:Periode} eingesetzt ergibt sich: 
@@ -134,6 +137,7 @@ Umformen zu G führt zu:
 
 \begin{equation}
 G = \frac{16\pi m_\text{K} R_\text{K}² L}{5T²R⁴}
+\label{eqn:Schubmodul}
 \end{equation}
 
 \subsection{Bestimmung des magnetischen Momentes des Permanentmagneten}
@@ -151,9 +155,9 @@ Kräfte, was in Abbildung \ref{fig:Magnet} veranschaulicht wird. Diese Kräfte s
 durch das unterschiedliche Vorzeichen von $p$. Es wirkt also ein magnetisches 
 Drehmoment, dass betraglich durch
 
-\begin{equation}
+\begin{equation*}
 M_\text{mag} = m B \sin{\gamma}
-\end{equation}
+\end{equation*}
 
 gegeben ist. 
 
@@ -169,5 +173,6 @@ und lässt sich ebenfalls durch einen Cosinusansatz lösen. Daraus ergibt sich d
 bei aktivierten Magnetfeld und daraus widerrum das magnetische Moment $m$.
 
 \begin{equation}
-T = 2\pi \sqrt{\frac{\theta}{mB+D}} \leftrightarrow m = \frac{4\pi²\theta}{BT²}-\frac{D}{B}
+T = 2\pi \sqrt{\frac{\theta}{mB+D}} 
+\label{eqn:PeriodeM}
 \end{equation}
