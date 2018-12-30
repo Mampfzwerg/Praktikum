@@ -6,6 +6,7 @@
 \contentsline {subsection}{\numberline {1.2}Die Auf- und Entladung eines Kondensators}{3}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Die Relaxionsphänomene bei periodischer Auslenkung}{4}{subsection.1.3}
 \contentsline {subsection}{\numberline {1.4}Der RC-Kreis als Integrator}{5}{subsection.1.4}
-\contentsline {section}{\numberline {2}Durchführung}{5}{section.2}
-\contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
-\contentsline {section}{\numberline {4}Diskussion}{5}{section.4}
+\contentsline {section}{\numberline {2}Durchführung}{6}{section.2}
+\contentsline {section}{\numberline {3}Auswertung}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Entladung eines Kondensators}{7}{subsection.3.1}
+\contentsline {section}{\numberline {4}Diskussion}{9}{section.4}

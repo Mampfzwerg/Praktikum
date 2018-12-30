@@ -26,21 +26,28 @@ sich
 
 Allerdings muss, damit A beschränkt ist, $c < 0$ in \eqref{eqn:Integration} gelten.
 Im Folgenden soll das Relaxionsverhalten für das Beispiel eines über einen Widerstand
-auf- und entladenden Kondensators nach Abbildung ... betrachtet werden.
+auf- und entladenden Kondensators nach Abbildung \ref{fig:sch_auf_ent} betrachtet werden.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.2]{content/Schaltung-auf-ent.png}
+\caption{Aufladung (Stellung 2) und Entladung (Stellung 1) eines Kondensators über einen Widerstand [1]}
+\label{fig:sch_auf_ent}
+\end{figure}
 
 \subsection{Die Auf- und Entladung eines Kondensators}
 
 Liegt an dem Kondensator mit der Kapazität $C$ eine Ladung $Q$ vor, so liegt dort die Spannung 
 
-\begin{equation}
+\begin{equation*}
     U_\text{C} = \frac{Q}{C}
-\end{equation}
+\end{equation*}
 
 an. Mit dem Zusammenhang
 
-\begin{equation}
+\begin{equation*}
     I = - \frac{\text{d}Q}{\text{d}t} = \frac{U_\text{C}}{R}
-\end{equation}
+\end{equation*}
 
 ergibt sich für die Ladung $Q$ ähnlich zu \eqref{eqn:Aenderung}
  die zeitliche Differentialgleichung
@@ -54,7 +61,8 @@ vollständig entladen hat, ergibt sich nach \eqref{eqn:Integration} die Lösung
 
 \begin{equation}
     Q(t) = Q(0) \cdot \text{e}^{\frac{-t}{RC}} \; \text{.}
-\end{equation} \\
+    \label{eqn:ent}
+\end{equation}
 
 Analog führt der Aufladevorgang mit den Randbedingungen $Q(0) = 0 \text{  und  } Q(\infty) = CU_0$
 zu der Lösung
@@ -69,7 +77,14 @@ Endzustand entgegenstrebt.
 \subsection{Die Relaxionsphänomene bei periodischer Auslenkung}
 
 Als Beispiel für Relaxionsphänomene wird das Verhalten eines RC-Kreises bei anliegender
-Sinusspannung nach Abbildung ... betrachtet. 
+Sinusspannung nach Abbildung \ref{fig:sch_per} betrachtet. 
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.2]{content/sch_per.png}
+\caption{Schaltung zur Untersuchung von Relaxationsphänomenen bei periodischer Auslenkung [1]}
+\label{fig:sch_per}
+\end{figure}
 
 An der Schaltung liegt die Spannung
 
@@ -84,9 +99,9 @@ Auf- und Entladevorgangs des Kondensators hinter dem zeitlichen Verlauf von $U(t
 
 Mit einem Ansatz
 
-\begin{equation} 
+\begin{equation*} 
     U_\text{C}(t) = A(\omega) \text{cos}(\omega t + \varphi(\omega))
-\end{equation}
+\end{equation*}
 
 ergibt sich unter Zuhilfenahme des 2. Kirchhoffschen Gesetzes und des Zusammenhangs
 
@@ -104,15 +119,15 @@ die Gleichung
         U_0 \, \text{cos}(\omega t) &= -A(\omega) \, \omega RC \, \text{sin}(\omega t + \varphi)
         A(\omega) \, \text{cos}(\omega t + \varphi) 
     \end{split}
-\end{equation}\\
+\end{equation}
 
 Daraus folgen für die Phasenverschiebung $\varphi(\omega)$ und die Amplitude $A(\omega)$
 die Gleichungen
 
-\begin{align}
-    \varphi(\omega) &= \text{arctan}(- \omega RC) \\
-    A(\omega) &= \frac{U_0}{\sqrt{1 + (\omega RC)^2}}
-\end{align}
+\begin{align*}
+    \varphi(\omega) &= \text{arctan}(- \omega RC), \\
+    A(\omega) &= \frac{U_0}{\sqrt{1 + (\omega RC)^2}}.
+\end{align*}
 
 Es ist zu erkennen, dass für niedrige Frequenzen die Phase $\varphi(\omega) \to 0$ und
 die Amplitude $A(\omega) \to U_0$ gegen entsprechende Werte streben. Für größere
@@ -131,16 +146,16 @@ kann der RC-Kreis die anliegende zeitlich veränderliche Spannung $U(t)$ integri
 Aus den Gleichungen \eqref{eqn:Stromkreis} und \eqref{eqn:Stromstaerke} ergibt sich die
 Gleichung 
 
-\begin{equation}
+\begin{equation*}
     U(t) = RC \frac{\text{d}U_\text{C}}{\text{d}t} + U_\text{C}(t) \; \text{,}
-\end{equation}
+\end{equation*}
 
 die als
 
-\begin{align}
+\begin{align*}
     U(t) &= RC \cdot \frac{\text{d}U_\text{C}}{\text{d}t} \\
     \iff U_\text{C}(t) &= \frac{1}{RC} \int^t_0 U(t') \; \text{d} t'
-\end{align}
+\end{align*}
 
 genähert werden kann. Dabei ist $U_\text{C}(t)$ nur unter den oben genannten Bedingungen
 proportional zu $\int U(t) \; \text{d}t$.
