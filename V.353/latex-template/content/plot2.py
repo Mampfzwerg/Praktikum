@@ -1,29 +1,29 @@
 import numpy as np
 from uncertainties import ufloat
 import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
 
-x, y = np.genfromtxt('mess2.txt', unpack=True)
+f, Uc = np.genfromtxt('mess2.txt', unpack=True)
 
-x1 = np.log(x)
 U0 = 51.6
-y1 = y/U0
+U = Uc/U0
 
-params, covariance_matrix = np.polyfit(x1, y1, deg=1, cov=True)
+def h (x,m,b):
+    return 1/np.sqrt(1+m**2*x**2)+b
+
+params, covariance_matrix = curve_fit(h, f, U)
+x_plot = np.linspace(10, 10**4, 1000000)
+plt.plot(x_plot, h(x_plot, params[0], params[1]), 'b-', label=r'Ausgleichskurve', linewidth=1)
 
 errors = np.sqrt(np.diag(covariance_matrix))
 
 print('a = {:.10f} ± {:.10f}'.format(params[0], errors[0]))
 print('b = {:.4f} ± {:.5f}'.format(params[1], errors[1]))
 
-def gerade (x, m, b):
-    return (1/np.sqrt(1+m*x**2))
-
-z = np.linspace(np.min(x1), np.max(x1))
-
-plt.plot(x1, y1, 'rx', label='Messdaten')
-plt.plot(z, gerade (z, *params), 'b-', label='Ausgleichsgerade')
-plt.xlabel(r'$t \: / \: \mathrm{s}$')
-plt.ylabel(r'$\ln{\left(\frac{U_C}{U_0}\right)}$')
+plt.plot(f, U, 'rx', label='Messdaten')
+plt.xscale('log')
+plt.xlabel(r'$f \: / \: \frac{1}{s}$')
+plt.ylabel(r'$\frac{U_C}{U_0}$')
 plt.legend(loc='best')
 
 plt.tight_layout()

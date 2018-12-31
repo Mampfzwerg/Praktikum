@@ -103,11 +103,167 @@ $f \,/\, \si{\hertz}$ & $A \,/\, \si{\volt}$ & $\frac{A}{U_0}$ \\
 \end{tabular}
 \end{table} 
 
-Stellt man diese Werte graphisch da, so ergibt sich Abbildung ... .
+In Abbildung \ref{fig:plot2} werden die gemessenen mit der Erregerspannung normierten
+Amplituden gegen die Frequenz der Erregerspannung halblogarithmisch
+aufgetragen. 
 
-%\begin{figure}
-%  \centering
-%  \includegraphics{plot.pdf}
-%  \caption{Plot.}
-%  \label{fig:plot}
-%\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.8]{content/plot2.pdf}
+  \caption{Normierte Kondensatoramplituden}
+  \label{fig:plot2}
+\end{figure}
+
+Mittels eines Fits der Form
+
+\begin{equation*}
+f = \frac{1}{\sqrt{1+x²m²}}+b,
+\end{equation*}
+
+werden die Messwerte gefittet. Die Parameter ergeben sich dabei zu
+
+\begin{align*}
+m &= \num{-8.64+-0.34e-3},\\
+b &= \num{-14.90+-6.91e-3}.
+\end{align*}
+
+Somit ergibt sich nach Formel \eqref{eqn:Amplitude} die Zeitkonstante $RC$ zu
+
+\begin{equation*}
+RC = \SI{8.64+-0.34}{\milli\second}. 
+\end{equation*}
+
+\subsection{Frequenzabhängigkeit der Phasenverschiebung}
+
+In diesem Versuchsteil wird die Frequenzabhängigkeit der Phasenverschiebung
+zwischen der Kondensator- und Generatorspannung untersucht. Über die Frequenz 
+wird dabei die jeweilige Periodendauer nach $T= \frac{1}{f}$ bestimmt. Außerdem
+wird aus dem abgelesenem zeitlichen Abstand $\Delta t$ zwischen den beiden 
+Maxima und der Periodendauer die Phasenverschiebung gemäß 
+
+\begin{equation*}
+\phi = \frac{\Delta t}{T} 2 \pi
+\end{equation*}
+
+bestimmt. 
+Die Messdaten und die daraus bestimmten Größen sind in Tabelle \ref{tab:Messdaten3} zu finden. 
+
+\begin{table}
+\centering
+\caption{Messdaten zur Frequenzabhängigkeit der Phasenverschiebung}
+\label{tab:Messdaten3}
+\sisetup{table-format=2.1}
+\begin{tabular}{c c c c}
+\toprule
+$f \,/\, \si{\hertz}$ & $T=\frac{1}{f} \,/\, \si{\milli\second}$ 
+&$\Delta t \,/\, \si{\milli\second}$ & $\phi \,/\, \si{\radian}$\\
+\midrule
+   10 & 100,00 & 12,000 & 0,75\\
+   20 &  50,00 &  4,200 & 0,53\\
+   30 &  33,33 &  2,600 & 0,49\\
+   40 &  25,00 &  1,900 & 0,48\\
+   50 &  20,00 &  1,800 & 0,57\\
+   60 &  16,67 &  1,700 & 0,64\\
+   70 &  14,29 &  1,640 & 0,72\\
+   80 &  12,50 &  1,440 & 0,72\\
+   90 &  11,11 &  1,400 & 0,79\\
+  100 &  10,00 &  1,280 & 0,80\\
+  200 &   5,00 &  0,780 & 0,98\\
+  300 &   3,33 &  0,640 & 1,21\\
+  400 &   2,50 &  0,560 & 1,41\\
+  500 &   2,00 &  0,440 & 1,38\\
+  600 &   1,67 &  0,390 & 1,47\\
+  700 &   1,43 &  0,340 & 1,50\\
+  800 &   1,25 &  0,280 & 1,41\\
+  900 &   1,11 &  0,270 & 1,53\\
+ 1000 &   1,00 &  0,240 & 1,51\\
+ 2000 &   0,50 &  0,116 & 1,46\\
+ 3000 &   0,33 &  0,080 & 1,51\\
+ 4000 &   0,25 &  0,060 & 1,51\\
+ 5000 &   0,20 &  0,048 & 1,51\\
+ 6000 &   0,17 &  0,041 & 1,55\\
+ 7000 &   0,14 &  0,035 & 1,54\\
+ 8000 &   0,13 &  0,031 & 1,56\\
+ 9000 &   0,11 &  0,027 & 1,53\\
+10000 &   0,10 &  0,024 & 1,51\\
+\bottomrule
+\end{tabular}
+\end{table} 
+
+Diese Daten werden ebenfalls halblogarithmisch gegen die Erregerfrequenz 
+aufgetragen. Das Resultat ist in Abbildung \ref{fig:plot3} zu sehen. 
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.8]{content/plot3.pdf}
+  \caption{Phasenverschiebungen}
+  \label{fig:plot3}
+\end{figure}
+
+Es wird eine Funktion der Art 
+
+\begin{equation*}
+f = a\text{arctan}(mx)+b,
+\end{equation*}
+
+identisch \eqref{eqn:Phase}, gefittet. Die Parameter ergeben sich zu 
+
+\begin{align*}
+a &= \num{-0.72+-0.03},\\
+m &= \num{-0.0058+-0.0009},\\
+b &= \num{0.44+-0.05}.
+\end{align*}
+
+Die nicht-lineare Ausgleichsrechnung lässt somit auf den Wert
+
+\begin{equation*}
+RC = \SI{5.8+-0.9}{\milli\second}
+\end{equation*}
+
+schließen.
+Mit letzterem kann ein Polarplot erstellt werden. Der Winkel $\phi$ beschreibt 
+die Phasenverschiebung, der Radius hingegegen die normierte Amplitude der
+Kondensatorspannung. Es resultiert der Polarplot in Abbildung mit 
+$RC = \SI{5.8+-0.9}{\milli\second}$.
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.8]{content/plot4.pdf}
+  \caption{Polarplot}
+  \label{fig:plot4}
+\end{figure}
+
+Es wurden mehrere Probewerte eingezeichnet.
+
+\subsection{Der RC-Kreis als Integrator}
+
+In diesem Versuchsteil wird gezeigt, dass der RC-Kreis als Integrator arbeiten 
+kann, wenn $\omega \gg \frac{1}{RC}$. Dazu wird dieser mit einer Rechteck-, 
+Sinus- und Dreiecksspannung gespeist und sowohl die Ursprungssignale als auch 
+die integrierten Signale auf dem Oszilloskop angezeigt. Um die geforderte 
+Bedingung an $\omega$ zu gewährleisten, werden Frequenzen von etwa \SI{5}{\kilo\hertz}
+verwendet. 
+Die Ursprungssignale und die integrierten Signale sind jeweils in den Abbildungen 
+\ref{fig:Sinus}, \ref{fig:Dreieck} und \ref{fig:Rechteck} zu erkennen. Dabei ist
+die mit dem Cursor erfasste Funktion stets das integrierte Signal
+
+\begin{figure}
+  \centering
+  \includegraphics[angle=90, scale=0.8]{content/Sinus.jpg}
+  \caption{Integration eines Sinussignals durch das RC-Glied}
+  \label{fig:Sinus}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[angle=90, scale=0.8]{content/Dreieck.jpg}
+  \caption{Integration eines Dreiecksignals durch das RC-Glied}
+  \label{fig:Dreieck}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[angle=90, scale=0.8]{content/Rechteck.jpg}
+  \caption{Integration eines Rechtecksignals durch das RC-Glied}
+  \label{fig:Rechteck}
+\end{figure}

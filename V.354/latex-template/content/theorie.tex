@@ -1,0 +1,90 @@
+\section{Theorie}
+\label{sec:Theorie}
+
+Ziel des Versuches ist es, gedämpfte und erzwungene Schwingungen eines
+RLC-Schwingkreises zu untersuchen und den Dämpfungswiderstand und die 
+Frequenzabhängigkeit der Phasenverschiebung zwischen Kondensator- und 
+Generatorspannung zu bestimmen. 
+Ein solcher Schwingkreis zeichnet sich aus durch eine Kapazität $C$, 
+einer Induktivität $L$ und einem einem Widerstand $R$. Bei einer 
+Schwingung wird beständig Energie zwischen dem B-Feld der Spule und
+dem E-Feld des Kondensators ausgetauscht. Der Widerstand $R$ sorgt
+dafür, dass die Energie des Systems fortlaufend abnimmt und so die 
+Amplituden immer kleiner werden, bis sie irgendwann gänzlich abgeklungen 
+sind. 
+Mit Hilfe des zweiten Kirchhoffschen Gesetztes kann man eine Gleichung 
+für den Schaltkreis aufstellen: 
+
+\begin{equation*}
+U_R(t) + U_C(t) + U_L(t) = 0 
+\end{equation*}
+
+Durch Umformungen kann eine DGL für das System aufgestellt werden: 
+
+\begin{equation}
+L\frac{\symup{d}²I}{\symup{d}t²}+\frac{R}{L} \frac{\symup{d}I}{\symup{d}t}+\frac{I}{LC} = 0
+\end{equation}
+
+Eine Lösung der DGL ist: 
+
+\begin{equation}
+I(t) = e^{-t\frac{R}{2L}}\left(I_1 e^{it\sqrt{\frac{1}{LC}-\frac{R²}{4L²}}}+I_2 e^{-it\sqrt{\frac{1}{LC}-\frac{R²}{4L²}}} \right).
+\label{eqn:Loesung}
+\end{equation}
+
+Es gibt drei verschiedene Fälle, die betrachtet werden müssen. 
+Der erste Fall ist, dass $\frac{1}{LC} > \frac{R²}{4L²}$. Die Wurzel im Exponenten
+bleibt reell und \eqref{eqn:Loesung} geht über in: 
+
+\begin{equation*}
+I(t) = A_0 e^{-\frac{R}{2L}t}\cdot \cos\left({2\pi ft+\eta}\right).
+\end{equation*}
+
+Hierbei ist $\eta$ eine Phasenverschiebung. Dieser Fall wird auch als 
+Schwingfall bezeichnet. 
+Wenn nun gilt
+
+\begin{align*}
+\frac{1}{LC} &= \frac{R²}{4L²}\\
+\leftrightarrow R &= 2\sqrt{\frac{L}{C}},
+\end{align*}
+
+spricht man vom aperiodischen Grenzfall. Bei diesem Fall geht $I(t)$ ohne 
+Überschwingung am schnellsten gegen null. 
+
+Wird der RLC-Kreis nun von außen durch eine Wechselspannung zum Schwingen 
+angeregt, so spricht man von einer erzwungenen Schwingung. In diesem Fall
+liegt eine Inhomogenität in der DGL vor. Durch Lösen der resultierenden 
+DGL erhält man schließlich: 
+
+\begin{equation}
+U_C(\omega) = \frac{U_0}{\sqrt{(1-LC\omega²)²+\omega²R²C²}}
+\end{equation}
+
+Diese Lösung hat ein Maximum bei $f = f_\text{res}$, das Resonanzüberhöhung
+genannt wird. Die Breite $\symup{\Delta}f$ kann mit
+
+\begin{equation}
+\symup{\Delta} f = |f_1 - f_2|
+\end{equation}
+
+bestimmt werden. Hierbei gilt: 
+
+\begin{equation}
+f_\text{res} = \frac{1}{2\pi}\sqrt{\frac{1}{LC}-\frac{R²}{2L²}}
+\end{equation}
+
+und 
+
+\begin{equation}
+f_\text{1,2} = \pm \frac{1}{2\pi} \frac{R}{2L}+\sqrt{\frac{R²}{4L²}+\frac{1}{LC}}.
+\end{equation}
+
+Außerdem weist die Kondensatorspannung $U_C(t)$ eine Phasenverschiebung gegenüber
+der Erregerspannung auf. Diese kann mit 
+
+\begin{equation}
+\tan({\phi(\omega)})=\frac{-\omega RC}{1-LC\omega²}
+\end{equation}
+
+bestimmt werden. 

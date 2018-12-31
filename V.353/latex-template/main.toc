@@ -9,4 +9,7 @@
 \contentsline {section}{\numberline {2}Durchführung}{6}{section.2}
 \contentsline {section}{\numberline {3}Auswertung}{7}{section.3}
 \contentsline {subsection}{\numberline {3.1}Entladung eines Kondensators}{7}{subsection.3.1}
-\contentsline {section}{\numberline {4}Diskussion}{9}{section.4}
+\contentsline {subsection}{\numberline {3.2}Frequenzabhängigkeit der Amplitude}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Frequenzabhängigkeit der Phasenverschiebung}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Der RC-Kreis als Integrator}{15}{subsection.3.4}
+\contentsline {section}{\numberline {4}Diskussion}{16}{section.4}
