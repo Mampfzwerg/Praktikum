@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.30)  6 JAN 2019 18:12
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.30)  6 JAN 2019 18:29
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -32,7 +32,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.083 seconds (./header.tex
+luaotfload | main : initialization completed in 0.082 seconds (./header.tex
 (/home/marek/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/home/marek/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -898,11 +898,11 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            synonyms	table: 0x59562d0
-(polyglossia)            hyphenation	
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	table: 0x62fe8e0
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
@@ -910,11 +910,11 @@ n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            synonyms	table: 0x59564a0
-(polyglossia)            hyphenation	
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	table: 0x62feab0
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
@@ -2446,13 +2446,8 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
-
-
-Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: C0B36BF2782E18E86BE8A4E59F261D04;12774
-(rerunfilecheck)             After:  9B35B9265A02D4405E85659966CA8685;12901.
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: 9B35B9265A02D4405E85659966CA8685;12901.
 Package rerunfilecheck Info: File `main.toc' has not changed.
 (rerunfilecheck)             Checksum: 6BCC3963D4204931A78E939D12B43B5C;1223.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2468,7 +2463,7 @@ Here is how much of LuaTeX's memory you used:
 , 40 attribute_list, 1 write nodes
    avail lists: 1:2,2:1084,3:131,4:39,5:193,6:36,7:3833,8:85,9:437,10:10,11:271
  45246 multiletter control sequences out of 65536+600000
- 222 fonts using 81878063 bytes
+ 222 fonts using 81877711 bytes
  61i,21n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinm
 odern-math.otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public
