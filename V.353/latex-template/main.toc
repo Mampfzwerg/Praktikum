@@ -13,3 +13,4 @@
 \contentsline {subsection}{\numberline {3.3}Frequenzabhängigkeit der Phasenverschiebung}{11}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Der RC-Kreis als Integrator}{15}{subsection.3.4}
 \contentsline {section}{\numberline {4}Diskussion}{16}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{17}{section.5}
