@@ -115,12 +115,12 @@ die Erregerspannung $U_0$ sind in Tabelle \ref{tab:Messdaten2} aufgeführt.
 
 \begin{table}
   \centering
-  \caption{Messdaten frequenzabhängigen Kondensatorspannung}
+  \caption{Messdaten der frequenzabhängigen Kondensatorspannung}
   \label{tab:Messdaten2}
   \sisetup{table-format=2.1}
-  \begin{tabular}{c c c c}
+  \begin{tabular}{c c c}
   \toprule
-  $f \,/\, \si{\kilo\hertz}$ & $U_C \,/\, \si{\volt}$ & $U \,/\, \si{\volt}$ & $\frac{U_C}{U} $\\
+  $f \,/\, \si{\kilo\hertz}$ & $U_C \,/\, \si{\volt}$ & $U \,/\, \si{\volt}$ \\
   \midrule
   09 & 1,08 & 0,56\\
   11 & 1,12 & 0,56\\
@@ -190,7 +190,7 @@ Der Fehler ergibt sich dabei durch die Gaußsche Fehlerfortpflanzung:
 Der experimentelle Wert der Halbwertsbreite $b$ wird aus der Abbildung als 
 
 \begin{equation*}
-b_\text{ex} = \omega _+ - \omega _- = \SI{41}{\kilo\hertz} - \SI{25}{\kilo\hertz} = \SI{16}{\kilo\hertz} 
+b_\text{ex} = \omega _+ - \omega _- = \SI{38}{\kilo\hertz} - \SI{28}{\kilo\hertz} = \SI{10}{\kilo\hertz} 
 \end{equation*}
 
 abgelesen.
@@ -208,3 +208,97 @@ Dabei ergibt sich der Fehler mit:
 \end{equation*}
 
 \subsection{Frequenzabhängigkeit der Phasenverschiebung}
+
+Die Messwerte der Zeitdifferenz $\symup{\Delta} t$ in Abhängigkeit der Frequenz $f$, sowie die daraus errechnete
+Phasendifferenz
+
+\begin{equation}
+  \phi = 2 \pi - \frac{\Delta t}{f} \cdot 2 \pi
+  \label{eqn:Diff}
+\end{equation}
+
+sind in Tabelle \ref{tab:Messdaten3} aufgelistet. Die Subtraktion von $2 \pi$ in \eqref{eqn:Diff} hängt dabei mit der 
+Messdurchführung zusammen, d.h. $\symup{\Delta} t$ wurde zuzüglich einer Periode gemessen. 
+
+
+\begin{table}
+  \centering
+  \caption{Messdaten der frequenzabhängigen Phasendifferenz}
+  \label{tab:Messdaten3}
+  \sisetup{table-format=2.1}
+  \begin{tabular}{c c c}
+  \toprule
+  $f \,/\, \si{\kilo\hertz}$ & $\symup{\Delta} t \,/\, \si{\micro\second}$ & $\Phi \,\, \text{in rad} $ \\
+  \midrule
+09 & 107,0 & 0.232 \\
+11 & 088,0 & 0.201 \\
+13 & 075,0 & 0.157 \\
+15 & 065,2 & 0.138 \\
+17 & 056,8 & 0.216 \\
+19 & 050,4 & 0.266 \\
+21 & 045,6 & 0.266 \\
+23 & 041,2 & 0.329 \\
+25 & 037,6 & 0.376 \\
+27 & 034,0 & 0.515 \\
+29 & 031,2 & 0.598 \\
+30 & 029,2 & 0.779 \\
+31 & 027,6 & 0.907 \\
+32 & 025,6 & 1.136 \\
+33 & 024,0 & 1.307 \\
+34 & 022,0 & 1.583 \\
+35 & 020,4 & 1.797 \\
+36 & 019,2 & 1.940 \\
+37 & 018,0 & 2.099 \\
+38 & 016,4 & 2.368 \\
+39 & 016,0 & 2.362 \\
+41 & 014,4 & 2.574 \\
+43 & 013,6 & 2.609 \\
+45 & 012,8 & 2.664 \\
+47 & 011,6 & 2.858 \\
+49 & 011,2 & 2.835 \\
+51 & 010,8 & 2.822 \\
+53 & 010,4 & 2.820 \\
+55 & 009,6 & 2.966 \\
+57 & 009,2 & 2.988 \\
+59 & 008,8 & 3.021 \\
+  \bottomrule
+  \end{tabular}
+  \end{table} 
+
+  In Abbildung \ref{fig:phase} sind die Phasendifferenz gegen die Frequenz aufgetragen und markierende Geraden für Phasen von
+  $\frac{\pi}{4}$, $\frac{3 \pi}{4}$ und $\frac{\pi}{2}$,für welche die Frequenzen $f_1$, $f_2$ und $f_\text{res}$ (Resonanzfrequenz)
+  ablesbar sind, eingezeichnet.
+
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.8]{content/plot3.pdf}
+    \caption{Phasendifferenz}
+    \label{fig:phase}
+  \end{figure}
+
+  Die abgelesenen Frequenzen sind somit:
+
+  \begin{align*}
+    f_{1,\text{ex}} &= \SI{30}{\kilo\hertz} \\
+    f_{2,\text{ex}} &= \SI{38}{\kilo\hertz} \\
+    f_\text{res,ex} &= \SI{34}{\kilo\hertz} \; .
+  \end{align*}
+
+  Die nach den Formeln \eqref{eqn:f12} und \eqref{eqn:fres} berechneten Frequenzen sind:
+
+  \begin{align*}
+    f_1 &= \SI{30.78 +- 0.006}{\kilo\hertz} \\
+    f_2 &= \SI{38.80 +- 0.008}{\kilo\hertz} \\
+    f_\text{res} &= \SI{34.09 +- 0.007}{\kilo\hertz} \; .
+  \end{align*}
+
+  Dabei berechnen sich deren Fehler nach
+
+  \begin{align*}
+    \symup{\Delta}f_{1\text{,}2} &= \sqrt{\left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)² +
+    \left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
+    \left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²} \\
+    \symup{\Delta}f_\text{res} &= \sqrt{\left(\frac{\symup{d}f_\text{res}}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)² +
+    \left(\frac{\symup{d}f_\text{res}}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
+    \left(\frac{\symup{d}f_\text{res}}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²} \; .
+  \end{align*}
