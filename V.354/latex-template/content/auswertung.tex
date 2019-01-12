@@ -110,6 +110,9 @@ Der Fehler berechnet sich über die Gaußsche Fehlerfortpflanzung:
 
 \subsection{Frequenzabhängigkeit der Kondensatorspannung}
 
+Die gemessenene Kondensatorspannung $U_C$ und die zugehörige Frequenz $f$, sowie
+die Erregerspannung $U_0$ sind in Tabelle \ref{tab:Messdaten2} aufgeführt. 
+
 \begin{table}
   \centering
   \caption{Messdaten frequenzabhängigen Kondensatorspannung}
@@ -153,3 +156,55 @@ Der Fehler berechnet sich über die Gaußsche Fehlerfortpflanzung:
   \bottomrule
   \end{tabular}
   \end{table} 
+
+Es wird $\frac{U_C}{U_0}$ in Abbildung ... gegen die Frequenz aufgetragen. 
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.8]{content/plot2.pdf}
+  \caption{Resonanzkurve}
+  \label{fig:resonanz}
+\end{figure}
+
+Die experimentelle Resonanzüberhöhung wird aus der Abbildung als 
+
+\begin{equation*}
+q_\text{ex} = \num{3.76}
+\end{equation*}
+
+Der theoretische Wert der Resonanzüberhöhung berechnet sich über die Formel 
+... zu: 
+
+\begin{equation*}
+q_\text{theo} = \frac{\sqrt{L}}{R\sqrt{C}} = \num{4.309+-0.010}.
+\end{equation*}
+
+Der Fehler ergibt sich dabei durch die Gaußsche Fehlerfortpflanzung: 
+
+\begin{equation*}
+\symup{\Delta}q_\text{theo} = \sqrt{\left(\frac{\symup{d}q}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
+\left(\frac{\symup{d}q}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)²+
+\left(\frac{\symup{d}q}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²}. 
+\end{equation*}
+
+Der experimentelle Wert der Halbwertsbreite $b$ wird aus der Abbildung als 
+
+\begin{equation*}
+b_\text{ex} = \omega _+ - \omega _- = \SI{41}{\kilo\hertz} - \SI{25}{\kilo\hertz} = \SI{16}{\kilo\hertz} 
+\end{equation*}
+
+abgelesen.
+Der theoretische Wert für die Breite liegt jedoch bei 
+
+\begin{equation*}
+b_\text{theo} = \frac{R}{2\pi L} = \SI{8.021+-0.025}{\kilo\hertz}.
+\end{equation*}
+
+Dabei ergibt sich der Fehler mit: 
+
+\begin{equation*}
+\symup{\Delta}b_\text{theo} = \sqrt{\left(\frac{\symup{d}b}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
+\left(\frac{\symup{d}q}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)²}.
+\end{equation*}
+
+\subsection{Frequenzabhängigkeit der Phasenverschiebung}

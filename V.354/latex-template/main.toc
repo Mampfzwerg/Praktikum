@@ -7,4 +7,5 @@
 \contentsline {subsection}{\numberline {3.1}Zeitabhängigkeit der Amplitude}{5}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Bestimmung des Dämpfungswiderstandes}{7}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Frequenzabhängigkeit der Kondensatorspannung}{7}{subsection.3.3}
-\contentsline {section}{\numberline {4}Diskussion}{7}{section.4}
+\contentsline {subsection}{\numberline {3.4}Frequenzabhängigkeit der Phasenverschiebung}{10}{subsection.3.4}
+\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}

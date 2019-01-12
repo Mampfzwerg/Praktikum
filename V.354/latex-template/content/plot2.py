@@ -6,20 +6,13 @@ from scipy.optimize import curve_fit
 f, Uc, U, t = np.genfromtxt('mess2.txt', unpack=True)
 
 UcU = Uc / U
+f1 = f*1e3
 
-#t1 = t*1e-6
 
-#def h (x,m,b):
-#    return m*np.exp(-2*np.pi*b*x)
-#
-#params, covariance_matrix = curve_fit(h, t1, U)
-#x_plot = np.linspace(0,0.0005, 1000000)
-#plt.plot(x_plot, h(x_plot, params[0], params[1]), 'b-', label=r'Ausgleichskurve', linewidth=1)
-#
-#errors = np.sqrt(np.diag(covariance_matrix))
-#
-#print('a = {:.10f} ± {:.10f}'.format(params[0], errors[0]))
-#print('b = {:.4f} ± {:.5f}'.format(params[1], errors[1]))
+
+plt.axhline(y=1.88, color='b', linestyle='-')
+#z = np.linspace(np.min(f), np.max(f))
+#plt.plot(z, 1.88, 'b-', label='Ausgleichsgerade')
 
 plt.plot(f, Uc, 'rx', label='Messdaten')
 plt.xlabel(r'$f \: / \: kHz$')

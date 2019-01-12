@@ -10,4 +10,11 @@ R = 4*np.pi*L*mu
 
 T = 1/(2*np.pi*mu)
 
-print(2*(L/C)**(1/2))
+#Resonanszüberhöhung
+
+R2 = ufloat(509.5, 0.5)
+
+#print((L**(1/2))/(R2*(C**(1/2))))
+#print(np.sqrt(9))
+
+print(R2/(2*np.pi*L))
