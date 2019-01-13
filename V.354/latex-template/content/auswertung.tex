@@ -3,6 +3,15 @@
 
 \subsection{Zeitabhängigkeit der Amplitude}
 
+Zunächst werden die bauteilspezifischen Werte notiert:
+
+\begin{align*}
+L &= \SI{10.11+-0.03}{\milli\henry},\\
+C &= \SI{2.089+-0.006}{\nano\farad},\\
+R_1 &= \SI{48.1+-0.1}{\ohm},\\
+R_2 &= \SI{509.5+-0.5}{\ohm}.
+\end{align*}
+
 Die gemessenen Maxima bei einer gedämpften Schwingung sind 
 in Tabelle \ref{tab:Messdaten1} zu sehen. 
 
@@ -13,7 +22,7 @@ in Tabelle \ref{tab:Messdaten1} zu sehen.
 \sisetup{table-format=2.1}
 \begin{tabular}{c c}
 \toprule
-$U \,/\, \si{\volt}$ & $s \,/\, \si{\micro\second}$\\
+$U \,/\, \si{\volt}$ & $t \,/\, \si{\micro\second}$\\
 \midrule
 1,74 &   0,0\\
 1,44 &  29,6\\
@@ -58,7 +67,8 @@ A_0 &= \SI{1.785+-0.036}{\volt},\\
 \mu &= \SI{1068.421+-34.320}{\per\second}.
 \end{align*}
 
-Mit Formel... lässt sich nun der effiktive Widerstand berechnen.
+Aus dem Parameter $\mu$ lässt sich nun der effektive Dämpfungswiderstand
+$R_\text{eff}$ berechnen.
 
 \begin{equation*}
 R_\text{eff} = 4\pi L\mu = \SI{136+-4}{\ohm}
@@ -71,8 +81,7 @@ Der Fehler ergibt sich dabei durch die Gaußsche Fehlerfortpflanzung zu:
 \left(\frac{\symup{d}R_\text{eff}}{\symup{d}\mu}\right)²\cdot (\symup{\Delta}\mu)²}.
 \end{equation*}
 
-Weiterhin wird die Abklingdauer mit Formel... berechnet und 
-es ergibt sich:
+Weiterhin kann nun auch die Abklingdauer $T_\text{ex}$ berechnet werden zu:
 
 \begin{equation*}
 T_\text{ex} = \frac{1}{2\pi\mu} = \SI{0.149+-0.005e-3}{\second}.
@@ -157,7 +166,7 @@ die Erregerspannung $U_0$ sind in Tabelle \ref{tab:Messdaten2} aufgeführt.
   \end{tabular}
   \end{table} 
 
-Es wird $\frac{U_C}{U_0}$ in Abbildung ... gegen die Frequenz aufgetragen. 
+Es wird $\frac{U_C}{U_0}$ in Abbildung \ref{fig:resonanz} gegen die Frequenz aufgetragen. 
 
 \begin{figure}
   \centering
@@ -166,28 +175,14 @@ Es wird $\frac{U_C}{U_0}$ in Abbildung ... gegen die Frequenz aufgetragen.
   \label{fig:resonanz}
 \end{figure}
 
-Die experimentelle Resonanzüberhöhung wird aus der Abbildung als 
 
-\begin{equation*}
-q_\text{ex} = \num{3.76}
-\end{equation*}
+Ein Maß für die Schärfe der Resonanz ist die Breite der Resonanzkurve. 
+Man kann sie durch die beiden Frequenzen $\omega _+$ und $\omega _-$
+charakterisieren, bei welchen $U_C$ auf den Bruchteil $\frac{1}{\sqrt{2}}$
+seines Maximalwertes abgesunken ist. Dieser Wert ist als horizontal Linie
+in Abbildung \ref{fig:resonanz} eingetragen. 
 
-Der theoretische Wert der Resonanzüberhöhung berechnet sich über die Formel 
-... zu: 
-
-\begin{equation*}
-q_\text{theo} = \frac{\sqrt{L}}{R\sqrt{C}} = \num{4.309+-0.010}.
-\end{equation*}
-
-Der Fehler ergibt sich dabei durch die Gaußsche Fehlerfortpflanzung: 
-
-\begin{equation*}
-\symup{\Delta}q_\text{theo} = \sqrt{\left(\frac{\symup{d}q}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
-\left(\frac{\symup{d}q}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)²+
-\left(\frac{\symup{d}q}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²}. 
-\end{equation*}
-
-Der experimentelle Wert der Halbwertsbreite $b$ wird aus der Abbildung als 
+Der experimentelle Wert dieser Halbwertsbreite $b$ wird aus der Abbildung als 
 
 \begin{equation*}
 b_\text{ex} = \omega _+ - \omega _- = \SI{38}{\kilo\hertz} - \SI{28}{\kilo\hertz} = \SI{10}{\kilo\hertz} 
@@ -206,6 +201,30 @@ Dabei ergibt sich der Fehler mit:
 \symup{\Delta}b_\text{theo} = \sqrt{\left(\frac{\symup{d}b}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
 \left(\frac{\symup{d}q}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)²}.
 \end{equation*}
+
+Die experimentelle Resonanzüberhöhung wird aus der Abbildung als 
+
+\begin{equation*}
+q_\text{ex} = \num{3.76}
+\end{equation*}
+
+abgelesen.
+
+Außerdem lässt sich der theoretische Wert berechnen:
+
+\begin{equation*}
+q_\text{theo} = \frac{\sqrt{L}}{R\sqrt{C}} = \num{4.309+-0.010}.
+\end{equation*}
+
+Der Fehler ergibt sich dabei durch die Gaußsche Fehlerfortpflanzung: 
+
+\begin{equation*}
+\symup{\Delta}q_\text{theo} = \sqrt{\left(\frac{\symup{d}q}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
+\left(\frac{\symup{d}q}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)²+
+\left(\frac{\symup{d}q}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²}. 
+\end{equation*}
+
+
 
 \subsection{Frequenzabhängigkeit der Phasenverschiebung}
 
@@ -230,44 +249,46 @@ Messdurchführung zusammen, d.h. $\symup{\Delta} t$ wurde zuzüglich einer Perio
   \toprule
   $f \,/\, \si{\kilo\hertz}$ & $\symup{\Delta} t \,/\, \si{\micro\second}$ & $\Phi \,\, \text{in rad} $ \\
   \midrule
-09 & 107,0 & 0.232 \\
-11 & 088,0 & 0.201 \\
-13 & 075,0 & 0.157 \\
-15 & 065,2 & 0.138 \\
-17 & 056,8 & 0.216 \\
-19 & 050,4 & 0.266 \\
-21 & 045,6 & 0.266 \\
-23 & 041,2 & 0.329 \\
-25 & 037,6 & 0.376 \\
-27 & 034,0 & 0.515 \\
-29 & 031,2 & 0.598 \\
-30 & 029,2 & 0.779 \\
-31 & 027,6 & 0.907 \\
-32 & 025,6 & 1.136 \\
-33 & 024,0 & 1.307 \\
-34 & 022,0 & 1.583 \\
-35 & 020,4 & 1.797 \\
-36 & 019,2 & 1.940 \\
-37 & 018,0 & 2.099 \\
-38 & 016,4 & 2.368 \\
-39 & 016,0 & 2.362 \\
-41 & 014,4 & 2.574 \\
-43 & 013,6 & 2.609 \\
-45 & 012,8 & 2.664 \\
-47 & 011,6 & 2.858 \\
-49 & 011,2 & 2.835 \\
-51 & 010,8 & 2.822 \\
-53 & 010,4 & 2.820 \\
-55 & 009,6 & 2.966 \\
-57 & 009,2 & 2.988 \\
-59 & 008,8 & 3.021 \\
+09 & 107,0 & 0,232 \\
+11 & 088,0 & 0,201 \\
+13 & 075,0 & 0,157 \\
+15 & 065,2 & 0,138 \\
+17 & 056,8 & 0,216 \\
+19 & 050,4 & 0,266 \\
+21 & 045,6 & 0,266 \\
+23 & 041,2 & 0,329 \\
+25 & 037,6 & 0,376 \\
+27 & 034,0 & 0,515 \\
+29 & 031,2 & 0,598 \\
+30 & 029,2 & 0,779 \\
+31 & 027,6 & 0,907 \\
+32 & 025,6 & 1,136 \\
+33 & 024,0 & 1,307 \\
+34 & 022,0 & 1,583 \\
+35 & 020,4 & 1,797 \\
+36 & 019,2 & 1,940 \\
+37 & 018,0 & 2,099 \\
+38 & 016,4 & 2,368 \\
+39 & 016,0 & 2,362 \\
+41 & 014,4 & 2,574 \\
+43 & 013,6 & 2,609 \\
+45 & 012,8 & 2,664 \\
+47 & 011,6 & 2,858 \\
+49 & 011,2 & 2,835 \\
+51 & 010,8 & 2,822 \\
+53 & 010,4 & 2,820 \\
+55 & 009,6 & 2,966 \\
+57 & 009,2 & 2,988 \\
+59 & 008,8 & 3,021 \\
   \bottomrule
   \end{tabular}
   \end{table} 
 
-  In Abbildung \ref{fig:phase} sind die Phasendifferenz gegen die Frequenz aufgetragen und markierende Geraden für Phasen von
-  $\frac{\pi}{4}$, $\frac{3 \pi}{4}$ und $\frac{\pi}{2}$,für welche die Frequenzen $f_1$, $f_2$ und $f_\text{res}$ (Resonanzfrequenz)
-  ablesbar sind, eingezeichnet.
+  In Abbildung \ref{fig:phase} ist die Phasendifferenz gegen die jeweilige Frequenz 
+  aufgetragen. Außerdem markieren die Geraden die Phasen von
+  $\frac{\pi}{4}$, $\frac{3 \pi}{4}$ und $\frac{\pi}{2}$, für welche die Frequenzen 
+  $f_1$, $f_2$ und $f_\text{res}$ (Resonanzfrequenz)
+  ablesbar sind.
 
   \begin{figure}
     \centering
@@ -276,29 +297,34 @@ Messdurchführung zusammen, d.h. $\symup{\Delta} t$ wurde zuzüglich einer Perio
     \label{fig:phase}
   \end{figure}
 
-  Die abgelesenen Frequenzen sind somit:
+  Die abgelesenen Frequenzen ergeben sich somit zu:
 
   \begin{align*}
-    f_{1,\text{ex}} &= \SI{30}{\kilo\hertz} \\
-    f_{2,\text{ex}} &= \SI{38}{\kilo\hertz} \\
+    f_{1,\text{ex}} &= \SI{30}{\kilo\hertz} \; ,\\
+    f_{2,\text{ex}} &= \SI{38}{\kilo\hertz} \; ,\\
     f_\text{res,ex} &= \SI{34}{\kilo\hertz} \; .
   \end{align*}
 
-  Die nach den Formeln \eqref{eqn:f12} und \eqref{eqn:fres} berechneten Frequenzen sind:
+  Die nach den Formeln \eqref{eqn:fres} und \eqref{eqn:f12} berechneten Frequenzen sind:
 
   \begin{align*}
-    f_1 &= \SI{30.78 +- 0.006}{\kilo\hertz} \\
-    f_2 &= \SI{38.80 +- 0.008}{\kilo\hertz} \\
+    f_1 &= \SI{30.78 +- 0.006}{\kilo\hertz} \; ,\\
+    f_2 &= \SI{38.80 +- 0.008}{\kilo\hertz} \; ,\\
     f_\text{res} &= \SI{34.09 +- 0.007}{\kilo\hertz} \; .
   \end{align*}
 
   Dabei berechnen sich deren Fehler nach
 
-  \begin{align*}
-    \symup{\Delta}f_{1\text{,}2} &= \sqrt{\left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)² +
+  \begin{equation*}
+    \symup{\Delta}f_{1\text{,}2} = \sqrt{\left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)² +
     \left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
-    \left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²} \\
-    \symup{\Delta}f_\text{res} &= \sqrt{\left(\frac{\symup{d}f_\text{res}}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)² +
+    \left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²} 
+  \end{equation*}
+
+  und
+
+  \begin{equation*}
+    \symup{\Delta}f_\text{res} = \sqrt{\left(\frac{\symup{d}f_\text{res}}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)² +
     \left(\frac{\symup{d}f_\text{res}}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
     \left(\frac{\symup{d}f_\text{res}}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²} \; .
-  \end{align*}
+  \end{equation*}

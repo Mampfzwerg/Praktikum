@@ -10,7 +10,7 @@ f1 = f*1e3
 
 
 
-plt.axhline(y=2.66, color='b', linestyle='-')
+plt.axhline(y=2.66, color='b', linestyle='-', label=r'$\frac{U_m}{U_0}\cdot \frac{1}{\sqrt{2}}$')
 #z = np.linspace(np.min(f), np.max(f))
 #plt.plot(z, 1.88, 'b-', label='Ausgleichsgerade')
 

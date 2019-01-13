@@ -22,13 +22,14 @@ pres = np.pi /2
 
 
 plt.plot(f, phi, 'rx', label='Messdaten')
-plt.axhline(y=p1, color='b', linestyle='-')
-plt.axhline(y=p2, color='b', linestyle='-')
-plt.axhline(y=pres, color='g', linestyle='-')
+plt.axhline(y=p1, color='c', linestyle='-', label=r'$\frac{\pi}{4}$')
+plt.axhline(y=p2, color='b', linestyle='-', label=r'$\frac{3\pi}{4}$')
+plt.axhline(y=pres, color='g', linestyle='-', label=r'$\frac{\pi}{2}$')
 
 
 plt.xlabel(r'$f \: / \: kHz$')
 plt.ylabel(r'$\Phi \: in \: rad$')
 plt.legend(loc='best')
+plt.tight_layout()
 
 plt.savefig('plot3.pdf')

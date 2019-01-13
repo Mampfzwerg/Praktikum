@@ -20,7 +20,7 @@ print('a = {:.10f} ± {:.10f}'.format(params[0], errors[0]))
 print('b = {:.4f} ± {:.5f}'.format(params[1], errors[1]))
 
 plt.plot(t1, U, 'rx', label='Messdaten')
-plt.xlabel(r'$s \: / \: s$')
+plt.xlabel(r'$t \: / \: s$')
 plt.ylabel(r'$U_C \: / \: V$')
 plt.legend(loc='best')
 
