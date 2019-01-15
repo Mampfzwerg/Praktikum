@@ -1,9 +1,30 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-%\begin{figure}
-%  \centering
-%  \includegraphics{plot.pdf}
-%  \caption{Plot.}
-%  \label{fig:plot}
-%\end{figure}
+\subsection{Die Fourieranalyse}
+
+Im ersten Versuchsteil soll der Abfall der Fourierkoeffizienten $a_k$ und $b_k$
+periodischer Sägezahn, Rechtecks- und Dreiecksspannungen untersucht werden.
+Dazu werden die Ordnung $k$ und die Spannungsamplitude $U$ gegeneinander
+logarithmiert aufgetragen und eine lineare Regression der Form
+
+\begin{equation}
+    \text{ln} \left(U \cdot \frac{1}{\si{\milli\volt}} \right) = a \cdot \text{ln}(k) + b
+    %hier andere Beschriftung für a und b überlegen
+\end{equation}
+
+Dabei wird die Spannung $U$ durch ihre Einheit geteilt, da der Logarithmus nur für
+für dimensionslose Größen definiert ist. Zudem ergibt sich umgeformt:
+
+\begin{equation}
+    U = \text{e}^b \cdot k^a \cdot \si{\milli\volt}
+\end{equation}
+
+Da nun $U$ proportional zu den Fourierkoeffizienten ist, lässt sich die
+Stärke deren Abfalls ermitteln.
+Die Messdaten der Sägezahnspannung sind dazu in Tabelle... aufgeführt und in 
+Abbildung ... gegeneinander aufgetragen.
+
+
+
+
