@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.30)  17 JAN 2019 00:10
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.30)  17 JAN 2019 03:10
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -32,7 +32,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.083 seconds (./header.tex
+luaotfload | main : initialization completed in 0.082 seconds (./header.tex
 (/home/marek/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/home/marek/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -898,24 +898,24 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            hyphenation	
-(polyglossia)            synonyms	table: 0x54f0920
 (polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	table: 0x4d61860
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            hyphenation	
-(polyglossia)            synonyms	table: 0x54f0af0
 (polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	table: 0x4d61a30
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
+(polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -2347,7 +2347,10 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 {/home/marek/.local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 
- (./main.toc)
+ (./main.toc
+Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
+3
+)
 \tf@toc=\write5
 
 \openout5 = main.toc
@@ -2363,7 +2366,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
 
-<content/Beispielspektrum.jpg, id=21, 578.91281pt x 435.12563pt>
+<content/Beispielspektrum.jpg, id=39, 578.91281pt x 435.12563pt>
 File: content/Beispielspektrum.jpg Graphic file (type jpg)
 <use content/Beispielspektrum.jpg>
 Package luatex.def Info: content/Beispielspektrum.jpg  used on input line 47.
@@ -2374,7 +2377,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--59
  []
 
 [3]) (./content/durchfuehrung.tex
-<content/Aufbau_1.jpg, id=37, 493.845pt x 257.46187pt>
+<content/Aufbau_1.jpg, id=53, 493.845pt x 257.46187pt>
 File: content/Aufbau_1.jpg Graphic file (type jpg)
 <use content/Aufbau_1.jpg>
 Package luatex.def Info: content/Aufbau_1.jpg  used on input line 19.
@@ -2384,15 +2387,8 @@ Missing character: There is no 𝜇 (U+1D707) in font [lmroman10-regular]:+tlig;
 !
 Missing character: There is no 𝛿 (U+1D6FF) in font [lmroman10-regular]:+tlig;
 !
-<./content/Beispielspektrum.jpg><./content/Aufbau_1.jpg>]
-
-LaTeX Warning: Reference `tab:Messdaten1' on page 5 undefined on input line 26.
-
-
-LaTeX Warning: Reference `fig:Säge' on page 5 undefined on input line 27.
-
-[5]
-<content/plot1.pdf, id=59, 462.52798pt x 346.89601pt>
+<./content/Beispielspektrum.jpg><./content/Aufbau_1.jpg>] [5]
+<content/plot1.pdf, id=75, 462.52798pt x 346.89601pt>
 File: content/plot1.pdf Graphic file (type pdf)
 <use content/plot1.pdf>
 Package luatex.def Info: content/plot1.pdf  used on input line 62.
@@ -2402,13 +2398,7 @@ Overfull \hbox (44.27129pt too wide) in paragraph at lines 62--63
  [][] 
  []
 
-
-LaTeX Warning: Reference `tab:Messdaten2' on page 6 undefined on input line 67.
-
-
-LaTeX Warning: Reference `fig:Recht' on page 6 undefined on input line 67.
-
-<content/plot2.pdf, id=61, 462.52798pt x 346.89601pt>
+<content/plot2.pdf, id=79, 462.52798pt x 346.89601pt>
 File: content/plot2.pdf Graphic file (type pdf)
 <use content/plot2.pdf>
 Package luatex.def Info: content/plot2.pdf  used on input line 103.
@@ -2418,14 +2408,7 @@ Overfull \hbox (44.27129pt too wide) in paragraph at lines 103--104
  [][] 
  []
 
-
-LaTeX Warning: Reference `tab:Messdaten3' on page 6 undefined on input line 108.
-
-
-
-LaTeX Warning: Reference `fig:Drei' on page 6 undefined on input line 108.
-
-<content/plot3.pdf, id=63, 462.52798pt x 346.89601pt>
+<content/plot3.pdf, id=83, 462.52798pt x 346.89601pt>
 File: content/plot3.pdf Graphic file (type pdf)
 <use content/plot3.pdf>
 Package luatex.def Info: content/plot3.pdf  used on input line 141.
@@ -2435,13 +2418,69 @@ Overfull \hbox (44.27129pt too wide) in paragraph at lines 141--142
  [][] 
  []
 
-) (./content/diskussion.tex [6] [7<./content/plot1.pdf>] [8<./content/plot2.pdf>
-] [9<./content/plot3.pdf>])
+[6] [7<./content/plot1.pdf>] [8<./content/plot2.pdf>] [9<./content/plot3.pdf>]
+<content/plot4.pdf, id=248, 462.52798pt x 346.89601pt>
+File: content/plot4.pdf Graphic file (type pdf)
+<use content/plot4.pdf>
+Package luatex.def Info: content/plot4.pdf  used on input line 165.
+(luatex.def)             Requested size: 462.52684pt x 346.89516pt.
+
+Overfull \hbox (44.27129pt too wide) in paragraph at lines 165--166
+[][] 
+ []
+
+<content/MAP001.pdf, id=251, 597.51233pt x 845.0471pt>
+File: content/MAP001.pdf Graphic file (type pdf)
+<use content/MAP001.pdf>
+Package luatex.def Info: content/MAP001.pdf  used on input line 201.
+(luatex.def)             Requested size: 418.25577pt x 591.52895pt.
+
+LaTeX Warning: Float too large for page by 17.72868pt on input line 204.
+
+[10<./content/plot4.pdf>] [11<./content/MAP001.pdf>]
+<content/plot5.pdf, id=318, 462.52798pt x 346.89601pt>
+File: content/plot5.pdf Graphic file (type pdf)
+<use content/plot5.pdf>
+Package luatex.def Info: content/plot5.pdf  used on input line 222.
+(luatex.def)             Requested size: 462.52684pt x 346.89516pt.
+
+Overfull \hbox (44.27129pt too wide) in paragraph at lines 222--223
+[][] 
+ []
+
+<content/MAP002.pdf, id=321, 597.51233pt x 845.0471pt>
+File: content/MAP002.pdf Graphic file (type pdf)
+<use content/MAP002.pdf>
+Package luatex.def Info: content/MAP002.pdf  used on input line 257.
+(luatex.def)             Requested size: 418.25577pt x 591.52895pt.
+
+LaTeX Warning: Float too large for page by 17.72868pt on input line 260.
+
+[12] [13<./content/plot5.pdf>] [14<./content/MAP002.pdf>]
+<content/plot6.pdf, id=387, 462.52798pt x 346.89601pt>
+File: content/plot6.pdf Graphic file (type pdf)
+<use content/plot6.pdf>
+Package luatex.def Info: content/plot6.pdf  used on input line 278.
+(luatex.def)             Requested size: 462.52684pt x 346.89516pt.
+
+Overfull \hbox (44.27129pt too wide) in paragraph at lines 278--279
+[][] 
+ []
+
+<content/MAP003.pdf, id=390, 597.51233pt x 845.0471pt>
+File: content/MAP003.pdf Graphic file (type pdf)
+<use content/MAP003.pdf>
+Package luatex.def Info: content/MAP003.pdf  used on input line 314.
+(luatex.def)             Requested size: 418.25577pt x 591.52895pt.
+
+LaTeX Warning: Float too large for page by 17.72868pt on input line 317.
+
+) (./content/diskussion.tex [15<./content/plot6.pdf>] [16<./content/MAP003.pdf>])
 
 LaTeX Warning: Empty bibliography on input line 23.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-[10]
+[17]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./main.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
@@ -2449,40 +2488,26 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
-
-
-Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: CD8A291E2664F1B38000EDAF0D212067;4966
-(rerunfilecheck)             After:  83E0F269B4BA5EF5703AD70B1857D2D7;7158.
-
-Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  A29FDD98D7022F125D1A75BF85599E4C;747.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: 4D463C89973810B10B588F05986DFDE4;9613.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: 78DA01EF1128D12788F4B864799D8FFE;747.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 42122 strings out of 494407
+ 42192 strings out of 494407
  100000,1648299 words of node,token memory allocated
- 651 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 21 attribute, 72 glue_spec
+ 666 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 21 attribute, 75 glue_spec
 , 21 attribute_list, 1 write nodes
-   avail lists: 1:2,2:1215,3:124,4:48,5:260,6:34,7:3690,8:92,9:432,10:25,11:379
- 45041 multiletter control sequences out of 65536+600000
- 144 fonts using 51486163 bytes
- 61i,14n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+   avail lists: 1:2,2:1280,3:144,4:48,5:260,6:39,7:3690,8:110,9:487,10:25,11:379
+
+ 45077 multiletter control sequences out of 65536+600000
+ 144 fonts using 51487011 bytes
+ 61i,16n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinm
 odern-math.otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public
 /lm/lmroman8-regular.otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opent
@@ -2494,10 +2519,10 @@ al/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home
 .otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmsans
 10-bold.otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm
 /lmroman12-bold.otf>
-Output written on main.pdf (10 pages, 145678 bytes).
+Output written on main.pdf (17 pages, 206222 bytes).
 
-PDF statistics: 318 PDF objects out of 1000 (max. 8388607)
- 179 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 131072)
+PDF statistics: 542 PDF objects out of 1000 (max. 8388607)
+ 294 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 131072)
  65 words of extra memory for PDF output out of 10000 (max. 100000000)
 

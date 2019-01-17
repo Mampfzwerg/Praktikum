@@ -8,4 +8,4 @@
 \contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Fourieranalyse}{5}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Fourier-Synthese}{6}{subsection.3.2}
-\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}
+\contentsline {section}{\numberline {4}Diskussion}{17}{section.4}

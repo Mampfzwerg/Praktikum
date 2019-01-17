@@ -145,29 +145,176 @@ proportional zu $\frac{1}{k^2}$ abfallen.
 
 \subsection{Fourier-Synthese}
 
-%\begin{figure}
-%    \centering
-%    \includegraphics[scale=1.0]{content/MAP001.BMP}
-%    \caption{Messwerte und lineare Regression für die Messwerte der Dreiecksspannung}
-%    \label{fig:Ex1}
-%\end{figure}
-%
-%\begin{figure}
-%    \centering
-%    \includegraphics[scale=1.0]{content/MAP002.BMP}
-%    \caption{Messwerte und lineare Regression für die Messwerte der Dreiecksspannung}
-%    \label{fig:Ex2}
-%\end{figure}
-%
-%\begin{figure}
-%    \centering
-%    \includegraphics[scale=1.0]{content/MAP003.BMP}
-%    \caption{Messwerte und lineare Regression für die Messwerte der Dreiecksspannung}
-%    \label{fig:Ex3}
-%\end{figure}
+Im zweiten Versuchsteil wird gezeigt, dass sich die verschiedenen Spannungsfunktionen
+durch Superpositionen verschiedener Oberwellen, bzw Fourierkoeffizienten synthetisieren
+lassen. Als Grundlage dessen dienen theoretische Vorberechnungen der jeweiligen
+Fourier-Reihen, nach Formel \eqref{eqn:Entwicklung}, und der in diese eingesetzten
+Fourierkoeffizienten $a_k$ und $b_k$.
+
+Für die ungerade Sägezahnspannung sind die Fourierkoeffizienten:
+
+\begin{align*}
+    a_\text{k} &= 0 \\
+    b_\text{k} &= - \frac{1}{2k} + \frac{1}{k}
+\end{align*}
+
+Diese ergeben in Formel \eqref{eqn:Entwicklung} eingesetzt die Fourier-Reihe
+der Sägezahnspannung, die in Abbbildung \ref{fig:Theo1}  dargestellt ist.
+
+\begin{figure}
+    \includegraphics[scale = 1.0]{content/plot4.pdf}
+    \caption{Theoretische Sägezahnfunktion}
+    \label{fig:Theo1}
+\end{figure}
+
+Experimentell werden die Fourierkoeffizienten bzw. Oberwellenamplituden möglichst mit dem
+Proportionalitätsfaktor $\frac{1}{k}$ abfallend eingestellt, wie in Tabelle \ref{tab:Messdaten4}
+dargestellt. Dabei bezeichnen $U_\text{theo}$ die theoretisch einzustellenden und $U$ die
+tatsächlich eingestellten Spannungamplituden. $\symup{\Delta}U$ bezeichnet die Abweichung der
+beiden Werte voneinander. Es ergibt sich die Sägezahnspannung, welche in Abbildung \ref{fig:Ex1}
+dargestellt ist.
+
+\begin{table}
+    \centering
+    \caption{Einstellungen der Oberwellenamplituden für eine Sägezahnspannung}
+    \label{tab:Messdaten4}
+    \sisetup{table-format=2.1}
+    \begin{tabular}{c c c c}
+    \toprule
+    $k$ & $U \,/\, \si{\volt}$ & $U_\text{theo} \,/\, \si{\volt}$ & $\symup{\Delta}U \,/\, \si{\percent})$ \\
+    \midrule
+    1 & 0,633 & 0,633 & 0,00 \\
+    2 & 0,316 & 0,317 & 0,32 \\
+    3 & 0,211 & 0,211 & 0,00 \\
+    4 & 0,157 & 0,158 & 0,63 \\
+    5 & 0,126 & 0,127 & 0,79 \\
+    6 & 0,106 & 0,106 & 0,00 \\
+    7 & 0,089 & 0,090 & 1,11 \\
+    8 & 0,078 & 0,079 & 1,27 \\
+    9 & 0,070 & 0,070 & 0,00 \\
+   10 & 0,063 & 0,063 & 0,00 \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}
+    \includegraphics[scale = 0.7]{content/MAP001.pdf}
+    \caption{Experimentell synthetisierte Sägezahnspannung}
+    \label{fig:Ex1}
+\end{figure}
 
 
 
+Für die ungerade Rechtecksspannung lauten die Fourierkoeffizienten:
+
+\begin{align*}
+    a_\text{k} &= 0 \\
+    b_\text{k} &= 
+        \begin{cases} 
+            0, \text{ für k gerade} \\ \frac{4}{\pi k}, \text{ für k ungerade}
+        \end{cases}
+\end{align*}
+
+Diese ergeben in Formel \eqref{eqn:Entwicklung} eingesetzt die Fourier-Reihe
+der Rechtecksspannung, die in Abbbildung \ref{fig:Theo2}  dargestellt ist.
+
+\begin{figure}
+    \includegraphics[scale = 1.0]{content/plot5.pdf}
+    \caption{Theoretische Rechtecksfunktion}
+    \label{fig:Theo2}
+\end{figure}
+
+Die Fourierkoeffizienten der Rechtecksspannung werden analog zu denen der Sägezahnspannung
+eingestellt , wie in Tabelle \ref{tab:Messdaten5} dargestellt. 
+Es ergibt sich die Rechtecksspannung, welche in Abbildung \ref{fig:Ex2}
+dargestellt ist.
+
+\begin{table}
+    \centering
+    \caption{Einstellungen der Oberwellenamplituden für eine Rechtecksspannung}
+    \label{tab:Messdaten5}
+    \sisetup{table-format=2.1}
+    \begin{tabular}{c c c c}
+    \toprule
+    $k$ & $U \,/\, \si{\volt}$ & $U_\text{theo} \,/\, \si{\volt}$ & $\symup{\Delta}U \,/\, \si{\percent})$ \\
+    \midrule
+     1 & 0,633 & 0,633 & 0.00 \\
+     2 & 0,000 & 0,000 & 0.00 \\
+     3 & 0,211 & 0,211 & 0.00 \\
+     4 & 0,000 & 0,000 & 0.00 \\
+     5 & 0,126 & 0,127 & 0.79 \\
+     6 & 0,000 & 0,000 & 0.00 \\
+     7 & 0,089 & 0,090 & 1.11 \\
+     8 & 0,000 & 0,000 & 0.00 \\
+     9 & 0,070 & 0,070 & 0.00 \\
+    10 & 0,000 & 0,000 & 0.00 \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.7]{content/MAP002.pdf}
+    \caption{Experimentell synthetisierte Rechtecksspannung}
+    \label{fig:Ex2}
+\end{figure}
+
+
+
+Für die gerade Dreiecksspannung lauten die Fourierkoeffizienten:
+
+\begin{align*}
+    a_\text{k} &= 0 
+        \begin{cases} 
+            0, \text{ für k gerade} \\ \frac{8}{\pi^2 k^2}, \text{ für k ungerade}
+        \end{cases} \\
+    b_\text{k} &= 0
+\end{align*}
+
+Diese ergeben in Formel \eqref{eqn:Entwicklung} eingesetzt die Fourier-Reihe
+der Dreiecksspannung, die in Abbbildung \ref{fig:Theo3}  dargestellt ist.
+
+\begin{figure}
+    \includegraphics[scale = 1.0]{content/plot6.pdf}
+    \caption{Theoretische Rechtecksfunktion}
+    \label{fig:Theo3}
+\end{figure}
+
+Die Fourierkoeffizienten der Dreiecksspannungen werden im Gegensatz zu denen
+der vorherigen mit einem Abfall proportional zu $\frac{1}{k^2}$ eingestellt,
+wie in Tabelle \ref{tab:Messdaten6} dargestellt. Die abgebildeten
+Größen ergeben sich analog zu den Tabellen der anderen beiden Spannungen.
+Es ergibt sich schließlich die Dreiecksspannung, welche in Abbildung \ref{fig:Ex3}
+dargestellt ist.
+
+\begin{table}
+    \centering
+    \caption{Einstellungen der Oberwellenamplituden für eine Dreiecksspannung}
+    \label{tab:Messdaten6}
+    \sisetup{table-format=2.1}
+    \begin{tabular}{c c c c}
+    \toprule
+    $k$ & $U \,/\, \si{\volt}$ & $U_\text{theo} \,/\, \si{\volt}$ & $\symup{\Delta}U \,/\, \si{\percent})$ \\
+    \midrule
+    1 & 0,617 & 0,617 & 0.00 \\
+    2 & 0,000 & 0,000 & 0.00 \\
+    3 & 0,068 & 0,069 & 1.45 \\
+    4 & 0,000 & 0,000 & 0.00 \\
+    5 & 0,025 & 0,025 & 0.00 \\
+    6 & 0,000 & 0,000 & 0.00 \\
+    7 & 0,013 & 0,013 & 0.00 \\
+    8 & 0,000 & 0,000 & 0.00 \\
+    9 & 0,008 & 0,008 & 0.00 \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.7]{content/MAP003.pdf}
+    \caption{Experimentell synthetisierte Dreiecksspannung}
+    \label{fig:Ex3}
+\end{figure}
 
 
 
