@@ -13,29 +13,20 @@ logarithmiert aufgetragen und eine lineare Regression der Form
     %hier andere Beschriftung für a und b überlegen
 \end{equation}
 
+durchgeführt.
 Dabei wird die Spannung $U$ durch ihre Einheit geteilt, da der Logarithmus nur für
 für dimensionslose Größen definiert ist. Zudem ergibt sich umgeformt:
 
 \begin{equation}
-    U = \text{e}^b \cdot k^a \cdot \si{\volt}
+    U = \text{e}^b \cdot k^a \cdot \si{\volt}.
     \label{eqn:Spannung}
 \end{equation}
 
 Da nun $U$ proportional zu den Fourierkoeffizienten ist, lässt sich die
 Stärke deren Abfalls ermitteln.
-Die Messdaten der Sägezahnspannung sind dazu in Tabelle \ref{tab:Messdaten1} aufgeführt und in 
-Abbildung \ref{fig:Säge} gegeneinander aufgetragen.
-Die Lineare Regression, die mittels python durchgeführt wurde, ergibt die Tangentenparameter:
+Die Messdaten der Sägezahnspannung sind dazu in Tabelle \ref{tab:Messdaten1} aufgeführt. 
 
-\begin{align*}
-    a_\text{S} &= \SI{-1.0052 \pm 0.0286}{} \\
-    b_\text{S} &= \SI{07523 \pm 0.0451}{}
-\end{align*}
-
-Nach Formel \eqref{eqn:Spannung} ist zu erkennen, dass die Fourierkoeffizienten der Sägezahnspannung in etwa
-proportional zu $\frac{1}{k}$ abfallen.
-
-\begin{table}
+\begin{table}[H]
     \centering
     \caption{Messdaten und deren Logarithmen der Sägezahnspannung}
     \label{tab:Messdaten1}
@@ -57,25 +48,28 @@ proportional zu $\frac{1}{k}$ abfallen.
     \end{tabular}
 \end{table} 
 
-\begin{figure}
+Diese werden außerdem in Abbildung \ref{fig:Säge} gegeneinander aufgetragen.
+
+\begin{figure}[H]
     \centering
     \includegraphics[scale=1.0]{content/plot1.pdf}
     \caption{Messwerte und lineare Regression für die Messwerte der Sägezahnspannung}
     \label{fig:Säge}
 \end{figure}
 
-Für die Rechtecksspannung sind die Messdaten in Tabelle \ref{tab:Messdaten2} aufgelistet und in Abbildung \ref{fig:Recht}
-gegeneinander aufgetragen. Es ergeben sich die Regressionsparameter:
+Die Lineare Regression, die mittels python durchgeführt wurde, ergibt die Tangentenparameter:
 
 \begin{align*}
-    a_\text{R} &= \SI{-1.0021 \pm 0.0209}{} \\
-    b_\text{R} &= \SI{1.4205 \pm 0.0462}{}
+    a_\text{S} &= \SI{-1.0052 \pm 0.0286}{}, \\
+    b_\text{S} &= \SI{07523 \pm 0.0451}{}.
 \end{align*}
 
-Nach Formel \eqref{eqn:Spannung} ist zu erkennen, dass die Fourierkoeffizienten der Rechtecksspannung in etwa
+Nach Formel \eqref{eqn:Spannung} ist zu erkennen, dass die Fourierkoeffizienten der Sägezahnspannung in etwa
 proportional zu $\frac{1}{k}$ abfallen.
+\\
+Für die Rechtecksspannung sind die Messdaten in Tabelle \ref{tab:Messdaten2} aufgelistet.
 
-\begin{table}
+\begin{table}[H]
     \centering
     \caption{Messdaten und deren Logarithmen der Rechtecksspannung}
     \label{tab:Messdaten2}
@@ -98,25 +92,30 @@ proportional zu $\frac{1}{k}$ abfallen.
     \end{tabular}
 \end{table} 
 
-\begin{figure}
+Diese werden in Abbildung \ref{fig:Recht} gegeneinander aufgetragen. 
+
+\begin{figure}[H]
     \centering
     \includegraphics[scale=1.0]{content/plot2.pdf}
     \caption{Messwerte und lineare Regression für die Messwerte der Rechtecksspannung}
     \label{fig:Recht}
 \end{figure}
 
-Für die Dreiecksspannung sind die Messdaten in Tabelle \ref{tab:Messdaten3} aufgelistet und in Abbildung \ref{fig:Drei}
-gegeneinander aufgetragen. Es ergeben sich die Regressionsparameter:
+Es ergeben sich die Regressionsparameter:
 
 \begin{align*}
-    a_\text{D} &= \SI{-1.9681 \pm 0.0121}{} \\
-    b_\text{D} &= \SI{0.9585 \pm 0.0227}{}
+    a_\text{R} &= \SI{-1.0021 \pm 0.0209}{}, \\
+    b_\text{R} &= \SI{1.4205 \pm 0.0462}{}.
 \end{align*}
 
-Nach Formel \eqref{eqn:Spannung} ist zu erkennen, dass die Fourierkoeffizienten der Dreiecksspannung in etwa
-proportional zu $\frac{1}{k^2}$ abfallen.
+Nach Formel \eqref{eqn:Spannung} ist zu erkennen, dass die Fourierkoeffizienten der Rechtecksspannung in etwa
+proportional zu $\frac{1}{k}$ abfallen.
+\\
+\newpage
+Für die Dreiecksspannung sind die Messdaten in Tabelle \ref{tab:Messdaten3} aufgelistet.
 
-\begin{table}
+
+\begin{table}[H]
     \centering
     \caption{Messdaten und deren Logarithmen der Dreiecksspannung}
     \label{tab:Messdaten3}
@@ -136,12 +135,25 @@ proportional zu $\frac{1}{k^2}$ abfallen.
     \end{tabular}
 \end{table} 
 
-\begin{figure}
+Diese sind in Abbildung \ref{fig:Drei} gegeneinander aufgetragen. 
+
+\begin{figure}[H]
     \centering
     \includegraphics[scale=1.0]{content/plot3.pdf}
     \caption{Messwerte und lineare Regression für die Messwerte der Dreiecksspannung}
     \label{fig:Drei}
 \end{figure}
+
+Es ergeben sich die Regressionsparameter:
+
+\begin{align*}
+    a_\text{D} &= \SI{-1.9681 \pm 0.0121}{}, \\
+    b_\text{D} &= \SI{0.9585 \pm 0.0227}{}.
+\end{align*}
+
+Nach Formel \eqref{eqn:Spannung} ist zu erkennen, dass die Fourierkoeffizienten der Dreiecksspannung in etwa
+proportional zu $\frac{1}{k^2}$ abfallen.
+
 
 \subsection{Fourier-Synthese}
 
@@ -159,10 +171,11 @@ Für die ungerade Sägezahnspannung sind die Fourierkoeffizienten:
 \end{align*}
 
 Diese ergeben in Formel \eqref{eqn:Entwicklung} eingesetzt die Fourier-Reihe
-der Sägezahnspannung, die in Abbbildung \ref{fig:Theo1}  dargestellt ist.
+der Sägezahnspannung, die in Abbbildung \ref{fig:Theo1} dargestellt ist.
 
-\begin{figure}
-    \includegraphics[scale = 1.0]{content/plot4.pdf}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.6]{content/plot4.pdf}
     \caption{Theoretische Sägezahnfunktion}
     \label{fig:Theo1}
 \end{figure}
@@ -171,10 +184,9 @@ Experimentell werden die Fourierkoeffizienten bzw. Oberwellenamplituden möglich
 Proportionalitätsfaktor $\frac{1}{k}$ abfallend eingestellt, wie in Tabelle \ref{tab:Messdaten4}
 dargestellt. Dabei bezeichnen $U_\text{theo}$ die theoretisch einzustellenden und $U$ die
 tatsächlich eingestellten Spannungamplituden. $\symup{\Delta}U$ bezeichnet die Abweichung der
-beiden Werte voneinander. Es ergibt sich die Sägezahnspannung, welche in Abbildung \ref{fig:Ex1}
-dargestellt ist.
+beiden Werte voneinander.
 
-\begin{table}
+\begin{table}[H]
     \centering
     \caption{Einstellungen der Oberwellenamplituden für eine Sägezahnspannung}
     \label{tab:Messdaten4}
@@ -197,13 +209,15 @@ dargestellt ist.
     \end{tabular}
 \end{table}
 
-\begin{figure}
-    \includegraphics[scale = 0.7]{content/MAP001.pdf}
+Daraus ergibt sich die Sägezahnspannung, welche in Abbildung \ref{fig:Ex1}
+dargestellt ist.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.7]{content/saege.jpg}
     \caption{Experimentell synthetisierte Sägezahnspannung}
     \label{fig:Ex1}
 \end{figure}
-
-
 
 Für die ungerade Rechtecksspannung lauten die Fourierkoeffizienten:
 
@@ -218,18 +232,17 @@ Für die ungerade Rechtecksspannung lauten die Fourierkoeffizienten:
 Diese ergeben in Formel \eqref{eqn:Entwicklung} eingesetzt die Fourier-Reihe
 der Rechtecksspannung, die in Abbbildung \ref{fig:Theo2}  dargestellt ist.
 
-\begin{figure}
-    \includegraphics[scale = 1.0]{content/plot5.pdf}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.6]{content/plot5.pdf}
     \caption{Theoretische Rechtecksfunktion}
     \label{fig:Theo2}
 \end{figure}
 
 Die Fourierkoeffizienten der Rechtecksspannung werden analog zu denen der Sägezahnspannung
-eingestellt , wie in Tabelle \ref{tab:Messdaten5} dargestellt. 
-Es ergibt sich die Rechtecksspannung, welche in Abbildung \ref{fig:Ex2}
-dargestellt ist.
+eingestellt, wie in Tabelle \ref{tab:Messdaten5} dargestellt. 
 
-\begin{table}
+\begin{table}[H]
     \centering
     \caption{Einstellungen der Oberwellenamplituden für eine Rechtecksspannung}
     \label{tab:Messdaten5}
@@ -238,27 +251,29 @@ dargestellt ist.
     \toprule
     $k$ & $U \,/\, \si{\volt}$ & $U_\text{theo} \,/\, \si{\volt}$ & $\symup{\Delta}U \,/\, \si{\percent})$ \\
     \midrule
-     1 & 0,633 & 0,633 & 0.00 \\
-     2 & 0,000 & 0,000 & 0.00 \\
-     3 & 0,211 & 0,211 & 0.00 \\
-     4 & 0,000 & 0,000 & 0.00 \\
-     5 & 0,126 & 0,127 & 0.79 \\
-     6 & 0,000 & 0,000 & 0.00 \\
-     7 & 0,089 & 0,090 & 1.11 \\
-     8 & 0,000 & 0,000 & 0.00 \\
-     9 & 0,070 & 0,070 & 0.00 \\
-    10 & 0,000 & 0,000 & 0.00 \\
+     1 & 0,633 & 0,633 & 0,00 \\
+     2 & 0,000 & 0,000 & 0,00 \\
+     3 & 0,211 & 0,211 & 0,00 \\
+     4 & 0,000 & 0,000 & 0,00 \\
+     5 & 0,126 & 0,127 & 0,79 \\
+     6 & 0,000 & 0,000 & 0,00 \\
+     7 & 0,089 & 0,090 & 1,11 \\
+     8 & 0,000 & 0,000 & 0,00 \\
+     9 & 0,070 & 0,070 & 0,00 \\
+    10 & 0,000 & 0,000 & 0,00 \\
     \bottomrule
     \end{tabular}
 \end{table}
 
-\begin{figure}
+Daraus ergibt sich die Rechtecksspannung, welche in Abbildung \ref{fig:Ex2}
+dargestellt ist.
+
+\begin{figure}[H]
     \centering
-    \includegraphics[scale=0.7]{content/MAP002.pdf}
+    \includegraphics[scale=0.7]{content/recht.jpg}
     \caption{Experimentell synthetisierte Rechtecksspannung}
     \label{fig:Ex2}
 \end{figure}
-
 
 
 Für die gerade Dreiecksspannung lauten die Fourierkoeffizienten:
@@ -274,8 +289,9 @@ Für die gerade Dreiecksspannung lauten die Fourierkoeffizienten:
 Diese ergeben in Formel \eqref{eqn:Entwicklung} eingesetzt die Fourier-Reihe
 der Dreiecksspannung, die in Abbbildung \ref{fig:Theo3}  dargestellt ist.
 
-\begin{figure}
-    \includegraphics[scale = 1.0]{content/plot6.pdf}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.6]{content/plot6.pdf}
     \caption{Theoretische Rechtecksfunktion}
     \label{fig:Theo3}
 \end{figure}
@@ -284,10 +300,8 @@ Die Fourierkoeffizienten der Dreiecksspannungen werden im Gegensatz zu denen
 der vorherigen mit einem Abfall proportional zu $\frac{1}{k^2}$ eingestellt,
 wie in Tabelle \ref{tab:Messdaten6} dargestellt. Die abgebildeten
 Größen ergeben sich analog zu den Tabellen der anderen beiden Spannungen.
-Es ergibt sich schließlich die Dreiecksspannung, welche in Abbildung \ref{fig:Ex3}
-dargestellt ist.
 
-\begin{table}
+\begin{table}[H]
     \centering
     \caption{Einstellungen der Oberwellenamplituden für eine Dreiecksspannung}
     \label{tab:Messdaten6}
@@ -296,22 +310,25 @@ dargestellt ist.
     \toprule
     $k$ & $U \,/\, \si{\volt}$ & $U_\text{theo} \,/\, \si{\volt}$ & $\symup{\Delta}U \,/\, \si{\percent})$ \\
     \midrule
-    1 & 0,617 & 0,617 & 0.00 \\
-    2 & 0,000 & 0,000 & 0.00 \\
-    3 & 0,068 & 0,069 & 1.45 \\
-    4 & 0,000 & 0,000 & 0.00 \\
-    5 & 0,025 & 0,025 & 0.00 \\
-    6 & 0,000 & 0,000 & 0.00 \\
-    7 & 0,013 & 0,013 & 0.00 \\
-    8 & 0,000 & 0,000 & 0.00 \\
-    9 & 0,008 & 0,008 & 0.00 \\
+    1 & 0,617 & 0,617 & 0,00 \\
+    2 & 0,000 & 0,000 & 0,00 \\
+    3 & 0,068 & 0,069 & 1,45 \\
+    4 & 0,000 & 0,000 & 0,00 \\
+    5 & 0,025 & 0,025 & 0,00 \\
+    6 & 0,000 & 0,000 & 0,00 \\
+    7 & 0,013 & 0,013 & 0,00 \\
+    8 & 0,000 & 0,000 & 0,00 \\
+    9 & 0,008 & 0,008 & 0,00 \\
     \bottomrule
     \end{tabular}
 \end{table}
 
-\begin{figure}
+Es ergibt sich schließlich die Dreiecksspannung, welche in Abbildung \ref{fig:Ex3}
+dargestellt ist.
+
+\begin{figure}[H]
     \centering
-    \includegraphics[scale=0.7]{content/MAP003.pdf}
+    \includegraphics[scale=0.7]{content/sinus.jpg}
     \caption{Experimentell synthetisierte Dreiecksspannung}
     \label{fig:Ex3}
 \end{figure}
