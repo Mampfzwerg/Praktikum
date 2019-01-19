@@ -1,7 +1,8 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-\subsection{Zeitabhängigkeit der Amplitude}
+\subsection{Bestimmung des effektiven Dämpfungswiderstandes $R_\text{eff}$ und der Abklingdauer $T_\text{ex}$ 
+aus der Zeitabhängigkeit der Amplitude}
 
 Zunächst werden die bauteilspezifischen Werte notiert:
 
@@ -17,7 +18,8 @@ in Tabelle \ref{tab:Messdaten1} zu sehen.
 
 \begin{table}
 \centering
-\caption{Messdaten der Maxima der Amplitude}
+\caption{Messdaten zur Bestimmung des effektiven Dämpfungswiderstandes $R_\text{eff}$ und 
+der Abklingdauer $T_\text{ex}$ aus der Zeitabhängigkeit der Amplitude.}
 \label{tab:Messdaten1}
 \sisetup{table-format=2.1}
 \begin{tabular}{c c}
@@ -56,7 +58,8 @@ durchgeführt. Das Ergebnis ist in Abbildung \ref{fig:gedämpft} zu sehen.
 \begin{figure}
   \centering
   \includegraphics[scale=0.8]{content/plot1.pdf}
-  \caption{Exponentielle Regression der Amplitude}
+  \caption{Exponentielle Regression der Amplitude zur Bestimmung des Dämpfungswiderstandes $R_\text{eff}$ und 
+der Abklingdauer $T_\text{ex}$.}
   \label{fig:gedämpft}
 \end{figure}
 
@@ -76,10 +79,11 @@ R_\text{eff} = 4\pi L\mu = \SI{136+-4}{\ohm}
 
 Der Fehler ergibt sich dabei durch die Gaußsche Fehlerfortpflanzung zu: 
 
-\begin{equation*}
-\symup{\Delta} R_\text{eff} = \sqrt{\left(\frac{\symup{d}R_\text{eff}}{\symup{d}L}\right)²\cdot (\symup{\Delta}L)² +
-\left(\frac{\symup{d}R_\text{eff}}{\symup{d}\mu}\right)²\cdot (\symup{\Delta}\mu)²}.
-\end{equation*}
+\begin{align*}
+\symup{\Delta} R_\text{eff} &= \sqrt{\left(\frac{\symup{d}R_\text{eff}}{\symup{d}L}\right)²\cdot (\symup{\Delta}L)² +
+\left(\frac{\symup{d}R_\text{eff}}{\symup{d}\mu}\right)²\cdot (\symup{\Delta}\mu)²}\\
+&=\sqrt{(4\pi\mu\cdot \symup{\Delta}L)²+(2\pi\L\cdot \symup{\Delta}\mu)²} 
+\end{align*}
 
 Weiterhin kann nun auch die Abklingdauer $T_\text{ex}$ berechnet werden zu:
 
@@ -90,10 +94,11 @@ T_\text{ex} = \frac{1}{2\pi\mu} = \SI{0.149+-0.005e-3}{\second}.
 Der Fehler ergibt sich hierbei zu: 
 
 \begin{equation*}
-\symup{\Delta} T_\text{ex} = \sqrt{\left(\frac{\symup{d}T_\text{ex}}{\symup{d}\mu}\right)²\cdot (\symup{\Delta}\mu)²}.
+\symup{\Delta} T_\text{ex} = \sqrt{\left(\frac{\symup{d}T_\text{ex}}{\symup{d}\mu}\right)²\cdot (\symup{\Delta}\mu)²} = \sqrt{\frac{-1}{2\pi\mu²}\cdot(\symup{\Delta}\mu)²}.
 \end{equation*}
 
-\subsection{Bestimmung des Dämpfungswiderstandes}
+\subsection{Bestimmung des Dämpfungswiderstandes $R_\text{ap}$ bei der Untersuchung 
+des aperiodischen Grenzfalles}
 
 Hier wurde der aperiodische Grenzfall untersucht. Dabei wurde der
 Dämpfungswiderstand zu 
@@ -112,10 +117,12 @@ R_\text{ap,theo} = \SI{4390+-9}{\ohm}.
 
 Der Fehler berechnet sich über die Gaußsche Fehlerfortpflanzung: 
 
-\begin{equation*}
-\symup{\Delta} R_\text{ap,theo} = \sqrt{\left(\frac{\symup{d}R_\text{ap}}{\symup{d}L}\right)²\cdot (\symup{\Delta}L)² +
-\left(\frac{\symup{d}R_\text{ap}}{\symup{d}C}\right)²\cdot (\symup{\Delta}C)²}.
-\end{equation*}
+\begin{align*}
+\symup{\Delta} R_\text{ap,theo} &= \sqrt{\left(\frac{\symup{d}R_\text{ap}}{\symup{d}L}\right)²\cdot (\symup{\Delta}L)² +
+\left(\frac{\symup{d}R_\text{ap}}{\symup{d}C}\right)²\cdot (\symup{\Delta}C)²}\\
+&= \sqrt{\frac{(\symup{\Delta}L)²}{LC}+\frac{L\cdot(\symup{\Delta}C)²}{C³}}
+.
+\end{align*}
 
 \subsection{Frequenzabhängigkeit der Kondensatorspannung}
 
@@ -124,7 +131,7 @@ die Erregerspannung $U_0$ sind in Tabelle \ref{tab:Messdaten2} aufgeführt.
 
 \begin{table}
   \centering
-  \caption{Messdaten der frequenzabhängigen Kondensatorspannung}
+  \caption{Gemessene Kondensatorspannungen $U_C$ und Generatorspannung $U_0$ bei verschiedenen Frequenzen $f$.}
   \label{tab:Messdaten2}
   \sisetup{table-format=2.1}
   \begin{tabular}{c c c}
@@ -171,7 +178,8 @@ Es wird $\frac{U_C}{U_0}$ in Abbildung \ref{fig:resonanz} gegen die Frequenz auf
 \begin{figure}
   \centering
   \includegraphics[scale=0.8]{content/plot2.pdf}
-  \caption{Resonanzkurve}
+  \caption{Resultierende Resonanzkurve bei Auftragung der normierten Amplitude gegen die 
+  Frequenz $f$.}
   \label{fig:resonanz}
 \end{figure}
 
@@ -185,7 +193,7 @@ in Abbildung \ref{fig:resonanz} eingetragen.
 Der experimentelle Wert dieser Halbwertsbreite $b$ wird aus der Abbildung als 
 
 \begin{equation*}
-b_\text{ex} = \omega _+ - \omega _- = \SI{38}{\kilo\hertz} - \SI{28}{\kilo\hertz} = \SI{10}{\kilo\hertz} 
+b_\text{ex} = \omega _+ - \omega _- = \SI{38+-1.5}{\kilo\hertz} - \SI{28+-1.5}{\kilo\hertz} = \SI{10+-2.1}{\kilo\hertz} 
 \end{equation*}
 
 abgelesen.
@@ -197,12 +205,13 @@ b_\text{theo} = \frac{R}{2\pi L} = \SI{8.021+-0.025}{\kilo\hertz}.
 
 Dabei ergibt sich der Fehler mit: 
 
-\begin{equation*}
-\symup{\Delta}b_\text{theo} = \sqrt{\left(\frac{\symup{d}b}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
-\left(\frac{\symup{d}q}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)²}.
-\end{equation*}
+\begin{align*}
+\symup{\Delta}b_\text{theo} &= \sqrt{\left(\frac{\symup{d}b}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
+\left(\frac{\symup{d}b}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)²}\\
+&= \sqrt{\frac{(\symup{\Delta}R)²}{4\pi²L²}+\frac{R²(\symup{\Delta}L)²}{4\pi²L⁴}}.
+\end{align*}
 
-Die experimentelle Resonanzüberhöhung wird aus der Abbildung als 
+Die experimentelle Resonanzüberhöhung wird aus Tabelle \ref{tab:Messdaten2} als 
 
 \begin{equation*}
 q_\text{ex} = \num{3.76}
@@ -218,11 +227,13 @@ q_\text{theo} = \frac{\sqrt{L}}{R\sqrt{C}} = \num{4.309+-0.010}.
 
 Der Fehler ergibt sich dabei durch die Gaußsche Fehlerfortpflanzung: 
 
-\begin{equation*}
-\symup{\Delta}q_\text{theo} = \sqrt{\left(\frac{\symup{d}q}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
+\begin{align*}
+\symup{\Delta}q_\text{theo} &= \sqrt{\left(\frac{\symup{d}q}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
 \left(\frac{\symup{d}q}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)²+
-\left(\frac{\symup{d}q}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²}. 
-\end{equation*}
+\left(\frac{\symup{d}q}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²}\\
+&= \sqrt{\frac{L \cdot (\symup{\Delta}R)²}{R⁴C}+\frac{L\cdot(\symup{\Delta}L)²}{4C³R²}+
+\frac{L³\cdot(\symup{\Delta}C)²}{4R²C⁵}}.
+\end{align*}
 
 
 
@@ -242,12 +253,12 @@ Messdurchführung zusammen, d.h. $\symup{\Delta} t$ wurde zuzüglich einer Perio
 
 \begin{table}
   \centering
-  \caption{Messdaten der frequenzabhängigen Phasendifferenz}
+  \caption{Messdaten der Phasendifferenzen $\phi$, errechnet aus dem zeitlichen Abstand $t$ der Maxima, bei verschiedenen Frequenzen $f$}
   \label{tab:Messdaten3}
   \sisetup{table-format=2.1}
   \begin{tabular}{c c c}
   \toprule
-  $f \,/\, \si{\kilo\hertz}$ & $\symup{\Delta} t \,/\, \si{\micro\second}$ & $\Phi \,\, \text{in rad} $ \\
+  $f \,/\, \si{\kilo\hertz}$ & $\symup{\Delta} t \,/\, \si{\micro\second}$ & $\Phi \,/\, \si{\radian}$ \\
   \midrule
 09 & 107,0 & 0,232 \\
 11 & 088,0 & 0,201 \\
@@ -293,16 +304,16 @@ Messdurchführung zusammen, d.h. $\symup{\Delta} t$ wurde zuzüglich einer Perio
   \begin{figure}
     \centering
     \includegraphics[scale=0.8]{content/plot3.pdf}
-    \caption{Phasendifferenz}
+    \caption{Phasendifferenz $\phi$ aufgetragen gegen die Frequenz $f$.}
     \label{fig:phase}
   \end{figure}
 
   Die abgelesenen Frequenzen ergeben sich somit zu:
 
   \begin{align*}
-    f_{1,\text{ex}} &= \SI{30}{\kilo\hertz} \; ,\\
-    f_{2,\text{ex}} &= \SI{38}{\kilo\hertz} \; ,\\
-    f_\text{res,ex} &= \SI{34}{\kilo\hertz} \; .
+    f_{1,\text{ex}} &= \SI{30+-1.5}{\kilo\hertz} \; ,\\
+    f_{2,\text{ex}} &= \SI{38+-1.5}{\kilo\hertz} \; ,\\
+    f_\text{res,ex} &= \SI{34+-1.5}{\kilo\hertz} \; .
   \end{align*}
 
   Die nach den Formeln \eqref{eqn:fres} und \eqref{eqn:f12} berechneten Frequenzen sind:
@@ -315,16 +326,22 @@ Messdurchführung zusammen, d.h. $\symup{\Delta} t$ wurde zuzüglich einer Perio
 
   Dabei berechnen sich deren Fehler nach
 
-  \begin{equation*}
-    \symup{\Delta}f_{1\text{,}2} = \sqrt{\left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)² +
+  \begin{align*}
+    \symup{\Delta}f_{1\text{,}2} &= \sqrt{\left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)² +
     \left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
-    \left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²} 
-  \end{equation*}
+    \left(\frac{\symup{d}f_{1\text{,}2}}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²} \\
+    &=\sqrt{\left(\frac{-\frac{1}{CL²}-\frac{R²}{2L³}}{4\pi\sqrt{\frac{1}{CL}+\frac{R²}{4L²}}}\mp\frac{R}{4\pi L²}\right)²\cdot (\symup{\Delta}L)²
+    + \left(\frac{(\symup{\Delta}C)²}{16\pi²L²C⁴\left(\frac{1}{LC}+\frac{R²}{4L²}\right)}\right)
+    + \left(\frac{R}{8\pi L²\sqrt{\frac{R²}{4L²}+\frac{1}{CL}}}\pm \frac{1}{4\pi L}\right)²\cdot(symup{\Delta}R)²}
+  \end{align*}
 
   und
 
-  \begin{equation*}
-    \symup{\Delta}f_\text{res} = \sqrt{\left(\frac{\symup{d}f_\text{res}}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)² +
+  \begin{align*}
+    \symup{\Delta}f_\text{res} &= \sqrt{\left(\frac{\symup{d}f_\text{res}}{\symup{d}L}\right)²\cdot(\symup{\Delta}L)² +
     \left(\frac{\symup{d}f_\text{res}}{\symup{d}R}\right)²\cdot(\symup{\Delta}R)² +
-    \left(\frac{\symup{d}f_\text{res}}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²} \; .
-  \end{equation*}
+    \left(\frac{\symup{d}f_\text{res}}{\symup{d}C}\right)²\cdot(\symup{\Delta}C)²} \; \\
+    &= \sqrt{\left(\frac{-L+CR²}{4\pi CL³\sqrt{\frac{1}{CL}-\frac{R²}{2L²}}}\right)²(\symup{\Delta}L)²+
+    \frac{R²\cdot(\symup{\Delta}R)²}{16\pi²L⁴\cdot\left(\frac{1}{CL}-\frac{R²}{2L²}\right)}
+    + \frac{(\symup{\Delta}C)²}{16\pi²L²C⁴\left(\frac{1}{CL}-\frac{R²}{2L²}\right)}}
+  \end{align*}

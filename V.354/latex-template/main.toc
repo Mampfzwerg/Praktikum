@@ -4,9 +4,9 @@
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}
 \contentsline {section}{\numberline {2}Durchführung}{4}{section.2}
 \contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Zeitabhängigkeit der Amplitude}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Bestimmung des Dämpfungswiderstandes}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Frequenzabhängigkeit der Kondensatorspannung}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.1}Bestimmung des effektiven Dämpfungswiderstandes $R_\text {eff}$ und der Abklingdauer $T_\text {ex}$ aus der Zeitabhängigkeit der Amplitude}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Bestimmung des Dämpfungswiderstandes $R_\text {ap}$ bei der Untersuchung des aperiodischen Grenzfalles}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Frequenzabhängigkeit der Kondensatorspannung}{8}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Frequenzabhängigkeit der Phasenverschiebung}{10}{subsection.3.4}
 \contentsline {section}{\numberline {4}Diskussion}{13}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{13}{section.5}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{14}{section.5}
