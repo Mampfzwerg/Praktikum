@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.30)  29 JAN 2019 22:01
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.30)  30 JAN 2019 00:55
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -898,11 +898,11 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            synonyms	table: 0x68887e0
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
+(polyglossia)            hyphenation	
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	table: 0x51b0bf0
 (polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
@@ -910,11 +910,11 @@ n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            synonyms	table: 0x68889b0
-(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
+(polyglossia)            hyphenation	
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	table: 0x51b0dc0
 (polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
@@ -2369,10 +2369,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--38
 <content/Beispielspektrum.jpg, id=43, 578.91281pt x 435.12563pt>
 File: content/Beispielspektrum.jpg Graphic file (type jpg)
 <use content/Beispielspektrum.jpg>
-Package luatex.def Info: content/Beispielspektrum.jpg  used on input line 47.
+Package luatex.def Info: content/Beispielspektrum.jpg  used on input line 46.
 (luatex.def)             Requested size: 173.67517pt x 130.53868pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--59
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
  []
 
@@ -2381,23 +2381,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--59
 File: content/Aufbau_1.jpg Graphic file (type jpg)
 <use content/Aufbau_1.jpg>
 Package luatex.def Info: content/Aufbau_1.jpg  used on input line 19.
-(luatex.def)             Requested size: 98.76724pt x 51.49146pt.
+(luatex.def)             Requested size: 246.92189pt x 128.7306pt.
 ) (./content/auswertung.tex [4
 Missing character: There is no 𝜇 (U+1D707) in font [lmroman10-regular]:+tlig;
 !
-Missing character: There is no 𝛿 (U+1D6FF) in font [lmroman10-regular]:+tlig;
-!
-<./content/Beispielspektrum.jpg><./content/Aufbau_1.jpg>]
+<./content/Beispielspektrum.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
  []
 
-
+[5<./content/Aufbau_1.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[5]
+
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
@@ -2408,7 +2406,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
  []
 
 [6]
-<content/plot1.pdf, id=93, 462.52798pt x 346.89601pt>
+<content/plot1.pdf, id=90, 462.52798pt x 346.89601pt>
 File: content/plot1.pdf Graphic file (type pdf)
 <use content/plot1.pdf>
 Package luatex.def Info: content/plot1.pdf  used on input line 122.
@@ -2418,8 +2416,8 @@ Overfull \hbox (44.27129pt too wide) in paragraph at lines 122--123
  [][] 
  []
 
-[7<./content/plot1.pdf>]
-<content/plot2.pdf, id=148, 462.52798pt x 346.89601pt>
+[7] [8<./content/plot1.pdf>]
+<content/plot2.pdf, id=153, 462.52798pt x 346.89601pt>
 File: content/plot2.pdf Graphic file (type pdf)
 <use content/plot2.pdf>
 Package luatex.def Info: content/plot2.pdf  used on input line 167.
@@ -2429,13 +2427,13 @@ Overfull \hbox (44.27129pt too wide) in paragraph at lines 167--168
  [][] 
  []
 
-[8]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 179--183
 
  []
 
-[9<./content/plot2.pdf>]
-<content/plot3.pdf, id=211, 462.52798pt x 346.89601pt>
+[10<./content/plot2.pdf>]
+<content/plot3.pdf, id=215, 462.52798pt x 346.89601pt>
 File: content/plot3.pdf Graphic file (type pdf)
 <use content/plot3.pdf>
 Package luatex.def Info: content/plot3.pdf  used on input line 211.
@@ -2445,44 +2443,44 @@ Overfull \hbox (44.27129pt too wide) in paragraph at lines 211--212
  [][] 
  []
 
-[10<./content/plot3.pdf>]
-<content/plot4.pdf, id=270, 462.52798pt x 346.89601pt>
+[11<./content/plot3.pdf>]
+<content/plot4.pdf, id=275, 462.52798pt x 346.89601pt>
 File: content/plot4.pdf Graphic file (type pdf)
 <use content/plot4.pdf>
 Package luatex.def Info: content/plot4.pdf  used on input line 248.
 (luatex.def)             Requested size: 277.51892pt x 208.1392pt.
- [11<./content/plot4.pdf>]
-<content/saege.jpg, id=327, 401.5pt x 240.9pt>
+ [12<./content/plot4.pdf>]
+<content/saege.jpg, id=331, 401.5pt x 240.9pt>
 File: content/saege.jpg Graphic file (type jpg)
 <use content/saege.jpg>
 Package luatex.def Info: content/saege.jpg  used on input line 287.
 (luatex.def)             Requested size: 281.04808pt x 168.62883pt.
-<content/plot5.pdf, id=330, 462.52798pt x 346.89601pt>
+<content/plot5.pdf, id=334, 462.52798pt x 346.89601pt>
 File: content/plot5.pdf Graphic file (type pdf)
 <use content/plot5.pdf>
 Package luatex.def Info: content/plot5.pdf  used on input line 307.
 (luatex.def)             Requested size: 277.51892pt x 208.1392pt.
- [12<./content/Saege.jpg>]
-<content/recht.jpg, id=339, 401.5pt x 240.9pt>
+ [13<./content/Saege.jpg>]
+<content/recht.jpg, id=343, 401.5pt x 240.9pt>
 File: content/recht.jpg Graphic file (type jpg)
 <use content/recht.jpg>
 Package luatex.def Info: content/recht.jpg  used on input line 343.
 (luatex.def)             Requested size: 281.04808pt x 168.62883pt.
 
-[13<./content/plot5.pdf>]
-<content/plot6.pdf, id=391, 462.52798pt x 346.89601pt>
+[14<./content/plot5.pdf>]
+<content/plot6.pdf, id=396, 462.52798pt x 346.89601pt>
 File: content/plot6.pdf Graphic file (type pdf)
 <use content/plot6.pdf>
 Package luatex.def Info: content/plot6.pdf  used on input line 364.
 (luatex.def)             Requested size: 277.51892pt x 208.1392pt.
- [14<./content/recht.jpg><./content/plot6.pdf>]
-<content/sinus.jpg, id=443, 401.5pt x 240.9pt>
+ [15<./content/recht.jpg><./content/plot6.pdf>]
+<content/sinus.jpg, id=447, 401.5pt x 240.9pt>
 File: content/sinus.jpg Graphic file (type jpg)
 <use content/sinus.jpg>
 Package luatex.def Info: content/sinus.jpg  used on input line 401.
 (luatex.def)             Requested size: 281.04808pt x 168.62883pt.
 )
-(./content/diskussion.tex) [15<./content/sinus.jpg>]
+(./content/diskussion.tex) [16<./content/sinus.jpg>]
 
 LaTeX Warning: Empty bibliography on input line 23.
 
@@ -2498,7 +2496,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--30
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
-[16]
+[17]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
  (./main.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
@@ -2507,23 +2505,23 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 31.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 35A90F00BE852A5F14CCEFAB5FBF4536;10374.
+(rerunfilecheck)             Checksum: 93BF6EA6CD726D9261E3B8E6C6D35C82;10406.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: CA30EEC354C90A6893DC6DC087336428;901.
+(rerunfilecheck)             Checksum: 3FC111E7C3AE17D3E13E558E86DF1D9E;901.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 42200 strings out of 494407
+ 42201 strings out of 494407
  100000,1648299 words of node,token memory allocated
  683 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 24 attribute, 76 glue_spec
 , 24 attribute_list, 1 write nodes
-   avail lists: 1:2,2:627,3:127,4:49,5:259,6:37,7:3688,8:71,9:347,10:25,11:380
+   avail lists: 1:2,2:627,3:128,4:55,5:255,6:38,7:3722,8:71,9:318,10:26,11:373
  45084 multiletter control sequences out of 65536+600000
- 144 fonts using 51485951 bytes
+ 144 fonts using 51486375 bytes
  61i,16n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-re
 gular.otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/l
@@ -2538,10 +2536,10 @@ tf></home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman1
 lm/lmroman12-regular.otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opent
 ype/public/lm/lmsans10-bold.otf></home/marek/.local/texlive/2018/texmf-dist/font
 s/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (16 pages, 301548 bytes).
+Output written on main.pdf (17 pages, 302615 bytes).
 
-PDF statistics: 564 PDF objects out of 1000 (max. 8388607)
- 319 compressed objects within 4 object streams
- 53 named destinations out of 1000 (max. 131072)
+PDF statistics: 568 PDF objects out of 1000 (max. 8388607)
+ 322 compressed objects within 4 object streams
+ 54 named destinations out of 1000 (max. 131072)
  81 words of extra memory for PDF output out of 10000 (max. 100000000)
 

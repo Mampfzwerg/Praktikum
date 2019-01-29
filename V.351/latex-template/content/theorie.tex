@@ -36,11 +36,10 @@ Diese Ermittlung der Fourierkoeffizienten $a_k$ und $b_k$ wird als Fourieranalys
 Dabei verschwinden für gerade Funktionen mit $f(-t) = f(t)$ die Koeffizienten $b_k$ mit den ungeraden Sinusfunktionen und für
 ungerade Funktionen mit $f(-t) = -f(t)$ die Koeffizienten $a_k$ mit geraden Kosinusfunktionen. \\
 
-Das Frequenzspektrum der fourieranalysierten Funktion entsteht durch Auftragung der Koeffizienten als Funktionen der Frequenzen.
-Da die Fourierentwicklung aus einer Summe über ganzzahlige $k$ besteht, resultiert aus ihr ein Linienspektrum, dessen
+Das Frequenzspektrum der fourieranalysierten Funktion entsteht durch Auftragen der Koeffizienten als Funktionen der Frequenzen.
+Da die Fourierentwicklung aus einer Summe über ganzzahlige $k$ besteht, resultiert aus ihr für periodische Funktionen ein Linienspektrum, dessen
 Linien gegen Null streben, da die Reihe konvergieren muss. Ein Beispiel ist in 
-Abbildung \ref{fig:Beispiel} zu sehen. Man nennt ein solches Frequenzspektrum
-auch einen Dirac-Kamm.
+Abbildung \ref{fig:Beispiel} zu sehen.
 
 \begin{figure}
   \centering
@@ -64,7 +63,7 @@ Die Transformation
     g(\nu) = \int^\infty_{-\infty} f(t) \text{e}^{\text{i} \nu t} \; \text{d} t
 \end{equation}
 
-gibt dabei das kontinuierliche Frequenzspektrum $g(\nu)$ wieder, welches durch 
+gibt dabei das Frequenzspektrum $g(\nu)$ wieder, welches durch 
 
 \begin{equation}
     f(t) = \frac{1}{2 \pi} \int^\infty_{-\infty} g(\nu) \text{e}^{- \text{i} \nu t} \; \text{d} \nu
@@ -72,7 +71,7 @@ gibt dabei das kontinuierliche Frequenzspektrum $g(\nu)$ wieder, welches durch
 
 zurücktransformiert wird.
 Im Gegensatz zur Fourierentwicklung periodischer Funktionen, resultieren hieraus in der Praxis keine perfekten
-$\text{\delta}$-Funktionen, sondern Pike endlicher Breite, da die Integration über ein unendliches Intervall nicht
+$\delta$-Funktionen, sondern Peaks endlicher Breite, da die Integration über ein unendliches Intervall nicht
 realisierbar ist.
 
 
