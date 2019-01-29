@@ -1,6 +1,73 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Vorbereitung}
+
+Für die Auswertung der beiden Versuchsteile, ist es nötig, die Fourierkoeffizienten der verschiedenen
+Spannungsfunktionen (Sägezahn, Rechteck und Dreieck) erst theoretisch zu berechnen,
+um diese dann mit den experimentell bestimmten vergleichen zu können. Dazu werden die Funktionsparametriesierungen
+möglichst so gewählt, dass sie gerade oder ungerade sind und somit jeweils $b_k$ oder $a_k$ für alle $k$ verschwinden. \\
+
+Für die Sägezahnspannung ergeben sich die Fourierkoeffizienten
+
+\begin{align*}
+    a_\text{k} &= 0 \\
+    b_\text{k} &= - \frac{1}{2k} + \frac{1}{k}
+\end{align*}
+
+und nach \eqref{eqn:Entwicklung} die Fourierreihe
+
+\begin{equation*}
+    f(t) = \sum^\infty_{k = 1} \left( \left( - \frac{1}{2k} + \frac{1}{k} \right) \; \text{sin}
+    \left(\frac{2 \pi k t}{T} \right) \right)   ,
+\end{equation*}
+
+deren Graph in Abbildung \ref{fig:Theo1} zu sehen ist. \\
+
+Für die Rechtecksspannung ergeben sich die Koeffizienten
+
+\begin{align*}
+    a_\text{k} &= 0 \\
+    b_\text{k} &= \frac{2}{T} \left(\frac{T}{\pi k} - \frac{T}{\pi k} \cdot (-1)^k \right)
+\end{align*}
+
+und nach \eqref{eqn:Entwicklung} die Fourierreihe
+
+\begin{equation*}
+    f(t) = \sum^\infty_{k = 1} \left(\left(\frac{2}{\pi k} - \frac{2}{\pi k} \cdot (-1)^k \right) \; \text{sin}
+    \left(\frac{2 \pi k t}{T} \right) \right)   ,
+\end{equation*}
+
+die in Abbildung \ref{fig:Theo2} abgebildet ist. \\
+
+Zuletzt ergeben sich für die Dreiecksspannung die Koeffizienten
+
+\begin{align*}
+    a_\text{k} &= \frac{4}{T} \left(\frac{T}{\pi^2 k^2} \cdot (-1)^k - \frac{T}{\pi^2 k^2} \right) \\
+    b_\text{k} &= 0
+\end{align*}
+
+und nach \eqref{eqn:Entwicklung} die Fourierreihe
+
+\begin{equation*}
+    f(t) = \sum^\infty_{k = 1} \left( \left(\frac{4}{\pi^2 k^2} \cdot (-1)^k - 
+    \frac{4}{\pi^2 k^2} \right) \;  \text{cos}\left(\frac{2 \pi k t}{T} \right) \right)   ,
+\end{equation*} 
+
+die in Abbildung \ref{fig:Theo3} sichtbar ist. \\
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{Fourieranalyse}
 
 Im ersten Versuchsteil soll der Abfall der Fourierkoeffizienten $a_k$ und $b_k$
@@ -33,7 +100,7 @@ Die Messdaten der Sägezahnspannung sind dazu in Tabelle \ref{tab:Messdaten1} au
     \sisetup{table-format=2.1}
     \begin{tabular}{c c c c}
     \toprule
-    $k$ & $\text{ln} (k)$ & $U \,/\, \si{\volt}$ & $\text{ln}(U \,/\, \si{\volt})$ \\
+    $k$ & $\text{ln} (k)$ & $U \,/\, \si{\volt}$ & $\text{ln}(U \,\cdot\, \frac{1}{\si{\volt}})$ \\
     \midrule
     1 & 0,000 & 2,040 &  0,713 \\
     2 & 0,693 & 1,100 &  0,095 \\
@@ -61,11 +128,12 @@ Die Lineare Regression, die mittels python durchgeführt wurde, ergibt die Tange
 
 \begin{align*}
     a_\text{S} &= \SI{-1.0052 \pm 0.0286}{}, \\
-    b_\text{S} &= \SI{07523 \pm 0.0451}{}.
+    b_\text{S} &= \SI{0.7523 \pm 0.0451}{}.
 \end{align*}
 
-Nach Formel \eqref{eqn:Spannung} ist zu erkennen, dass die Fourierkoeffizienten der Sägezahnspannung in etwa
-proportional zu $\frac{1}{k}$ abfallen.
+Somit liegt die Abweichung zwischen $a_\text{S}$ und $a_\text{S,theo} = \SI{-1}{}$ bei $\SI{0.52}{\percent}$ und
+nach Formel \eqref{eqn:Spannung} ist zu erkennen, dass die Fourierkoeffizienten der Sägezahnspannung in etwa
+proportional zu $\frac{1}{k}$ abfallen, wie bereits vorbereitend berechnet.
 \\
 Für die Rechtecksspannung sind die Messdaten in Tabelle \ref{tab:Messdaten2} aufgelistet.
 
@@ -76,7 +144,7 @@ Für die Rechtecksspannung sind die Messdaten in Tabelle \ref{tab:Messdaten2} au
     \sisetup{table-format=2.1}
     \begin{tabular}{c c c c}
     \toprule
-    $k$ & $\text{ln} (k)$ & $U \,/\, \si{\volt}$ & $\text{ln}(U \,/\, \si{\volt})$ \\
+    $k$ & $\text{ln} (k)$ & $U \,/\, \si{\volt}$ & $\text{ln}(U \, \cdot \, \frac{1}{\si{\volt}})$ \\
     \midrule
     1 & 0,000 & 4,000 &  1,389 \\
     3 & 1,099 & 1,440 &  0,365 \\
@@ -108,8 +176,9 @@ Es ergeben sich die Regressionsparameter:
     b_\text{R} &= \SI{1.4205 \pm 0.0462}{}.
 \end{align*}
 
-Nach Formel \eqref{eqn:Spannung} ist zu erkennen, dass die Fourierkoeffizienten der Rechtecksspannung in etwa
-proportional zu $\frac{1}{k}$ abfallen.
+Somit liegt die Abweichung zwischen $a_\text{R}$ und $a_\text{R,theo} = \SI{-1}{}$ bei $\SI{0.21}{\percent}$ und
+nach Formel \eqref{eqn:Spannung} ist zu erkennen, dass die Fourierkoeffizienten der Rechtecksspannung in etwa
+proportional zu $\frac{1}{k}$ abfallen, wie bereits prognostiziert.
 \\
 \newpage
 Für die Dreiecksspannung sind die Messdaten in Tabelle \ref{tab:Messdaten3} aufgelistet.
@@ -122,7 +191,7 @@ Für die Dreiecksspannung sind die Messdaten in Tabelle \ref{tab:Messdaten3} auf
     \sisetup{table-format=2.1}
     \begin{tabular}{c c c c}
     \toprule
-    $k$ & $\text{ln} (k)$ & $U \,/\, \si{\volt}$ & $\text{ln}(U \,/\, \si{\volt})$ \\
+    $k$ & $\text{ln} (k)$ & $U \,/\, \si{\volt}$ & $\text{ln}(U \,\cdot\, \frac{1}{\si{\volt}})$ \\
     \midrule
      1 & 0,000 & 2,560 &  0,940 \\
      3 & 1,099 & 0,312 & -1,165 \\
@@ -151,8 +220,9 @@ Es ergeben sich die Regressionsparameter:
     b_\text{D} &= \SI{0.9585 \pm 0.0227}{}.
 \end{align*}
 
+Somit liegt die Abweichung zwischen $a_\text{R}$ und $a_\text{R,theo} = \SI{-2}{}$ bei $\SI{1.60}{\percent}$ und
 Nach Formel \eqref{eqn:Spannung} ist zu erkennen, dass die Fourierkoeffizienten der Dreiecksspannung in etwa
-proportional zu $\frac{1}{k^2}$ abfallen.
+proportional zu $\frac{1}{k^2}$ abfallen, wie bereits in der in der Vorbereitung berechnet.
 
 
 \subsection{Fourier-Synthese}
@@ -292,7 +362,7 @@ der Dreiecksspannung, die in Abbbildung \ref{fig:Theo3}  dargestellt ist.
 \begin{figure}[H]
     \centering
     \includegraphics[scale = 0.6]{content/plot6.pdf}
-    \caption{Theoretische Rechtecksfunktion}
+    \caption{Theoretische Dreiecksfunktion}
     \label{fig:Theo3}
 \end{figure}
 
