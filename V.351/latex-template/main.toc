@@ -8,6 +8,6 @@
 \contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Vorbereitung}{5}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Fourieranalyse}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Fourier-Synthese}{12}{subsection.3.3}
-\contentsline {section}{\numberline {4}Diskussion}{16}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{17}{section.5}
+\contentsline {subsection}{\numberline {3.3}Fourier-Synthese}{11}{subsection.3.3}
+\contentsline {section}{\numberline {4}Diskussion}{15}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{16}{section.5}
