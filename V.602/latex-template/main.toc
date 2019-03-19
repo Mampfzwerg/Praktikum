@@ -1,0 +1,7 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Theorie}{3}{section.1}
+\contentsline {section}{\numberline {2}Durchführung}{3}{section.2}
+\contentsline {section}{\numberline {3}Auswertung}{3}{section.3}
+\contentsline {section}{\numberline {4}Diskussion}{3}{section.4}
