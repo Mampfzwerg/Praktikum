@@ -5,11 +5,104 @@ In diesem Versuch werden die Suszeptibilitäten paramagnetischer Substanzen
 mit Hilfe einer Brückenschaltung bestimmt. Außerdem wird die Filterkurve 
 des dabei verwendeten Selektivverstärkers untersucht. 
 
-\subsection{Die Suszeptibilität}
+\subsection{Die magnetische Suszeptibilität}
 
 Die magnetische Suszeptibilität $\chi$ ist eine dimensionslose Größe, die 
 angibt, wie gut ein Material in einem externen Magnetfeld magnetisierbar ist,
-d.h. wie sich die Magnetisierung des Materials durch ein externes Magnetfeld 
-ändert. Diese Größe ist im Allgemeinem von vielen Variablen abhängig (z.B. der
-magnetischen Feldstärke $\vec{H}$ und der Temperatur T) und tensoriell. 
+d.h. wie sich die Magnetisierung $\vec{M}$ des Materials durch ein externes Magnetfeld 
+ändert. Diese Größe ist im Allgemeinem von vielen Variablen abhängig (z.B. von der
+magnetischen Feldstärke $\vec{H}$ und der Temperatur $T$) und tensoriell.
+
+Allerdings nehmen die Suszeptibilitäten verschiedener Materiale unter Raumtemperatur und bei 
+kleinen Magnetfeldern mit Feldstärken $\vec{B}$ kleiner einem Tesla näherungsweise
+konstante Werte an, welches den linearen Ausdruck
+
+\begin{equation}
+    \vec{M} = \mu_0 \chi \vec{H}
+\end{equation}
+
+liefert. Mit dessen Hilfe lassen sich Materialien durch ihre magnetische Suszeptibilität 
+unterscheiden. 
+
+Stoffe mit einer Suszeptibilität $\chi < 0$ sind diamagnetisch, d.h. das Material 
+magnetisiert in einem äußeren Magnetfeld entgegengesetzt zur Feldrichtung des Feldes,
+sodass das innere Magnetfeld des Stoffvolumens schwächer ist.
+Materialien mit einer Suszeptibilität $\chi > 0$ verhalten sich paramagnetisch, sodass
+das Magnetfeld im Inneren des Stoffvolumens durch die Magnetisierung stärker ist, als 
+das äußere anregende Magnetfeld.
+
+Bei höheren Temperaturen verschwindet die Ordnung der Magnetisierung $\vec{M}$ nahezu
+einheitlicher Richtung mit
+
+\begin{equation}
+    \chi \propto \frac{1}{T}
+\end{equation}
+
+antiproportional zur Umgebungstemperatur.
+
+\subsection{Die Berechnung paramagnetischer Suszeptibilitäten}
+
+Zur Berechnung der Suszeptibilität muss der Zusammenhang zwischen atomarem Drehimpuls
+und magnetischem Momenten bekannt sein. Der Drehimpuls $\vec{J}$ eines Atoms setzt sich
+aus dessen Bahnimpuls der Elektronenhülle $\vec{L}$, dem Gesamtspin $\vec{S}$
+und dem für den Paramagnetismus vernachlässigbaren Kerndrehimpuls zusammen.
+Dabei sind $\vec{L}$ und $\vec{S}$ Vektorsummen der einzelnen Elektronendrehimpulse
+und -spins und ihnen können durch Erkenntnisse aus der Quantenmechanik folgende
+magnetische Momente zugeordnet werden:
+
+\begin{align}
+    \vec{\mu}_L &= - \frac{\mu_\text{B}}{\hbar} \vec{L} \\
+    \vec{\mu}_S &= - g_S \frac{\mu_\text{B}}{\hbar} \vec{S}
+\end{align}
+
+$\mu_\text{B}$ beschreibt dabei das Bohrsche Magneton und $g_S$ das
+gyromagnetische Verhältnis.
+
+Mit den Quantenzahlen der Drehimpulse $\vec{J}$ und $\vec{L}$ und des Spins $\vec{S}$
+ergeben sich die Beträge
+
+\begin{align}
+    |\vec{\mu}_L| &= - \mu_\text{B} \sqrt{L\left(L+1\right)}\\
+    |\vec{\mu}_S| &= - g_S \cdot \mu_\text{B} \sqrt{S\left(S+1\right)}
+\end{align}
+
+Zudem lässt sich aus Abbildung ... die Beziehung
+
+\begin{equation}
+    |\vec{\mu}_J| = |\vec{\mu}_S| \cdot \text{cos}\left(\alpha \right) + 
+    |\vec{\mu}_L| \cdot \text{cos}\left(\beta \right)
+\end{equation}
+
+ableiten und mit dem Kosinussatz zu 
+
+\begin{equation}
+    |\vec{\mu}_J| \approx \mu_\text{B} \cdot g_J \sqrt{J\left(J+1\right)}
+\end{equation}
+
+mit dem Lande-Faktor 
+
+\begin{equation}
+    g_J = \frac{3J(J+1) + [S(S+1) - L(L+1)]} {2 J(J+1)}
+\end{equation}
+
+vereinfachen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
