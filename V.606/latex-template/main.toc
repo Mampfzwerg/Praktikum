@@ -4,6 +4,6 @@
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}
 \contentsline {subsection}{\numberline {1.1}Die magnetische Suszeptibilität}{3}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Die Berechnung paramagnetischer Suszeptibilitäten}{3}{subsection.1.2}
-\contentsline {section}{\numberline {2}Durchführung}{4}{section.2}
-\contentsline {section}{\numberline {3}Auswertung}{4}{section.3}
-\contentsline {section}{\numberline {4}Diskussion}{4}{section.4}
+\contentsline {section}{\numberline {2}Durchführung}{5}{section.2}
+\contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
+\contentsline {section}{\numberline {4}Diskussion}{5}{section.4}
