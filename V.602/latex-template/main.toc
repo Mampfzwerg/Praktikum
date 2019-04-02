@@ -10,5 +10,7 @@
 \contentsline {subsection}{\numberline {2.2}Emissionsspektrum der Kupfer-Röntgen-Röhre}{6}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Absorptionsspektren}{6}{subsection.2.3}
 \contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Überprüfung der Bragg Bedingung}{6}{subsection.3.1}
-\contentsline {section}{\numberline {4}Diskussion}{6}{section.4}
+\contentsline {subsection}{\numberline {3.1}Vorbereitung}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Überprüfung der Bragg Bedingung}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Das Emissionsspektrum einer Kupferröntgenröhre}{7}{subsection.3.3}
+\contentsline {section}{\numberline {4}Diskussion}{7}{section.4}
