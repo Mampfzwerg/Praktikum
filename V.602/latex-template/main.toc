@@ -13,5 +13,6 @@
 \contentsline {subsection}{\numberline {3.1}Vorbereitung}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Überprüfung der Bragg Bedingung}{7}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Das Emissionsspektrum einer Kupferröntgenröhre}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Das Emissionsspektrum einer Kupferröntgenröhre}{7}{subsection.3.4}
 \contentsline {section}{\numberline {4}Diskussion}{7}{section.4}
 \contentsline {section}{\numberline {5}Literaturverzeichnis}{7}{section.5}

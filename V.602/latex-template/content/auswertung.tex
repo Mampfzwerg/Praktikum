@@ -6,7 +6,7 @@
 Die Größen Ordnungszahl $Z$, Literaturwert der
 K-Kante $E_\text{K}^\text{Lit}$, der zugehörige Glanzwinkel 
 $\theta_\text{glanz}^\text{Lit}$ und die Abschirmkonstante 
-$\sigma_\text{K}$ verschiedener Elemente cind in Tabelle 
+$\sigma_\text{K}$ verschiedener Elemente sind in Tabelle 
 \ref{tab:literatur} aufgelistet.
 
 \begin{table}
@@ -41,15 +41,26 @@ Dabei ergibt sich der Glanzwinkel
   \end{equation}
 
   durch die Umstellung der Gleichung \eqref{eqn:Bragg} und durch Einsetzen 
-  des Ausdrucks $\lambda = \frac{h \cdot c}{E}$.
+  des Ausdrucks $\lambda = \frac{h \cdot c}{E}$. Weiterhin beträgt die Gitterkonstante
+  des Kristalls $d_\text{LiF} = \SI{201.4}{\pico\meter}$.
 
   Die Abschirmkonstante $\sigma_\text{K}$ ergibt sich für die K-Schale aus Gleichung
   \eqref{eqn:std} durch Einsetzen des Ausdrucks $z_\text{eff} = z -\sigma$ und durch 
   Umstellung zu 
 
   \begin{equation}
-    \sigma_\text{K} = z - \sqrt{\frac{E_n}{R_{\infty}}}.
+    \sigma_\text{K} = z - \sqrt{\frac{E_n}{R_{\infty}}} \; .
   \end{equation}
+
+  Weiterhin sind zur Überprüfung der Absorption die folgeneden Werte für Kupfer 
+  ermittelt worden:
+
+  \begin{align*}
+    \text{Für } K_\alpha \text{ : } E_{K_\alpha} &= \SI{8.046}{\kilo\eV}, \\
+    \text{Für } K_\beta \text{ : } E_{K_\beta} &= \SI{8.904}{\kilo\eV} \\
+    \theta_{K_\alpha} &= \SI{22.49}{\degree}, \\
+    \theta_{K_\beta} &= \SI{20.22}{\degree} \: .
+ \end{align*}
 
 
 
@@ -59,39 +70,24 @@ Dabei ergibt sich der Glanzwinkel
 
 
 
+
 \subsection{Überprüfung der Bragg Bedingung}
 
 Nach der Braggbedingung ist zu erwarten, dass das gemessene Intensitätsmaximum
-für den errechneten Glanzwinkel auftritt. 
-
-Die Berechnung erfolgt über die Umstellung der Gleichung \eqref{eqn:Bragg} zum Glanzwinkel
-hin und durch Einsetzen des Ausdrucks $\lambda = \frac{h \cdot c}{E}$ zu 
-
-\begin{equation}
-  \theta_\text{glanz} = \text{arcsin}\left(\frac{h \cdot c}{E \cdot 2d}\right)
-  \label{eqn:theta}
-\end{equation}
-
-Mit einer Gitterkonstanten $d_\text{LiF} = \SI{201.4}{\pico\meter}$ und den Energien
-
-\begin{align*}
-   \text{Für } K_\alpha \text{ : } E_{K_\alpha} &= \SI{8.046}{\kilo\eV}, \\
-   \text{Für } K_\beta \text{ : } E_{K_\beta} &= \SI{8.904}{\kilo\eV}
-\end{align*}
-
-ergeben sich aus der Gleichung \eqref{eqn:theta} die Glanzwinkel
-
-\begin{align*}
-  \theta_{K_\alpha} &= \SI{22.49}{\degree}, \\
-  \theta_{K_\beta} &= \SI{20.22}{\degree} \: .
-\end{align*}
-
-Aus Abbildung ... erhält man für die Stellen der beiden Peaks etwa $\SI{40}{\degree}$
-und $\SI{45}{\degree}$. Beachtet man die Skalierung des Winkels, so ist
-erkennbar, dass die experimentell bestimmten Glanzwinkel minimal von den Sollwinkeln
-abweichen. Die Braggbedingung trifft folglich zu.
+für einen bestimmten Glanzwinkel auftritt. 
+Dies wird durch Abbildung ... verifiziert. In jener ist eindeutig ein Maximum 
+mit etwa $310$ Impulsen bei $\SI{27.25}{\degree}$ zu erkennen.
 
 \subsection{Das Emissionsspektrum einer Kupferröntgenröhre}
+
+\subsection{Das Emissionsspektrum einer Kupferröntgenröhre}
+
+Das gemessene Emissionsspektrum der Kupferanode ist in Abbildung ... abgebildet.
+In dieser sind mit zunehmendem Winkel gut der Grenzwinkel bei etwa $\SI{5}{\degree}$,
+der Bremsberg im bereich von $\SI{5}{\degree}$ bis $\SI{19}{\degree}$, die 
+$K_\alpha$-Kante bei etwa $\SI{20}{\degree}$ und die $K_\beta$-Kante bei 
+etwa $\SI{22.5}{\degree}$ zu erkennen.
+
 
 
 
