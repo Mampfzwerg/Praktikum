@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.30)  6 APR 2019 18:23
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.9.30)  7 APR 2019 01:06
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -32,7 +32,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.378 seconds (./header.tex
+luaotfload | main : initialization completed in 0.082 seconds (./header.tex
 (/home/marek/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/home/marek/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -898,24 +898,24 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	table: 0x48a48d0
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            synonyms	table: 0x54c7350
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	table: 0x48a4aa0
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            righthyphenmin	2
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            synonyms	table: 0x54c7520
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -2174,10 +2174,6 @@ luatex-hyphen: loading patterns and exceptions for: german (\language4)
 luatex-hyphen: info: no hyphenation exceptions for this language
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 26
-
-
-LaTeX Warning: Label `eqn:theta' multiply defined.
-
 )
 \openout1 = main.aux
 
@@ -2361,20 +2357,24 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
  [2
 
 ] (./content/theorie.tex [3]
-<content/bragg.png, id=62, 460.72125pt x 360.34625pt>
+<content/bragg.png, id=72, 460.72125pt x 360.34625pt>
 File: content/bragg.png Graphic file (type png)
 <use content/bragg.png>
-Package luatex.def Info: content/bragg.png  used on input line 120.
+Package luatex.def Info: content/bragg.png  used on input line 121.
 (luatex.def)             Requested size: 138.21744pt x 108.1047pt.
 ) (./content/durchfuehrung.tex
 [4]
-<content/aufbau1.png, id=73, 829.59938pt x 436.63126pt>
+<content/aufbau1.png, id=83, 829.59938pt x 436.63126pt>
 File: content/aufbau1.png Graphic file (type png)
 <use content/aufbau1.png>
 Package luatex.def Info: content/aufbau1.png  used on input line 9.
 (luatex.def)             Requested size: 414.79868pt x 218.3151pt.
  [5<./content/bragg.png><./content/aufbau1.png>]) (./content/auswertung.tex
-[6]) (./content/diskussion.tex)
+[6]
+
+LaTeX Warning: Reference `eqn:lambda' on page 7 undefined on input line 95.
+
+[7] [8]) (./content/diskussion.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
@@ -2383,7 +2383,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 LaTeX Warning: Empty bibliography on input line 28.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 30.
-[7]
+[9]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 30.
  (./main.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
@@ -2396,16 +2396,16 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 30.
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 7DCD9E19DD723134F3E7986F997F96BC;10193
-(rerunfilecheck)             After:  975E8F7E3F97AD7882A2B42D695C6ABF;10876.
+(rerunfilecheck)             Before: 3F0F8457D5439BE68FD7CDD503B5E2DC;12739
+(rerunfilecheck)             After:  3493F213396AC0D90EE9F8DA7B1E7097;13086.
 
 Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: 7D9FD449BDEF125421F877D941B7A329;1392
-(rerunfilecheck)             After:  0FF0C187C9EF33B000FA79C142E70A63;1505.
+(rerunfilecheck)             Before: AB2DD231957F75E19351DE5474E26D58;1856
+(rerunfilecheck)             After:  5E8363D2F91B6342086D30A283E39162;1940.
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 
@@ -2413,14 +2413,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 42109 strings out of 494407
+ 42127 strings out of 494407
  100000,1648299 words of node,token memory allocated
- 691 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 26 attribute, 76 glue_spec
-, 26 attribute_list, 1 write nodes
-   avail lists: 1:3,2:824,3:154,4:32,5:226,6:29,7:2997,8:83,9:244,10:22,11:341
- 45037 multiletter control sequences out of 65536+600000
- 144 fonts using 51486375 bytes
+ 704 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 28 attribute, 77 glue_spec
+, 28 attribute_list, 1 write nodes
+   avail lists: 1:3,2:977,3:185,4:32,5:226,6:40,7:2997,8:83,9:345,10:22,11:341
+ 45047 multiletter control sequences out of 65536+600000
+ 144 fonts using 51486163 bytes
  61i,16n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-i
 talic.otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-m
@@ -2434,10 +2434,10 @@ otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman
 12-regular.otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opentype/public
 /lm/lmsans10-bold.otf></home/marek/.local/texlive/2018/texmf-dist/fonts/opentype
 /public/lm/lmroman12-bold.otf>
-Output written on main.pdf (7 pages, 690876 bytes).
+Output written on main.pdf (9 pages, 699024 bytes).
 
-PDF statistics: 214 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 131072)
- 121 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 260 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
+ 44 named destinations out of 1000 (max. 131072)
+ 161 words of extra memory for PDF output out of 10000 (max. 100000000)
 

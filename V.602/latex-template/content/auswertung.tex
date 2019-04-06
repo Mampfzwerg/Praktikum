@@ -50,6 +50,7 @@ Dabei ergibt sich der Glanzwinkel
 
   \begin{equation}
     \sigma_\text{K} = z - \sqrt{\frac{E_n}{R_{\infty}}} \; .
+    \label{eqn:sigma}
   \end{equation}
 
   Weiterhin sind zur Überprüfung der Absorption die folgeneden Werte für Kupfer 
@@ -85,16 +86,60 @@ mit etwa $310$ Impulsen bei $\SI{27.25}{\degree}$ zu erkennen.
 Das gemessene Emissionsspektrum der Kupferanode ist in Abbildung ... abgebildet.
 In dieser sind mit zunehmendem Winkel gut der Grenzwinkel bei etwa $\SI{5}{\degree}$,
 der Bremsberg im bereich von $\SI{5}{\degree}$ bis $\SI{19}{\degree}$, die 
-$K_\alpha$-Kante bei etwa $\SI{20}{\degree}$ und die $K_\beta$-Kante bei 
-etwa $\SI{22.5}{\degree}$ zu erkennen.
+$K_\beta$-Kante bei etwa $\SI{20}{\degree}$ und die $K_\alpha$-Kante bei 
+etwa $\SI{22.5}{\degree}$ zu erkennen. 
 
+Nach Formel \eqref{eqn:Bragg} mit $n = 1$ ergeben sich aus dem gemessenen Grenzwinkel die 
+minimale Wellenlänge $\lambda_\text{min} = \SI{35.106}{\pico\meter}$ und maximale
+Energie $E_\text{max} = \SI{5.658}{\femto\joule} = \SI{35.316}{\kilo\eV}$.
+Die nach Formel \eqref{eqn:lambda} errechneten Werte sind hingegen hingegen
+$\lambda_\text{min} = \SI{35.424}{\pico\meter}$ und 
+$E_\text{max} = \SI{5.608}{\femto\joule} = \SI{35}{\kilo\eV}$.
+Dabei weichen die gemessenen Werte um $\SI{0.9}{\percent}$ von den errechneten ab.
 
+Die Halbwärtsbreiten betragen für die $K_\alpha$-Kante bei $2100$ Impulsen
+etwa $\Delta \theta_\alpha = \SI{0.5}{\degree}$ und die $K_\beta$-Kante bei $600$ Impulsen
+etwa $\Delta \theta_\beta = \SI{0.7}{\degree}$.
+Mithilfe der Formel
 
+\begin{equation}
+  \Delta E = \frac{h \cdot c}{2d \cdot \text{sin}\left(\Delta \theta \right)}
+\end{equation}
 
+ergeben sich die Energiedifferenzen 
 
+\begin{align*}
+  \Delta E_\alpha &= \SI{0.252}{\kilo\eV} \\
+  \Delta E_\beta &= \SI{0.353}{\kilo\eV}  \; .
+\end{align*}
 
+Das Auflösungsvermögen der Apparatur ergibt sich dabei als der Mittelwert der 
+Energiedifferenzen $ x = \SI{0.3025 +- 0.0505}{\kilo\eV}$.
 
+Für die K-Linien ergeben sich aus den abgelesenen Glanzwinkeln 
 
+\begin{align*}
+  \theta_{K_\alpha} &= \SI{22.5}{\degree} \\
+  \theta_{K_\beta} &= \SI{20}{\degree}
+\end{align*}
+
+die Energien 
+
+\begin{align*}
+E_{K_\alpha} &= \SI{8.043}{\kilo\eV} \\
+E_{K_\beta} &= \SI{9.000}{\kilo\eV} 
+\end{align*}.
+
+Aus Gleichung \eqref{eqn:std} folgen die Beziehungen
+
+%\begin{align*}
+%  E_{K_\alpha} &= R_{\infinity} {(z - \sigma_1)}^2  \frac{1}{1^2} \\
+%  - R_\infinity {(z - \sigma_2)}^2  \frac{1}{2^2} \\
+%  E_{K_\beta} &= R_{\infinity} {(z - \sigma_2)}^2  \frac{1}{1^2}
+%  - R_\infinity {(z - \sigma_1)}^2  \frac{1}{2^2}
+%\end{align*}
+
+aus denen sich ein LGS bilden lässt mit den Abschirmkonstanten
 
 %\begin{figure}
 %  \centering
@@ -102,3 +147,49 @@ etwa $\SI{22.5}{\degree}$ zu erkennen.
 %  \caption{Plot.}
 %  \label{fig:plot}
 %\end{figure}
+
+\subsection{Die Absorptionsspektren verschiedener Stoffe}
+
+\subsubsection{Zink}
+
+In Abbildung ... ist das gemessene Absorptionsspektrum von Zink abgebildet.
+Die K-Kante ist bei etwa $\SI{18.5}{\degree}$ lokalisiert. Durch Umstellung 
+der Gleichung \eqref{eqn:theta} wird die Absorptionssenergie als 
+$ E_\text{Zn, K} = \SI{9.701}{\kilo\eV}$ mit einer relativen Abweichung
+zum theoretischen Wert von $\SI{0.53}{\percent}$ bestimmt. Die Abschirmkonstante
+berechnet sich nach Gleichung \eqref{eqn:sigma} zu $\sigma_\text{Zn, K} = 3.293$
+mit einer relativen Abweichung von $\SI{2.0}{\percent}$.
+
+\subsubsection{Brom}
+
+Das Absorptionsspektrum von Brom ist in Abbildung ... zu sehen.
+Auch hier ist deutlich eine K-Kante bei etwa $\SI{13.0}{\degree}$ zu erkennen.
+Es ergeben sich nach den Gleichungen \eqref{eqn:theta} und \eqref{eqn:sigma}
+die Absorptionssenergie $ E_\text{Br, K} = \SI{13.683}{\kilo\eV}$ mit einer 
+relativen Abweichung von $\SI{1.58}{\percent}$ zum Literaturwert und die 
+Absorptionskonstante $\sigma_\text{Br, K} = 3.281$ mit einer relativen
+Abweichung von $\SI{7.05}{\percent}$.
+
+\subsubsection{Strontium}
+
+Abbildung ... zeigt das Absorptionsspektrum von Strontium mit einer 
+K-Kante bei etwa $\SI{10.8}{\degree}$ mit der nach Formel \eqref{eqn:theta}
+zugehörigen Absorptionssenergie $ E_\text{Sr, K} = \SI{16.427}{\kilo\eV}$,
+die um $\SI{2.03}{\percent}$ vom Theoriewert abweicht. Die sich nach Formel 
+\eqref{eqn:sigma} ergebende Absorptionskonstante $\sigma_\text{Sr, K} = 3.246$
+weicht um $\SI{9.83}{\percent}$ ab.
+
+\subsubsection{Zirkonium}
+
+Das Absorptionsspektrum von Zirkonium ist in Abbildung ... dargestellt.
+Bei einem Winkel von $\SI{9,65}{\degree}$ ist die K-Kante zu erkennen. Die
+Absorptionssenergie von $E_\text{Zr, K} = \SI{18.362}{\kilo\eV}$ weicht
+um $\SI{2.01}{\percent}$ relativ ab. Nach Formel \eqref{eqn:sigma} ergibt 
+sich die Abschirmkonstante $\sigma_\text{Sr, K} = 3.256$, die um 
+$\SI{10.06}{\percent}$ von ihrem Theoriewert abweicht.
+
+
+
+
+
+

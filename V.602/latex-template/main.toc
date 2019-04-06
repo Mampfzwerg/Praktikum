@@ -14,5 +14,10 @@
 \contentsline {subsection}{\numberline {3.2}Überprüfung der Bragg Bedingung}{7}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Das Emissionsspektrum einer Kupferröntgenröhre}{7}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Das Emissionsspektrum einer Kupferröntgenröhre}{7}{subsection.3.4}
-\contentsline {section}{\numberline {4}Diskussion}{7}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{7}{section.5}
+\contentsline {subsection}{\numberline {3.5}Die Absorptionsspektren verschiedener Stoffe}{8}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Zink}{8}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}Brom}{8}{subsubsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.3}Strontium}{8}{subsubsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.4}Zirkonium}{9}{subsubsection.3.5.4}
+\contentsline {section}{\numberline {4}Diskussion}{9}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{9}{section.5}
