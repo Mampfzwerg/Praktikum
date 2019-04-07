@@ -79,7 +79,6 @@ für einen bestimmten Glanzwinkel auftritt.
 Dies wird durch Abbildung ... verifiziert. In jener ist eindeutig ein Maximum 
 mit etwa $310$ Impulsen bei $\SI{27.25}{\degree}$ zu erkennen.
 
-\subsection{Das Emissionsspektrum einer Kupferröntgenröhre}
 
 \subsection{Das Emissionsspektrum einer Kupferröntgenröhre}
 
@@ -132,12 +131,12 @@ E_{K_\beta} &= \SI{9.000}{\kilo\eV}
 
 Aus Gleichung \eqref{eqn:std} folgen die Beziehungen
 
-%\begin{align*}
-%  E_{K_\alpha} &= R_{\infinity} {(z - \sigma_1)}^2  \frac{1}{1^2} \\
-%  - R_\infinity {(z - \sigma_2)}^2  \frac{1}{2^2} \\
-%  E_{K_\beta} &= R_{\infinity} {(z - \sigma_2)}^2  \frac{1}{1^2}
-%  - R_\infinity {(z - \sigma_1)}^2  \frac{1}{2^2}
-%\end{align*}
+\begin{align*}
+  E_{K_\alpha} &= R_\infty {(z - \sigma_1)}^2  \frac{1}{1^2} 
+  - R_\infty {(z - \sigma_2)}^2  \frac{1}{2^2} \\
+  E_{K_\beta} &= R_\infty {(z - \sigma_2)}^2  \frac{1}{1^2}
+  - R_\infty {(z - \sigma_1)}^2  \frac{1}{2^2}
+\end{align*}
 
 aus denen sich ein LGS bilden lässt mit den Abschirmkonstanten
 
@@ -187,6 +186,36 @@ Absorptionssenergie von $E_\text{Zr, K} = \SI{18.362}{\kilo\eV}$ weicht
 um $\SI{2.01}{\percent}$ relativ ab. Nach Formel \eqref{eqn:sigma} ergibt 
 sich die Abschirmkonstante $\sigma_\text{Sr, K} = 3.256$, die um 
 $\SI{10.06}{\percent}$ von ihrem Theoriewert abweicht.
+
+\subsection{Mosleysches Gesetz}
+
+Die Quadratwurzeln der Absorptionsenergien verschiedener Elemente
+sind in Abbildung ... gegen die jeweilige Ordnungszahl aufgetragen.
+
+Nach einer linearen Regression mittels python ergeben sich die
+Regressionsparameter als
+
+\begin{align*}
+  a &= \SI{3.705 +- 0.005}{\per \kilo \eV \tothe{1/2}} \\
+  b &= \SI{-12.663 +- 0.192}{\kilo \eV \tothe{1/2}}
+\end{align*}
+
+Nach Gleichung \eqref{eqn:std} ist die Quadratwurzel der Rydberg-Energie
+$\sqrt{R_\infty}$ die Geradensteigung. Folglich beträgt die experimentell
+bestimmte Rydbergenergie $R_\infty = \SI{13.73}{\eV}$ und weicht von ihrem
+Theoriewert um etwa $\SI{0.96}{\percent}$ ab.
+
+\subsection{Die L-Kanten des Absorptionsspektrums von Gold}
+
+In Abbildung ... ist das gemessene Absorptionsspektrum von Gold abgebildet.
+Die L-Kante sind bei etwa $\SI{13.5}{\degree}$ und $\SI{15.0}{\degree}$ lokalisiert.
+Durch Umstellung der Gleichung \eqref{eqn:theta} werden die Absorptionssenergien 
+$ E_1 = \SI{13.185}{\kilo\eV}$ und $ E_2 = \SI{11.893}{\kilo\eV}$ bestimmt.
+Die Energiedifferenz beträgt also $\Delta E_\text{Au, L} = \SI{1.292}{\kilo\eV}$.
+Die Abschirmkonstante berechnet sich nach Gleichung \eqref{eqn:crap} zu 
+$\sigma_\text{Au, L} = 9.127$ mit der Feinstrukturkonstante
+$\alpha = 0.0072974$.
+
 
 
 

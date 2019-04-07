@@ -36,6 +36,14 @@ E2 = h * c / (2 * d * np.sin(20.0 / 57.2958)) / e
 
 
 
-En = h * c / (2 * d * np.sin(9.65 / 57.2958))
-print(En / e)
-print(40 - np.sqrt(En / R))
+
+#En = h * c / (2 * d * np.sin(15 / 57.2958))
+#print(En / e)
+#print(40 - np.sqrt(En / R))
+
+#L-Kante
+alpha = 7.2974 * 1e-3
+dE = 1.292  * e
+sigmaL = 79 - (((4 / alpha) * np.sqrt(dE / R) - (5 * dE / R)) *
+    (1 + (19/32) * alpha**2 * (dE/R)))**(1/2)
+print(sigmaL)
