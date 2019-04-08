@@ -12,13 +12,13 @@
 \contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}Vorbereitung}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Überprüfung der Bragg Bedingung}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Das Emissionsspektrum einer Kupferröntgenröhre}{7}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Die Absorptionsspektren verschiedener Stoffe}{8}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Zink}{8}{subsubsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.2}Brom}{8}{subsubsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.3}Strontium}{9}{subsubsection.3.4.3}
-\contentsline {subsubsection}{\numberline {3.4.4}Zirkonium}{9}{subsubsection.3.4.4}
-\contentsline {subsection}{\numberline {3.5}Mosleysches Gesetz}{9}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Die L-Kanten des Absorptionsspektrums von Gold}{9}{subsection.3.6}
-\contentsline {section}{\numberline {4}Diskussion}{9}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{10}{section.5}
+\contentsline {subsection}{\numberline {3.3}Das Emissionsspektrum einer Kupferröntgenröhre}{8}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Die Absorptionsspektren verschiedener Stoffe}{10}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}Zink}{10}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Brom}{10}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}Strontium}{11}{subsubsection.3.4.3}
+\contentsline {subsubsection}{\numberline {3.4.4}Zirkonium}{12}{subsubsection.3.4.4}
+\contentsline {subsection}{\numberline {3.5}Mosleysches Gesetz}{13}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Die L-Kanten des Absorptionsspektrums von Gold}{14}{subsection.3.6}
+\contentsline {section}{\numberline {4}Diskussion}{15}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{15}{section.5}

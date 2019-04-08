@@ -24,8 +24,11 @@ E1 = h * c / (2 * d * np.sin(22.5 / 57.2958)) / e
 E2 = h * c / (2 * d * np.sin(20.0 / 57.2958)) / e
 #print(E2 / e)
 
-#sigma2 = 29 - np.sqrt((16 * E2 + 4 * E1) / 15 * R)
-#print(sigma2)
+sigma1 = 29 - np.sqrt(9 * e /R)
+sigma2 = 29 - 2 * np.sqrt((R * (29 - sigma1)**2 - 8.043 * e) / R)
+print(sigma2)
+
+
 
 
 
@@ -42,8 +45,8 @@ E2 = h * c / (2 * d * np.sin(20.0 / 57.2958)) / e
 #print(40 - np.sqrt(En / R))
 
 #L-Kante
-alpha = 7.2974 * 1e-3
-dE = 1.292  * e
-sigmaL = 79 - (((4 / alpha) * np.sqrt(dE / R) - (5 * dE / R)) *
-    (1 + (19/32) * alpha**2 * (dE/R)))**(1/2)
-print(sigmaL)
+#alpha = 7.2974 * 1e-3
+#dE = 1.292  * e
+#sigmaL = 79 - (((4 / alpha) * np.sqrt(dE / R) - (5 * dE / R)) *
+#    (1 + (19/32) * alpha**2 * (dE/R)))**(1/2)
+#print(sigmaL)

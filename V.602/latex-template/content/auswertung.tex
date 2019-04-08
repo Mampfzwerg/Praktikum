@@ -76,13 +76,19 @@ Dabei ergibt sich der Glanzwinkel
 
 Nach der Braggbedingung ist zu erwarten, dass das gemessene Intensitätsmaximum
 für einen bestimmten Glanzwinkel auftritt. 
-Dies wird durch Abbildung ... verifiziert. In jener ist eindeutig ein Maximum 
+Dies wird durch Abbildung \ref{fig:plot1} verifiziert. In jener ist eindeutig ein Maximum 
 mit etwa $310$ Impulsen bei $\SI{27.25}{\degree}$ zu erkennen.
 
+\begin{figure}[H]!
+  \centering
+  \includegraphics[scale=0.3]{content/bild1.png}
+  \caption{Winkelabhängigkeit der Intensitätsmessung}
+  \label{fig:plot1}
+\end{figure}
 
 \subsection{Das Emissionsspektrum einer Kupferröntgenröhre}
 
-Das gemessene Emissionsspektrum der Kupferanode ist in Abbildung ... abgebildet.
+Das gemessene Emissionsspektrum der Kupferanode ist in Abbildung \ref{fig:plot2} abgebildet.
 In dieser sind mit zunehmendem Winkel gut der Grenzwinkel bei etwa $\SI{5}{\degree}$,
 der Bremsberg im bereich von $\SI{5}{\degree}$ bis $\SI{19}{\degree}$, die 
 $K_\beta$-Kante bei etwa $\SI{20}{\degree}$ und die $K_\alpha$-Kante bei 
@@ -112,6 +118,13 @@ ergeben sich die Energiedifferenzen
   \Delta E_\beta &= \SI{0.353}{\kilo\eV}  \; .
 \end{align*}
 
+\begin{figure}[H]!
+  \centering
+  \includegraphics[scale=0.3]{content/bild2.png}
+  \caption{Emissionsspektrum der Kupferanode}
+  \label{fig:plot2}
+\end{figure}
+
 Das Auflösungsvermögen der Apparatur ergibt sich dabei als der Mittelwert der 
 Energiedifferenzen $ x = \SI{0.3025 +- 0.0505}{\kilo\eV}$.
 
@@ -129,29 +142,27 @@ E_{K_\alpha} &= \SI{8.043}{\kilo\eV} \\
 E_{K_\beta} &= \SI{9.000}{\kilo\eV} 
 \end{align*}.
 
-Aus Gleichung \eqref{eqn:std} folgen die Beziehungen
+Aus Gleichung \eqref{eqn:sigma} lässt sich mit der Energie der $K_\beta$-Schale
+die erste Abschirmkonstante als $\sigma_1 = 3.275$ berechnen. Aus der Gleichung
+\eqref{eqn:std} ergibt sich die Beziehung
 
-\begin{align*}
-  E_{K_\alpha} &= R_\infty {(z - \sigma_1)}^2  \frac{1}{1^2} 
-  - R_\infty {(z - \sigma_2)}^2  \frac{1}{2^2} \\
-  E_{K_\beta} &= R_\infty {(z - \sigma_2)}^2  \frac{1}{1^2}
-  - R_\infty {(z - \sigma_1)}^2  \frac{1}{2^2}
-\end{align*}
+\begin{equation}
+  E_{K_\alpha} = R_\infty (z - \sigma_1)^2 \frac{1}{1^2} - R_\infty (z - \sigma_2)^2 \frac{1}{2^2}  \; \text{,}
+\end{equation}
 
-aus denen sich ein LGS bilden lässt mit den Abschirmkonstanten
+die sich zu
 
-%\begin{figure}
-%  \centering
-%  \includegraphics{plot.pdf}
-%  \caption{Plot.}
-%  \label{fig:plot}
-%\end{figure}
+\begin{equation}
+  \sigma_2 = z - 2 \sqrt{\frac{R_\infty (z - \sigma_1)^2 - E_\alpha}{R_\infty}}
+\end{equation}
+
+umstellen lässt, sodass sich die zweite Abschirmkonstante $\sigma_1 = 12.223$ bestimmen lässt.
 
 \subsection{Die Absorptionsspektren verschiedener Stoffe}
 
 \subsubsection{Zink}
 
-In Abbildung ... ist das gemessene Absorptionsspektrum von Zink abgebildet.
+In Abbildung \ref{fig:plot3} ist das gemessene Absorptionsspektrum von Zink abgebildet.
 Die K-Kante ist bei etwa $\SI{18.5}{\degree}$ lokalisiert. Durch Umstellung 
 der Gleichung \eqref{eqn:theta} wird die Absorptionssenergie als 
 $ E_\text{Zn, K} = \SI{9.701}{\kilo\eV}$ mit einer relativen Abweichung
@@ -159,9 +170,16 @@ zum theoretischen Wert von $\SI{0.53}{\percent}$ bestimmt. Die Abschirmkonstante
 berechnet sich nach Gleichung \eqref{eqn:sigma} zu $\sigma_\text{Zn, K} = 3.293$
 mit einer relativen Abweichung von $\SI{2.0}{\percent}$.
 
+\begin{figure}[H]!
+  \centering
+  \includegraphics[scale=0.3]{content/bild7.png}
+  \caption{Absorptionsspektrum von Zink}
+  \label{fig:plot3}
+\end{figure}
+
 \subsubsection{Brom}
 
-Das Absorptionsspektrum von Brom ist in Abbildung ... zu sehen.
+Das Absorptionsspektrum von Brom ist in Abbildung \ref{fig:plot4} zu sehen.
 Auch hier ist deutlich eine K-Kante bei etwa $\SI{13.0}{\degree}$ zu erkennen.
 Es ergeben sich nach den Gleichungen \eqref{eqn:theta} und \eqref{eqn:sigma}
 die Absorptionssenergie $ E_\text{Br, K} = \SI{13.683}{\kilo\eV}$ mit einer 
@@ -169,28 +187,56 @@ relativen Abweichung von $\SI{1.58}{\percent}$ zum Literaturwert und die
 Absorptionskonstante $\sigma_\text{Br, K} = 3.281$ mit einer relativen
 Abweichung von $\SI{7.05}{\percent}$.
 
+\begin{figure}[H]!
+  \centering
+  \includegraphics[scale=0.3]{content/bild6.png}
+  \caption{Absorptionsspektrum von Brom}
+  \label{fig:plot4}
+\end{figure}
+
 \subsubsection{Strontium}
 
-Abbildung ... zeigt das Absorptionsspektrum von Strontium mit einer 
+Abbildung \ref{fig:plot5} zeigt das Absorptionsspektrum von Strontium mit einer 
 K-Kante bei etwa $\SI{10.8}{\degree}$ mit der nach Formel \eqref{eqn:theta}
 zugehörigen Absorptionssenergie $ E_\text{Sr, K} = \SI{16.427}{\kilo\eV}$,
 die um $\SI{2.03}{\percent}$ vom Theoriewert abweicht. Die sich nach Formel 
 \eqref{eqn:sigma} ergebende Absorptionskonstante $\sigma_\text{Sr, K} = 3.246$
 weicht um $\SI{9.83}{\percent}$ ab.
 
+\begin{figure}[H]!
+  \centering
+  \includegraphics[scale=0.3]{content/bild5.png}
+  \caption{Absorptionsspektrum von Strontium}
+  \label{fig:plot5}
+\end{figure}
+
 \subsubsection{Zirkonium}
 
-Das Absorptionsspektrum von Zirkonium ist in Abbildung ... dargestellt.
+Das Absorptionsspektrum von Zirkonium ist in Abbildung \ref{fig:plot6} dargestellt.
 Bei einem Winkel von $\SI{9,65}{\degree}$ ist die K-Kante zu erkennen. Die
 Absorptionssenergie von $E_\text{Zr, K} = \SI{18.362}{\kilo\eV}$ weicht
 um $\SI{2.01}{\percent}$ relativ ab. Nach Formel \eqref{eqn:sigma} ergibt 
 sich die Abschirmkonstante $\sigma_\text{Sr, K} = 3.256$, die um 
 $\SI{10.06}{\percent}$ von ihrem Theoriewert abweicht.
 
+\begin{figure}[H]!
+  \centering
+  \includegraphics[scale=0.3]{content/bild4.png}
+  \caption{Absorptionsspektrum von Zirkonium}
+  \label{fig:plot6}
+\end{figure}
+
 \subsection{Mosleysches Gesetz}
 
 Die Quadratwurzeln der Absorptionsenergien verschiedener Elemente
-sind in Abbildung ... gegen die jeweilige Ordnungszahl aufgetragen.
+sind in Abbildung \ref{fig:plotx} gegen die jeweilige Ordnungszahl aufgetragen.
+
+\begin{figure}[H]!
+  \centering
+  \includegraphics[scale=0.7]{content/plot1.pdf}
+  \caption{Die Qudratwurzeln der Absorptionsenergien verschiedener Elemente}
+  \label{fig:plotx}
+\end{figure}
 
 Nach einer linearen Regression mittels python ergeben sich die
 Regressionsparameter als
@@ -207,7 +253,7 @@ Theoriewert um etwa $\SI{0.96}{\percent}$ ab.
 
 \subsection{Die L-Kanten des Absorptionsspektrums von Gold}
 
-In Abbildung ... ist das gemessene Absorptionsspektrum von Gold abgebildet.
+In Abbildung \ref{fig:plot7} ist das gemessene Absorptionsspektrum von Gold abgebildet.
 Die L-Kante sind bei etwa $\SI{13.5}{\degree}$ und $\SI{15.0}{\degree}$ lokalisiert.
 Durch Umstellung der Gleichung \eqref{eqn:theta} werden die Absorptionssenergien 
 $ E_1 = \SI{13.185}{\kilo\eV}$ und $ E_2 = \SI{11.893}{\kilo\eV}$ bestimmt.
@@ -215,6 +261,13 @@ Die Energiedifferenz beträgt also $\Delta E_\text{Au, L} = \SI{1.292}{\kilo\eV}
 Die Abschirmkonstante berechnet sich nach Gleichung \eqref{eqn:crap} zu 
 $\sigma_\text{Au, L} = 9.127$ mit der Feinstrukturkonstante
 $\alpha = 0.0072974$.
+
+\begin{figure}[H]!
+  \centering
+  \includegraphics[scale=0.3]{content/bild3.png}
+  \caption{Absorptionsspektrum von Gold}
+  \label{fig:plot7}
+\end{figure}
 
 
 
