@@ -7,5 +7,7 @@
 \contentsline {section}{\numberline {2}Durchführung}{5}{section.2}
 \contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Untersuchung der Filterkurve}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Experimentelle Bestimmung der Suszeptibilität}{5}{subsection.3.2}
-\contentsline {section}{\numberline {4}Diskussion}{8}{section.4}
+\contentsline {subsection}{\numberline {3.2}Theoretische Bestimmung des Suszeptibilitäten}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Experimentelle Bestimmung der Suszeptibilität}{8}{subsection.3.3}
+\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{10}{section.5}
