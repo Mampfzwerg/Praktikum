@@ -4,10 +4,11 @@
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}
 \contentsline {subsection}{\numberline {1.1}Die magnetische Suszeptibilität}{3}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Die Berechnung paramagnetischer Suszeptibilitäten}{3}{subsection.1.2}
-\contentsline {section}{\numberline {2}Durchführung}{5}{section.2}
-\contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Untersuchung der Filterkurve}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Theoretische Bestimmung des Suszeptibilitäten}{7}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Experimentelle Bestimmung der Suszeptibilität}{8}{subsection.3.3}
-\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{10}{section.5}
+\contentsline {subsection}{\numberline {1.3}Messverfahren zur Bestimmung paramagnetischer Suszeptibilitäten}{5}{subsection.1.3}
+\contentsline {section}{\numberline {2}Durchführung}{6}{section.2}
+\contentsline {section}{\numberline {3}Auswertung}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Untersuchung der Filterkurve}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Theoretische Bestimmung des Suszeptibilitäten}{9}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Experimentelle Bestimmung der Suszeptibilität}{10}{subsection.3.3}
+\contentsline {section}{\numberline {4}Diskussion}{12}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{12}{section.5}
