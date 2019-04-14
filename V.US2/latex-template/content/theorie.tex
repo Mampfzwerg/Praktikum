@@ -1,0 +1,99 @@
+\section{Theorie}
+\label{sec:Theorie}
+
+Ziel des Versuches ist das kennenlernen und anwenden der Scanverfahren
+in der Ultraschallechographie
+
+Die Frequenzen des Ultraschalls von $\SI{20}{\kilo\hertz}$ bis
+$\SI{1}{\giga\hertz}$ liegen über dem Hörbereich des Menschen
+von $\SI{16}{\kilo\hertz}$ bis $\SI{20}{\kilo\hertz}$.
+
+Schall beschreibt eine longitudinale Druckwelle
+
+\begin{equation}
+    p(x, t) = p_0 + v_0 Z \text{cos} \left(\omega t - k x \right)
+\end{equation}
+
+mit der akustischen Impedanz $Z = c\rho$ , die von der Dichte des
+durchstrahlten Materials und dessen Schallgeschwindigkeit $c$ abhängt.
+Auch die Schallgeschwindigkeit ist materialabhängig.
+In Gasen und Flüssigkeiten breiten sich Longitudinalwellen mit der 
+von der Kompressibilität $\kappa$ und Dichte $\rho$ abhängiger
+Geschwindigkeit
+
+\begin{equation}
+    c_\text{Fl} = \sqrt{\frac{1}{\kappa \rho}}
+\end{equation}
+
+aus. In Festkörpern breiten sich Longitudinalwellen
+mit der vom Elastizitätsmodul $E$ abhängigen Schallgeschwindigkeit 
+
+\begin{equation}
+    c_\text{Fe} = \sqrt{\frac{E}{\rho}}
+\end{equation}
+
+aus. Auch Transversalwellen mit anderer Schallgeschwindigkeit sind hier
+möglich. Allgemein hängen Schallgeschwindigkeiten von der Wellenrichtung
+ab.
+
+Ein Teil des Schalles wird bei seiner Ausbreitung absorbiert, somit
+gilt für die Intensität:
+
+\begin{equation}
+    I(x) = I_0 \cdot \text{e}^{\alpha x}
+\end{equation}
+
+$\alpha$ beschreibt den Absorptionskoeffizienten der Schallamplitude
+
+Zudem werden Schallwellen an Grenzflächen reflektiert. Der Reflektionskoeffizient
+
+\begin{equation}
+    R = \left( \frac{Z_1 - Z_2}{Z_1 + Z_2} \right)^2
+\end{equation}
+
+gibt das Verhältnis von einfallender und reflektierter Wellen,
+
+der Transmissionskoeffizient $T = R - 1$
+jenes einfallender und transmittierter Wellen an. \\
+
+Eine Methode zur Ultraschallerzeugung stellt der
+piezo-elektrische Effekt dar. Dabei wird ein
+(Quarz-)Kristall durch ein wechselndes
+elektrisches Feld zur Schwingung angeregt und
+emittiert Ultraschallwellen. Besonders groß
+ist deren Amplitude, wenn die Anregung die 
+Resonanzfrequenz trifft. \\
+
+Verwendung finden bspw. in der Medizin Laufzeitmessungen des Ultraschalls,
+aus denen sich auf das zu durchquerende Material schließen lässt.
+Beim Durchschallungsverfahren wird Ultraschall ausgesendet nach
+Durchquerung einer Materialprobe wieder empfangen.
+Liegen im Material Störstellen vor, so wird an diesen
+eine geringere Intensität gemessen.
+Beim Impuls-Echo-Verfahren liegen Sender und
+Empfänger zusammen. Der Schall wird dazu am Ende der Probe
+an einer Grenzfläche reflektiert. Mit dieser Methode 
+lassen sich die Größen möglicher Störstellen  und bei bekannter
+Schallgeschwindigkeit auch deren Höhen $s = \frac{1}{2} c t$ bestimmen.
+
+Zur Darstellung der Laufzeitdiagramme dienen die Darstellungsarten:
+
+\begin{itemize}
+    \item A-Scan (Amplituden Scan): Ein eindimensionales Verfahren, bei dem die 
+    Echoamplituden eine Funktion der Laufzeit sind.
+    \item B-Scan (Brightness Scan): Ein zweidimensionales Verfahren, bei dem
+    durch Bewegung der Sonde ein Bild entsteht, in dem
+    die Echoamplituden durch Helligkeitsabstufungen dargestellt sind. 
+    \item TM-Scan (Time-Motion Scan): Ein schnelles Verfahren zur Aufnahme
+    von Bildfolgen.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
