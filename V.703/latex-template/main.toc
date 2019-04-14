@@ -5,5 +5,5 @@
 \contentsline {subsection}{\numberline {1.1}Aufbau und Charakteristik}{3}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Totzeit und Nachentladung}{4}{subsection.1.2}
 \contentsline {section}{\numberline {2}Durchführung}{5}{section.2}
-\contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
-\contentsline {section}{\numberline {4}Diskussion}{5}{section.4}
+\contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
+\contentsline {section}{\numberline {4}Diskussion}{6}{section.4}
