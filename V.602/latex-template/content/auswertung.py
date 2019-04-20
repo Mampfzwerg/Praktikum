@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from uncertainties import ufloat
+import uncertainties.unumpy as unp
 
 z, E = np.genfromtxt('mess1.txt', unpack=True)
 
@@ -17,26 +18,31 @@ theta = np.arcsin((h * c) / (E * 2 * d)) * 57.2958
 
 
 
-t = ufloat(np.sin(5 / x), np.sin(0.4 / x))
-lambdamin = 2 * d  *  t #np.sin(5 / 57.2958)
+t = ufloat(10, 0.75) / 2
+lambdamin = 2 * d  * unp.sin(t / 57.2958)
 Emax = h * c / lambdamin
 lambdamintheo = h * c /(e  * 35)
 Emaxtheo = h * c / lambdamintheo
 #print(Emax / e)
 
-a = ufloat(1, 0.75)
-
-print(a / 2)
+a = ufloat(11.89, 0.31)
+b = ufloat(14.1, 0.4)
+g = b - a
+#print((b - a))
 
 # Mehr Energie!!!
-t = ufloat(np.sin(0.8 / x), np.sin(0.4 / x))
-E1 = (h * c / (2 * d * t) )/ e
+t = ufloat(15.0 , 0.4)
+E1 = (h * c / (2 * d * unp.sin(t / x)))/ e
 #E2 = h * c / (2 * d * np.sin(20.0 / 57.2958)) / e
 print(E1)
 
-sigma1 = 29 - np.sqrt(9 * e /R)
-sigma2 = 29 - 2 * np.sqrt((R * (29 - sigma1)**2 - 8.043 * e) / R)
-#print(sigma2)
+#Ex = ufloat(9.58, 0.2)
+#Ey = ufloat(8.04, 0.14)
+##wurzel = ufloat(np.sqrt(9 * e /R), np.sqrt(0.18 * e /R))
+#sigma1 = 40 - unp.sqrt(E1 * e / R)
+#sigma2 = 29 - 2 * unp.sqrt((R * (29 - sigma1)**2 - Ey * e) / R)
+#sigma3 = 29 - 3 * unp.sqrt((R * (29 - sigma1)**2 - Ey * e) / R)
+#print(sigma1)
 
 
 
@@ -44,9 +50,9 @@ sigma2 = 29 - 2 * np.sqrt((R * (29 - sigma1)**2 - 8.043 * e) / R)
 
 
 #Auflösung
-#x = np.array([0.252, 0.353])
+#print((0.035 + 0.02) / 2) 
+#x = np.array([0.035, 0.020])
 #print(np.std(x, ddof=1) / np.sqrt(len(x)))
-
 
 
 
@@ -55,8 +61,8 @@ sigma2 = 29 - 2 * np.sqrt((R * (29 - sigma1)**2 - 8.043 * e) / R)
 #print(40 - np.sqrt(En / R))
 
 #L-Kante
-#alpha = 7.2974 * 1e-3
-#dE = 1.292  * e
-#sigmaL = 79 - (((4 / alpha) * np.sqrt(dE / R) - (5 * dE / R)) *
-#    (1 + (19/32) * alpha**2 * (dE/R)))**(1/2)
-#print(sigmaL)
+alpha = 7.2974 * 1e-3
+dE = g  * e
+sigmaL = 79 - (((4 / alpha) * unp.sqrt(dE / R) - (5 * dE / R)) *
+    (1 + (19/32) * alpha**2 * (dE/R)))**(1/2)
+print(sigmaL)
