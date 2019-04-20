@@ -4,6 +4,7 @@ from uncertainties import ufloat
 
 z, E = np.genfromtxt('mess1.txt', unpack=True)
 
+x = 57.2958
 e = 1.602176487 * 1e-16
 E = E * e
 R = 13.6 * 1.602176487 * 1e-19
@@ -14,19 +15,28 @@ c = 299792458
 d = 201.4 * 1e-12
 theta = np.arcsin((h * c) / (E * 2 * d)) * 57.2958
 
-lambdamin = 2 * d * np.sin(5 / 57.2958)
+
+
+t = ufloat(np.sin(5 / x), np.sin(0.4 / x))
+lambdamin = 2 * d  *  t #np.sin(5 / 57.2958)
 Emax = h * c / lambdamin
 lambdamintheo = h * c /(e  * 35)
 Emaxtheo = h * c / lambdamintheo
+#print(Emax / e)
+
+a = ufloat(1, 0.75)
+
+print(a / 2)
 
 # Mehr Energie!!!
-E1 = h * c / (2 * d * np.sin(22.5 / 57.2958)) / e
-E2 = h * c / (2 * d * np.sin(20.0 / 57.2958)) / e
-#print(E2 / e)
+t = ufloat(np.sin(0.8 / x), np.sin(0.4 / x))
+E1 = (h * c / (2 * d * t) )/ e
+#E2 = h * c / (2 * d * np.sin(20.0 / 57.2958)) / e
+print(E1)
 
 sigma1 = 29 - np.sqrt(9 * e /R)
 sigma2 = 29 - 2 * np.sqrt((R * (29 - sigma1)**2 - 8.043 * e) / R)
-print(sigma2)
+#print(sigma2)
 
 
 
