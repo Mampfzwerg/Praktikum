@@ -108,6 +108,58 @@ die Impulszahlen, die in Tabelle \ref{tab:mess2} aufgelistet sind.
     \frac{1}{2 n_1 n_2} \symup{\Delta} n_{1+2} \; .
   \end{equation}
 
+  \subsection{Durchschnittliche Teilchenladung}
+
+  Zur Bestimmung der Teilchenladung werden die Messwerte der Stromstärke aus Tabelle
+  \ref{tab:mess} entnommen und die Ladungen nach der Formel
+
+  \begin{equation}
+    Q = \frac{I \cdot t}{N}
+  \end{equation}
+
+  berechnet. Diese sind in Tabelle \ref{tab:mess3} eingetragen.
+
+  \begin{table}
+    \centering
+    \caption{Die Messdaten der Stromstärke und Ladung im Zählrohr}
+    \label{tab:mess3}
+    \sisetup{table-format=2.1}
+    \begin{tabular}{c c c c c c c}
+    \toprule
+    $U \,/\, \si{\volt}$ & $\frac{N}{t} \;/\; \si{\per\second}$
+    & $\frac{\sqrt{N}}{t} \;/\; \si{\per\second}$ & $A \,/\, \si{\micro\ampere}$
+    & $Q \,/\, \si{\nano\coulomb}$ & $Q \,/\, \si{\giga e}$ & 
+    $\symup{\Delta Q} \,/\, \si{\giga e}$\\
+    \midrule 
+    320 & 85,81 & 0,83 & 0,20 & 2,33 & 14,55 & 0,14 \\
+    400 & 90,49 & 0,85 & 0,20 & 2,21 & 13,80 & 0,13 \\
+    480 & 89,88 & 0,85 & 0,25 & 2,78 & 17,36 & 0,16 \\
+    560 & 90,44 & 0,85 & 0,40 & 4,42 & 27,61 & 0,26 \\
+    640 & 92,47 & 0,86 & 0,50 & 5,41 & 33,75 & 0,31 \\
+    680 & 94,64 & 0,87 & 0,50 & 5,28 & 33,00 & 0,30 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+    \begin{figure}
+      \centering
+      \includegraphics{content/plot2.pdf}
+      \caption{Die spannungsabhängige Ladung}
+      \label{fig:plot2}
+    \end{figure}
+
+    Die Werte von $Q$ sind in Abbildung \ref{fig:plot2} gegen die Spannung $U$
+    abgebildet. Die lineare Regression mittels python mit der
+    Gleichung $Q = c * U + d$ ergibt die Parameter: 
+
+    \begin{align*}
+      c &= \SI{0.063 +- 0.015}{\giga e \per\volt} \\
+      d &= \SI{-8.86 +- 7.65}{\giga e}   \;.
+    \end{align*}
+
+
+
+
 
 
 

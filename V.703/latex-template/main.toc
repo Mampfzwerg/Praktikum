@@ -9,5 +9,6 @@
 \contentsline {subsection}{\numberline {3.1}Die Charakteristik des Zählrohrs}{6}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Nachentladungen des Zählrohrs}{8}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Die Totzeit des Zählrohrs}{8}{subsection.3.3}
-\contentsline {section}{\numberline {4}Diskussion}{9}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{9}{section.5}
+\contentsline {subsection}{\numberline {3.4}Durchschnittliche Teilchenladung}{9}{subsection.3.4}
+\contentsline {section}{\numberline {4}Diskussion}{11}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{11}{section.5}
