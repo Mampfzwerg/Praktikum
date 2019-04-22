@@ -6,4 +6,7 @@
 \contentsline {subsection}{\numberline {1.2}Totzeit und Nachentladung}{4}{subsection.1.2}
 \contentsline {section}{\numberline {2}Durchführung}{5}{section.2}
 \contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
-\contentsline {section}{\numberline {4}Diskussion}{6}{section.4}
+\contentsline {subsection}{\numberline {3.1}a) Die Charakteristik des Zählrohrs}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}b) Nachentladungen des Zählrohrs}{8}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}c) Die Totzeit des Zählrohrs}{8}{subsection.3.3}
+\contentsline {section}{\numberline {4}Diskussion}{9}{section.4}
