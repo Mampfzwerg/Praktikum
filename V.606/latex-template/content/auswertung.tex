@@ -50,14 +50,14 @@ Ergebnis ist in Abbildung \ref{fig:plot1} zu finden.
   \label{fig:plot1}
 \end{figure}
 
-Mittels Python wird eine Lorentzkurve für eine Ausgleichskurve 
+Mittels Python 3.6.5. und dem Paket Matplotlib wird eine Lorentzkurve für eine Ausgleichskurve 
 gefittet. Dabei wird die Gleichung 
 
 \begin{equation*}
 f(x) = \frac{a}{(x²-x_0^2)²+\gamma²x_0²}
 \end{equation*}
 
-für die berechnete Lorentzkurve verwendet. 
+für die berechnete Lorentzkurve und die Werte von $\SI{34.1}{\kilo\hertz}$ bis $\SI{36.0}{\kilo\hertz}$verwendet. 
 
 Die Durchlassfrequenz lässt sich nun direkt ablesen und ergibt sich zu:
 
@@ -70,15 +70,15 @@ eine Gerade angelegt. Die Parameter ergeben sich schließlich zu:
 
 \begin{align*}
 a &= \SI{6.6+-0.4e4}{\volt\per\second²},\\
-\gamma &= \SI{0.772+-0.031}{}.
+\gamma &= \SI{0.772+-0.03}{}.
 \end{align*}
 
 Außerdem werden $\nu_\text{A}$, $\nu_1$ und $\nu_2$ mittels Python zu
 
 \begin{align*}
-\nu_1 &= \SI{34.816+-0.014}{\kilo\hertz},\\
-\nu_\text{A} &= \SI{35.065+-0.010}{\kilo\hertz},\\
-\nu_2 &= \SI{35.313+-0.014}{\kilo\hertz}
+\nu_1 &= \SI{34.816+-0.01}{\kilo\hertz},\\
+\nu_\text{A} &= \SI{35.065+-0.01}{\kilo\hertz},\\
+\nu_2 &= \SI{35.313+-0.01}{\kilo\hertz}
 \end{align*}
 
 berechnet. Die Güte $Q$ kann nun mit 
@@ -97,7 +97,7 @@ berechnet werden.
 Der Fehler ergibt sich dabei durch eine Fehlerrechnung mittels 
 Python.
 
-\subsection{Theoretische Bestimmung des Suszeptibilitäten}
+\subsection{Theoretische Bestimmung der Suszeptibilitäten}
 
 Nach Formel \eqref{eqn:theo} lassen sich die Theoriewerte Seltener 
 Erde Verbindungen berechnen. Es werden $\symup{Dy_2O_3}$, $\symup{C_6O_{12}Pr_3}$, 

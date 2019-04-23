@@ -41,7 +41,7 @@ print("Güte:",Q)
 
 #Gerade 
 h = a/(y**2 * x0**2)/np.sqrt(2)
-plt.plot(x_plot, 0*x_plot + h.nominal_value, 'g-',label= r'$\frac{1}{\sqrt{2}}$', linewidth=1.3)
+plt.plot(x_plot, 0*x_plot + h.nominal_value, 'g-',label= r'$\frac{U_{A, max}}{\sqrt{2}}$', linewidth=1.3)
 
 
 plt.legend(loc='best')
