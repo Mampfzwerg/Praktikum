@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.10.3)  23 APR 2019 21:03
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.10.3)  23 APR 2019 21:38
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -32,7 +32,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.120 seconds (./header.tex
+luaotfload | main : initialization completed in 0.133 seconds (./header.tex
 (/home/sara/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/home/sara/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -902,24 +902,24 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 df
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            righthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            synonyms	table: 0x58343d0
-(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	table: 0x34be9c0
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
 (polyglossia)            righthyphenmin	2
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            synonyms	table: 0x58345a0
-(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	table: 0x34beb90
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -2388,7 +2388,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
-) (./content/auswertung.tex [4] [5] [6]) (./content/diskussion.tex) [7]
+) (./content/auswertung.tex [4]
+<content/Ascan.PNG, id=58, 952.30782pt x 716.6775pt>
+File: content/Ascan.PNG Graphic file (type png)
+<use content/Ascan.PNG>
+Package luatex.def Info: content/Ascan.PNG  used on input line 58.
+(luatex.def)             Requested size: 285.69455pt x 215.00491pt.
+
+
+LaTeX Warning: Reference `Ascangruen' on page 5 undefined on input line 65.
+
+<content/blau-a-scan.PNG, id=61, 945.5325pt x 703.87968pt>
+File: content/blau-a-scan.PNG Graphic file (type png)
+<use content/blau-a-scan.PNG>
+Package luatex.def Info: content/blau-a-scan.PNG  used on input line 69.
+(luatex.def)             Requested size: 283.66194pt x 211.16553pt.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 70.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 70.
+<content/rot-a-scan.PNG, id=62, 933.4875pt x 700.11563pt>
+File: content/rot-a-scan.PNG Graphic file (type png)
+<use content/rot-a-scan.PNG>
+Package luatex.def Info: content/rot-a-scan.PNG  used on input line 76.
+(luatex.def)             Requested size: 280.04842pt x 210.0363pt.
+<content/grün-a-scan.PNG, id=63, 947.03813pt x 699.36281pt>
+File: content/grün-a-scan.PNG Graphic file (type png)
+<use content/grün-a-scan.PNG>
+Package luatex.def Info: content/grün-a-scan.PNG  used on input line 83.
+(luatex.def)             Requested size: 284.11363pt x 209.81046pt.
+<content/bscan1.jpg, id=66, 875.27pt x 753.81625pt>
+File: content/bscan1.jpg Graphic file (type jpg)
+<use content/bscan1.jpg>
+Package luatex.def Info: content/bscan1.jpg  used on input line 95.
+(luatex.def)             Requested size: 262.58302pt x 226.14662pt.
+<content/bscan2.jpg, id=67, 869.2475pt x 764.8575pt>
+File: content/bscan2.jpg Graphic file (type jpg)
+<use content/bscan2.jpg>
+Package luatex.def Info: content/bscan2.jpg  used on input line 102.
+(luatex.def)             Requested size: 260.77626pt x 229.45901pt.
+[5] [6<./content/Ascan.PNG><./content/blau-a-scan.PNG>] [7<./content/rot-a-scan.
+PNG><./content/grün-a-scan.PNG>] [8<./content/bscan1.jpg><./content/bscan2.jpg>
+] [9]
+<content/tm.jpg, id=108, 878.28125pt x 747.79375pt>
+File: content/tm.jpg Graphic file (type jpg)
+<use content/tm.jpg>
+Package luatex.def Info: content/tm.jpg  used on input line 185.
+(luatex.def)             Requested size: 263.4864pt x 224.33984pt.
+ [10<./content/tm.jpg>]) (./content/diskussion.tex)
 Overfull \hbox (21.7237pt too wide) in paragraph at lines 25--29
 \TU/lmr/m/n/10.95 [1]:  Schall-ge-schwin-dig-keit im Ma-te-ri-al. []$\TU/lmtt/m
 /n/10.95 https://www.olympus-[]ims.com/de/ndt-[]tutorials/
@@ -2398,7 +2445,7 @@ Overfull \hbox (21.7237pt too wide) in paragraph at lines 25--29
 LaTeX Warning: Empty bibliography on input line 30.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
-[8]
+[11]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
  (./main.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
@@ -2407,24 +2454,28 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: AAE6A9BBB218EBB5573FD60F497B0FF4;7173.
+(rerunfilecheck)             Checksum: FEC070F1AF90BADA00A8DA2FF3602ED7;9051.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: AA67A56B8BFD086280F84077629CB274;827.
+(rerunfilecheck)             Checksum: 95436DC4B3AEFD2492DA3BBEEFB34BE0;830.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 42291 strings out of 494407
+ 42394 strings out of 494407
  100000,1648299 words of node,token memory allocated
  692 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 27 attribute, 76 glue_spec
 , 27 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 1:3,2:1213,3:136,4:33,5:221,6:28,7:3852,8:101,9:355,10:17,11:358
+   avail lists: 1:3,2:1592,3:220,4:33,5:221,6:49,7:4446,8:138,9:462,10:17,11:358
 
- 45165 multiletter control sequences out of 65536+600000
- 210 fonts using 77424207 bytes
+ 45225 multiletter control sequences out of 65536+600000
+ 222 fonts using 81877711 bytes
  61i,15n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-reg
 ular.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmr
@@ -2438,10 +2489,10 @@ ara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.ot
 f></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmsans10-b
 old.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmro
 man12-bold.otf>
-Output written on main.pdf (8 pages, 62099 bytes).
+Output written on main.pdf (11 pages, 827218 bytes).
 
-PDF statistics: 183 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 131072)
+PDF statistics: 221 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 131072)
  65 words of extra memory for PDF output out of 10000 (max. 100000000)
 
