@@ -100,7 +100,7 @@ Python.
 \subsection{Theoretische Bestimmung der Suszeptibilitäten}
 
 Nach Formel \eqref{eqn:theo} lassen sich die Theoriewerte Seltener 
-Erde Verbindungen berechnen. Es werden $\symup{Dy_2O_3}$, $\symup{C_6O_{12}Pr_3}$, 
+Erde Verbindungen berechnen. Es werden $\symup{Dy_2O_3}$, $\symup{C_6O_{12}Pr_2}$, 
 $\symup{Gd_2O_3}$ und $\symup{Nd_2O_3}$ untersucht. Es wird eine Temperatur von 
 $T = \SI{294}{\kelvin}$ angenommen, was etwa Raumtemperatur entspricht.
 Der Lande-Faktor $g_J$, sowie $S$, $L$ und $J$ sind in Tabelle \ref{tab:theo} 
@@ -115,11 +115,13 @@ aufgeführt.
 \toprule
 & $\symup{Nd_2O_3}$ & $\symup{Gd_2O_3}$ & $\symup{Dy_2O_3}$ & $\symup{C_6O_{12}Pr_3}$\\
 \midrule
-4f-Elektronen & 3    & 7   & 9    & 3\\
-L             & 6    & 0   & 5    & 5\\
-S             & 1,5  & 3,5 & 2,5  & 1\\
-J             & 4,5  & 3,5 & 7,5  & 4\\
-$g_J$         & 0,97 & 2,0 & 1,41 & 0,8\\
+4f-Elektronen                             & 3      & 7      & 9      & 3\\
+L                                         & 6      & 0      & 5      & 5\\
+S                                         & 1,5    & 3,5    & 2,5    & 1\\
+J                                         & 4,5    & 3,5    & 7,5    & 4\\
+$g_J$                                     & 0,73   & 2,0    & 1,33   & 0,8\\
+$\rho \, / \, \si{\kilo\gram\per\meter³}$ & 7240   & 7400   & 7800   & 6260\\
+$m \, / \, \si{\kilo\gram}$               & 0,0090 & 0,0141 & 0,0151 & 0,0079\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -127,14 +129,14 @@ $g_J$         & 0,97 & 2,0 & 1,41 & 0,8\\
 Außerdem ergibt sich $N$ nach
 
 \begin{equation*}
-N = \frac{\rho}{M}\cdot N_\text{A}.
+N = 2 \cdot \frac{\rho}{M}\cdot N_\text{A}.
 \end{equation*}
 
 Dabei ist $N_\text{A} = \SI{6.02214129e23}{1\per\mol}$ [2] die 
 Avogadrokonstante, $\rho$ die Dichte des jeweiligen Stoffes und $M$
 die molare Masse. Diese Werte sind zusammen mit den berechneten Werten für $N$
-in Tabelle \ref{tab:theo2} zu finden. Setzt man diese Werte alle in Gleichung  
-\eqref{eqn:theo} ein, so ergeben sich die gesuchten Suszeptibilitäten, die sich ebenfalls in 
+in Tabelle \ref{tab:theo2} zu finden. Werden diese Werte alle in Gleichung  
+\eqref{eqn:theo} eingesetzt, so ergeben sich die gesuchten Suszeptibilitäten, die sich ebenfalls in 
 Tabelle \ref{tab:theo2} befinden. 
 
 \begin{table}
@@ -146,11 +148,11 @@ Suszeptibilitäten $\chi$.}
 \sisetup{table-format=2.1}
 \begin{tabular}{c c c c c}
 \toprule
-& $\symup{Nd_2O_3}$ & $\symup{Gd_2O_3}$ & $\symup{Dy_2O_3}$ & $\symup{C_6O_{12}Pr_3}$\\
+& $\symup{Nd_2O_3}$ & $\symup{Gd_2O_3}$ & $\symup{Dy_2O_3}$ & $\symup{C_6O_{12}Pr_2}$\\
 \midrule
-$M/\si{\gram\mol^-1}$            & 168     & 176    & 180    & 346\\
-$N \cdot \num{e28}/\si{\meter³}$ & 2,60    & 2,53   & 2,61   & 1,09\\
-$\chi$                           & 0,00536 & 0,0142 & 0,0294 & 0,00123\\
+$M/\si{\gram\per\mol}$           & 336     & 362    & 373    & 544\\
+$N \cdot \num{e28}/\si{\meter³}$ & 2,59    & 2,46   & 2,52   & 1,38\\
+$\chi_\text{theo}$               & 0,0030 & 0,0138 & 0,0254 & 0,00123\\
 \bottomrule
 \end{tabular}
 \end{table}
