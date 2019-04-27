@@ -34,15 +34,15 @@ g = b - a
 t = ufloat(15.0 , 0.4)
 E1 = (h * c / (2 * d * unp.sin(t / x)))/ e
 #E2 = h * c / (2 * d * np.sin(20.0 / 57.2958)) / e
-print(E1)
+#print(E1)
 
-#Ex = ufloat(9.58, 0.2)
-#Ey = ufloat(8.04, 0.14)
-##wurzel = ufloat(np.sqrt(9 * e /R), np.sqrt(0.18 * e /R))
-#sigma1 = 40 - unp.sqrt(E1 * e / R)
-#sigma2 = 29 - 2 * unp.sqrt((R * (29 - sigma1)**2 - Ey * e) / R)
-#sigma3 = 29 - 3 * unp.sqrt((R * (29 - sigma1)**2 - Ey * e) / R)
-#print(sigma1)
+Ex = ufloat(9.58, 0.2)
+Ey = ufloat(8.04, 0.14)
+#wurzel = ufloat(np.sqrt(9 * e /R), np.sqrt(0.18 * e /R))
+sigma1 = 40 - unp.sqrt(E1 * e / R)
+sigma2 = 29 - 2 * unp.sqrt((R * (29 - sigma1)**2 - Ey * e) / R)
+sigma3 = 29 - 2 * unp.sqrt((R * (29 - sigma1)**2 - Ex * e) / R)
+print(sigma3)
 
 
 
@@ -61,8 +61,8 @@ print(E1)
 #print(40 - np.sqrt(En / R))
 
 #L-Kante
-alpha = 7.2974 * 1e-3
-dE = g  * e
-sigmaL = 79 - (((4 / alpha) * unp.sqrt(dE / R) - (5 * dE / R)) *
-    (1 + (19/32) * alpha**2 * (dE/R)))**(1/2)
-print(sigmaL)
+#alpha = 7.2974 * 1e-3
+#dE = g  * e
+#sigmaL = 79 - (((4 / alpha) * unp.sqrt(dE / R) - (5 * dE / R)) *
+#    (1 + (19/32) * alpha**2 * (dE/R)))**(1/2)
+#print(sigmaL)
