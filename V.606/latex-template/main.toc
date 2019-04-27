@@ -11,4 +11,4 @@
 \contentsline {subsection}{\numberline {3.2}Theoretische Bestimmung der Suszeptibilitäten}{10}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Experimentelle Bestimmung der Suszeptibilität}{11}{subsection.3.3}
 \contentsline {section}{\numberline {4}Diskussion}{13}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{13}{section.5}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{14}{section.5}
