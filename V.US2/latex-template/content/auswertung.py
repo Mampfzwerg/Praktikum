@@ -25,6 +25,7 @@ s11 = s1/2
 s22 = s2/2
 s = s22+s11
 DU = H-s
+print(DU)
 
 #B-Scan 
 
@@ -38,6 +39,7 @@ to22 = to2*1e-6-tw*2
 d2 = to22-tu21
 d1 = to12-tu11
 a = va*d1
+print(a/2)
 a1 = va*d2
-
+print(a1/2)
 
