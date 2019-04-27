@@ -9,10 +9,10 @@ b = 3.995*1e-3
 va = 2730
 
 a, b, c, d, e, f,g  = np.genfromtxt('mess3.txt', unpack=True)
-print(np.mean(a),
-    np.mean(b),
-    np.mean(c),
-    np.mean(d),
-    np.mean(e),
-    np.mean(f),
-    np.mean(g))
+print(np.mean(a),np.std(a),
+    np.mean(b),np.std(b),
+    np.mean(c), np.std(c),
+    np.mean(d), np.std(d),
+    np.mean(e), np.std(e),
+    np.mean(f), np.std(f),
+    np.mean(g), np.std(g))
