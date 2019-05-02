@@ -7,10 +7,10 @@ import uncertainties.unumpy as unp
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-x, Y = np.genfromtxt('mess1.txt', unpack=True)
+x, Y = np.genfromtxt('mess2.txt', unpack=True)
 
 y = Y - 0.000515
-b = 0.15 * 1e-3
+b = 0.075 * 1e-3
 L = 1040
 K = np.sqrt(x**2 + L**2)
 ph = np.arcsin(x / K) / np.pi
@@ -22,7 +22,7 @@ l = 633 * 1e-9
 def I(x, A, b):
     return A**2 * b**2 * (l / (np.pi * b * x))**2 * (np.sin(np.pi * b * x /l))**2
 
-params, covariance_matrix = curve_fit(I, x, y, p0=[560, b])
+params, covariance_matrix = curve_fit(I, x, y, p0=[1e3, b])
 errors = np.sqrt(np.diag(covariance_matrix))
 
 print('A = {:.4f} ± {:.5f}'.format(params[0], errors[0]))
@@ -37,4 +37,4 @@ plt.ylabel(r'$I \: / \: \mu A$')
 plt.legend(loc='best')
 
 plt.tight_layout()
-plt.savefig('plot1.pdf')
+plt.savefig('plot2.pdf')
