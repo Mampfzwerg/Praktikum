@@ -69,8 +69,8 @@ Desweiteren wird bei einem Wert von $\frac{1}{\sqrt{2}}$ des Maximalwerts
 eine Gerade angelegt. Die Parameter ergeben sich schließlich zu: 
 
 \begin{align*}
-a &= \SI{6.6+-0.4e4}{\volt\per\second²},\\
-\gamma &= \SI{0.772+-0.03}{}.
+a &= \SI{6.6+-0.4e4}{\volt\per\second⁴},\\
+\gamma &= \SI{0.772+-0.03}{1\per\second²}.
 \end{align*}
 
 Außerdem werden $\nu_\text{A}$, $\nu_1$ und $\nu_2$ mittels Python zu
@@ -124,7 +124,7 @@ $J= L - S = \frac{9}{2} = \num{4.5}$ berechnet.
 \sisetup{table-format=2.1}
 \begin{tabular}{c c c c c}
 \toprule
-& $\symup{Nd_2O_3}$ & $\symup{Gd_2O_3}$ & $\symup{Dy_2O_3}$ & $\symup{C_6O_{12}Pr_3}$\\
+& $\symup{Nd_2O_3}$ & $\symup{Gd_2O_3}$ & $\symup{Dy_2O_3}$ & $\symup{C_6O_{12}Pr_2}$\\
 \midrule
 4f-Elektronen                             & 3      & 7      & 9      & 3\\
 L                                         & 6      & 0      & 5      & 5\\
@@ -257,7 +257,7 @@ $U_\text{m} \,/\, \si{\milli\volt}$ & $R_\text{m} \,/\, \si{\ohm}$ & $U_\text{0}
 
 \begin{table}
 \centering
-\caption{Messwerten und Differenzwerte für $\symup{C_6O_{12}Pr_3}$}
+\caption{Messwerten und Differenzwerte für $\symup{C_6O_{12}Pr_2}$}
 \label{tab:Messdaten6}
 \sisetup{table-format=2.1}
 \begin{tabular}{c c c c c c}
@@ -313,28 +313,6 @@ $\symup{C_6O_\text{12}Pr_2}$ & $\num{0.0041+-0.0007}$ & $\num{1.4148+-0.9849}$ &
 \end{tabular}
 \end{table}
 
-Damit ergeben sich die Abweichungen in Tabelle \ref{tab:Messdaten8} vom theoretischem 
-Wert. 
+Die Abweichungen zum theoretischem Wert finden sich in der Diskussion.  
 
-\begin{table}
-\centering
-\caption{Abweichungen zum theoretischem Wert.}
-\label{tab:Messdaten8}
-\sisetup{table-format=2.1}
-\begin{tabular}{c c c}
-\toprule
-Stoff & $\frac{\chi_\text{theo}-\chi_\text{R}}{\chi_\text{theo}}$ & $\frac{\chi_\text{theo}-\chi_\text{U}}{\chi_\text{theo}}$\\ 
-\midrule
-$\symup{Dy_2O_3}$       & $\SI{91.03+-0.01}{\percent}$ & $\SI{77.24+-11.73}{\percent}$\\
-$\symup{Nd_2O_3}$       & $\SI{6.06+-40.32}{\percent}$ & $\SI{85.20+-12.09}{\percent}$\\
-$\symup{Gd_2O_3}$       & $\SI{74.65+-9.09}{\percent}$ & $\SI{5841.75+-8163.26}{\percent}$\\
-$\symup{C_6O_{12}Pr_3}$ & $\SI{310.07+-74.68}{\percent}$ & $\SI{141383.21+-98493.63}{\percent}$\\
-\bottomrule
-\end{tabular}
-\end{table}
 
-Diese ergeben sich nach 
-
-\begin{equation*}
-\nu = \left|\frac{\chi_\text{theo}-\chi_\text{exp}}{\chi_\text{theo}}\right| \cdot 100.
-\end{equation*}
