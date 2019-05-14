@@ -1,0 +1,51 @@
+\section{Theorie}
+\label{sec:Theorie}
+
+Ziel dieses Versuchs ist die Bestimmung der Energie von $\alpha$-Strahlung über die Messung von deren 
+Reichweite in Luft. \\
+Ein $\alpha$-Teilchen verliert über zwei Aspekte seine Energie.
+Zunächst über elastische Stöße mit dem Medium, welches es durchläuft. Dieser Prozess, der als Rutherford-Streuung
+bekannt ist, spielt für den Energieverlust eine nebensächlichen Rolle, da die Größe der Atomkerndichte im Material 
+sehr gering ist und somit ein Zusammenstoß relativ unwahrscheinlich ist.\\
+Den zweiten, weitaus wichtigeren, Aspekt stellen Ionisationsprozesse, sowie Anregung uns Dissoziation von Molekülen
+im Material dar. Dabei hängt auch hier der Energieverlust pro Wegstück von der Dichte des Materials und der 
+Energie $E_\alpha$ der $\alpha$-Strahlung ab. Bei einer hohen Geschwindigkeit und somit einer großen 
+Energie der Strahlung, ist es jedoch wahrscheinlicher, dass es zu keiner Wechselwirkung kommt, da die Zeit, 
+in der sich der Heliumkern in Wechselwirkungsnähe befindet, geringer ist.\\
+Bei hinreichend großen Energien kann der Energieverlust pro Wegstück über die Bethe-Block Gleichung
+
+\begin{equation}
+-\frac{\symup{d}E_\alpha}{\symup{d}x} = \frac{z²e⁴}{4\pi\epsilon_0 m_\text{e}} \frac{nZ}{v²}\ln{\left(\frac{2m_\text{e}v²}{I}\right)}
+\label{eqn:Bethebloch}
+\end{equation}
+
+bestimmt werden, wobei $z$ die Ladung, $v$ die Geschwindigkeit, $Z$ die Ordnungszahl, $n$ die Teilchendichte 
+und $I$ die Ionisationsenergie des Targetgases ist. Quantenmechanische Prozesse wie zum Beispiel der Kernspin 
+werden ignoriert. \\
+Die Reichweite der $\alpha$-Strahlung ergibt sich dann über das Integral 
+
+\begin{equation}
+R = \int_{0}^{E_\alpha} -\frac{\symup{d}E_\alpha}{\symup{d}x} \symup{d}E_\alpha.
+\label{eqn:Reichweite}
+\end{equation}
+
+Da bei geringeren Energien vermehrt Ladungsaustauschprozesse stattfinden, verliert die Bethe-Bloch-Gleichung 
+ihre Gültigkeit und somit wird die mittlere Reichweite über empirisch gewonnene Kurven bestimmt. Für sie gilt 
+für $\alpha$-Stahlung in Luft die Gleichung 
+
+\begin{equation}
+R_\text{m}= \num{3.1}\cdot E_\alpha^\frac{3}{2},
+\end{equation}
+
+wobei die Energie in Megaelektronenvolt angegeben in einem Bereich unter $\SI{2.5}{\mega\eV}$ liegen sollte und 
+$R_\text{m}$ in Millimeter angegeben wird. Unter konstanter Temperatur und konstantem Volumen ist die Reichweite 
+propotional zum umgebenden Druck $p$. Folglich kann zur Ermittlung der Reichweite eine Absorptionsmessung 
+gemacht werden, bei der der Druck variiert wird. Dadurch gilt für einen festen Abstand $x_0$ zwischen Detektor 
+und Strahler die effektive Weglänge 
+
+\begin{equation}
+x_\text{eff} = x_0 \frac{p}{p_0},
+\label{eqn:Weglaenge}
+\end{equation}
+
+welche durch den Normaldruck $p_0 = \SI{1013}{\milli\bar}$ [1] beschrieben wird. 

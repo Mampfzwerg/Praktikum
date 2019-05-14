@@ -10,3 +10,4 @@
 \contentsline {subsection}{\numberline {3.2}Methode von Bessel}{9}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Methode von Abbe}{10}{subsection.3.3}
 \contentsline {section}{\numberline {4}Diskussion}{13}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{14}{section.5}
