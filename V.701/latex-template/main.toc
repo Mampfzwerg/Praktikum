@@ -4,4 +4,4 @@
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}
 \contentsline {section}{\numberline {2}Durchführung}{4}{section.2}
 \contentsline {section}{\numberline {3}Auswertung}{4}{section.3}
-\contentsline {section}{\numberline {4}Diskussion}{5}{section.4}
+\contentsline {section}{\numberline {4}Diskussion}{8}{section.4}
