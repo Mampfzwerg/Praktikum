@@ -1,6 +1,26 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Bestimmung der mittleren Reichweite und Energie zweier Messreihen}
+
+Die Abstände $x_0$ zwischen $\alpha$-Strahler und Detektor betragen für die Messreihen
+$\SI{2.4}{\centi\meter}$ und $\SI{2.9}{\centi\meter}$. Für diese Abstände werden jeweils
+$100$ Messungen der Zählrate $N$ und des Energiemesschannels für den Druck zwischen
+$\SI{0}{\milli\bar}$ und $\SI{1000}{\milli\bar}$ und einer Zeitspanne von
+$t = \SI{120}{\second}$ durchgeführt. 
+
+Daraus kann der effektive Abstand $x_\text{eff}$ nach der Formel \eqref{eqn:Weglaenge}
+berechnet werden. Die Energie wird dadurch bestimmt, dass der jeweils höchste Channel dem
+Energiewert $\SI{4}{\mega\eV}$ entspricht und die restlichen Channel und Energien
+proportional dazu sind.
+
+Der erste Messwert der Zählrate wird $N_0$ benannt.
+
+\subsubsection{Messreihe 1} %1111111111111111111111111111111111111111111111111111111
+
+Für die erste Messreihe beträgt $x_0 = \SI{2.4}{\centi\meter}$. Die zugehörigen
+Messwerte und berechneten effektiven Abstände $x_\text{eff}$ und Energien $E$ sind in
+Tabelle \ref{tab:mess1} aufgelistet.
 
 \begin{table}
   \centering
@@ -10,7 +30,7 @@
   \sisetup{table-format=2.1}
   \begin{tabular}{c c c c c}
   \toprule
-  $p \,/\, \si{\milli\bar}$ & $N$ & Channel & $x_\text{eff} \,/\, \si{\centi\meter}$ & 
+  $p \,/\, \si{\milli\bar}$ & $N$ & Channel & $x_\text{eff} \,/\, \si {\centi\meter}$ & 
   $E \,/\, \si{\mega\eV}$\\
   \midrule 
          0 & 74494 & 783 & 0,00 & 4,00 \\
@@ -37,6 +57,72 @@
   \bottomrule
   \end{tabular}
   \end{table}
+
+Zur Bestimmung der mittleren Reichweite sind in Abbildung \ref{fig:plot1} die Messwerte der Zählrate $N$ 
+gegen den effektiven Abstand $x_\text{eff}$ abbgebildet.
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[scale=0.8]{content/plot1.pdf}
+  \caption{Bestimmung der mittleren Reichweite aus der Messung der Zählrate (Messreihe 1)}
+  \label{fig:plot1}
+\end{figure}
+
+Für das Intervall von $x_\text{eff} = \SI{1.66}{\centi\meter}$ bis $x_\text{eff} = \SI{2.13}{\centi\meter}$
+wird mittels python eine Lineare Regression der Form $N(x_\text{eff}) = a x_\text{eff} + b$ durchgeführt,
+die die Parameter 
+
+\begin{align*}
+    a &= \SI{- 103336.13 +- 5941.49}{\per \centi \meter} \\
+    b &= 229485,20 \pm 11305,16
+\end{align*}
+
+enthält. Durch die Schnittstelle der Regressionstangente und der Konstante $\frac{N_0}{2} = 37247$,
+kann die mittlere Reichweite als
+
+\begin{equation*}
+    R_{m,1} = \frac{\frac{N_0}{2} - b}{a} = \SI{1.86 +- 0.15}{\centi\meter}
+\end{equation*}
+
+bestimmt werden.
+
+Nach Umstellung der Formel \eqref{eqn:energie} ergibt sich die Energie 
+
+\begin{equation*}
+     E_{\alpha, 1} = \SI{3.30 +- 0.18}{\mega\eV} \; .
+\end{equation*}
+
+Weiterhin werden die Energiemesswerte in Abbildung \ref{fig:plot2} gegen $x_\text{eff}$ aufgetragen.
+
+\begin{figure} [H]
+  \centering
+  \includegraphics[scale=0.8]{content/plot3.pdf}
+  \caption{Bestimmung der Energieänderung aus den Energiemesswerten (Messreihe 1)}
+  \label{fig:plot2}
+\end{figure}
+
+Die Lineare Regression mittels python der Form $E(x_\text{eff}) = c x_\text{eff} + d$ im Intervall
+von $x_\text{eff} = \SI{0.00}{\centi\meter}$ bis $x_\text{eff} = \SI{1.54}{\centi\meter}$
+ergibt die Parameter
+
+\begin{align*}
+  c &= \SI{- 0.795 +- 0.079}{\mega \eV \per \centi \meter} \\
+  d &= \SI{3.949 +- 0.072}{\mega\eV} \; .
+\end{align*}
+
+Danach ergeben sich die Energieänderung und mittlere Energie zu
+
+\begin{align*}
+  \frac{dE_{\alpha, 1}}{dx} &= c = \SI{-0.795 +- 0.079}{\mega \eV \per \centi \meter} \\
+  E_{\alpha, R_{\alpha, 1}} &= E(R_{\alpha, 1}) = \SI{2.47 +- 0.20}{\mega\eV} \; .
+\end{align*}
+
+
+\subsubsection{Messreihe 2} %2222222222222222222222222222222222222222222222222222222222222222222222
+
+Für die zweite Messreihe beträgt $x_0 = \SI{2.9}{\centi\meter}$. Die zugehörigen
+Messwerte und berechneten effektiven Abstände $x_\text{eff}$ und Energien $E$ sind in
+Tabelle \ref{tab:mess2} aufgelistet.
 
 
   \begin{table}
@@ -75,6 +161,71 @@
     \end{tabular}
     \end{table}
 
+    Zur Bestimmung der mittleren Reichweite sind in Abbildung \ref{fig:plot3} die Messwerte der Zählrate $N$ 
+    gegen den effektiven Abstand $x_\text{eff}$ abbgebildet.
+    
+    \begin{figure} [H]
+      \centering
+      \includegraphics[scale=0.8]{content/plot2.pdf}
+      \caption{Bestimmung der mittleren Reichweite aus der Messung der Zählrate (Messreihe 2)}
+      \label{fig:plot3}
+    \end{figure}
+    
+    Für das Intervall von $x_\text{eff} = \SI{1.72}{\centi\meter}$ bis $x_\text{eff} = \SI{2.29}{\centi\meter}$
+    wird mittels python eine Lineare Regression der Form $N(x_\text{eff}) = a x_\text{eff} + b$ durchgeführt,
+    die die Parameter 
+    
+    \begin{align*}
+        a &= \SI{- 72400.86 +- 5325.81}{\per \centi \meter} \\
+        b &= 170512,00 \pm 10726,97
+    \end{align*}
+    
+    enthält. Durch die Schnittstelle der Regressionstangente und der Konstante $\frac{N_0}{2} = 29251,5$,
+    kann die mittlere Reichweite als
+    
+    \begin{equation*}
+        R_{m,2} = \frac{\frac{N_0}{2} - b}{a} = \SI{1.95 +- 0.21}{\centi\meter}
+    \end{equation*}
+    
+    bestimmt werden.
+    
+    Nach Umstellung der Formel \eqref{eqn:energie} ergibt sich die Energie 
+    
+    \begin{equation*}
+         E_{\alpha,2} = \SI{3.41 +- 0.24}{\mega\eV} \; .
+    \end{equation*}
+    
+    Weiterhin werden die Energiemesswerte in Abbildung \ref{fig:plot4} gegen $x_\text{eff}$ aufgetragen.
+    
+    \begin{figure} [H]
+      \centering
+      \includegraphics[scale=0.8]{content/plot4.pdf}
+      \caption{Bestimmung der Energieänderung aus den Energiemesswerten (Messreihe 2)}
+      \label{fig:plot4}
+    \end{figure}
+    
+    Die Lineare Regression mittels python der Form $E(x_\text{eff}) = c x_\text{eff} + d$ im Intervall
+    von $x_\text{eff} = \SI{0.00}{\centi\meter}$ bis $x_\text{eff} = \SI{1.72}{\centi\meter}$
+    ergibt die Parameter
+    
+    \begin{align*}
+      c &= \SI{- 0.863 +- 0.060}{\mega \eV \per \centi \meter} \\
+      d &= \SI{3.949 +- 0.061}{\mega\eV} \; .
+    \end{align*}
+    
+    Danach ergeben sich die Energieänderung und mittlere Energie zu
+    
+    \begin{align*}
+      \frac{dE_{\alpha, 2}}{dx} &= c = \SI{-0.863 +- 0.060}{\mega \eV \per \centi \meter} \\
+      E_{\alpha, R_{\alpha, 2}} &= E(R_{\alpha, 2}) = \SI{2.27 +- 0.22}{\mega\eV} \; .
+    \end{align*}
+
+
+   \subsection{Statistik des radioaktiven Zerfalls} %3333333333333333333333333333333333333333333333333333333333333
+
+      Zur statistischen Untersuchung sind für den Druck $p = \SI{0}{\milli\bar}$ $n = 100$ Messwerte der
+      Zählrate $N$ in Tabelle \ref{tab:mess3} aufgelistet.
+
     \begin{table}
       \centering
       \caption{100 statistische Messwerte der Zählrate bei $p = \SI{0}{\milli\bar}$ und Abstand 
@@ -107,10 +258,49 @@
       \end{tabular}
       \end{table}
 
+    Zunächst werden der Mittelwert $\mu$ und die Standartabweichung $\sigma$ berechnet:
 
-%\begin{figure}
-%  \centering
-%  \includegraphics{plot.pdf}
-%  \caption{Plot.}
-%  \label{fig:plot}
-%\end{figure}
+    \begin{align}
+        \mu &= \frac{1}{n} \sum_{i=1}^n N_i = 4605,59 \\
+        \sigma &= \sqrt{ \frac{1}{n-1} \sum_{i=1}^n (N_i - \mu)^2  } \; .
+    \end{align}
+
+    Die Messwerte sind in Abbildung \ref{fig:plot5} gaußverteilt in einem Histogramm dargestellt.
+    Zusätzlich abbgebildet ist die zugehörige Gaußverteilung der Form
+
+    \begin{equation}
+        G(N, \mu, \sigma) = \frac{1}{\sigma \sqrt{2 \pi}} \cdot \text{exp} 
+                            \left(- \frac{(N - \mu)^2}{2 \sigma^2} \right) \; .
+    \end{equation}
+
+    \begin{figure} [H]
+      \centering
+      \includegraphics[scale=0.8]{content/gauss.pdf}
+      \caption{Gaußverteilte Messwerte der Zählrate}
+      \label{fig:plot5}
+    \end{figure}
+
+
+    Zusätzlich werden die Messwerte für eine Poissonverteilung normiert:
+
+    \begin{equation}
+        N_\text{i, norm} = \frac{N_i - N_\text{min}}{n} \; .
+    \end{equation}
+
+    Dabei beschreibt $N_{min} = 4231$ den kleinsten der gemessenen Zählratenwerte $N_i$.
+    Durch die Normierung liegen die Werte $M$ nun zwischen $0$ und $7$.
+    Ihr Mittelwert beträgt $\mu_P = 3,72$.
+    Die poissonverteilten Werte sind nun zusammen mit der theoretischen Poissonverteilung
+
+    \begin{equation}
+        p_{\mu_P}(M) = \frac{\mu_P^M}{M!} \cdot \text{e}^{-\mu_P} 
+    \end{equation}
+
+    in Abbildung \ref{fig:plot6} abbgebildet.
+
+    \begin{figure} [H]
+      \centering
+      \includegraphics[scale=0.8]{content/poisson.pdf}
+      \caption{Poissonverteilte Messwerte der Zählrate}
+      \label{fig:plot6}
+    \end{figure}

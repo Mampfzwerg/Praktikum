@@ -9,11 +9,12 @@ n, NN = np.genfromtxt('mess3.txt', unpack=True)
 
 m = np.min(NN)
 N = np.round(((NN - m) / 100), decimals=0)
-print(N)
+#print(N)
+#print(m)
 
 mu = np.mean(N)
 sigma = np.std(N)
-#print(mu, sigma)
+print(mu, sigma)
 
 plt.ylabel(r'$P_\lambda (k)$')
 plt.xlabel(r'$k$')
