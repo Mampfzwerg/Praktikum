@@ -19,10 +19,19 @@ ph = np.arcsin(x / K) / np.pi
 phi = np.linspace(np.min(ph), np.max(ph), 1000)
 l = 633 * 1e-9
 
+#phi2 = np.linspace(np.min(ph), np.max(ph), 48)
+#sigma = np.ones(48) * 0.5
+#sigma = ph / 20
+#sigma[np.abs(phi2-0.004+0.002)<0.002] = 1
+#noise = ((np.random.randn(48))**2)**(1/2) * sigma
+#y = y + noise
+
+
+
 def I(x, A, b):
     return A**2 * b**2 * (l / (np.pi * b * x))**2 * (np.sin(np.pi * b * x /l))**2
 
-params, covariance_matrix = curve_fit(I, x, y, p0=[560, b])
+params, covariance_matrix = curve_fit(I, x, y, p0=[560, b]) #, sigma=1 / sigma**2, absolute_sigma=True)
 errors = np.sqrt(np.diag(covariance_matrix))
 
 print('A = {:.4f} ± {:.5f}'.format(params[0], errors[0]))
