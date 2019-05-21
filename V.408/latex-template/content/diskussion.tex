@@ -36,7 +36,8 @@ f_\text{rot} &= \SI{0.1639+-0.0006}{\meter},\\
 f_\text{blau} & = \SI{0.1627+-0.0001}{\meter}.
 \end{align*}
 
-Diese liegen sehr nah zusammen und weichen fast gar nicht voneinander ab. 
+Diese liegen sehr nah zusammen und weichen fast gar nicht voneinander ab, was auf wenig chromatische 
+Absorption schließen lässt. 
 
 Bei der Bestimmung der Brennweite eines Linsensystems nach der Methode nach Abbe ergeben sich 
 zwei Werte $f_1$ und $f_2$ für die Brennweiten, aus denen ein Mittelwert gebildet wurde:
@@ -45,6 +46,27 @@ zwei Werte $f_1$ und $f_2$ für die Brennweiten, aus denen ein Mittelwert gebild
 f = \SI{0.180+-0.060}{\meter}.
 \end{equation*}
 
-Dieses Ergebnis liegt im erwarteten Bereich von ungefähr $\SI{0.200}{\meter}$, da ein 
-sehr kleiner Abstand zwischen den beiden Linsen gewählt wurde und die Brechkräfte sich dann
-aufaddieren. 
+Im Folgenden soll der dazugehörige Theoriewert für die Brennweite des Linsensystems bestimmt werden. Hierzu
+wird die Matritzenoptik benutzt. Für ein System wie es hier verwendet wurde ergibt sich eine 
+Transfermatrix $\symbf{T}$:
+
+\begin{equation*}
+\begin{pmatrix}
+ 1+\frac{d}{f} & d \\
+ -\frac{d}{f^2} & 1-\frac{d}{f}
+\end{pmatrix}
+\end{equation*}
+
+Mit dem unteren linken Element ergibt sich die Brennweite des Systems zu
+
+\begin{equation*}
+\frac{1}{-f} = -\frac{d}{f^2}.
+\end{equation*}
+
+Dabei ist $d=\SI{45}{\milli\meter}$. Damit ergibt sich der Theoriewert der Brennweite des Linsensystems zu
+
+\begin{equation*}
+f = \SI{222,22}{\milli\meter}.
+\end{equation*}
+
+Dementsprechend liegt der experimentelle Wert recht nahe an den theoretisch erwarteten Wert. 
