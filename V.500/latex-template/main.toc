@@ -2,9 +2,12 @@
 \defcounter {refsection}{0}\relax 
 \select@language {german}
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}
-\contentsline {section}{\numberline {2}Durchführung}{3}{section.2}
-\contentsline {section}{\numberline {3}Auswertung}{3}{section.3}
-\contentsline {subsection}{\numberline {3.1}Bestimmung von $\frac {h}{e}$ und der Austrittsarbeit}{3}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Betrachtung des Photostroms in Abhängigkeit der Spannung}{7}{subsection.3.2}
-\contentsline {section}{\numberline {4}Diskussion}{10}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{11}{section.5}
+\contentsline {subsection}{\numberline {1.1}Die Natur des Lichts}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Der Photoeffekt}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Die experimentelle Untersuchung}{3}{subsection.1.3}
+\contentsline {section}{\numberline {2}Durchführung}{4}{section.2}
+\contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Bestimmung von $\frac {h}{e}$ und der Austrittsarbeit}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Betrachtung des Photostroms in Abhängigkeit der Spannung}{10}{subsection.3.2}
+\contentsline {section}{\numberline {4}Diskussion}{12}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{13}{section.5}

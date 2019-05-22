@@ -3,8 +3,8 @@
 
 \subsection{Bestimmung von $\frac{h}{e}$ und der Austrittsarbeit}
 
-Es werden die zwischen Photokathode und Anode angelegte Gegenspannung $U$, sowie der 
-Photostrom $I$ für alle erkennbaren Spektrallinien durchgemessen und $\sqrt{I}$ berechnet. 
+Es werden die zwischen Photokathode und Anode angelegte Gegenspannung $U_\text{g}$, sowie der 
+Photostrom $I_\lambda$ für alle erkennbaren Spektrallinien durchgemessen und $\sqrt{I_\lambda}$ berechnet. 
 Diese Messdaten finden sich in den Tabellen \ref{tab:gelb} bis \ref{tab:blau}. 
 
 \begin{table}
@@ -14,8 +14,8 @@ Diese Messdaten finden sich in den Tabellen \ref{tab:gelb} bis \ref{tab:blau}.
     \sisetup{table-format=2.1}
     \begin{tabular}{c c c}
     \toprule
-    $ U \;/\; \si{\volt} $ & $I \;/\; \si{\nano\ampere}$ &
-    $ \sqrt{\frac{I}{\si{\nano\ampere}}}$\\
+    $ U_\text{g} \;/\; \si{\volt} $ & $I_\lambda \;/\; \si{\nano\ampere}$ &
+    $ \sqrt{\frac{I_\lambda}{\si{\nano\ampere}}}$\\
     \midrule 
       -0.670 & 0.000 & 0.000\\
       -0.500 & 0.002 & 0.045\\
@@ -38,8 +38,8 @@ Diese Messdaten finden sich in den Tabellen \ref{tab:gelb} bis \ref{tab:blau}.
     \sisetup{table-format=2.1}
     \begin{tabular}{c c c}
     \toprule
-    $ U \;/\; \si{\volt} $ & $I \;/\; \si{\nano\ampere}$ &
-    $ \sqrt{\frac{I}{\si{\nano\ampere}}}$\\
+    $ U_\text{g} \;/\; \si{\volt} $ & $I_\lambda \;/\; \si{\nano\ampere}$ &
+    $ \sqrt{\frac{I_\lambda}{\si{\nano\ampere}}}$\\
     \midrule 
        -0.650 & 0.000 & 0.000\\   
        -0.500 & 0.002 & 0.045\\  
@@ -63,8 +63,8 @@ Diese Messdaten finden sich in den Tabellen \ref{tab:gelb} bis \ref{tab:blau}.
     \sisetup{table-format=2.1}
     \begin{tabular}{c c c}
     \toprule
-    $ U \;/\; \si{\volt} $ & $I \;/\; \si{\nano\ampere}$ &
-    $ \sqrt{\frac{I}{\si{\nano\ampere}}}$\\
+    $ U_\text{g} \;/\; \si{\volt} $ & $I_\lambda \;/\; \si{\nano\ampere}$ &
+    $ \sqrt{\frac{I_\lambda}{\si{\nano\ampere}}}$\\
     \midrule 
       -1.130 & 0.0000 & 0.000\\
       -1.000 & 0.0020 & 0.045\\
@@ -87,8 +87,8 @@ Diese Messdaten finden sich in den Tabellen \ref{tab:gelb} bis \ref{tab:blau}.
     \sisetup{table-format=2.1}
     \begin{tabular}{c c c}
     \toprule
-    $ U \;/\; \si{\volt} $ & $I \;/\; \si{\nano\ampere}$ &
-    $ \sqrt{\frac{I}{\si{\nano\ampere}}}$\\
+    $ U_\text{g} \;/\; \si{\volt} $ & $I_\lambda \;/\; \si{\nano\ampere}$ &
+    $ \sqrt{\frac{I_\lambda}{\si{\nano\ampere}}}$\\
     \midrule 
       -1.270 & 0.000 & 0.000\\
       -1.000 & 0.003 & 0.055\\
@@ -111,8 +111,8 @@ Diese Messdaten finden sich in den Tabellen \ref{tab:gelb} bis \ref{tab:blau}.
 %    \sisetup{table-format=2.1}
 %    \begin{tabular}{c c c}
 %    \toprule
-%    $ U \;/\; \si{\volt} $ & $I \;/\; \si{\nano\ampere}$ &
-%    $ \sqrt{\frac{I}{\si{\nano\ampere}}}$\\
+%    $ U_\text{g} \;/\; \si{\volt} $ & $I_\lambda \;/\; \si{\nano\ampere}$ &
+%    $ \sqrt{\frac{I_\lambda}{\si{\nano\ampere}}}$\\
 %    \midrule 
 %      -1.000 & 0.000 & 0.000\\
 %      -0.500 & 0.002 & 0.045\\
@@ -127,7 +127,7 @@ Diese Messdaten finden sich in den Tabellen \ref{tab:gelb} bis \ref{tab:blau}.
 %\end{table}
 
 Nun wird mittels Python und Matplotlib für jede Spektrallinie eine lineare Ausgleichsrechung durchgeführt, indem 
-$\sqrt{I}$ gegen die Gegenspannung $U$ aufgetragen wird. Die Plots sind in Grafik \ref{fig:plot1} zu sehen.
+$\sqrt{I_\lambda}$ gegen die Gegenspannung $U_\text{g}$ aufgetragen wird. Die Plots sind in Grafik \ref{fig:plot1} zu sehen.
 
 \begin{figure}
   \centering
@@ -214,12 +214,12 @@ Somit ergeben sich die gesuchten Größen:
 
 \begin{align*}
 h &= \SI{1.59e-15}{\eV\second},\\
-E_\text{A} &= \SI{0.264}{\eV}.
+W_\text{A} &= \SI{0.264}{\eV}.
 \end{align*}
 
 \subsection{Betrachtung des Photostroms in Abhängigkeit der Spannung}
 
-Im zweiten Versuchsteil wird der Photostrom $I$ in Abhängigkeit der angelegten Spannung $U$
+Im zweiten Versuchsteil wird der Photostrom $I_\lambda$ in Abhängigkeit der angelegten Spannung $U_\text{g}$
 betrachtet, wobei die Spannung im Bereich vom $\SI{-10}{\volt}$ bis $\SI{19}{\volt}$ variiert 
 wird. Die gemessenen Wertepaare bei der konstanten Wellenlänge $\lambda = \SI{578}{\nano\meter}$
 sind in Tabelle \ref{tab:stsp} aufgeführt. 
@@ -231,7 +231,7 @@ sind in Tabelle \ref{tab:stsp} aufgeführt.
     \sisetup{table-format=2.1}
     \begin{tabular}{c c}
     \toprule
-    $ U \;/\; \si{\volt} $ & $I \;/\; \si{\nano\ampere}$\\
+    $ U_\text{g} \;/\; \si{\volt} $ & $I_\lambda \;/\; \si{\nano\ampere}$\\
     \midrule 
       -10.000 & 0.0035\\
        -8.000 & 0.0030\\
@@ -301,12 +301,12 @@ Raumbereich ab, sodass ohnehin nur ein Bruchteil der Photoelektronen aufgefangen
 Zum vollständigen Erreichen des maximalen Stromflusses bei einer endlichen Spannung müsste 
 die Anode alle ausgelösten Elektronen auffangen. \\
 Außerdem wird erkannt, dass der Strom im Bereich der Gegenspannung nicht unstetig auf 0 
-springt, sondern für $U\rightarrow U_\text{g}$ allmählich auf 0 absinkt. Dies liegt ebenfalls 
+springt, sondern für $U_\text{g}\rightarrow U_\text{grenz}$ allmählich auf 0 absinkt. Dies liegt ebenfalls 
 in der Energieverteilung der Elektronen begründet. Da diese in der Photokathode einer 
 Fermi-Dirac-Statistik genügen, haben die Elektronen vor dem Austritt verschiedene Energiewerte. 
 Auch nach dem Austritt liegt diese ungleiche Verteilung vor, da prinzipiell jedes Elektron 
 den gleichen Energiebetrag von $E=h\cdot f$ zugeführt bekommt.\\
-Weiterhin wird erkannt, dass im Bereich Gegenspannung $U < U_\text{g}$ ein geringfügiger, 
+Weiterhin wird erkannt, dass im Bereich Gegenspannung $U_\text{g} < U_\text{grenz}$ ein geringfügiger, 
 entgegengerichteter Stromfluss messbar ist, welcher bereits bei kleinen Spannungswerten 
 einen Sättigungswert annimmt. Dieser Effekt lässt sich dadurch erklären, dass die 
 Beschichtung der Photokathode bereits bei geringen Temperaturen anfängt zu verdampfen. 
@@ -318,6 +318,6 @@ ein Strom in entgegengesetzer Richtung. Man erkennt, dass dieser Effekt eindeuti
 Teilchendichte der freien Atome im Vakuum abhängt. Da diese aber nicht beliebig hoch werden kann und 
 die Metallatome der Photokathode auch kondensieren, gibt es einen Sättigungswert des Stromes. Die 
 Tatsache, dass dieser Effekt bereits bei energiearmen Licht (ca. $\SI{650}{\nano\meter})$ auftritt, 
-beweist, dass die Anode eine sehr geringe Austrittsarbeit $E_\text{A} = \SI{1.9}{\eV}$ haben muss. 
+beweist, dass die Anode eine sehr geringe Austrittsarbeit $W_\text{A} = \SI{1.9}{\eV}$ haben muss. 
 Dies leitet sich daraus ab, dass ein Atom im freien Raum mit genau dieser Energie ionisiert werden 
 kann und genau diesen Energiebetrag dazu verwendet, um ein Elektron aus der Anode herauszulösen. 
