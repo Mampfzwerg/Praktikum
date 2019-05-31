@@ -3,7 +3,7 @@ import numpy as np
 
 u, i = np.genfromtxt('mess6.txt', unpack=True)
 
-U = u + np.log(i * 1e-3)
+U = u + i * 1e-3
 I = np.log(i)
 
 params, covariance_matrix = np.polyfit(U, I, deg=1, cov=True)
