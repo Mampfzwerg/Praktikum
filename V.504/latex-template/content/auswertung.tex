@@ -103,7 +103,7 @@ in Abbildung \ref{fig:plot2} doppellogarithmisch aufgetragen.
 \begin{figure} [H]
   \centering
   \includegraphics{content/plot2.pdf}
-  \caption{Kennlinen der Hochvakkumdiode im Raumladungsgebiet mit der Heizstromstärke $I_\text{H,5}$}
+  \caption{Kennline der Hochvakkumdiode im Raumladungsgebiet mit der Heizstromstärke $I_\text{H,5}$}
   \label{fig:plot2}
 \end{figure}
 
@@ -124,8 +124,18 @@ ergeben sich die Regressionsparameter
 Somit entspricht der Exponent der Strom-Spannungs-Beziehung $a = 1,260  \pm 0,040$.\\
 
 Für die Untersuchung des Anlaufstromgebietes wird der Diodenstrom für die Spannung $U$ im 
-Intervall $\SI{0}{\volt}$ bis $\SI{1}{\volt}$ gemessen. Die zugehörigen Messwerte sind in 
-Tabelle \ref{tab:mess2} aufgelistet und werden in Abbildung \ref{tab:mess2}
+Intervall $\SI{0}{\volt}$ bis $\SI{1}{\volt}$ gemessen. 
+
+Da für die Messung ein Nanoamperemeter mit Widerstand $R = \SI{1}{\mega\ohm}$ eingesetzt wird,
+müssen die gemessenen Spannungswerte zu
+
+\begin{equation*}
+    U_\text{k} = U + I \cdot R
+\end{equation*}
+
+korrigiert werden.
+Die (korrigierten) Messwerte sind in 
+Tabelle \ref{tab:mess2} aufgelistet und werden in Abbildung \ref{fig:plot3}
 einfachlogarithmisch gegeneinander aufgetragen.
 
 \begin{table}
@@ -133,30 +143,30 @@ einfachlogarithmisch gegeneinander aufgetragen.
   \caption{Messwerte des Diodenstroms im Anlaufstromgebiet}
   \label{tab:mess2}
   \sisetup{table-format=2.1}
-  \begin{tabular}{c c}
+  \begin{tabular}{c c c}
   \toprule
-  $ U \,/\, \si{\volt} $ & $I_5 \,/\, \si{\nano\ampere}$\\
+  $ U \,/\, \si{\volt} $ & $ U_\text{k} \,/\, \si{\volt} $ & $I_5 \,/\, \si{\nano\ampere}$\\
   \midrule 
-  0,00 & 12,00 \\
-  0,05 &  8,75 \\
-  0,10 &  6,50 \\
-  0,15 &  5,00 \\
-  0,20 &  3,75 \\
-  0,25 &  3,00 \\
-  0,30 &  2,40 \\
-  0,35 &  1,80 \\
-  0,40 &  1,40 \\
-  0,45 &  1,10 \\
-  0,50 &  0,80 \\
-  0,55 &  0,60 \\
-  0,60 &  0,50 \\
-  0,65 &  0,42 \\
-  0,70 &  0,35 \\
-  0,75 &  0,28 \\
-  0,80 &  0,20 \\
-  0,85 &  0,18 \\
-  0,90 &  0,15 \\
-  0,95 &  0,10 \\
+  0,000 & 0,012 & 12,00 \\
+  0,050 & 0,059 &  8,75 \\
+  0,100 & 0,107 &  6,50 \\
+  0,150 & 0,155 &  5,00 \\
+  0,200 & 0,204 &  3,75 \\
+  0,250 & 0,253 &  3,00 \\
+  0,300 & 0,302 &  2,40 \\
+  0,350 & 0,352 &  1,80 \\
+  0,400 & 0,401 &  1,40 \\
+  0,450 & 0,451 &  1,10 \\
+  0,500 & 0,501 &  0,80 \\
+  0,550 & 0,551 &  0,60 \\
+  0,600 & 0,601 &  0,50 \\
+  0,650 & 0,650 &  0,42 \\
+  0,700 & 0,700 &  0,35 \\
+  0,750 & 0,750 &  0,28 \\
+  0,800 & 0,800 &  0,20 \\
+  0,850 & 0,850 &  0,18 \\
+  0,900 & 0,900 &  0,15 \\
+  0,950 & 0,950 &  0,10 \\
   \bottomrule
   \end{tabular}
   \end{table}
@@ -164,7 +174,7 @@ einfachlogarithmisch gegeneinander aufgetragen.
   \begin{figure} [H]
     \centering
     \includegraphics{content/plot3.pdf}
-    \caption{Kennlinen der Hochvakkumdiode im Anlaufstromgebiet mit der Heizstromstärke $I_\text{H,5}$}
+    \caption{Kennline der Hochvakkumdiode im Anlaufstromgebiet mit der Heizstromstärke $I_\text{H,5}$}
     \label{fig:plot3}
   \end{figure}
 
@@ -194,6 +204,58 @@ durch welche sich nach Umstellung die Kathodentemperatur zu
       T = - \frac{e}{k \cdot a} = \SI{2490 +- 40}{\degree\kelvin}
 \end{equation}
 
-ergibt.
+ergibt. \\
 
+Die Kathodentemperatur $T$ lässt sich auch nach der Gleichung
+
+\begin{equation}
+    T = \left( \frac{I_\text{H} U_\text{H} - N_\text{WL}}{f \eta \sigma} \right)^{\frac{1}{4}}
+    \label{eqn:temp}
+\end{equation}
+
+bestimmen. Die abgeschätzte Wärmeleitung  beträgt $N_\text{WL} = \SI{1}{\watt}$.
+Weitere Größen sind die Stefan-Boltzmannsche Strahlungskonstante 
+$\sigma = \num{5.7e-12}\frac{\text{W}}{\text{cm}^2\text{K}^4}$, die emmitierende Kathodenfläche
+$\SI{0.35}{\centi\meter\squared}$ und der Oberflächenemisionsgrad $\eta = \num{0.28}$.
+
+Des Weiteren werden die Austrittsarbeiten 
+
+\begin{equation}
+    e \phi = -k T \: \text{ln} \left( \frac{I_\text{S} h^3}{f 4 \pi e m k^2 T^2} \right)
+    \label{eqn:ephi}
+\end{equation}
+
+berechnet.
+
+
+
+Die gemessenen Sättigungsstromstärken, Heizstromstärken und -spannungen, sowie die nach 
+\eqref{eqn:temp} und \eqref{eqn:ephi} berechneten Kathodentemperaturen $T$ und 
+Austrittsarbeiten $e\phi$ befinden sich in Tabelle \ref{tab:mess3}.
+
+\begin{table}
+  \centering
+  \caption{Messwerte der Sättigungsstromstärken, Heizstromstärken und -spannungen, sowie die daraus errechneten
+          Kathodentemperaturen $T$ und Austrittsarbeiten $e\phi$}
+  \label{tab:mess3}
+  \sisetup{table-format=2.1}
+  \begin{tabular}{c c c c c}
+  \toprule
+  $I_\text{H} \,/\, \si{\ampere} $ & $U_\text{H} \,/\, \si{\volt}$ & $T \,/\, \si{\kelvin}$
+  & $I_\text{S} \,/\, \si{\milli\ampere} $ & $e\phi \,/\, \si{\eV} $\\
+  \midrule 
+    2,1 & 4,5 & 1972,15 & 0,30 & 5,81 \\
+    2,2 & 4,8 & 2033,95 & 0,75 & 5,85 \\
+    2,3 & 5,2 & 2104,64 & 1,40 & 5,96 \\
+    2,4 & 5,5 & 2161,80 & 2,50 & 6,02 \\
+    2,5 & 5,8 & 2217,22 &  -   &  -   \\
+  \bottomrule
+  \end{tabular}
+  \end{table}
+
+Der Mittelwert der Austrittsarbeiten beträgt 
+
+\begin{equation*}
+    \overline{e\phi} = \SI{5.91 +- 0.05}{\eV} \; .
+\end{equation*}
 
