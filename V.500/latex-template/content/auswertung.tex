@@ -9,7 +9,7 @@ Diese Messdaten finden sich in den Tabellen \ref{tab:gelb} bis \ref{tab:blau}.
 
 \begin{table}
     \centering
-    \caption{Gelb}
+    \caption{Messwerte zur gelben Spektrallinie.}
     \label{tab:gelb}
     \sisetup{table-format=2.1}
     \begin{tabular}{c c c}
@@ -33,7 +33,7 @@ Diese Messdaten finden sich in den Tabellen \ref{tab:gelb} bis \ref{tab:blau}.
 
 \begin{table}
     \centering
-    \caption{Grün}
+    \caption{Messwerte zur grünen Spektrallinie.}
     \label{tab:gruen}
     \sisetup{table-format=2.1}
     \begin{tabular}{c c c}
@@ -58,7 +58,7 @@ Diese Messdaten finden sich in den Tabellen \ref{tab:gelb} bis \ref{tab:blau}.
 
 \begin{table}
     \centering
-    \caption{Violett}
+    \caption{Messwerte zur violetten Spektrallinie.}
     \label{tab:viol}
     \sisetup{table-format=2.1}
     \begin{tabular}{c c c}
@@ -82,7 +82,7 @@ Diese Messdaten finden sich in den Tabellen \ref{tab:gelb} bis \ref{tab:blau}.
 
 \begin{table}
     \centering
-    \caption{Blau}
+    \caption{Messwerte zur blauen Spektrallinie.}
     \label{tab:blau}
     \sisetup{table-format=2.1}
     \begin{tabular}{c c c}
@@ -104,42 +104,42 @@ Diese Messdaten finden sich in den Tabellen \ref{tab:gelb} bis \ref{tab:blau}.
     \end{tabular}
 \end{table}
 
-%\begin{table}
-%    \centering
-%    \caption{Orange}
-%    \label{tab:orange}
-%    \sisetup{table-format=2.1}
-%    \begin{tabular}{c c c}
-%    \toprule
-%    $ U_\text{g} \;/\; \si{\volt} $ & $I_\lambda \;/\; \si{\nano\ampere}$ &
-%    $ \sqrt{\frac{I_\lambda}{\si{\nano\ampere}}}$\\
-%    \midrule 
-%      -1.000 & 0.000 & 0.000\\
-%      -0.500 & 0.002 & 0.045\\
-%      -0.250 & 0.009 & 0.095\\
-%       0.250 & 0.031 & 0.145\\
-%       0.000 & 0.021 & 0.176\\
-%       0.500 & 0.042 & 0.205\\
-%       0.750 & 0.052 & 0.228\\
-%       1.000 & 0.062 & 0.249\\
-%    \bottomrule
-%    \end{tabular}
-%\end{table}
-
 Nun wird mittels Python und Matplotlib für jede Spektrallinie eine lineare Ausgleichsrechung durchgeführt, indem 
-$\sqrt{I_\lambda}$ gegen die Gegenspannung $U_\text{g}$ aufgetragen wird. Die Plots sind in Grafik \ref{fig:plot1} zu sehen.
+$\sqrt{I_\lambda}$ gegen die Gegenspannung $U_\text{g}$ aufgetragen wird. Die Plots sind in Grafik \ref{fig:plot1}
+bis Grafik \ref{fig:plot4} zu sehen.
 
 \begin{figure}
   \centering
   \includegraphics{content/plot1.pdf}
-  \caption{Messdaten von verschiedenen Spektrallinien und Regressionen.}
+  \caption{Messdaten für die grüne Spektrallinie.}
   \label{fig:plot1}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.4]{content/plot2.pdf}
+  \caption{Messdaten für die violette Spektrallinie.}
+  \label{fig:plot2}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.4]{content/plot3.pdf}
+  \caption{Messdaten für die gelbe Spektrallinie.}
+  \label{fig:plot3}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.4]{content/plot4.pdf}
+  \caption{Messdaten für die blaue Spektrallinie.}
+  \label{fig:plot4}
 \end{figure}
 
 Die mit den Ausgleichsgeraden der Form 
 
 \begin{equation*}
-\sqrt{\frac{I}{nA}} = a\cdot U + b 
+\sqrt{I} = a\cdot U + b 
 \end{equation*}
 
 erhaltenen Regressionsparameter sind für die zugehörigen Wellenlänge in $\lambda$ in Tabelle \ref{tab:para} aufgeführt. 
@@ -154,9 +154,9 @@ erhaltenen Regressionsparameter sind für die zugehörigen Wellenlänge in $\lam
     $ \lambda \;/\; \si{\nano\meter} $ & $a \;/\; \si{\volt\second}$ &
     $ b \;/\; \si{\volt}$\\
     \midrule 
-      546,00 & $\num{0.114+-0.014}$ & $\num{0.153+-0.018}$\\ %grün
-      435,80 & $\num{0.195+-0.013}$ & $\num{0.251+-0.009}$\\ %violett
-      576,96 & $\num{0.138+-0.016}$ & $\num{0.138+-0.013}$\\ %gelb
+      546,00 & $\num{0.11+-0.01}$ & $\num{0.15+-0.02}$\\ %grün
+      435,80 & $\num{0.20+-0.01}$ & $\num{0.251+-0.009}$\\ %violett
+      576,96 & $\num{0.14+-0.02}$ & $\num{0.14+-0.01}$\\ %gelb
       404,70 & $\num{0.115+-0.008}$ & $\num{0.169+-0.006}$\\ %blau
     \bottomrule
     \end{tabular}
@@ -183,13 +183,12 @@ diese sind in Tabelle \ref{tab:gegen} eingetragen.
 \end{table}
 
 Mit den erhaltenen Gegenspannungen und den Lichtfrequenzen wird eine weitere Ausgleichsrechnung 
-durchgeführt. Dazu werden die negativen Vorzeichen weggelassen, da sonst mit $E = U\cdot e$ eine 
-negative Energie der Elektronen folgen würde. Das Ergebnis hierzu ist in Abbildung \ref{fig:plot2} zu 
-begutachten. 
+durchgeführt. Im Folgenden werden die negativen Vorzeichen weggelassen, da eine Umpolung durchgeführt
+wird. Das Ergebnis hierzu ist in Abbildung \ref{fig:plot2} zu begutachten. 
 
 \begin{figure}
   \centering
-  \includegraphics{content/plot2.pdf}
+  \includegraphics{content/plot5.pdf}
   \caption{Die zuvor berechneten Spannungswerte gegen die jeweilige Frequenz.}
   \label{fig:plot2}
 \end{figure}
@@ -203,12 +202,12 @@ U_\text{g} = a\cdot f + b
 werden die Werte
 
 \begin{align*}
-a &= \SI{0.159+-0.123e-14}{\volt\second},\\
-b &= \SI{0.264+-0.750}{\volt}
+a &= \SI{0.16+-0.12e-14}{\volt\second},\\
+b &= \SI{0.26+-0.75}{\volt}
 \end{align*}
 
 erhalten.
-Die Steigung $a$ ist nun genau $\frac{h}{e}$, also $h$ in $\si{\eV}$ angegeben, da $U = \frac{E}{e}$. Der 
+Die Steigung $a$ ist nun genau $\frac{h}{e}$, also $h$ in $\si{\eV\second}$ angegeben, da $U = \frac{E}{e}$. Der 
 Achsenabschnitt $b$ entspricht aufgrund der gleichen Beziehung genau der Austrittsarbeit in $\si{\eV}$.
 Somit ergeben sich die gesuchten Größen: 
 
@@ -278,11 +277,11 @@ sind in Tabelle \ref{tab:stsp} aufgeführt.
     \end{tabular}
 \end{table}
 
-Graphisch aufgetragen ergibt sich in Abbildung \ref{fig:plot3}. 
+Graphisch aufgetragen ergibt sich Abbildung \ref{fig:plot3}. 
 
 \begin{figure}
   \centering
-  \includegraphics{content/plot3.pdf}
+  \includegraphics{content/plot6.pdf}
   \caption{Aufgenommene Kennlinie bei $\lambda=\SI{578}{\nano\meter}$.}
   \label{fig:plot3}
 \end{figure}

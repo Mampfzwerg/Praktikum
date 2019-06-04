@@ -39,21 +39,54 @@ z3 = np.linspace(np.min(Uv)-0.5, np.max(Uv)+1.5)
 z4 = np.linspace(np.min(Ug)-0.5, np.max(Ug)+1.5)
 z5 = np.linspace(np.min(Ub)-0.5, np.max(Ub)+2)
 
-#plt.plot(Uo, np.sqrt(Io), 'rx', label='Messdaten')
+#Grüner Plot
 plt.plot(Ugr, np.sqrt(Igr), 'gx', label='Messdaten')
-plt.plot(Uv, np.sqrt(Iv), 'mx', label='Messdaten')
-plt.plot(Ug, np.sqrt(Ig), 'yx', label='Messdaten')
-plt.plot(Ub, np.sqrt(Ib), 'bx', label='Messdaten')
-#plt.plot(z1, gerade (z1, *params1), 'r-', label='Orange')
 plt.plot(z2, gerade (z2, *params2), 'g-', label='Grün')
-plt.plot(z3, gerade (z3, *params3), 'm-', label='violett')
-plt.plot(z4, gerade (z4, *params4), 'y-', label='Gelb')
-plt.plot(z5, gerade (z5, *params5), 'b-', label='Blau')
 plt.xlabel(r'$U \,/\, V$')
-plt.ylabel(r'$\sqrt{\frac{I}{nA}}$')
+plt.ylabel(r'$\sqrt{I}$')
 plt.ylim(0,0.5)
 plt.xlim(-1.5,3)
 plt.legend(loc='best')
-
 plt.tight_layout()
 plt.savefig('plot1.pdf')
+
+plt.clf()
+
+#Violett
+
+plt.plot(Uv, np.sqrt(Iv), 'mx', label='Messdaten')
+plt.plot(z3, gerade (z3, *params3), 'm-', label='violett')
+plt.xlabel(r'$U \,/\, V$')
+plt.ylabel(r'$\sqrt{I}$')
+plt.ylim(0,0.5)
+plt.xlim(-1.5,2)
+plt.legend(loc='best')
+plt.tight_layout()
+plt.savefig('plot2.pdf')
+plt.clf()
+
+#Gelb
+
+plt.plot(Ug, np.sqrt(Ig), 'yx', label='Messdaten')
+plt.plot(z4, gerade (z4, *params4), 'y-', label='Gelb')
+plt.xlabel(r'$U \,/\, V$')
+plt.ylabel(r'$\sqrt{I}$')
+plt.ylim(0,0.4)
+plt.xlim(-1.5,2)
+plt.legend(loc='best')
+plt.tight_layout()
+plt.savefig('plot3.pdf')
+plt.clf()
+
+#blau
+
+plt.plot(Ub, np.sqrt(Ib), 'bx', label='Messdaten')
+plt.plot(z5, gerade (z5, *params5), 'b-', label='Blau')
+plt.xlabel(r'$U \,/\, V$')
+plt.ylabel(r'$\sqrt{I}$')
+plt.ylim(0,0.3)
+plt.xlim(-1.5,1.5)
+plt.legend(loc='best')
+plt.tight_layout()
+plt.savefig('plot4.pdf')
+plt.clf()
