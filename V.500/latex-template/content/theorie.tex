@@ -12,7 +12,8 @@ Wellenbeschreibung wie beispielsweise bei Beugungsphänomenen wieder Verwendung.
 \subsection{Der Photoeffekt}
 
 Als Photoeffekt benannt ist die Herauslösung von Elektronen aus Metalloberflächen bei
-(monochromatischer) Lichteinstrahlung. Die Energie des Lichtes, bzw. der sich mit der 
+(monochromatischer) Lichteinstrahlung. Diese ist entgegen der Wellentheorie abhängig
+von der Frequenz und nicht von der Lichtintensität. Die Energie des Lichtes, bzw. der sich mit der 
 Lichtgeschwindigkeit $c$ linear ausbreitenden Photonen, ist als
 
 \begin{equation}
@@ -22,26 +23,24 @@ Lichtgeschwindigkeit $c$ linear ausbreitenden Photonen, ist als
 
 gegeben, wobei $f$ die Lichtfrequenz beschreibt und $h$ das Plancksche Wirkungsquantum darstellt.
 
-Die Energie, die ein Photon auf ein Elektron im Metall überträgt, wird aufgewendet, um die Austrittsarbeit
+Die Energie, die ein Photon auf ein Elektron im Metall überträgt, wird teilweise dazu aufgewendet, um die Austrittsarbeit
 $W_\text{A}$ zur Heruslösung des Elektrons zu leisten. Die restliche Energie wird zur kinetischen Energie
 $E_\text{kin,e}$ des Elektrons. Es ergibt sich:
 
 \begin{align}
-    E_\lambda &= h f = E_\text{kin,e} + W_\text{A} = \frac{1}{2} m_\text{e} v^2 \\
-    \iff  E_\text{kin,e} &= h f - W_\text{A}  \; .
+    &E_\lambda = h f = E_\text{kin,e} + W_\text{A} = \frac{1}{2} m_\text{e} v^2 \\
+    \iff  &E_\text{kin,e} = h f - W_\text{A}  \; .
     \label{eqn:energie}
 \end{align}
 
-$E_\text{kin,e}$ wird also durch eine von $f$ abhängige Gerade beschrieben. Für den Bereich
+Die kinetische Energie der Elektronen $E_\text{kin,e}$ wird also durch eine von $f$ abhängige Gerade beschrieben. Für den Bereich
 
 \begin{equation*}
     h f < W_\text{A} = h f_\text{grenz}
 \end{equation*}
 
 kleiner der Grenzfrequenz $f_\text{grenz}$ tritt der Photoeffekt nicht auf, da die Austrittsarbeit $W_\text{A}$
-nicht geleistet werden kann. 
-Die Herauslösung der Elektronen ist entgegen der Wellentheorie abhängig von der Frequenz und nicht
-von der Lichtintensität.
+nicht geleistet werden kann.
 
 \subsection{Die experimentelle Untersuchung}
 
@@ -54,7 +53,7 @@ In Abbildung \ref{fig:bild1} sind links der Aufbau der Photozelle und rechts der
     \label{fig:bild1}
 \end{figure}
 
-  Die kinetische Energie
+  Die kinetische Energie der Elektronen
 
 \begin{equation}
     E_\text{kin,e} = \frac{1}{2} m_\text{e} v^2 = e U
@@ -67,36 +66,57 @@ In Abbildung \ref{fig:bild1} sind links der Aufbau der Photozelle und rechts der
   eingestellten Grenzspannung $U_\text{grenz}$ wird $E_\text{kin,e}$ für Elektronen
   mit der maximalen Geschwindigkeit $v_\text{max}$ bestimmt.
 
-  Somit ergibt sich für Lichtenergie:
+  Somit ergibt sich für die Lichtenergie:
 
 \begin{equation}
     E_\lambda = h f = e_0 U_\text{grenz} + W_\text{A} \; .
     \label{eqn:lichtenergie2}
 \end{equation}
 
- Bei bekannter Lichtfrequenz lässt sich durch Umformung der Gleichung \eqref{eqn:lichtenergie2} die
- Austrittsarbeit $W_\text{A}$ bestimmen.
+% Bei bekannter Lichtfrequenz lässt sich durch Umformung der Gleichung \eqref{eqn:lichtenergie2} die
+% Austrittsarbeit $W_\text{A}$ bestimmen.
 
- Allerdings besitzen die herausgelösten Elektronen keinen diskreten Energiewert, sodass
- schon vorm Erreichen der Grenzspannung $U_\text{grenz}$ der Photostrom $I_\lambda$ merklich absinkt.
- Es ergibt sich der parabolische Zusammenhang 
+ Die Elektronen in der Photokathode besitzen ein kontinuierliches Energiespektrum - die
+ Fermi-Dirac-Verteilung. Somit besitzen sie auch nach Herauslösung keinen diskreten 
+ Energiewert, sodass schon vorm Erreichen der Grenzspannung $U_\text{grenz}$ der Photostrom $I_\lambda$ 
+ merklich absinkt.
+ Es ergibt sich der in Abbildung \ref{fig:bild3} dargestellte parabolische Zusammenhang 
 
  \begin{equation}
-     I_\lambda(U) \sim U^2 \; ,
+     I_\lambda \sim U^2 \; ,
      \label{eqn:photostrom}
  \end{equation}
 
-mit dem sich die Grenzfrequenz
+mit dem sich die Grenzfrequenz $U_\text{grenz}$ bei $I_\lambda = 0$ ablesen lässt.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.37]{content/bild3.png}
+    \caption{Der parabolische Zusammenhang zwischen Photostrom und Spannung. [1]}
+    \label{fig:bild3}
+\end{figure}
+
+Besitzt das Anodenmetall eine hohe Austrittsarbeit $W_\text{A}$ (in der Abbildung $A_\text{A}$ genannt), 
+so muss nach Abbildung \ref{fig:bild4} 
+eine Beschleunigungsspannung $U_\text{b}$ angelegt werden, damit
+das Potential der Elektronen
 
 \begin{equation}
-    U_\text{grenz} = I_\lambda(0)
+    h f + e_0 U_\text{b} \geq W_\text{A}
 \end{equation}
 
-bestimmen lässt.
+hoch genug ist, dass diese herausgelöst werden.
+Die Ferminiveaus $\xi_\text{A}$ und $\xi_\text{K}$ der Anode und Kathode stellen
+sich auf gleiche Höhe ein, sobald die Elektroden elektrisch leitend miteinander
+verbunden sind.
 
-
-  
-
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.37]{content/bild4.png}
+    \caption{Die Potentialgefälle ohne angelegte Beschleunigungsspannung $U_\text{b}$ (links) und mit
+    $U_\text{b}$ (rechts). [1]}
+    \label{fig:bild4}
+\end{figure}
 
 
 

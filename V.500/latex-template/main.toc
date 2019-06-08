@@ -5,9 +5,9 @@
 \contentsline {subsection}{\numberline {1.1}Die Natur des Lichts}{3}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Der Photoeffekt}{3}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Die experimentelle Untersuchung}{3}{subsection.1.3}
-\contentsline {section}{\numberline {2}Durchführung}{4}{section.2}
-\contentsline {section}{\numberline {3}Auswertung}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Bestimmung von $\frac {h}{e}$ und der Austrittsarbeit}{5}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Betrachtung des Photostroms in Abhängigkeit der Spannung}{11}{subsection.3.2}
-\contentsline {section}{\numberline {4}Diskussion}{13}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{14}{section.5}
+\contentsline {section}{\numberline {2}Durchführung}{5}{section.2}
+\contentsline {section}{\numberline {3}Auswertung}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Bestimmung von $\frac {h}{e}$ und der Austrittsarbeit}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Betrachtung des Photostroms in Abhängigkeit der Spannung}{12}{subsection.3.2}
+\contentsline {section}{\numberline {4}Diskussion}{14}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{15}{section.5}
