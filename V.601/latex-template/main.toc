@@ -2,11 +2,16 @@
 \defcounter {refsection}{0}\relax 
 \select@language {german}
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}
-\contentsline {section}{\numberline {2}Durchführung}{3}{section.2}
-\contentsline {section}{\numberline {3}Auswertung}{3}{section.3}
-\contentsline {subsection}{\numberline {3.1}Bestimmung der freien Weglänge}{3}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Energieverteilung der beschleunigten Elektronen}{3}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Anregung des Hg-Atoms}{6}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Ionisationsspannung}{7}{subsection.3.4}
-\contentsline {section}{\numberline {4}Diskussion}{7}{section.4}
-\contentsline {section}{\numberline {5}Literaturverzeichnis}{8}{section.5}
+\contentsline {subsection}{\numberline {1.1}Einflüsse auf den Verlauf der Franck-Hertz-Kurve}{4}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Einfluss des Kontaktpotentials}{4}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}Einfluss der Fermi-Dirac-Verteilung}{5}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.3}Der Einfluss des Dampfdruckes}{5}{subsubsection.1.1.3}
+\contentsline {subsection}{\numberline {1.2}Der Versuchsaufbau und die Gegenfeldmethode}{5}{subsection.1.2}
+\contentsline {section}{\numberline {2}Durchführung}{6}{section.2}
+\contentsline {section}{\numberline {3}Auswertung}{8}{section.3}
+\contentsline {subsection}{\numberline {3.1}Bestimmung der freien Weglänge}{8}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Energieverteilung der beschleunigten Elektronen}{8}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Anregung des Hg-Atoms}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Ionisationsspannung}{12}{subsection.3.4}
+\contentsline {section}{\numberline {4}Diskussion}{12}{section.4}
+\contentsline {section}{\numberline {5}Literaturverzeichnis}{13}{section.5}
