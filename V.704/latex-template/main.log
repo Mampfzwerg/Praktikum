@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.10.3)  10 JUN 2019 22:02
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.10.3)  11 JUN 2019 17:44
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -32,7 +32,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.137 seconds (./header.tex
+luaotfload | main : initialization completed in 0.130 seconds (./header.tex
 (/home/sara/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/home/sara/.local/texlive/2018/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -861,7 +861,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 11.0pt
 (typearea)              \footskip       = 47.6pt
 (typearea)              \baselineskip   = 13.6pt
-(typearea)              on input line 30.
+(typearea)              on input line 31.
 
 (/home/sara/.local/texlive/2018/texmf-dist/tex/latex/polyglossia/polyglossia.st
 y
@@ -902,24 +902,24 @@ Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
 df
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
+(polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            synonyms	table: 0x4f19620
+(polyglossia)            synonyms	table: 0x58ca960
 (polyglossia)            patterns	hyph-de-1901.pat.txt
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 o
 n input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
+(polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            synonyms	table: 0x4f197f0
+(polyglossia)            synonyms	table: 0x58cab30
 (polyglossia)            patterns	hyph-de-1996.pat.txt
 (polyglossia)            hyphenation	
-(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 
 on input line 68
@@ -1127,15 +1127,15 @@ odernMath:mode=base;script=math;language=DFLT;+ssty=0;"<-7>"LatinModernMath:mode
 . \__um_luatex_copy_fontdimens: 
 .................................................
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 53.
+(Font)              `operators' in the math version `normal' on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/LatinModernMath(1)/m/n on input line 
-53.
+54.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 53.
+(Font)              `operators' in the math version `bold' on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/LatinModernMath(1)/bx/n on input lin
-e 53.
+e 54.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1180,15 +1180,15 @@ e=9.475-},{Size=7-9.475,Font=Latin
 . 20\font =0pt\relax \fontdimen 21\font =0pt\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 53.
+(Font)              `symbols' in the math version `normal' on input line 54.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/LatinModernMath(2)/m/n on input line
- 53.
+ 54.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 53.
+(Font)              `symbols' in the math version `bold' on input line 54.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/LatinModernMath(2)/bx/n on input lin
-e 53.
+e 54.
 .................................................
 . fontspec info: "no-font-shape"
 . 
@@ -1225,34 +1225,34 @@ e=9.475-},{Size=7-9.475,Font=Latin
 . 13\font =0pt\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 53
+(Font)              `largesymbols' in the math version `normal' on input line 54
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/m/n on input line
- 53.
+ 54.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 53.
+(Font)              `largesymbols' in the math version `bold' on input line 54.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/bx/n on input lin
-e 53.
+e 54.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 53.
+(Font)              scaled to size 10.95015pt on input line 54.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.67863pt on input line 53.
+(Font)              scaled to size 7.67863pt on input line 54.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.45398pt on input line 53.
+(Font)              scaled to size 5.45398pt on input line 54.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 53.
+(Font)              scaled to size 10.94983pt on input line 54.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 7.6784pt on input line 53.
+(Font)              scaled to size 7.6784pt on input line 54.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 5.45381pt on input line 53.
-LaTeX Font Info:    Try loading font information for U+msa on input line 53.
+(Font)              scaled to size 5.45381pt on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
 
 (/home/sara/.local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 53.
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
 
 (/home/sara/.local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1291,10 +1291,10 @@ base;script=math;language=DFLT;+ssty=1;"
 \sym__um_fam1=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/m/n on input line 
-54.
+55.
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
 (Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/bx/n on input line
- 54.
+ 55.
 luaotfload | aux : font no 47 (nil) does not define feature smcp for script math
  with language dflt
 luaotfload | aux : no font with id 47
@@ -1329,10 +1329,10 @@ TSMath:mode=base;script=math;language=DFLT;+ss01;+ssty=1;"
 \sym__um_fam2=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `normal'
 (Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/m/n on input line 
-55.
+56.
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `bold'
 (Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/bx/n on input line
- 55.
+ 56.
 
 (/home/sara/.local/texlive/2018/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2018/05/17 v2.7s A comprehensive (SI) units package
@@ -1738,7 +1738,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks26
 \@floatcapt=\box57
 )
-Package scrhack Info: loading float hack on input line 79.
+Package scrhack Info: loading float hack on input line 80.
  (/home/sara/.local/texlive/2018/texmf-dist/tex/latex/koma-script/float.hak
 File: float.hak 2018/03/30 v3.25 KOMA-Script package (hacking package float)
 Package scrhack Info: redefining \newfloat on input line 163.
@@ -2332,13 +2332,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 20.74031pt on input line 14.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 14.4002pt on input line 14.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 12.00018pt on input line 14.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 20.73969pt on input line 14.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 14.39977pt on input line 14.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 11.99982pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 10.00015pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 7.0001pt on input line 14.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 9.99985pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
@@ -2359,128 +2367,136 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line
  [2
 
 ] (./content/theorie.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
-
- []
-
-<content/bild2.png, id=51, 573.14125pt x 406.51875pt>
-File: content/bild2.png Graphic file (type png)
-<use content/bild2.png>
-Package luatex.def Info: content/bild2.png  used on input line 47.
-(luatex.def)             Requested size: 229.25243pt x 162.60461pt.
 [3]
-<content/bild3.png, id=66, 941.5175pt x 483.8075pt>
-File: content/bild3.png Graphic file (type png)
-<use content/bild3.png>
-Package luatex.def Info: content/bild3.png  used on input line 77.
-(luatex.def)             Requested size: 376.60033pt x 193.51956pt.
- [4<./content/bild2.png>]
-<content/bild1.png, id=76, 674.52pt x 456.70625pt>
-File: content/bild1.png Graphic file (type png)
-<use content/bild1.png>
-Package luatex.def Info: content/bild1.png  used on input line 114.
-(luatex.def)             Requested size: 269.80322pt x 182.67926pt.
- [5<./content/bild3.png>])
-(./content/durchfuehrung.tex
-<content/bild4.png, id=86, 963.6pt x 607.26875pt>
-File: content/bild4.png Graphic file (type png)
-<use content/bild4.png>
-Package luatex.def Info: content/bild4.png  used on input line 9.
-(luatex.def)             Requested size: 385.43317pt x 242.9032pt.
- [6<./content/bild1.png>] [7<./content/bild4.png>]) (./content/auswertung.tex
-<content/plot1.pdf, id=102, 462.52798pt x 346.89601pt>
-File: content/plot1.pdf Graphic file (type pdf)
-<use content/plot1.pdf>
-Package luatex.def Info: content/plot1.pdf  used on input line 72.
-(luatex.def)             Requested size: 462.52684pt x 346.89516pt.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 8.00012pt on input line 70.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 6.00009pt on input line 70.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 7.99988pt on input line 70.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 5.99991pt on input line 70.
+<content/WW.jpg, id=43, 1274.7625pt x 333.245pt>
+File: content/WW.jpg Graphic file (type jpg)
+<use content/WW.jpg>
+Package luatex.def Info: content/WW.jpg  used on input line 92.
+(luatex.def)             Requested size: 382.4317pt x 99.97426pt.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 93.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 93.
 
-Overfull \hbox (44.27129pt too wide) in paragraph at lines 72--73
+Underfull \hbox (badness 10000) in paragraph at lines 97--100
+
+ []
+
+[4
+Missing character: There is no 𝛾 (U+1D6FE) in font [lmroman8-regular]:+tlig;!
+<./content/WW.jpg>]
+<content/com.jpg, id=52, 1302.8675pt x 464.73625pt>
+File: content/com.jpg Graphic file (type jpg)
+<use content/com.jpg>
+Package luatex.def Info: content/com.jpg  used on input line 124.
+(luatex.def)             Requested size: 390.86327pt x 139.42194pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
+
+ []
+
+<content/ger.jpg, id=54, 722.7pt x 1091.07625pt>
+File: content/ger.jpg Graphic file (type jpg)
+<use content/ger.jpg>
+Package luatex.def Info: content/ger.jpg  used on input line 157.
+(luatex.def)             Requested size: 216.81166pt x 327.3254pt.
+[5
+Missing character: There is no 𝛾 (U+1D6FE) in font [lmroman8-regular]:+tlig;!
+Missing character: There is no 𝛾 (U+1D6FE) in font [lmroman8-regular]:+tlig;!
+<./content/com.jpg>] [6<./content/ger.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+[7
+Missing character: There is no 𝛽 (U+1D6FD) in font [lmroman8-regular]:+tlig;!
+Missing character: There is no 𝛽 (U+1D6FD) in font [lmroman8-regular]:+tlig;!
+]
+<content/kurve.jpg, id=71, 1107.13625pt x 754.82pt>
+File: content/kurve.jpg Graphic file (type jpg)
+<use content/kurve.jpg>
+Package luatex.def Info: content/kurve.jpg  used on input line 227.
+(luatex.def)             Requested size: 332.14343pt x 226.44775pt.
+) (./content/durchfuehrung.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--14
+
+ []
+
+[8<./content/kurve.jpg>]
+<content/Aufbau.jpg, id=80, 1752.5475pt x 777.90625pt>
+File: content/Aufbau.jpg Graphic file (type jpg)
+<use content/Aufbau.jpg>
+Package luatex.def Info: content/Aufbau.jpg  used on input line 17.
+(luatex.def)             Requested size: 525.76831pt x 233.37367pt.
+
+Overfull \hbox (107.51276pt too wide) in paragraph at lines 17--18
  [][] 
  []
 
-<content/plot2.pdf, id=105, 462.52798pt x 346.89601pt>
-File: content/plot2.pdf Graphic file (type pdf)
-<use content/plot2.pdf>
-Package luatex.def Info: content/plot2.pdf  used on input line 108.
-(luatex.def)             Requested size: 462.52684pt x 346.89516pt.
+) (./content/auswertung.tex [9<./content/Aufbau.jpg>]
 
-Overfull \hbox (44.27129pt too wide) in paragraph at lines 108--109
- [][] 
+LaTeX Warning: Reference `tab:mess2' on page 10 undefined on input line 48.
+
+
+Overfull \hbox (0.33058pt too wide) in paragraph at lines 46--49
+\TU/lmr/m/n/10.95 Ziel des Ver-suchs-teil ist es die Ma-xi-mal-ener-gie aus der
+ auf-ge-nom-me-nen $\TU/LatinModernMath(1)/m/n/10.95 𝛽$\TU/lmr/m/n/10.95 -Ab
+sorptionskurve
  []
 
-[8] [9<./content/plot1.pdf>] [10<./content/plot2.pdf>] [11])
-(./content/diskussion.tex [12])
-Overfull \hbox (60.54146pt too wide) in paragraph at lines 25--31
-\TU/lmr/m/n/10.95 [2]:  Li-te-ra-tur-wert für An-re-gungs-en-er-gie. []$\TU/lm
-tt/m/n/10.95 https://www.chemie.de/lexikon/Franck-[]Hertz-[]Versuch.
- []
+! Undefined control sequence.
+<argument> \mikro 
+       \meter 
+l.57     $ d \;/\; \si{\mikro\meter}
+                                   $ & $t \;/\; \si{\second}$ & $N$\\
+? x
 
-
-Overfull \hbox (16.93811pt too wide) in paragraph at lines 25--31
-\TU/lmr/m/n/10.95 [3]:  Li-te-ra-tur-wert für Io-nai-sa-ti-ons-span-nung. []$\
-TU/lmtt/m/n/10.95 http://www.periodensystem.info/elemente/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 25--31
-
- []
-
-
-LaTeX Warning: Empty bibliography on input line 32.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
-[13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
- (./main.aux
-Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
-26
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
-Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: D42CAF4F100E44DB9A0002B4F8B2E7D9;11996.
-Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: E6F73FC92549CDFA87C2CEBC032C528D;1423.
-Package logreq Info: Writing requests to 'main.run.xml'.
-
-\openout1 = main.run.xml
-)
 
 Here is how much of LuaTeX's memory you used:
- 42162 strings out of 494407
- 100000,1648299 words of node,token memory allocated
- 740 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 34 attribute, 77 glue_spec
-, 34 attribute_list, 1 write, 2 pdf_action nodes
-   avail lists: 1:3,2:1078,3:173,4:24,5:179,6:34,7:3014,8:118,9:340,10:13,11:249
+ 42461 strings out of 494407
+ 100000,1648299 words of node,token memory allocated 14013 words of node memory still in use:
+   101 hlist, 5 vlist, 32 rule, 117 disc, 9 local_par, 5 dir, 26 math, 408 glue,
+ 54 kern, 40 penalty, 2 noad, 2 math_char, 11 margin_kern, 934 glyph, 3 align_re
+cord, 191 attribute, 94 glue_spec, 191 attribute_list, 11 temp, 1 align_stack, 6
+ write, 4 pdf_dest nodes
+   avail lists: 1:3,2:2,3:68,4:25,5:150,6:8,7:2205,8:48,9:60,10:16,11:284
+ 45290 multiletter control sequences out of 65536+600000
+ 265 fonts using 99038735 bytes
+ 61i,22n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 
- 45068 multiletter control sequences out of 65536+600000
- 144 fonts using 51486375 bytes
- 61i,14n,107p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmmono10-reg
-ular.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmr
-oman10-italic.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/publ
-ic/lm/lmroman5-regular.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/open
-type/public/lm/lmroman10-bold.otf></home/sara/.local/texlive/2018/texmf-dist/fon
-ts/opentype/public/lm/lmroman8-regular.otf></home/sara/.local/texlive/2018/texmf
--dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/sara/.local/texl
-ive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/sa
-ra/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math
-.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman
-10-regular.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/
-lm/lmroman12-regular.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/openty
-pe/public/lm/lmsans10-bold.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/
-opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (13 pages, 223248 bytes).
+warning  (pdf backend): unreferenced destination with name 'section.4'
+</home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman10-bo
+ld.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmrom
+an8-regular.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public
+/lm-math/latinmodern-math.otf></home/sara/.local/texlive/2018/texmf-dist/fonts/o
+pentype/public/lm-math/latinmodern-math.otf></home/sara/.local/texlive/2018/texm
+f-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/sara/.local/texlive
+/2018/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/sara/.loc
+al/texlive/2018/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></
+home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.
+otf></home/sara/.local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lmroman1
+2-bold.otf>
+Output written on main.pdf (9 pages, 575653 bytes).
 
-PDF statistics: 351 PDF objects out of 1000 (max. 8388607)
- 243 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 131072)
- 113 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 144 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
+ 23 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

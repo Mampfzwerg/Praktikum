@@ -1,9 +1,136 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-%\begin{figure}
-%  \centering
-%  \includegraphics{plot.pdf}
-%  \caption{Plot.}
-%  \label{fig:plot}
-%\end{figure}
+\subsection{Nullmessung}
+
+Wie zuvor erwähnt, muss zur Auswertung der zwei folgenden Versuchsteile der Nulleffekt berücksichtigt 
+werden. Die gemessene Zeit $t_0$, sowie die Zählrate $N_0$ und die Aktivität $A_0$ sind für die beiden
+Versuchsteile in Tabelle \ref{tab:null} eingetragen. Der berechnete Fehler der Zählrate ergibt sich gemäß der 
+Poisson-Verteilung. Dementsprechend wird der Fehler der Aktivität mittels der Gauß'schen Fehlerfortpflanzung
+bestimmt. \\
+Diese Berechnung wurden mittels Python 3.6 durchgeführt. Außerdem werden die zusätzlichen integrierten 
+Funktionen von den Paketen numpy, math, matplotlip und scipy verwendet. Bei allen weiteren Berechnungen und
+graphischen Darstellungen wird von diesen Gebrauch gemacht. 
+
+\begin{table}
+    \centering
+    \caption{Messung der Nulleffekte.}
+    \label{tab:null}
+    \sisetup{table-format=2.1}
+    \begin{tabular}{c c c c}
+    \toprule
+    $\text{Messunge}$ & $ t_0 \;/\; \si{\second} $  & $N_0$ & $A_0 \;/\; \si{\per\second}$\\
+    \midrule 
+        $\gamma \text{-Strahlung}$ & 900 &  000 & 000\\
+        $\beta \text{-Strahlung}$  & 900 & $\num{551+-23}$ & $\num{0.61+-0.03}$\\     
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Gammaabsorption}
+
+
+\subsection{Betaabsorption}
+
+
+Ziel des Versuchsteil ist es die Maximalenergie aus der aufgenommenen $\beta$-Absorptionskurve zu 
+bestimmen. Die gemessene Zählrate $N$, die gemessene Zeit $t$ und die Dicke $d$ der Aluminiumplatte 
+sind in Tabelle \ref{tab:mess2} aufgetragen. 
+
+\begin{table}
+    \centering
+    \caption{Gemessene Werte für die Aluminiumplatten.}
+    \label{tab:mess2}
+    \sisetup{table-format=2.1}
+    \begin{tabular}{c c c}
+    \toprule
+    $ d \;/\; \si{\mikro\meter} $ & $t \;/\; \si{\second}$ & $N$\\
+    \midrule 
+        482 & 1100 &   774\\
+        444 & 1000 &   683\\
+        400 &  900 &   642\\
+        338 &  800 &   494\\
+        302 &  700 &   505\\
+        253 &  600 &   501\\
+        200 &  500 &   794\\
+        160 &  400 &  1704\\
+        153 &  300 &  2037\\
+        125 &  200 &  1439\\  
+        100 &  100 &  2747\\ 
+          0 &   50 & 22220\\       
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+Im Folgenden wird für alle Berechnungen für die Zählrate $N$ der Poisson-Fehler angenommen.  
+Werden die Werte aus Tabelle \ref{tab:mess2} in Formel --.. eingesetzt, ergeben sich dabei die 
+Werte in Tabelle \ref{ta:akti} für die Aktivität. 
+
+\begin{table}
+    \centering
+    \caption{Errechnete Werte für Aktivität $A$ für das Material Aluminium.}
+    \label{tab:akti}
+    \sisetup{table-format=2.1}
+    \begin{tabular}{c c}
+    \toprule
+    $ d \;/\; \si{\mikro\meter} $ & $A_\text{Al} \;/\; \si{\per\second}$\\
+    \midrule 
+        482 & $\num{0.091+-0.036}$\\
+        444 & $\num{0.071+-0.036}$\\
+        400 & $\num{0.101+-0.038}$\\
+        338 & $\num{0.005+-0.038}$\\
+        302 & $\num{0.109+-0.041}$\\
+        253 & $\num{0.223+-0.045}$\\
+        200 & $\num{0.976+-0.062}$\\
+        160 & $\num{3.648+-0.106}$\\
+        153 & $\num{6.178+-0.152}$\\
+        125 & $\num{6.583+-0.202}$\\  
+        100 & $\num{26.858+-0.521}$\\ 
+          0 & $\num{443.79+-2.980}$\\       
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+
+Bei der Subtraktion können dabei auch negative Werte auftreten. Diese werden zum Betrag genommen, 
+da der Logarithmus nicht für negative Werte definiert ist. 
+In Abbildung \ref{fig:beta} werden die Aktivitäten halblogarithmisch gegen die Dicke $d$ aufgetragen. 
+
+\begin{figure}
+  \centering
+  \includegraphics{beta.pdf}
+  \caption{Lineare Regression der Messwerte zur Bestimmung von $R_\text{max}$.}
+  \label{fig:beta}
+\end{figure}
+
+Um $R_\text{max}$ aus der Abbildung \ref{fig:beta} zu bestimmen werden zwei lineare Regressionen der 
+Messwerte gefittet. Die eine Kurve liegt oberhalb und die andere Kurve unterhalb von $R_\text{max}$. 
+Die Geradengleichungen seien dabei $f(x) = ax+b$ und $g(x) = cx+d$.
+
+Mittels Python werden die Messwerte linear gefittet und sie ergeben sich zu 
+
+\begin{align*}
+a &= \SI{-28.48+-8.71e3}{\per\meter}, & c &= \SI{-1.08+-7.39e3}{\per\meter},\\
+b &= \SI{5.91+-1.12}{\per\second}, & d &= \SI{-2.32}{\per\second}.
+\end{align*}
+
+$R_\text{max}$ wird gemäß 
+
+\begin{equation*}
+R_\text{max} = \frac{d-b}{a-c}
+\end{equation*}
+
+bestimmt, wobei dieser Wert mit der Dichte von Aluminium multipliziert werden muss. 
+Damit beträgt der experimentell gemessene Werte für $R_\text{max}$:
+
+\begin{equation*}
+R_\text{max} = \SI{0.8+-0.5}{\kilo\gramm\per\meter²}.
+\end{equation*}
+
+Die daraus resultierende Maximalenergie ergibt sich nach Formel \eqref{eqn:Emax} zu 
+
+\begin{equation*}
+E_\text{max} = \SI{0.33+-0.11}{\mega\eV}.
+\end{equation*}
+
+Zu Beachten ist die richtige Umrechnung der Massenbelegung in $\si{\gram\per\centi\meter²}$.
