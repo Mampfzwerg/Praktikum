@@ -131,6 +131,7 @@ und Nishina bestimmt und ist durch
 
 \begin{equation*}
 \sigma_\text{com} = 2\pi r_\text{e}^2 \left(\frac{1+\epsilon}{\epsilon^2}\left[\frac{2(1+\epsilon)}{1+2\epsilon}-\frac{1}{\epsilon}\ln{(1+2\epsilon)}\right]+\frac{1}{2\epsilon}\ln{(1+2\epsilon)}-\frac{1+3\epsilon}{(1+2\epsilon)²}\right)
+\label{eqn:sigmacompton}
 \end{equation*}
 
 gegeben. $\epsilon$ gibt dabei das Verhältnis zwischen Quantenenergie $E_\text{\gamma}$
@@ -141,7 +142,14 @@ und der Ruheenergie des Elektrons
 \end{equation*}
 
 an. $r_\text{e}$ bezeichnet außerdem den klassischen Elektronenradius 
-$r_\text{e}=\SI{2.82e-15}{\meter}$ [1].\\
+$r_\text{e}=\SI{2.82e-15}{\meter}$ [1].
+Für den Compton-Absorptionskoeffizienten $\mu_\text{Compton}$ folgt dann
+
+\begin{equation}
+    \label{eqn:mucompton}
+    \mu =n \cdot \sigma = \frac{Z N_\text{A} \rho }{M} \cdot \sigma_\text{Compton} \;.
+\end{equation}
+\\
 
 Die Paarerzeugung tritt dann auf, wenn die Energie der Photonen mehr als doppelt so 
 groß ist, als die Ruhemasse des Elektrons ($\SI{1.02}{\mega\eV}$). Das $\gamma$-Quant 

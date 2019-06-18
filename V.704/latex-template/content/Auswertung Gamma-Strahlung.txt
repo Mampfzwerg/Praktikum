@@ -1,0 +1,157 @@
+#Messwerte Blei (Dicke(m)/Zeit/Zählung)
+#x     y   z
+0.005 60  5016
+0.01  120 5760
+0.015 180 4680
+0.02  240 3907
+0.025 300 3121
+0.03  360 2415
+0.035 420 1730
+0.04  480 1428
+0.045 540 1270
+0.05  600 0971
+
+#Auswertung Blei 
+import numpy as np
+from matplotlib import rc
+rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
+rc('text', usetex=True)
+import matplotlib.pyplot as plt
+from uncertainties import ufloat
+import uncertainties.unumpy as unp
+from scipy.optimize import curve_fit
+import scipy.constants as const
+
+#Nullmessung
+n_0 = ufloat(973, 31.19)
+t_0 = 900
+
+a_0 = n_0/t_0
+print(a_0)
+
+d, t, n = np.genfromtxt('blei.txt', unpack=True) #Dicke, Zeit, Anzahl n
+error_n = np.sqrt(n) #Fehler von n
+n = unp.uarray(n, error_n) #Werte von n mit Fehler
+a = n/t #Aktivität
+a_err = a - a_0 #Fehler von a
+np.savetxt('werte_blei.txt', np.column_stack([d, t, n, a, a_err]), fmt='%r')
+
+werte_a = np.array([82.51888888888888, 46.91888888888889, 24.91888888888889, 15.198055555555554, 9.322222222222223, 5.627222222222222, 3.0379365079365073, 1.893888888888889, 1.2707407407407405, 0.5372222222222223])
+error_a  = np.array([1.180904035417018, 0.6334043002150082, 0.38163523419006884, 0.2627372616169532, 0.18941696151253715, 0.14083773212503622, 0.10492027338265882, 0.0860169994683078, 0.07454051742507062, 0.06243580505676547]) 
+
+params, covariance_matrix = np.polyfit(d, np.log(werte_a), deg=1, cov=True)
+errors = np.sqrt(np.diag(covariance_matrix))
+
+print('a = {:.3f} ± {:.3f}'.format(params[0], errors[0]))
+print('b = {:.3f} ± {:.3f}'.format(params[1], errors[1]))
+
+plt.figure(1, (9, 7))
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
+
+x_plot = np.linspace(0.00, 0.05)
+
+plt.errorbar(d, werte_a, yerr=error_a, marker='+', fmt='+', color='green', label='$N \, / \, t$ mit Fehler', elinewidth=1.0)
+plt.yscale('log')
+plt.plot(x_plot, np.exp(params[0] * x_plot + params[1]), label='Lineare Regression', linewidth=1)
+plt.grid()
+plt.xlim(0.00, 0.05)
+plt.xlabel(r'$d \, / \; m$')
+plt.ylabel(r'$N \, / \, t \; / \; s^{-1}$')
+plt.legend(loc='best')
+plt.savefig('blei.pdf')
+plt.show()
+
+#Messwerte Eisen
+#x     y   z
+0.005 60  6853 
+0.01  90  8167
+0.015 120 8208
+0.02  150 8078
+0.025 170 8142
+0.03  190 6997
+0.035 210 6030
+0.04  240 5674 
+0.045 270 5028
+0.05  300 4661 
+
+#Auswertung Eisen
+import numpy as np
+from matplotlib import rc
+rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
+rc('text', usetex=True)
+import matplotlib.pyplot as plt
+from uncertainties import ufloat
+import uncertainties.unumpy as unp
+from scipy.optimize import curve_fit
+import scipy.constants as const
+
+#Nullmessung
+n_0 = ufloat(973, 31.19)
+t_0 = 900
+
+a_0 = n_0/t_0
+print(a_0)
+
+d, t, n = np.genfromtxt('eisen.txt', unpack=True) #Dicke, Zeit, Anzahl n
+error_n = np.sqrt(n) #Fehler von n
+n = unp.uarray(n, error_n) #Werte von n mit Fehler
+a = n/t #Aktivität
+a_err = a - a_0 #Fehler von a
+np.savetxt('werte_eisen.txt', np.column_stack([d, t, n, a, a_err]), fmt='%r')
+
+werte_a = np.array([113.13555555555556, 89.66333333333333, 67.31888888888889, 52.77222222222222, 46.81300653594771, 35.74520467836257, 27.633174603174606, 22.560555555555556, 17.541111111111114, 14.455555555555556])
+error_a  = np.array([1.380149310271166, 1.0047251427475754, 0.7557784116597035, 0.6001859959654895, 0.5319126914608191, 0.44161490261573444, 0.3713969593419085, 0.3157656599051085, 0.2649003604121785, 0.2301953440444726]) 
+
+params, covariance_matrix = np.polyfit(d, np.log(werte_a), deg=1, cov=True)
+errors = np.sqrt(np.diag(covariance_matrix))
+
+print('a = {:.3f} ± {:.3f}'.format(params[0], errors[0]))
+print('b = {:.3f} ± {:.3f}'.format(params[1], errors[1]))
+
+plt.figure(1, (9, 7))
+plt.rc('text', usetex=True)
+plt.rc('font', family='serif')
+
+x_plot = np.linspace(0.00, 0.05)
+
+plt.errorbar(d, werte_a, yerr=error_a, marker='+', fmt='+', color='green', label='$N \, / \, t$ mit Fehler', elinewidth=1.0)
+plt.yscale('log')
+plt.plot(x_plot, np.exp(params[0] * x_plot + params[1]), label='Lineare Regression', linewidth=1)
+plt.grid()
+plt.xlim(0.0, 0.05)
+plt.xlabel(r'$d \, / \; m$')
+plt.ylabel(r'$N \, / \, t \; / \; s^{-1}$')
+plt.legend(loc='best')
+plt.savefig('eisen.pdf')
+plt.show()
+
+#Auswertung Compton
+import numpy as np
+from matplotlib import rc
+rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
+rc('text', usetex=True)
+import matplotlib.pyplot as plt
+from uncertainties import ufloat
+import uncertainties.unumpy as unp
+from scipy.optimize import curve_fit
+import scipy.constants as const
+
+r = 2.82*10**(-15) #Elektronenradius
+e = 1.295 #Enegieverhältnis
+sigma = 2*np.pi*(r**2)*((1+e)/(e**2) * ((2+2*e)/(1+2*e) - (1/e)*np.log(1+2*e)) + 1/(2*e)*np.log(1+2*e) - (1+3*e)/((1+2*e)**2)) #m2
+print('Sigma: ', sigma)
+
+z_1 = 26 #Ordnungszahl von Eisen
+z_2 = 82 #Ordnungszahl von Blei
+n = const.physical_constants['Avogadro constant'][0] #1/mol
+u = const.physical_constants['unified atomic mass unit'][0] #kg
+p_1 = 7874 #Dichte von Eisen in kg/m3
+p_2 = 11342 #Dichte von Blei in kg/m3
+m_1 = n*u*55.845 #Molare Masse von Eisen in kg/mol
+m_2 = n*u*207.2 #Molare Masse von Blei in kg/mol
+
+mu_1 = (z_1*n*p_1*sigma)/m_1
+mu_2 = (z_2*n*p_2*sigma)/m_2
+print('Eisen: ', mu_1)
+print('Blei:  ', mu_2)
