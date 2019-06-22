@@ -1,9 +1,101 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
-%\begin{figure}
-%  \centering
-%  \includegraphics{plot.pdf}
-%  \caption{Plot.}
-%  \label{fig:plot}
-%\end{figure}
+\subsection{Bestimmung der Wellenlänge des Diodenlasers}
+
+Es werden $10$ Messungen des Abstandes $\symup{\Delta}d$ für die Zählung von $z \approx 3000$
+Interferenzmaxima durchgeführt. Der Hebelübersetzungsfaktor beträgt dabei $C_\text{H} = 5,046$
+und es ergibt sich 
+
+\begin{equation}
+    \symup{\Delta} d_\text{H} = \frac{\symup{\Delta}d}{C_\text{H}} \; .
+\end{equation}
+
+Die zugehörigen Messwerte sind zusammen mit den nach Gleichung \eqref{eqn:eins} berechneten
+Wellenlängen $\lambda$ in Tabelle \ref{tab:mess1} eingetragen.
+
+\begin{table}
+    \centering
+    \caption{Messwerte zur Wellenlängenbestimmung}
+    \label{tab:mess1}
+    \sisetup{table-format=2.1}
+    \begin{tabular}{c c c c c c}
+    \toprule
+    $z$ & $d_1 \,/\, \si{\milli\meter}$ & $d_2 \,/\, \si{\milli\meter}$
+    & $\symup{\Delta}d \,/\, \si{\milli\meter}$ & $\symup{\Delta}d_\text{H} \,/\, \si{\milli\meter}$
+    & $\lambda \,/\, \si{\nano\meter}$\\
+    \midrule 
+        2999 & 2,00 & 7,02 & 5,02 & 0,99 & 663,45 \\
+        3000 & 2,00 & 7,03 & 5,03 & 1,00 & 664,55 \\
+        3003 & 8,00 & 2,91 & 5,09 & 1,01 & 671,81 \\
+        3000 & 2,50 & 7,54 & 5,04 & 1,00 & 665,87 \\
+        3001 & 7,54 & 2,49 & 5,05 & 1,00 & 666,97 \\
+        3000 & 2,49 & 7,53 & 5,04 & 1,00 & 665,87 \\
+        3001 & 7,53 & 2,49 & 5,04 & 1,00 & 665,65 \\
+        3016 & 2,49 & 7,55 & 5,06 & 1,00 & 664,97 \\
+        3000 & 7,55 & 2,51 & 5,04 & 1,00 & 665,87 \\
+        3000 & 2,51 & 7,55 & 5,04 & 1,00 & 665,87 \\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+Der Mittelwert der Wellelnlängen ergibt sich als
+
+\begin{equation*}
+    \bar{\lambda} = \SI{666.1 +- 0.7}{\nano\meter} \; .
+\end{equation*}
+
+\subsection{Bestimmung des Brechungsindizes}
+
+Die Länge der Messkammer beträgt $b = \SI{50}{\milli\meter}$.
+Für eine Druckdifferenz $p - p' = \SI{0.6}{\bar}$ wurden zehn Impulsmaximaanzahlen $z$ gemessen
+und sind in Tabelle \ref{tab:mess2} aufgelistet.
+
+\begin{table}
+    \centering
+    \caption{Messwerte zur Brechungsindexbestimmung}
+    \label{tab:mess2}
+    \sisetup{table-format=2.1}
+    \begin{tabular}{c}
+    \toprule
+    $z$ \\
+    \midrule 
+        25\\
+        24\\
+        24\\
+        23\\
+        23\\
+        24\\
+        24\\
+        23\\
+        21\\
+        23\\
+    \bottomrule
+    \end{tabular}
+    \end{table}
+
+Ihr Mittelwert beträgt
+
+\begin{equation*}
+    \bar{z} = 23,4 \; .
+\end{equation*}
+
+Unter normalen Bedingungen mit
+
+\begin{align*}
+    p_0 &= \SI{1.0132}{\bar} \\
+    T_0 &= \SI{273.15}{\kelvin} \\
+    T &= \SI{298.15}{\kelvin}
+\end{align*}
+
+ergeben sich $\symup{\Delta}n$ und $n$ mit den Gleichungen \eqref{eqn:delta} und \eqref{eqn:brech} zu
+
+\begin{align*}
+    \symup{\Delta}n &= (\num{0.15587 +- 0.00016}) \cdot 10^{-3} \\
+    n &= \num{1.00028729 +- 0.00000030} \; .
+\end{align*}
+
+
+
+
+

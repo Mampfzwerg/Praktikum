@@ -1,3 +1,48 @@
 \section{Theorie}
-\label{sec:Theorie}
+
+Ziel dieses Versuches ist die Bestimmung der Wellenlänge $\lambda$ eines Diodenlasers und
+des Brechungsindizes $n$ von Luft mithilfe des Michelson-Interferometers.
+
+Licht ist eine elektromagnetische Welle mit elektromagnetischer Feldstärke
+
+\begin{equation}
+    \vec{E}(x, t) = \vec{E_0} \cdot \text{cos}(kx - \omega t - \delta) \; ,
+    \label{eqn:ansatz}
+\end{equation}
+
+für die das Superpositionsprinzip gilt.
+
+Es besitzt die Wellenlänge $\lambda$, die Wellenzahl $k = \frac{2 \pi}{\lambda}$, die Kreisfrequenz $\omega$,
+die Phase $\delta$ und die Intensität
+
+\begin{equation}
+    I \propto |\vec{E}|^2 \; .
+    \label{eqn:props}
+\end{equation}
+
+Die Gesamtintensität an einem Ort, auf den die Wellen $\vec{E_1}$ und $\vec{E_2}$ treffen, ergibt sich 
+unter der Bedingung, dass $t_2 - t_1$ groß gegen die Periodendauer $T = \frac{2 \pi}{\omega}$ ist, als
+
+\begin{equation}
+    I_\text{ges} = \frac{C}{t_2 - t_1} \int^{t_2}_{t_1} |\vec{E_1} + \vec{E_2}|^2 (x, t) \: \text{d}t 
+    \; , \; C \text{ konstant, } 
+\end{equation}
+
+Wird der Wellenansatz \eqref{eqn:ansatz} in \eqref{eqn:props} eingesetzt, so ergibt sich aufintegriert
+
+\begin{equation}
+    I_\text{ges} = 2 \cdot C \cdot \vec{E_0}^2 (1 + \text{cos}(\delta_2 - \delta_1))
+\end{equation}
+
+mit dem sogenannten Interferenzterm $2 C \vec{E_0}^2$.
+
+Die Gesamtintensität $I_\text{ges}$ weicht also um bis zu $\pm 2 C \vec{E_0}^2$ von ihrem Mittelwert
+$2 C \vec{E_0}^2$ ab und verschwindet für den Fall
+
+\begin{equation}
+    \delta_2 - \delta_1 = (2n + 1)\pi \: , \; n \in \symbb{N}_0 \; .
+\end{equation}
+
+Da für inkohärentes Licht der Interferenzterm bei der zeitlichen Mittelung verschwindet, wird kohärentes
+Laserlicht verwendet.
 
